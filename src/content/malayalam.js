@@ -223,7 +223,7 @@ export const malayalamContent = {
               image: 'marriage_finance'
             },
             {
-              content: 'വൈവാഹിക ജീവിതത്തിൽ,<br/>വിട്ടുവീഴ്ച ചെയ്ത് പോകുന്നതിനേക്കാൾ...<br/>ചില സമയങ്ങളിൽ,<br/>കണ്ടില്ലെന്ന് നടിച്ച് പോകുന്നതാണ് നല്ലത്.',
+              content: 'വൈവാഹിക ജീവിതത്തില്, വിട്ടുവീഴ്ച ചെയ്ത് പോകുന്നതിനേക്കാൾ...<br/>ചില സമയങ്ങളിൽ,<br/>കണ്ടില്ലെന്ന് നടിച്ച് പോകുന്നതാണ് നല്ലത്.',
               image: 'marriage_compromise'
             },
             {
@@ -240,7 +240,7 @@ export const malayalamContent = {
       subsections: [
         {
           id: '2.1',
-          title: 'സ്വയം സ്നേഹത്തിന്റെ ശക്തി',
+          title: 'സ്നേഹത്തിന്റെ ശക്തി',
           paragraphs: [
             {
               content: 'സ്നേഹം ലഭിക്കേണ്ട കാര്യമല്ല;<br/>നൽകേണ്ട കാര്യമാണ്.',
@@ -436,7 +436,7 @@ export const malayalamContent = {
     },
     {
       id: '3',
-      title: 'വികാരങ്ങളും ജീവിതത്തിലെ വെല്ലുവിളികളും',
+      title: 'വികാരങ്ങൾ & ജീവിതത്തിലെ വെല്ലുവിളികൾ',
       subsections: [
         {
           id: '3.1',
@@ -450,17 +450,17 @@ export const malayalamContent = {
         },
         {
           id: '3.3',
-          title: 'മനുഷ്യ മനസ്സിന്റെ മാറ്റങ്ങൾ',
+          title: 'മനുഷ്യ മാനസികാവസ്ഥയിലെ മാറ്റം',
           paragraphs: []
         },
         {
           id: '3.4',
-          title: 'നിശ്ശബ്ദമായ അകൽച്ച',
+          title: 'സമാധാനത്തോടെ പിന്മാറൽ',
           paragraphs: []
         },
         {
           id: '3.5',
-          title: 'ഇല്ലായ്മ',
+          title: 'അഭാവം',
           paragraphs: []
         },
         {
@@ -485,175 +485,140 @@ export const malayalamContent = {
         },
         {
           id: '3.10',
-          title: 'ധീരത',
+          title: 'വീരത്വം',
           paragraphs: []
         }
       ]
     },
     {
       id: '4',
-      title: 'ജീവിതപാഠങ്ങളും മനോഭാവങ്ങളും',
+      title: 'ജീവിതപാഠങ്ങൾ & മാനസികാവസ്ഥകൾ',
       subsections: [
         {
           id: '4.1',
-          title: 'അഭിനയം',
+          title: 'നമ്മുടെ കഷ്ടത ആരോട് പറയണം?',
           paragraphs: []
         },
         {
           id: '4.2',
-          title: 'ജീവിതത്തിലെ പ്രതിസന്ധികൾ',
+          title: 'സഹായം',
           paragraphs: []
         },
         {
           id: '4.3',
-          title: 'ജീവിതത്തിലെ പാഠങ്ങൾ',
+          title: 'രഹസ്യം സൂക്ഷിക്കാൻ പഠിക്കുക',
           paragraphs: []
         },
         {
           id: '4.4',
-          title: 'മാറ്റത്തിന്റെ പ്രാധാന്യം',
+          title: 'കള്ളം',
           paragraphs: []
         },
         {
           id: '4.5',
-          title: 'സ്വയം വിമർശനം',
+          title: 'നിരാശ',
           paragraphs: []
         },
         {
           id: '4.6',
-          title: 'ക്ഷമയുടെ പ്രാധാന്യം',
+          title: 'വഞ്ചന',
           paragraphs: []
         },
         {
           id: '4.7',
-          title: 'സമയത്തിന്റെ വില',
+          title: 'മനസ്സിലാക്കാൻ കഴിയുന്നില്ല',
           paragraphs: []
         },
         {
           id: '4.8',
-          title: 'ആത്മവിശ്വാസം',
-          paragraphs: []
-        },
-        {
-          id: '4.9',
-          title: 'കർമ്മത്തിന്റെ പ്രാധാന്യം',
-          paragraphs: []
-        },
-        {
-          id: '4.10',
-          title: 'സത്യസന്ധത',
+          title: 'പഠിക്കാം',
           paragraphs: []
         }
       ]
     },
     {
       id: '5',
-      title: 'ജീവിതത്തിലെ സത്യങ്ങൾ',
+      title: 'മനഃശാസ്ത്രപരമായ മാറ്റങ്ങൾ & ആഗ്രഹങ്ങൾ',
       subsections: [
         {
           id: '5.1',
-          title: 'ജീവിതം',
+          title: 'ലഹരിയും ധ്യാനമും',
           paragraphs: []
         },
         {
           id: '5.2',
-          title: 'സമയം',
+          title: 'സ്വപ്നം',
           paragraphs: []
         },
         {
           id: '5.3',
-          title: 'വിധി',
+          title: 'കല്പന',
           paragraphs: []
         },
         {
           id: '5.4',
-          title: 'സത്യം',
+          title: 'കുറച്ച് നിമിഷങ്ങൾ',
           paragraphs: []
         },
         {
           id: '5.5',
-          title: 'മരണം',
+          title: 'തെറ്റായ ശീലം',
           paragraphs: []
         },
         {
           id: '5.6',
-          title: 'കർമ്മം',
+          title: 'കാമം',
           paragraphs: []
         },
         {
           id: '5.7',
-          title: 'വിശ്വാസം',
+          title: 'സന്തോഷം',
           paragraphs: []
         },
         {
           id: '5.8',
-          title: 'പ്രതീക്ഷ',
-          paragraphs: []
-        },
-        {
-          id: '5.9',
-          title: 'സമാധാനം',
-          paragraphs: []
-        },
-        {
-          id: '5.10',
-          title: 'സന്തോഷം',
+          title: 'സ്വാർത്ഥത',
           paragraphs: []
         }
       ]
     },
     {
       id: '6',
-      title: 'ജീവിതത്തിലെ വിജയവും പരാജയവും',
+      title: 'സമ്പദ്‌വ്യവസ്ഥ, കടം & ജീവിതസമരങ്ങൾ',
       subsections: [
         {
           id: '6.1',
-          title: 'വിജയം',
+          title: 'പണം',
           paragraphs: []
         },
         {
           id: '6.2',
-          title: 'പരാജയം',
+          title: 'കടം',
           paragraphs: []
         },
         {
           id: '6.3',
-          title: 'പ്രതിസന്ധികൾ',
+          title: 'വിശപ്പ്',
           paragraphs: []
         },
         {
           id: '6.4',
-          title: 'വെല്ലുവിളികൾ',
-          paragraphs: []
-        },
-        {
-          id: '6.5',
-          title: 'അനുഭവങ്ങൾ',
-          paragraphs: []
-        },
-        {
-          id: '6.6',
           title: 'പഠനം',
           paragraphs: []
         },
         {
+          id: '6.5',
+          title: 'കഴിവ്',
+          paragraphs: []
+        },
+        {
+          id: '6.6',
+          title: 'ധൈര്യം',
+          paragraphs: []
+        },
+        {
           id: '6.7',
-          title: 'മുന്നേറ്റം',
-          paragraphs: []
-        },
-        {
-          id: '6.8',
-          title: 'നേട്ടങ്ങൾ',
-          paragraphs: []
-        },
-        {
-          id: '6.9',
-          title: 'പരിശ്രമം',
-          paragraphs: []
-        },
-        {
-          id: '6.10',
-          title: 'ആത്മവിശ്വാസം',
+          title: 'ഭാഗ്യം',
           paragraphs: []
         }
       ]

@@ -240,7 +240,7 @@ export const hindiContent = {
       subsections: [
         {
           id: '2.1',
-          title: 'स्वयं प्रेम की शक्ति',
+          title: 'प्रेम की शक्ति',
           paragraphs: [
             {
               content: 'प्रेम पाने की चीज़ नहीं;<br/>देने की चीज़ है।',
