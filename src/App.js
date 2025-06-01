@@ -130,6 +130,35 @@ function App() {
     setCurrentLanguage(selectedLanguage);
   };
 
+  const getHeaderTitles = () => {
+    if (!selectedSection) {
+      return {
+        mainTitle: content.title,
+        subTitle: null
+      };
+    }
+
+    let subTitle = '';
+    if (selectedSection === 'foreword') {
+      subTitle = content.foreword.title;
+    } else if (selectedSection === 'conclusion') {
+      subTitle = content.conclusion.title;
+    } else {
+      const section = content.sections.find(section =>
+        section.subsections.some(sub => sub.id === selectedSection)
+      );
+      const subsection = section?.subsections.find(sub => sub.id === selectedSection);
+      if (subsection) {
+        subTitle = `${section.title} - ${subsection.title}`;
+      }
+    }
+
+    return {
+      mainTitle: content.title,
+      subTitle
+    };
+  };
+
   const renderContent = () => {
     let title = '';
     let paragraphs = [];
@@ -243,7 +272,12 @@ function App() {
             ←
           </span>
         )}
-        <h1>{content.title}</h1>
+        <div className="header-titles">
+          <h1>{getHeaderTitles().mainTitle}</h1>
+          {getHeaderTitles().subTitle && (
+            <h2 className="subtitle">{getHeaderTitles().subTitle}</h2>
+          )}
+        </div>
       </header>
 
       {/* Main Content */}
@@ -312,6 +346,69 @@ function App() {
           <p>{languages[currentLanguage].name === 'தமிழ்' ? 'ஆசிரியர்: டேவிட் சூசைராஜ்' : 'Author: David Susairaj'}</p>
         </div>
       </footer>
+
+      <style jsx>{`
+        .header {
+          padding: 20px;
+          text-align: center;
+          position: relative;
+          background: #fff;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-titles {
+          max-width: 800px;
+          margin: 0 auto;
+        }
+
+        .header h1 {
+          margin: 0;
+          font-size: 1.8em;
+          color: #333;
+        }
+
+        .header .subtitle {
+          margin: 5px 0 0;
+          font-size: 1.2em;
+          color: #666;
+          font-weight: normal;
+        }
+
+        .back-button {
+          position: absolute;
+          left: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 24px;
+          cursor: pointer;
+          color: #333;
+          padding: 10px;
+          transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+          color: #666;
+        }
+
+        @media (max-width: 768px) {
+          .header {
+            padding: 15px;
+          }
+
+          .header h1 {
+            font-size: 1.5em;
+          }
+
+          .header .subtitle {
+            font-size: 1em;
+          }
+
+          .back-button {
+            left: 10px;
+            font-size: 20px;
+          }
+        }
+      `}</style>
     </div>
   );
 }
