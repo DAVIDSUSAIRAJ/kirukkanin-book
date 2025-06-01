@@ -2,6 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 import { tamilContent } from './content/tamil';
 import { englishContent } from './content/english';
+import { hindiContent } from './content/hindi';
+import { teluguContent } from './content/telugu';
+import { malayalamContent } from './content/malayalam';
+import { languages, defaultLanguage, getLanguageFont } from './config/languages';
+import LanguageSelector from './components/LanguageSelector';
 import { images } from './content/images';
 import help1 from './images/help1.jpg';
 import help2 from './images/help2.png';
@@ -10,8 +15,17 @@ import help2 from './images/help2.png';
 const helpImage1 = help1;
 const helpImage2 = help2;
 
+const contentMap = {
+  ta: tamilContent,
+  en: englishContent,
+  hi: hindiContent,
+  te: teluguContent,
+  ml: malayalamContent
+};
+
 function App() {
-  const [language, setLanguage] = useState('tamil');
+  const [currentLanguage, setCurrentLanguage] = useState(defaultLanguage);
+  const [content, setContent] = useState(contentMap[languages[defaultLanguage].code]);
   const [selectedSection, setSelectedSection] = useState(null);
   const [expandedSections, setExpandedSections] = useState({});
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
@@ -24,6 +38,12 @@ function App() {
   const isSwipingRef = useRef(false);
   const cardRef = useRef(null);
   const hasShownHintRef = useRef(false);
+
+  useEffect(() => {
+    const languageCode = languages[currentLanguage].code;
+    setContent(contentMap[languageCode]);
+    document.body.style.fontFamily = getLanguageFont(languageCode);
+  }, [currentLanguage]);
 
   useEffect(() => {
     // Show swipe hint when a section is selected for the first time
@@ -84,11 +104,6 @@ function App() {
     isSwipingRef.current = false;
   };
 
-  const content = {
-    tamil: tamilContent,
-    english: englishContent
-  };
-
   const toggleSection = (sectionId) => {
     setExpandedSections(prev => ({
       ...prev,
@@ -108,26 +123,31 @@ function App() {
     }
   };
 
-  const currentContent = content[language];
+  const handleLanguageChange = (languageCode) => {
+    const selectedLanguage = Object.keys(languages).find(
+      key => languages[key].code === languageCode
+    );
+    setCurrentLanguage(selectedLanguage);
+  };
 
   const renderContent = () => {
     let title = '';
     let paragraphs = [];
 
     if (selectedSection === 'foreword') {
-      title = currentContent.foreword.title;
-      paragraphs = currentContent.foreword.paragraphs.map(p => ({
+      title = content.foreword.title;
+      paragraphs = content.foreword.paragraphs.map(p => ({
         ...p,
         image: images[p.image]
       }));
     } else if (selectedSection === 'conclusion') {
-      title = currentContent.conclusion.title;
-      paragraphs = currentContent.conclusion.paragraphs.map(p => ({
+      title = content.conclusion.title;
+      paragraphs = content.conclusion.paragraphs.map(p => ({
         ...p,
         image: images[p.image]
       }));
     } else if (selectedSection) {
-      const section = currentContent.sections.find(section =>
+      const section = content.sections.find(section =>
         section.subsections.some(sub => sub.id === selectedSection)
       );
       const subsection = section?.subsections.find(sub => sub.id === selectedSection);
@@ -143,8 +163,8 @@ function App() {
     if (!selectedSection) {
       return (
         <div className="welcome-message">
-          <h2>{language === 'tamil' ? 'வரவேற்பு' : 'Welcome'}</h2>
-          <p>{language === 'tamil' ? 'தயவுசெய்து ஒரு பிரிவைத் தேர்ந்தெடுக்கவும்' : 'Please select a section'}</p>
+          <h2>{languages[currentLanguage].name === 'தமிழ்' ? 'வரவேற்பு' : 'Welcome'}</h2>
+          <p>{languages[currentLanguage].name === 'தமிழ்' ? 'தயவுசெய்து ஒரு பிரிவைத் தேர்ந்தெடுக்கவும்' : 'Please select a section'}</p>
         </div>
       );
     }
@@ -161,7 +181,7 @@ function App() {
           {showSwipeHint && isMobile && paragraphs.length > 1 && (
             <div className="swipe-hint-container">
               <span className="swipe-icon">←</span>
-              {language === 'tamil' ? 'ஸ்வைப் செய்யவும்' : 'Swipe to navigate'}
+              {languages[currentLanguage].name === 'தமிழ்' ? 'ஸ்வைப் செய்யவும்' : 'Swipe to navigate'}
               <span className="swipe-icon">→</span>
             </div>
           )}
@@ -184,7 +204,7 @@ function App() {
                   }
                 }}
               >
-                <p>{paragraph.content}</p>
+                <p dangerouslySetInnerHTML={{ __html: paragraph.content }}></p>
               </div>
             </div>
           ))}
@@ -211,6 +231,11 @@ function App() {
 
   return (
     <div className="App">
+      <LanguageSelector
+        currentLanguage={languages[currentLanguage].code}
+        onLanguageChange={handleLanguageChange}
+      />
+      
       {/* Header */}
       <header className="header">
         {selectedSection && !isSidebarVisible && (
@@ -218,21 +243,7 @@ function App() {
             ←
           </span>
         )}
-        <h1>{currentContent.title}</h1>
-        <div className="language-switcher">
-          <button 
-            className={language === 'tamil' ? 'active' : ''} 
-            onClick={() => setLanguage('tamil')}
-          >
-            தமிழ்
-          </button>
-          <button 
-            className={language === 'english' ? 'active' : ''} 
-            onClick={() => setLanguage('english')}
-          >
-            English
-          </button>
-        </div>
+        <h1>{content.title}</h1>
       </header>
 
       {/* Main Content */}
@@ -245,11 +256,11 @@ function App() {
               className={`nav-special-section ${selectedSection === 'foreword' ? 'active' : ''}`}
               onClick={() => handleSectionSelect('foreword')}
             >
-              {currentContent.foreword.title}
+              {content.foreword.title}
             </div>
 
             {/* Regular Sections */}
-            {currentContent.sections.map(section => (
+            {content.sections.map(section => (
               <div key={section.id} className="nav-section">
                 <div 
                   className={`nav-section-header ${expandedSections[section.id] ? 'expanded' : ''}`}
@@ -283,7 +294,7 @@ function App() {
               className={`nav-special-section ${selectedSection === 'conclusion' ? 'active' : ''}`}
               onClick={() => handleSectionSelect('conclusion')}
             >
-              {currentContent.conclusion.title}
+              {content.conclusion.title}
             </div>
           </nav>
         </aside>
@@ -297,8 +308,8 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <p>&copy; 2024 {currentContent.title}</p>
-          <p>{language === 'tamil' ? 'ஆசிரியர்: டேவிட் சூசைராஜ்' : 'Author: David Susairaj'}</p>
+          <p>&copy; 2024 {content.title}</p>
+          <p>{languages[currentLanguage].name === 'தமிழ்' ? 'ஆசிரியர்: டேவிட் சூசைராஜ்' : 'Author: David Susairaj'}</p>
         </div>
       </footer>
     </div>
