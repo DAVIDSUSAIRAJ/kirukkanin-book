@@ -745,17 +745,88 @@ export const teluguContent = {
         {
           id: '3.8',
           title: 'భయం',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'అపరిచితుల నుండి...<br/>ఆహారం భిక్షగా ఇస్తే,<br/>మనశ్శాంతితో తినవచ్చు.',
+              image: 'fear_unfamiliar_food'
+            },
+            {
+              content: 'కానీ, పరిచితులు ప్రేమతో ఇస్తే,<br/>చాలామంది భయంతోనే తింటారు.',
+              image: 'fear_familiar_food'
+            },
+            {
+              content: 'వారిలో... వెర్రివాడు కూడా ఒకడు.',
+              image: 'fear_madman_one'
+            },
+            {
+              content: 'భయపడేవాడికి... చీకటంతా దెయ్యంలా అనిపిస్తుంది!',
+              image: 'fear_darkness_ghost'
+            },
+            {
+              content: 'కర్తవ్యాలు ఎక్కువగా ఉన్నప్పుడు,<br/>ఒక రకమైన భయం ఉంటుంది.',
+              image: 'fear_many_duties'
+            },
+            {
+              content: 'కలల కోసం ఎదురుచూసేవాడిలో,<br/>ఒక రకమైన భయం ఉంటుంది.',
+              image: 'fear_waiting_dreams'
+            },
+            {
+              content: 'ద్రోహాలను అంగీకరించలేనప్పుడు,<br/>ఒక రకమైన భయం ఉంటుంది.',
+              image: 'fear_betrayal_acceptance'
+            },
+            {
+              content: 'మరణం వైపు ప్రయాణంలో భయం లేదు.<br/>సమాధిలో నిద్రపోయినప్పుడు కూడా భయం లేదు.',
+              image: 'fear_death_grave_no'
+            },
+            {
+              content: 'కానీ... సజీవంగా ఉన్న మనుష్యులను చూస్తేనే,<br/>చాలాసార్లు భయంగా ఉంటుంది.',
+              image: 'fear_living_humans'
+            },
+            {
+              content: 'బ్రతుకాలని అనిపించే కోరికను అర్పణంగా చేసి,<br/>మరణాన్ని అంతర్ముఖంగా చేసుకున్నవాడిలో,<br/>ఎలాంటి భయం ఉండదు.',
+              image: 'fear_surrendered_life'
+            }
+          ]
         },
         {
           id: '3.9',
           title: 'అపజయం',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'మంచి దారిలో నడిపించేది ఏదైనా...<br/>మనం జరుపుకోవాలి.',
+              image: 'failure_celebration'
+            },
+            {
+              content: 'అపజయాన్ని అంగీకరించి...<br/>హృదయంలో జరుపుకుందాం.',
+              image: 'failure_acceptance'
+            },
+            {
+              content: 'ఎందుకంటే...<br/>మనల్ని మంచి దారిలో నడిపించేది అదే కదా...?',
+              image: 'failure_guidance'
+            },
+            {
+              content: 'అపజయం – మార్గదర్శక వెలుగు.',
+              image: 'failure_guiding_light'
+            }
+          ]
         },
         {
           id: '3.10',
           title: 'వీరత్వం',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'అపజయం పొందినా,<br/>ఎదురుగా నిలబడితే...',
+              image: 'courage_facing_failure'
+            },
+            {
+              content: 'ప్రాణం ఉన్నంత వరకు ఏదైనా ఎదుర్కొంటాం.',
+              image: 'courage_face_anything'
+            },
+            {
+              content: 'కష్టమైన పరిస్థితుల్లో,<br/>మనలో ఉన్న మానసిక ధైర్యమే,<br/>మన వీరత్వం.',
+              image: 'courage_mental_strength'
+            }
+          ]
         }
       ]
     },

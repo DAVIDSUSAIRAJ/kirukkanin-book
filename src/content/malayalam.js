@@ -603,17 +603,88 @@ export const malayalamContent = {
         {
           id: '3.8',
           title: 'ഭയം',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'അപരിചിതരിൽ നിന്ന്...<br/>ഭക്ഷണം ഭിക്ഷയായി കൊടുത്താൽ,<br/>മനസ്സമാധാനത്തോടെ കഴിക്കാം.',
+              image: 'fear_unfamiliar_food'
+            },
+            {
+              content: 'എന്നാൽ, പരിചിതർ സ്നേഹത്തോടെ കൊടുത്താൽ,<br/>പലരും ഭയത്തോടെയാണ് കഴിക്കുന്നത്.',
+              image: 'fear_familiar_food'
+            },
+            {
+              content: 'അതിൽ... ഭ്രാന്തനും ഒരാൾ.',
+              image: 'fear_madman_one'
+            },
+            {
+              content: 'ഭയപ്പെടുന്നവന്... ഇരുട്ടെല്ലാം പിശാചാണെന്ന് തോന്നുന്ന പോലെ!',
+              image: 'fear_darkness_ghost'
+            },
+            {
+              content: 'കടമകൾ കൂടുതലായിരിക്കുമ്പോൾ,<br/>ഒരു തരത്തിലുള്ള ഭയം ഉണ്ടാകും.',
+              image: 'fear_many_duties'
+            },
+            {
+              content: 'സ്വപ്നത്തിനായി കാത്തിരിക്കുന്നവനിൽ,<br/>ഒരു തരത്തിലുള്ള ഭയം ഉണ്ടാകും.',
+              image: 'fear_waiting_dreams'
+            },
+            {
+              content: 'വഞ്ചനകളെ അംഗീകരിക്കാൻ കഴിയാത്തപ്പോൾ,<br/>ഒരു തരത്തിലുള്ള ഭയം ഉണ്ടാകും.',
+              image: 'fear_betrayal_acceptance'
+            },
+            {
+              content: 'മരണത്തിലേക്കുള്ള യാത്രയിൽ ഭയമില്ല.<br/>ശവക്കുഴിയിൽ ഉറങ്ങുമ്പോഴും ഭയമില്ല.',
+              image: 'fear_death_grave_no'
+            },
+            {
+              content: 'എന്നാൽ... ജീവിച്ചിരിക്കുന്ന മനുഷ്യരെ കണ്ടിട്ടാണ്,<br/>പലപ്പോഴും ഭയം തോന്നുന്നത്.',
+              image: 'fear_living_humans'
+            },
+            {
+              content: 'ജീവിക്കാനുള്ള ആഗ്രഹം അർപ്പണമാക്കി,<br/>മരണത്തെ ആന്തരികമാക്കിയവനിൽ,<br/>ഒരു തരത്തിലുള്ള ഭയവും ഉണ്ടാകില്ല.',
+              image: 'fear_surrendered_life'
+            }
+          ]
         },
         {
           id: '3.9',
           title: 'പരാജയം',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'നല്ല വഴിയിലേക്ക് നയിക്കുന്നത് എന്തായാലും...<br/>അത് ആഘോഷിക്കപ്പെടണം.',
+              image: 'failure_celebration'
+            },
+            {
+              content: 'പരാജയത്തെ അംഗീകരിച്ച്...<br/>ഹൃദയത്തിൽ ആഘോഷിക്കാം.',
+              image: 'failure_acceptance'
+            },
+            {
+              content: 'കാരണം...<br/>നമ്മെ നല്ല വഴിയിലേക്ക് നയിക്കുന്നത് അതല്ലേ...?',
+              image: 'failure_guidance'
+            },
+            {
+              content: 'പരാജയം – മാർഗദർശക വെളിച്ചം.',
+              image: 'failure_guiding_light'
+            }
+          ]
         },
         {
           id: '3.10',
           title: 'വീരത്വം',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'പരാജയം നേരിട്ടാലും,<br/>എതിരേ നിന്നാൽ...',
+              image: 'courage_facing_failure'
+            },
+            {
+              content: 'ജീവനുള്ളിടത്തോളം എന്തിനെയും എതിരിടാം.',
+              image: 'courage_face_anything'
+            },
+            {
+              content: 'ബുദ്ധിമുട്ടുള്ള സാഹചര്യങ്ങളിൽ,<br/>നമ്മുടെ മാനസിക ധൈര്യമാണ്,<br/>നമ്മുടെ വീരത്വം.',
+              image: 'courage_mental_strength'
+            }
+          ]
         }
       ]
     },

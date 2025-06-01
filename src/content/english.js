@@ -783,17 +783,88 @@ export const englishContent = {
         {
           id: '3.8',
           title: 'Fear',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'From strangers...<br/>If food is given as charity,<br/>One can eat with peace of mind.',
+              image: 'fear_unfamiliar_food'
+            },
+            {
+              content: 'But when familiar people give with affection,<br/>Many eat with fear.',
+              image: 'fear_familiar_food'
+            },
+            {
+              content: 'Among them... the madman is one.',
+              image: 'fear_madman_one'
+            },
+            {
+              content: 'Like how to the fearful... every darkness appears as a ghost!',
+              image: 'fear_darkness_ghost'
+            },
+            {
+              content: 'When duties are overwhelming,<br/>A certain kind of fear exists.',
+              image: 'fear_many_duties'
+            },
+            {
+              content: 'In one who waited for dreams,<br/>A certain kind of fear exists.',
+              image: 'fear_waiting_dreams'
+            },
+            {
+              content: 'When unable to accept betrayals,<br/>A certain kind of fear exists.',
+              image: 'fear_betrayal_acceptance'
+            },
+            {
+              content: 'No fear in the journey towards death.<br/>No fear even when sleeping in the grave.',
+              image: 'fear_death_grave_no'
+            },
+            {
+              content: 'But... looking at living humans,<br/>Many times there is fear.',
+              image: 'fear_living_humans'
+            },
+            {
+              content: 'One who has surrendered the desire to live,<br/>And embraced death inwardly,<br/>Has no fear whatsoever.',
+              image: 'fear_surrendered_life'
+            }
+          ]
         },
         {
           id: '3.9',
           title: 'Failure',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'Whatever guides us on the right path...<br/>Should be celebrated.',
+              image: 'failure_celebration'
+            },
+            {
+              content: 'Accepting failure...<br/>Let us celebrate it in our hearts.',
+              image: 'failure_acceptance'
+            },
+            {
+              content: 'Because...<br/>Isn\'t that what guides us on the right path...?',
+              image: 'failure_guidance'
+            },
+            {
+              content: 'Failure – The guiding light.',
+              image: 'failure_guiding_light'
+            }
+          ]
         },
         {
           id: '3.10',
           title: 'Courage',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'Even if we face failure,<br/>If we stand facing it...',
+              image: 'courage_facing_failure'
+            },
+            {
+              content: 'As long as we are alive, we will face anything.',
+              image: 'courage_face_anything'
+            },
+            {
+              content: 'In difficult situations,<br/>The mental courage we possess,<br/>That is our valor.',
+              image: 'courage_mental_strength'
+            }
+          ]
         }
       ]
     },

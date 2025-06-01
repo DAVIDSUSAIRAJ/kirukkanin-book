@@ -659,17 +659,88 @@ export const hindiContent = {
         {
           id: '3.8',
           title: 'डर',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'अजनबियों से...<br/>अगर खाना भिक्षा के रूप में मिले,<br/>तो मन की शांति से खा सकते हैं।',
+              image: 'fear_unfamiliar_food'
+            },
+            {
+              content: 'लेकिन, जाने-पहचाने लोग स्नेह से दें तो,<br/>कई लोग डर के साथ ही खाते हैं।',
+              image: 'fear_familiar_food'
+            },
+            {
+              content: 'उनमें... पागल भी एक है।',
+              image: 'fear_madman_one'
+            },
+            {
+              content: 'डरपोक के लिए... हर अंधेरा भूत जैसा लगता है!',
+              image: 'fear_darkness_ghost'
+            },
+            {
+              content: 'जब कर्तव्य ज्यादा हों,<br/>तो एक तरह का डर होता है।',
+              image: 'fear_many_duties'
+            },
+            {
+              content: 'सपनों का इंतजार करने वाले में,<br/>एक तरह का डर होता है।',
+              image: 'fear_waiting_dreams'
+            },
+            {
+              content: 'विश्वासघात को स्वीकार न कर पाने पर,<br/>एक तरह का डर होता है।',
+              image: 'fear_betrayal_acceptance'
+            },
+            {
+              content: 'मृत्यु की यात्रा में कोई डर नहीं।<br/>कब्र में सोते समय भी कोई डर नहीं।',
+              image: 'fear_death_grave_no'
+            },
+            {
+              content: 'लेकिन... जीवित इंसानों को देखकर ही,<br/>कई बार डर लगता है।',
+              image: 'fear_living_humans'
+            },
+            {
+              content: 'जीने की इच्छा को समर्पित कर,<br/>मृत्यु को अंतर्मुखी बनाने वाले में,<br/>कोई भी डर नहीं होता।',
+              image: 'fear_surrendered_life'
+            }
+          ]
         },
         {
           id: '3.9',
           title: 'असफलता',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'जो भी हमें सही राह दिखाता है...<br/>उसका जश्न मनाना चाहिए।',
+              image: 'failure_celebration'
+            },
+            {
+              content: 'असफलता को स्वीकार करके...<br/>दिल में इसका जश्न मनाएं।',
+              image: 'failure_acceptance'
+            },
+            {
+              content: 'क्योंकि...<br/>हमें सही राह दिखाने वाला वही तो है...?',
+              image: 'failure_guidance'
+            },
+            {
+              content: 'असफलता – मार्गदर्शक प्रकाश।',
+              image: 'failure_guiding_light'
+            }
+          ]
         },
         {
           id: '3.10',
           title: 'साहस',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'असफलता मिली हो तो भी,<br/>सामने खड़े रहें तो...',
+              image: 'courage_facing_failure'
+            },
+            {
+              content: 'जब तक जीवित हैं, किसी भी चीज़ का सामना करेंगे।',
+              image: 'courage_face_anything'
+            },
+            {
+              content: 'कठिन परिस्थितियों में,<br/>हमारा मानसिक साहस ही,<br/>हमारी वीरता है।',
+              image: 'courage_mental_strength'
+            }
+          ]
         }
       ]
     },

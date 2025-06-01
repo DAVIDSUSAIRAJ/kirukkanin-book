@@ -778,23 +778,94 @@ export const tamilContent = {
             {
               content: 'சில நேரங்களில்...<br/>எதற்காக அழுகிறோம் என்று தெரியாமல் கூட அழுவோம்.<br/>கவலை வேண்டாம்...<br/>இது எதிர்கால பிரதிபலிப்புக்கான இன்றைய அடித்தளம்தான்.',
               image: 'solitude_unexplained_tears'
+            },
+            {
+              id: '3.8',
+              title: 'பயம்',
+              paragraphs: [
+                {
+                  content: 'பழக்கமில்லாதவர்...<br/>உணவை பிட்சையாக கொடுத்தால்,<br/>மன நிம்மதியோடு சாப்பிடலாம்.',
+                  image: 'fear_unfamiliar_food'
+                },
+                {
+                  content: 'ஆனால், பழக்கமுள்ளவர் பாசத்தில் கொடுத்தால்,<br/>பலர் பயத்தோடு தான் சாப்பிடுகிறார்கள்.',
+                  image: 'fear_familiar_food'
+                },
+                {
+                  content: 'அதில்... கிறுக்கனும் ஒருவன்.',
+                  image: 'fear_madman_one'
+                },
+                {
+                  content: 'அரண்டவனுக்கு... இருட்டெல்லாம் பேய் என்றபோன்று!',
+                  image: 'fear_darkness_ghost'
+                },
+                {
+                  content: 'கடமைகள் அதிகமாக இருக்கும்போது,<br/>ஒரு விதமான பயம் இருக்கும்.',
+                  image: 'fear_many_duties'
+                },
+                {
+                  content: 'கனவுக்காக காதிருந்தவனிடம்,<br/>ஒரு விதமான பயம் இருக்கும்.',
+                  image: 'fear_waiting_dreams'
+                },
+                {
+                  content: 'துரோகங்களை ஏற்றுக்கொள்ள முடியாதபோது,<br/>ஒரு விதமான பயம் இருக்கும்.',
+                  image: 'fear_betrayal_acceptance'
+                },
+                {
+                  content: 'மரணத்தை நோக்கிய பயணத்திலும் பயம் இல்லை.<br/>கல்லறையில் உறங்கியபோதும் பயம் இல்லை.',
+                  image: 'fear_death_grave_no'
+                },
+                {
+                  content: 'ஆனால்... உயிரோடு இருக்கும் மனிதர்களை பார்த்துதான்,<br/>பல நேரங்களில் பயமாக இருக்கிறது.',
+                  image: 'fear_living_humans'
+                },
+                {
+                  content: 'வாழும் ஆசையை அர்ப்பமாக்கி,<br/>மரணத்தை உள்நோக்கியவனிடம்,<br/>எவ்வித பயமும் இருக்காது.',
+                  image: 'fear_surrendered_life'
+                }
+              ]
             }
           ]
         },
         {
-          id: '3.8',
-          title: 'பயம்',
-          paragraphs: []
-        },
-        {
           id: '3.9',
           title: 'தோல்வி',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'நல்வழிப்படுத்துவது எதுவாக இருந்தாலும்...<br/>நாம் கொண்டாடப்பட வேண்டும்.',
+              image: 'failure_celebration'
+            },
+            {
+              content: 'தோல்வியை ஏற்றுக்கொண்டு...<br/>உள்ளத்தில் கொண்டாடுவோம்.',
+              image: 'failure_acceptance'
+            },
+            {
+              content: 'ஏனெனில்...<br/>நம்மை நல்வழிப்படுத்துவது அதுதானே...?',
+              image: 'failure_guidance'
+            },
+            {
+              content: 'தோல்வி – வழிநடத்தும் வெளிச்சம்.',
+              image: 'failure_guiding_light'
+            }
+          ]
         },
         {
           id: '3.10',
           title: 'வீரம்',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'தோல்வி அடைந்தாலும்,<br/>எதிரே நின்றால்...',
+              image: 'courage_facing_failure'
+            },
+            {
+              content: 'உயிருள்ளவரை எதையும் எதிர்கொள்வோம்.',
+              image: 'courage_face_anything'
+            },
+            {
+              content: 'இக்கட்டான சூழ்நிலைகளில்,<br/>நாம் இருக்கும் மன தைரியமே,<br/>நம்முடைய வீரம்.',
+              image: 'courage_mental_strength'
+            }
+          ]
         }
       ]
     },
