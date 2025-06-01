@@ -604,6 +604,51 @@ export const tamilContent = {
               image: 'tears_language'
             }
           ]
+        },
+        {
+          id: '3.2',
+          title: 'நடிப்பு',
+          paragraphs: []
+        },
+        {
+          id: '3.3',
+          title: 'மனித மனநிலையின் மாறுபாடு',
+          paragraphs: []
+        },
+        {
+          id: '3.4',
+          title: 'அமைதியான விலகல்',
+          paragraphs: []
+        },
+        {
+          id: '3.5',
+          title: 'இல்லாமை',
+          paragraphs: []
+        },
+        {
+          id: '3.6',
+          title: 'வெறுமை',
+          paragraphs: []
+        },
+        {
+          id: '3.7',
+          title: 'தனிமை',
+          paragraphs: []
+        },
+        {
+          id: '3.8',
+          title: 'பயம்',
+          paragraphs: []
+        },
+        {
+          id: '3.9',
+          title: 'தோல்வி',
+          paragraphs: []
+        },
+        {
+          id: '3.10',
+          title: 'வீரம்',
+          paragraphs: []
         }
       ]
     },
@@ -651,28 +696,6 @@ export const tamilContent = {
           title: 'கற்றுக்கொள்வோம்',
           paragraphs: []
         },
-        {
-          id: '4.9',
-          title: 'நடிப்பு',
-          paragraphs: [
-            {
-              content: 'சிலருடைய வாழ்வு மேம்படவும்,<br/>சிந்தனை வேறுபட்ட இடத்தில் விடுபடவும்,<br/>நடிப்பு அவசியம்.',
-              image: 'acting_necessity'
-            },
-            {
-              content: 'பல நேரங்களில்,<br/>உண்மையான அன்பை வெறுக்க முடியாது;<br/>வெறுப்பது போல நடிக்கத்தான் முடியும்.',
-              image: 'acting_love'
-            },
-            {
-              content: 'வாழ்வதற்கு...<br/>இந்த உலகத்தில் நடிக்க வேண்டும்.',
-              image: 'acting_life'
-            },
-            {
-              content: 'ஆள்வதற்கு ஆசைப்பட்டால்...<br/>நடிப்பதில் வல்லமை படைத்தவராக இருக்க வேண்டும்.',
-              image: 'acting_power'
-            }
-          ]
-        }
       ]
     },
     {

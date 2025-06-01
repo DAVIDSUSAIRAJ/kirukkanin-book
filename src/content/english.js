@@ -683,28 +683,6 @@ export const englishContent = {
           title: 'Let Us Learn',
           paragraphs: []
         },
-        {
-          id: '4.9',
-          title: 'Acting',
-          paragraphs: [
-            {
-              content: 'For some lives to improve,<br/>And to break free from different thoughts,<br/>Acting is necessary.',
-              image: 'acting_necessity'
-            },
-            {
-              content: 'Many times,<br/>True love cannot be hated;<br/>One can only pretend to hate.',
-              image: 'acting_love'
-            },
-            {
-              content: 'To live...<br/>One must act in this world.',
-              image: 'acting_life'
-            },
-            {
-              content: 'If you desire to rule...<br/>You must master the art of acting.',
-              image: 'acting_power'
-            }
-          ]
-        }
       ]
     },
     {
