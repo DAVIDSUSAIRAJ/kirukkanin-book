@@ -565,32 +565,7 @@ export const englishContent = {
         {
           id: '3.1',
           title: 'Tears',
-          paragraphs: [
-            {
-              content: 'Separation... Memories...<br/>Tears are the gift that keeps giving.',
-              image: 'tears_gift'
-            },
-            {
-              content: 'Without comfort...<br/>Trembling in solitude, shrinking,<br/>Only those who have wept alone in a corner<br/>Understand certain truths.',
-              image: 'tears_truth'
-            },
-            {
-              content: 'When responsibilities come,<br/>Duties come with them.<br/>If we fail in our duties,<br/>Hardships and tears will surely follow.',
-              image: 'tears_duty'
-            },
-            {
-              content: 'Tears should be...<br/>For those who love us,<br/>Not for those who hurt us,<br/>Hate us, and push us away.',
-              image: 'tears_love'
-            },
-            {
-              content: 'When I had nothing...<br/>Tears with pain...<br/>Said "I am here."',
-              image: 'tears_presence'
-            },
-            {
-              content: 'Tears - the mother tongue of eyes.<br/>Many times,<br/>Eyes keep speaking<br/>In their mother tongue.',
-              image: 'tears_language'
-            }
-          ]
+          paragraphs: []
         },
         {
           id: '3.2',
@@ -810,7 +785,7 @@ export const englishContent = {
     },
     {
       id: '8',
-      title: 'Death & The Final Journey',
+      title: 'Death & Final Journey',
       subsections: [
         {
           id: '8.1',
@@ -830,6 +805,27 @@ export const englishContent = {
         {
           id: '8.4',
           title: 'Birth & Death - Why These Feelings?',
+          paragraphs: []
+        }
+      ]
+    },
+    {
+      id: '9',
+      title: 'Desires of a Madman & Final Words...',
+      subsections: [
+        {
+          id: '9.1',
+          title: 'Who is this Madman?',
+          paragraphs: []
+        },
+        {
+          id: '9.2',
+          title: 'Desires of a Madman',
+          paragraphs: []
+        },
+        {
+          id: '9.3',
+          title: 'Final Words...',
           paragraphs: []
         }
       ]

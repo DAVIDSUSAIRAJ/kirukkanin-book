@@ -437,43 +437,222 @@ export const hindiContent = {
     {
       id: '3',
       title: 'भावनाएं और जीवन की चुनौतियां',
-      subsections: [
-        {
-          id: '3.1',
-          title: 'आँसू',
-          paragraphs: [
-            {
-              content: 'जुदाई... यादें...<br/>आँसू एक ऐसा उपहार है जो लगातार मिलता रहता है.',
-              image: 'tears_gift'
-            },
-            {
-              content: 'बिना सांत्वना के...<br/>अकेलेपन में काँपते हुए, सिकुड़ते हुए,<br/>एक कोने में रोने वाले को ही समझ में आती हैं,<br/>कुछ सच्चाइयाँ.',
-              image: 'tears_truth'
-            },
-            {
-              content: 'जब जिम्मेदारियाँ आती हैं,<br/>तब कर्तव्य भी साथ आते हैं.<br/>अगर कर्तव्यों में चूक हो जाए,<br/>तो कष्ट और आँसू जरूर आएंगे.',
-              image: 'tears_duty'
-            },
-            {
-              content: 'आँसू होने चाहिए...<br/>हमें प्यार करने वालों के लिए,<br/>न कि उनके लिए जो हमें चोट पहुंचाते हैं,<br/>नफरत करते हैं, और दूर धकेलते हैं.',
-              image: 'tears_love'
-            },
-            {
-              content: 'जब मेरे पास कुछ नहीं था...<br/>दर्द भरे आँसू ने...<br/>"मैं हूँ" कहा.',
-              image: 'tears_presence'
-            },
-            {
-              content: 'आँसू - आँखों की मातृभाषा.<br/>कई बार,<br/>आँखें अपनी मातृभाषा में<br/>बोलती ही रहती हैं.',
-              image: 'tears_language'
-            }
-          ]
-        }
-      ]
+      subsections: []
     },
     {
       id: '4',
       title: 'जीवन के पाठ और मानसिक स्थितियाँ',
       subsections: [
+        {
+          id: '4.1',
+          title: 'किससे अपना दर्द बांटें?',
+          paragraphs: []
+        },
+        {
+          id: '4.2',
+          title: 'मदद',
+          paragraphs: []
+        },
+        {
+          id: '4.3',
+          title: 'गोपनीयता बनाए रखना सीखें',
+          paragraphs: []
+        },
+        {
+          id: '4.4',
+          title: 'झूठ',
+          paragraphs: []
+        },
+        {
+          id: '4.5',
+          title: 'निराशा',
+          paragraphs: []
+        },
+        {
+          id: '4.6',
+          title: 'विश्वासघात',
+          paragraphs: []
+        },
+        {
+          id: '4.7',
+          title: 'समझ नहीं पा रहे हैं',
+          paragraphs: []
+        },
+        {
+          id: '4.8',
+          title: 'सीखें',
+          paragraphs: []
+        }
+      ]
+    },
+    {
+      id: '5',
+      title: 'मनोवैज्ञानिक परिवर्तन और इच्छाएं',
+      subsections: [
+        {
+          id: '5.1',
+          title: 'नशा और ध्यान',
+          paragraphs: []
+        },
+        {
+          id: '5.2',
+          title: 'सपने',
+          paragraphs: []
+        },
+        {
+          id: '5.3',
+          title: 'कल्पना',
+          paragraphs: []
+        },
+        {
+          id: '5.4',
+          title: 'कुछ पल',
+          paragraphs: []
+        },
+        {
+          id: '5.5',
+          title: 'बुरी आदतें',
+          paragraphs: []
+        },
+        {
+          id: '5.6',
+          title: 'वासना',
+          paragraphs: []
+        },
+        {
+          id: '5.7',
+          title: 'खुशी',
+          paragraphs: []
+        },
+        {
+          id: '5.8',
+          title: 'स्वार्थ',
+          paragraphs: []
+        }
+      ]
+    },
+    {
+      id: '6',
+      title: 'अर्थव्यवस्था, कर्ज और जीवन के संघर्ष',
+      subsections: [
+        {
+          id: '6.1',
+          title: 'धन',
+          paragraphs: []
+        },
+        {
+          id: '6.2',
+          title: 'कर्ज',
+          paragraphs: []
+        },
+        {
+          id: '6.3',
+          title: 'भूख',
+          paragraphs: []
+        },
+        {
+          id: '6.4',
+          title: 'शिक्षा',
+          paragraphs: []
+        },
+        {
+          id: '6.5',
+          title: 'प्रतिभा',
+          paragraphs: []
+        },
+        {
+          id: '6.6',
+          title: 'साहस',
+          paragraphs: []
+        },
+        {
+          id: '6.7',
+          title: 'भाग्य',
+          paragraphs: []
+        }
+      ]
+    },
+    {
+      id: '7',
+      title: 'समय, परिवर्तन और जीवन का दर्शन',
+      subsections: [
+        {
+          id: '7.1',
+          title: 'समय',
+          paragraphs: []
+        },
+        {
+          id: '7.2',
+          title: 'भविष्य और परिवर्तन',
+          paragraphs: []
+        },
+        {
+          id: '7.3',
+          title: 'जीवन... अनंत यात्रा',
+          paragraphs: []
+        },
+        {
+          id: '7.4',
+          title: 'आगे बढ़ें',
+          paragraphs: []
+        },
+        {
+          id: '7.5',
+          title: 'व्यावहारिक सत्य',
+          paragraphs: []
+        },
+        {
+          id: '7.6',
+          title: 'विनाश',
+          paragraphs: []
+        }
+      ]
+    },
+    {
+      id: '8',
+      title: 'मृत्यु और अंतिम यात्रा',
+      subsections: [
+        {
+          id: '8.1',
+          title: 'मृत्यु से प्रेम करें',
+          paragraphs: []
+        },
+        {
+          id: '8.2',
+          title: 'धरती पर मरकर जीएं',
+          paragraphs: []
+        },
+        {
+          id: '8.3',
+          title: 'मृत्यु - पूर्व निर्धारित अंत',
+          paragraphs: []
+        },
+        {
+          id: '8.4',
+          title: 'जन्म और मृत्यु - ये भावनाएं क्यों?',
+          paragraphs: []
+        }
+      ]
+    },
+    {
+      id: '9',
+      title: 'पागल की इच्छाएं और अंतिम शब्द...',
+      subsections: [
+        {
+          id: '9.1',
+          title: 'कौन है यह पागल?',
+          paragraphs: []
+        },
+        {
+          id: '9.2',
+          title: 'पागल की इच्छाएं',
+          paragraphs: []
+        },
+        {
+          id: '9.3',
+          title: 'अंतिम शब्द...',
+          paragraphs: []
+        }
       ]
     }
   ],

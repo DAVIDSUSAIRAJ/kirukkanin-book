@@ -441,32 +441,52 @@ export const malayalamContent = {
         {
           id: '3.1',
           title: 'കണ്ണുനീർ',
-          paragraphs: [
-            {
-              content: 'വേർപാടും... ഓർമ്മകളും...<br/>തന്നുകൊണ്ടിരിക്കുന്ന സമ്മാനമാണ് കണ്ണുനീർ.',
-              image: 'tears_gift'
-            },
-            {
-              content: 'ആശ്വാസമില്ലാതെ...<br/>ഏകാന്തതയിൽ വിറച്ച്, ചുരുങ്ങി,<br/>ഒരു മൂലയിൽ കരഞ്ഞവനു മാത്രമേ മനസ്സിലാകൂ,<br/>ചില സത്യങ്ങൾ.',
-              image: 'tears_truth'
-            },
-            {
-              content: 'ഉത്തരവാദിത്തങ്ങൾ വരുമ്പോൾ,<br/>അതിനുള്ള കടമകളും വരും.<br/>കടമകൾ ചെയ്യാൻ വിട്ടുപോയാൽ,<br/>കഷ്ടപ്പാടുകളും, കണ്ണുനീരും തീർച്ചയായും വരും.',
-              image: 'tears_duty'
-            },
-            {
-              content: 'കണ്ണുനീർ എന്നത്...<br/>നമ്മെ സ്നേഹിക്കുന്നവർക്കായി ഉണ്ടാകണം,<br/>നമ്മെ മുറിപ്പെടുത്തി,<br/>വെറുത്ത്, തള്ളിക്കളയുന്നവർക്കായി അല്ല.',
-              image: 'tears_love'
-            },
-            {
-              content: 'എന്റെ കൈവശം ഒന്നുമില്ല എന്നു പറഞ്ഞു.',
-              image: 'tears_presence'
-            },
-            {
-              content: 'കണ്ണുനീർ – കണ്ണുകളുടെ മാതൃഭാഷ.<br/>പല സമയങ്ങളിലും,<br/>കണ്ണുകൾ അതിന്റെ മാതൃഭാഷയിൽ<br/>സംസാരിച്ചുകൊണ്ടേയിരിക്കും.',
-              image: 'tears_language'
-            }
-          ]
+          paragraphs: []
+        },
+        {
+          id: '3.2',
+          title: 'അഭിനയം',
+          paragraphs: []
+        },
+        {
+          id: '3.3',
+          title: 'മനുഷ്യ മനസ്സിന്റെ മാറ്റങ്ങൾ',
+          paragraphs: []
+        },
+        {
+          id: '3.4',
+          title: 'നിശ്ശബ്ദമായ അകൽച്ച',
+          paragraphs: []
+        },
+        {
+          id: '3.5',
+          title: 'ഇല്ലായ്മ',
+          paragraphs: []
+        },
+        {
+          id: '3.6',
+          title: 'ശൂന്യത',
+          paragraphs: []
+        },
+        {
+          id: '3.7',
+          title: 'ഏകാന്തത',
+          paragraphs: []
+        },
+        {
+          id: '3.8',
+          title: 'ഭയം',
+          paragraphs: []
+        },
+        {
+          id: '3.9',
+          title: 'പരാജയം',
+          paragraphs: []
+        },
+        {
+          id: '3.10',
+          title: 'ധീരത',
+          paragraphs: []
         }
       ]
     },
@@ -477,24 +497,247 @@ export const malayalamContent = {
         {
           id: '4.1',
           title: 'അഭിനയം',
-          paragraphs: [
-            {
-              content: 'ചിലരുടെ ജീവിതം മെച്ചപ്പെടുത്താനും,<br/>വ്യത്യസ്തമായ ചിന്തകളിൽ നിന്ന് മോചിതരാകാനും,<br/>അഭിനയം അനിവാര്യമാണ്.',
-              image: 'acting_necessity'
-            },
-            {
-              content: 'പല സമയങ്ങളിലും,<br/>യഥാർത്ഥ സ്നേഹത്തെ വെറുക്കാൻ കഴിയില്ല;<br/>വെറുക്കുന്നത് പോലെ അഭിനയിക്കാൻ മാത്രമേ കഴിയൂ.',
-              image: 'acting_love'
-            },
-            {
-              content: 'ജീവിക്കാൻ...<br/>ഈ ലോകത്തിൽ അഭിനയിക്കേണ്ടതുണ്ട്.',
-              image: 'acting_life'
-            },
-            {
-              content: 'ഭരിക്കാൻ ആഗ്രഹിക്കുന്നുവെങ്കിൽ...<br/>അഭിനയത്തിൽ പ്രാവീണ്യം നേടണം.',
-              image: 'acting_power'
-            }
-          ]
+          paragraphs: []
+        },
+        {
+          id: '4.2',
+          title: 'ജീവിതത്തിലെ പ്രതിസന്ധികൾ',
+          paragraphs: []
+        },
+        {
+          id: '4.3',
+          title: 'ജീവിതത്തിലെ പാഠങ്ങൾ',
+          paragraphs: []
+        },
+        {
+          id: '4.4',
+          title: 'മാറ്റത്തിന്റെ പ്രാധാന്യം',
+          paragraphs: []
+        },
+        {
+          id: '4.5',
+          title: 'സ്വയം വിമർശനം',
+          paragraphs: []
+        },
+        {
+          id: '4.6',
+          title: 'ക്ഷമയുടെ പ്രാധാന്യം',
+          paragraphs: []
+        },
+        {
+          id: '4.7',
+          title: 'സമയത്തിന്റെ വില',
+          paragraphs: []
+        },
+        {
+          id: '4.8',
+          title: 'ആത്മവിശ്വാസം',
+          paragraphs: []
+        },
+        {
+          id: '4.9',
+          title: 'കർമ്മത്തിന്റെ പ്രാധാന്യം',
+          paragraphs: []
+        },
+        {
+          id: '4.10',
+          title: 'സത്യസന്ധത',
+          paragraphs: []
+        }
+      ]
+    },
+    {
+      id: '5',
+      title: 'ജീവിതത്തിലെ സത്യങ്ങൾ',
+      subsections: [
+        {
+          id: '5.1',
+          title: 'ജീവിതം',
+          paragraphs: []
+        },
+        {
+          id: '5.2',
+          title: 'സമയം',
+          paragraphs: []
+        },
+        {
+          id: '5.3',
+          title: 'വിധി',
+          paragraphs: []
+        },
+        {
+          id: '5.4',
+          title: 'സത്യം',
+          paragraphs: []
+        },
+        {
+          id: '5.5',
+          title: 'മരണം',
+          paragraphs: []
+        },
+        {
+          id: '5.6',
+          title: 'കർമ്മം',
+          paragraphs: []
+        },
+        {
+          id: '5.7',
+          title: 'വിശ്വാസം',
+          paragraphs: []
+        },
+        {
+          id: '5.8',
+          title: 'പ്രതീക്ഷ',
+          paragraphs: []
+        },
+        {
+          id: '5.9',
+          title: 'സമാധാനം',
+          paragraphs: []
+        },
+        {
+          id: '5.10',
+          title: 'സന്തോഷം',
+          paragraphs: []
+        }
+      ]
+    },
+    {
+      id: '6',
+      title: 'ജീവിതത്തിലെ വിജയവും പരാജയവും',
+      subsections: [
+        {
+          id: '6.1',
+          title: 'വിജയം',
+          paragraphs: []
+        },
+        {
+          id: '6.2',
+          title: 'പരാജയം',
+          paragraphs: []
+        },
+        {
+          id: '6.3',
+          title: 'പ്രതിസന്ധികൾ',
+          paragraphs: []
+        },
+        {
+          id: '6.4',
+          title: 'വെല്ലുവിളികൾ',
+          paragraphs: []
+        },
+        {
+          id: '6.5',
+          title: 'അനുഭവങ്ങൾ',
+          paragraphs: []
+        },
+        {
+          id: '6.6',
+          title: 'പഠനം',
+          paragraphs: []
+        },
+        {
+          id: '6.7',
+          title: 'മുന്നേറ്റം',
+          paragraphs: []
+        },
+        {
+          id: '6.8',
+          title: 'നേട്ടങ്ങൾ',
+          paragraphs: []
+        },
+        {
+          id: '6.9',
+          title: 'പരിശ്രമം',
+          paragraphs: []
+        },
+        {
+          id: '6.10',
+          title: 'ആത്മവിശ്വാസം',
+          paragraphs: []
+        }
+      ]
+    },
+    {
+      id: '7',
+      title: 'സമയം, മാറ്റം & ജീവിതതത്വങ്ങൾ',
+      subsections: [
+        {
+          id: '7.1',
+          title: 'കാലം',
+          paragraphs: []
+        },
+        {
+          id: '7.2',
+          title: 'ഭാവി & മാറ്റം',
+          paragraphs: []
+        },
+        {
+          id: '7.3',
+          title: 'ജീവിതം... അവസാനമില്ലാത്ത യാത്ര',
+          paragraphs: []
+        },
+        {
+          id: '7.4',
+          title: 'കടന്നുപോകാം',
+          paragraphs: []
+        },
+        {
+          id: '7.5',
+          title: 'യാഥാർത്ഥ്യങ്ങൾ',
+          paragraphs: []
+        },
+        {
+          id: '7.6',
+          title: 'നാശം',
+          paragraphs: []
+        }
+      ]
+    },
+    {
+      id: '8',
+      title: 'മരണവും അന്ത്യയാത്രയും',
+      subsections: [
+        {
+          id: '8.1',
+          title: 'മരണത്തെ സ്നേഹിക്കുക',
+          paragraphs: []
+        },
+        {
+          id: '8.2',
+          title: 'മണ്ണിൽ മരിച്ച് ജീവിക്കാം',
+          paragraphs: []
+        },
+        {
+          id: '8.3',
+          title: 'മരണം - മുൻകൂട്ടി നിശ്ചയിക്കപ്പെട്ട അവസാനം',
+          paragraphs: []
+        },
+        {
+          id: '8.4',
+          title: 'ജനനവും മരണവും - എന്തിനീ വികാരങ്ങൾ?',
+          paragraphs: []
+        }
+      ]
+    },
+    {
+      id: '9',
+      title: 'ഭ്രാന്തന്റെ ആഗ്രഹങ്ങളും അവസാന വാക്കുകളും...',
+      subsections: [
+        {
+          id: '9.1',
+          title: 'ആരാണീ ഭ്രാന്തൻ?',
+          paragraphs: []
+        },
+        {
+          id: '9.2',
+          title: 'ഭ്രാന്തന്റെ ആഗ്രഹങ്ങൾ',
+          paragraphs: []
+        },
+        {
+          id: '9.3',
+          title: 'അവസാന വാക്കുകൾ...',
+          paragraphs: []
         }
       ]
     }
