@@ -1,14 +1,38 @@
 export const englishContent = {
   title: "Philosophies of a Madman's Wanderings",
   foreword: {
-    title: 'Foreword',
+    title: "Madman's Foreword",
     paragraphs: [
       {
-        content: "Don't go searching to help... It's enough to help those who come seeking us with whatever we can...",
+        content: 'Not a story...\nBut reality.',
         image: 'help1'
       },
       {
-        content: 'We should help those who truly trust us with whatever we can...',
+        content: 'Not imaginations...\nBut teardrops.',
+        image: 'help2'
+      },
+      {
+        content: 'Not mere words...\nBut thoughts.',
+        image: 'help1'
+      },
+      {
+        content: 'Not metaphors...\nBut the face of truth.',
+        image: 'help2'
+      },
+      {
+        content: 'Not a picture...\nBut a lesson.',
+        image: 'help1'
+      },
+      {
+        content: 'Not poems...\nBut hardships.',
+        image: 'help2'
+      },
+      {
+        content: 'Finally...\nPure happiness.',
+        image: 'help1'
+      },
+      {
+        content: 'Every line in this book...\nReal memories written in the diary of a madman.',
         image: 'help2'
       }
     ]
