@@ -1,5 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
+import { tamilContent } from './content/tamil';
+import { englishContent } from './content/english';
+import { images } from './content/images';
 import help1 from './images/help1.jpg';
 import help2 from './images/help2.png';
 
@@ -82,239 +85,8 @@ function App() {
   };
 
   const content = {
-    tamil: {
-      title: 'கிருக்கனின் பயணத் தத்துவங்கள்',
-      foreword: {
-        title: 'முன்னுரை',
-        paragraphs: [
-          {
-            content: 'தேடிப்போய் உதவி செய்ய வேண்டாம்... நம்மை தேடி வருவோர்க்கு நம்மால் முடிந்த உதவி செய்தால் போதுமானது...',
-            image: helpImage1
-          },
-          {
-            content: 'நம்மை உண்மையாக நம்பியிருந்தால் மட்டுமே உதவி கேட்பவர்க்கு நம்மால் முடிந்ததை செய்து கொடுக்கலாம்...',
-            image: helpImage2
-          }
-          
-        ]
-      },
-      conclusion: {
-        title: 'முடிவுரை',
-        paragraphs: [
-          {
-            content: 'நமக்கு செய்யும் உதவியை மறைப்பவன் அதிகமாக உதவும் குணம் உடையவனாக இருப்பான்...',
-            image: 'https://example.com/conclusion1-image.jpg'
-          },
-          {
-            content: 'நம்முடைய கஷ்டம் நமக்கானது அல்ல... நம்மை தேடி வருவோரை மகிழ்விக்கத்தான்...',
-            image: 'https://example.com/conclusion2-image.jpg'
-          }
-        ]
-      },
-      sections: [
-        {
-          id: '1',
-          title: 'உதவி',
-          subsections: [
-            {
-              id: '1.1',
-              title: 'தேடிப்போய் உதவி செய்தல்',
-              paragraphs: [
-                {
-                  content: 'ஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போதுமானது...',
-                  image: helpImage1
-                },
-                {
-                  content: 'நம்முடைய கஷ்டம் நமக்கானது அல்ல... நம்மை தேடி வருவோரை மகிழ்விக்கத்தான்...',
-                  image: helpImage2
-                },
-                {
-                  content: 'ஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போதுமானது...',
-                  image: helpImage1
-                },
-                {
-                  content: 'நம்முடைய கஷ்டம் நமக்கானது அல்ல... நம்மை தேடி வருவோரை மகிழ்விக்கத்தான்...',
-                  image: helpImage2
-                }
-              ]
-            },
-            // Add more subsections with similar structure
-          ]
-        },
-        // Add more sections
-        {
-          id: '2',
-          title: 'உதவி',
-          subsections: [
-            {
-              id: '1.1',
-              title: 'தேடிப்போய் உதவி செய்தல்',
-              paragraphs: [
-                {
-                  content: 'ஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போதுமானது...',
-                  image: helpImage1
-                },
-              ]
-            },
-            // Add more subsections with similar structure
-          ]
-        },
-        {
-          id: '3',
-          title: 'உதவி',
-          subsections: [
-            {
-              id: '1.1',
-              title: 'தேடிப்போய் உதவி செய்தல்',
-              paragraphs: [
-                {
-                  content: 'ஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போதுமானது...',
-                  image: helpImage1
-                },
-              ]
-            },
-            // Add more subsections with similar structure
-          ]
-        },{
-          id: '4',
-          title: 'உதவி',
-          subsections: [
-            {
-              id: '1.1',
-              title: 'தேடிப்போய் உதவி செய்தல்',
-              paragraphs: [
-                {
-                  content: 'ஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போதுமானது...',
-                  image: helpImage1
-                },
-              ]
-            },
-            // Add more subsections with similar structure
-          ]
-        },
-
-        {
-          id: '6',
-          title: 'உதவி',
-          subsections: [
-            {
-              id: '1.1',
-              title: 'தேடிப்போய் உதவி செய்தல்',
-              paragraphs: [
-                {
-                  content: 'ஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போதுமானது...',
-                  image: helpImage1
-                },
-              ]
-            },
-            // Add more subsections with similar structure
-          ]
-        },
-        {
-          id: '7',
-          title: 'உதவி',
-          subsections: [
-            {
-              id: '1.1',
-              title: 'தேடிப்போய் உதவி செய்தல்',
-              paragraphs: [
-                {
-                  content: 'ஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போதுமானது...',
-                  image: helpImage1
-                },
-              ]
-            },
-            // Add more subsections with similar structure
-          ]
-        },
-        {
-          id: '8',
-          title: 'உதவி',
-          subsections: [
-            {
-              id: '1.1',
-              title: 'தேடிப்போய் உதவி செய்தல்',
-              paragraphs: [
-                {
-                  content: 'ஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போதுமானது...',
-                  image: helpImage1
-                },
-              ]
-            },
-            // Add more subsections with similar structure
-          ]
-        },
-        {
-          id: '9',
-          title: 'உதவி',
-          subsections: [
-            {
-              id: '1.1',
-              title: 'தேடிப்போய் உதவி செய்தல்',
-              paragraphs: [
-                {
-                  content: 'ஆடம்பரத்திற்கு உதவ வேண்டாம் அவசரமான அத்யாவசத்திற்கு உதவி செய்தால் போதுமானது...',
-                  image: helpImage1
-                },
-              ]
-            },
-            // Add more subsections with similar structure
-          ]
-        },
-
-      ]
-    },
-    english: {
-      title: "Philosophies of a Madman's Wanderings",
-      foreword: {
-        title: 'Foreword',
-        paragraphs: [
-          {
-            content: "Don't go searching to help... It's enough to help those who come seeking us with whatever we can...",
-            image: helpImage1
-          },
-          {
-            content: 'We should help those who truly trust us with whatever we can...',
-            image: helpImage2
-          }
-        ]
-      },
-      sections: [
-        {
-          id: '1',
-          title: 'Help',
-          subsections: [
-            {
-              id: '1.1',
-              title: 'Searching to Help',
-              paragraphs: [
-                {
-                  content: "Don't help for luxury, it's enough to help for urgent necessities...",
-                  image: helpImage1
-                },
-                {
-                  content: 'Our hardships are not for us... they are to make happy those who come seeking us...',
-                  image: helpImage2
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      conclusion: {
-        title: 'Conclusion',
-        paragraphs: [
-          {
-            content: 'Those who hide the help they receive from us will have the nature to help more...',
-            image: 'https://example.com/conclusion1-image.jpg'
-          },
-          {
-            content: 'Our hardships are not for us... they are to make happy those who come seeking us...',
-            image: 'https://example.com/conclusion2-image.jpg'
-          }
-        ]
-      }
-    }
+    tamil: tamilContent,
+    english: englishContent
   };
 
   const toggleSection = (sectionId) => {
@@ -344,10 +116,16 @@ function App() {
 
     if (selectedSection === 'foreword') {
       title = currentContent.foreword.title;
-      paragraphs = currentContent.foreword.paragraphs;
+      paragraphs = currentContent.foreword.paragraphs.map(p => ({
+        ...p,
+        image: images[p.image]
+      }));
     } else if (selectedSection === 'conclusion') {
       title = currentContent.conclusion.title;
-      paragraphs = currentContent.conclusion.paragraphs;
+      paragraphs = currentContent.conclusion.paragraphs.map(p => ({
+        ...p,
+        image: images[p.image]
+      }));
     } else if (selectedSection) {
       const section = currentContent.sections.find(section =>
         section.subsections.some(sub => sub.id === selectedSection)
@@ -355,7 +133,10 @@ function App() {
       const subsection = section?.subsections.find(sub => sub.id === selectedSection);
       if (subsection) {
         title = subsection.title;
-        paragraphs = subsection.paragraphs;
+        paragraphs = subsection.paragraphs.map(p => ({
+          ...p,
+          image: images[p.image]
+        }));
       }
     }
 
