@@ -255,13 +255,20 @@
 /* Footer */
 .footer {
   background: #f8f9fa;
-  padding: 8px 25px;
+  padding: 12px 25px;
   border-top: 1px solid #e9ecef;
   text-align: center;
-  height: 35px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
 }
 
 .footer p {
@@ -330,6 +337,7 @@
   .content-cards {
     grid-template-columns: 1fr;
     padding: 15px;
+    padding-bottom: 45px;
     gap: 15px;
   }
 
@@ -342,7 +350,7 @@
   }
 
   .content-card {
-    height: 250px;
+    height: 400px;
     touch-action: pan-y pinch-zoom;
   }
 
@@ -358,15 +366,17 @@
     font-size: 0.95rem;
   }
 
+  .footer-content {
+    flex-direction: column;
+    gap: 4px;
+  }
+
   .footer {
-    padding: 8px 15px;
+    padding: 10px 15px;
   }
 
   .footer p {
     font-size: 0.85rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   .welcome-message h2 {
@@ -382,6 +392,14 @@
   .nav-subsection {
     padding: 15px;
     font-size: 1rem;
+  }
+
+  .card-navigation {
+    bottom: 10px;
+  }
+
+  .card-dots {
+    gap: 6px;
   }
 }
 
