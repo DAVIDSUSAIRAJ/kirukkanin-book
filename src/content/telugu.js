@@ -836,52 +836,176 @@ export const teluguContent = {
       subsections: [
         {
           id: '4.1',
-          title: 'నటన',
-          paragraphs: []
+          title: 'మన కష్టాలు ఎవరితో చెప్పాలి?',
+          paragraphs: [
+            {
+              content: 'మన కష్టాలు...<br/>వేరొకరితో చెప్పని,<br/>పంచుకోని వ్యక్తిగా ఉండాలి.',
+              image: 'troubles_confidentiality'
+            },
+            {
+              content: 'మన కష్టాలు, లోపాలను తెలుసుకుని,<br/>ఎప్పుడూ ఆజ్ఞాపించని,<br/>బానిసగా చేయని,<br/>లోపాలతో భయపెట్టి ప్రతీకారం తీర్చుకోని,<br/>వ్యక్తిగా ఉండాలి.',
+              image: 'troubles_no_exploitation'
+            },
+            {
+              content: 'తరచుగా ప్రత్యక్షంగా కలుసుకోని...<br/>దూరం నుండే అర్థం చేసుకునే వ్యక్తిగా ఉండాలి.',
+              image: 'troubles_distant_understanding'
+            },
+            {
+              content: 'ఎక్కువగా మాట్లాడని,<br/>మౌనంలో కూడా అర్థం అనుభవించే వ్యక్తిగా ఉండాలి.',
+              image: 'troubles_silent_understanding'
+            },
+            {
+              content: 'మనకు ఎప్పుడూ చెడు చేయాలని అనుకోని,<br/>మరోవైపు, మంచి చేయాలని అనుకునే వ్యక్తిగా ఉండాలి.',
+              image: 'troubles_good_intentions'
+            },
+            {
+              content: 'తాను కష్టపడుతున్నా,<br/>తనను వెతుక్కునే వారి కోసం,<br/>తనవంతు చేయాలని అనుకునే వ్యక్తిగా ఉండాలి.',
+              image: 'troubles_selfless_help'
+            },
+            {
+              content: 'మగవారైతే,<br/>స్త్రీతో కష్టాలు చెప్పాలి.',
+              image: 'troubles_man_to_woman'
+            },
+            {
+              content: 'స్త్రీలైతే,<br/>పురుషుడితో కష్టాలు చెప్పాలి.',
+              image: 'troubles_woman_to_man'
+            },
+            {
+              content: 'ఇలాంటి వ్యక్తి ఉంటేనే...<br/>మన కష్టాలను ఇతరులతో చెప్పాలి.',
+              image: 'troubles_right_person'
+            },
+            {
+              content: 'లేకపోతే...<br/>మన కష్టాలను ఎవరితోనూ,<br/>ఎప్పుడూ చెప్పకూడదు.',
+              image: 'troubles_keep_silent'
+            }
+          ]
         },
         {
           id: '4.2',
-          title: 'జీవిత సమస్యలు',
-          paragraphs: []
+          title: 'సహాయం',
+          paragraphs: [
+            {
+              content: 'వెదికి వెళ్ళి సహాయం చేయవద్దు...<br/>మనను వెతుక్కుని వచ్చేవారికి,<br/>మనకు వీలైనంత సహాయం చేస్తే సాకు.',
+              image: 'help_seek_us'
+            },
+            {
+              content: 'మనపై నిజంగా నమ్మకం ఉన్నవారికి మాత్రమే,<br/>మనకు వీలైన సహాయం చేయవచ్చు.',
+              image: 'help_true_trust'
+            },
+            {
+              content: 'మనకు చేసే సహాయాన్ని దాచేవాడు...<br/>ఎక్కువ సహాయం చేసే గుణం కలిగి ఉంటాడు.',
+              image: 'help_hide_received'
+            },
+            {
+              content: 'ఆడంబరానికి సహాయం చేయవద్దు...<br/>అత్యవసర, అవసరమైన వాటికే సహాయం చేస్తే చాలు.',
+              image: 'help_necessity_not_luxury'
+            },
+            {
+              content: 'లేకపోవటానికి సహాయం చేయండి...<br/>కానీ...<br/>మోసగాళ్ళకు మరియు<br/>మనను వాడుకునేవారికి సహాయం చేయవద్దు.',
+              image: 'help_needy_not_deceivers'
+            },
+            {
+              content: 'ఎక్కడైనా సహాయం అడగవచ్చు.<br/>కానీ...<br/>వేలాడుతూ ఉండకండి.',
+              image: 'help_ask_dont_cling'
+            },
+            {
+              content: 'ఒకరి లక్ష్యానికి<br/>సహాయం చేయలేకపోయినా...<br/>వాళ్ళు బ్రతకడానికి సహాయం చేయండి...<br/>వాళ్ళు తమ లక్ష్యాన్ని చేరుకుంటారు.',
+              image: 'help_survival_dreams'
+            }
+          ]
         },
         {
           id: '4.3',
-          title: 'జీవిత పాఠాలు',
-          paragraphs: []
+          title: 'రహస్యంగా రక్షించడం నేర్చుకోండి',
+          paragraphs: [
+            {
+              content: 'మన సహాయం...<br/>మనలో ఉన్న పేదరికం...<br/>మనల్ని వేధించే బాధ...',
+              image: 'secrets_our_struggles'
+            },
+            {
+              content: 'మనతో ఎవరైనా చెప్పే<br/>పేదరికం, బాధ...',
+              image: 'secrets_others_trust'
+            },
+            {
+              content: 'ఇవన్నీ...<br/>రహస్యంగా కాపాడబడాలి.',
+              image: 'secrets_keep_all'
+            },
+            {
+              content: 'కష్టంలో ఉన్న వారిని<br/>ఓదార్చడానికై,<br/>మనం అనుభవించిన లేదా అనుభవించే<br/>కష్టాలను చెప్పవచ్చు.',
+              image: 'secrets_comfort_exception'
+            },
+            {
+              content: 'వేరే ఎక్కడా...<br/>ఎప్పుడూ మన కష్టాలను చెప్పకూడదు.',
+              image: 'secrets_never_elsewhere'
+            },
+            {
+              content: 'మన కష్టాలు...<br/>మనలో రహస్యంగా కాపాడబడాలి.',
+              image: 'secrets_our_troubles'
+            }
+          ]
         },
         {
           id: '4.4',
-          title: 'మార్పు ప్రాముఖ్యత',
-          paragraphs: []
+          title: 'అబద్ధం',
+          paragraphs: [
+            {
+              content: 'ఒకరి అబద్ధం,<br/>మనల్ని బాధపెట్టనంత వరకు,<br/>మనం కోపం చేసుకోవాల్సిన అవసరం లేదు.',
+              image: 'lies_others_no_harm'
+            },
+            {
+              content: 'మన అబద్ధం,<br/>ఒకరిని బాధపెట్టనంత వరకు,<br/>మనం అబద్ధం చెప్పవచ్చు.',
+              image: 'lies_ours_no_harm'
+            },
+            {
+              content: 'ప్రేమలో అబద్ధం...<br/>నిరాశను,<br/>కోపాన్ని,<br/>అసహ్యాన్ని కలిగిస్తుంది.',
+              image: 'lies_love_consequences'
+            }
+          ]
         },
         {
           id: '4.5',
-          title: 'స్వయం విమర్శ',
-          paragraphs: []
+          title: 'నిరాశ',
+          paragraphs: [
+            {
+              content: 'నిరాశతో నిండిన జీవితంలో...<br/>ప్రయత్నాన్ని మాత్రమే,<br/>ముందుకు తీసుకెళ్లేవారిగా చేసుకుందాం.',
+              image: 'disappointment_effort_guide'
+            },
+            {
+              content: 'అధిక ప్రేమను ఆశించే చోట...<br/>అంచనాలు నిండిపోయి,<br/>వేదనతో,<br/>నిరాశపడుతాం.',
+              image: 'disappointment_excessive_expectations'
+            },
+            {
+              content: 'నిజంగా ప్రేమిస్తున్నట్లు నటించేవారిని...<br/>నిజంగా ప్రేమించడమే తప్పు.',
+              image: 'disappointment_false_love'
+            },
+            {
+              content: 'పగటిపూట దేవాలయం వైపు,<br/>రాత్రిపూట స్మశానం వైపు,<br/>ఒక శరీరమూ, మనసూ ప్రయాణిస్తే...<br/>అది గొప్ప నిరాశను భరించిన సంకేతం.',
+              image: 'disappointment_temple_graveyard'
+            }
+          ]
         },
         {
           id: '4.6',
-          title: 'సహనం ప్రాముఖ్యత',
-          paragraphs: []
+          title: 'ద్రోహం',
+          paragraphs: [
+            {
+              content: 'ఎవరితోనైనా...<br/>చనిపోయే వరకు చెప్పలేని<br/>విషయం ఏదైనా ఉంటే...<br/>అదే నిజమైన ద్రోహం.',
+              image: 'betrayal_unspeakable_secret'
+            },
+            {
+              content: 'మిగతావన్నీ...<br/>అనుభవమే.',
+              image: 'betrayal_everything_else_experience'
+            }
+          ]
         },
         {
           id: '4.7',
-          title: 'సమయం విలువ',
+          title: 'అర్థం చేసుకోలేకపోవడం',
           paragraphs: []
         },
         {
           id: '4.8',
-          title: 'ఆత్మవిశ్వాసం',
-          paragraphs: []
-        },
-        {
-          id: '4.9',
-          title: 'కర్మ ప్రాముఖ్యత',
-          paragraphs: []
-        },
-        {
-          id: '4.10',
-          title: 'నిజాయితీ',
+          title: 'నేర్చుకుందాం',
           paragraphs: []
         }
       ]

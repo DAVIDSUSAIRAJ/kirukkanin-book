@@ -751,32 +751,166 @@ export const hindiContent = {
         {
           id: '4.1',
           title: 'किससे अपना दर्द बांटें?',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'हमारे दर्द को...<br/>किसी और से न कहने वाला,<br/>साझा न करने वाला व्यक्ति होना चाहिए।',
+              image: 'troubles_confidentiality'
+            },
+            {
+              content: 'हमारे दर्द और कमियों को जानकर,<br/>कभी आदेश न देने वाला,<br/>गुलाम न बनाने वाला,<br/>कमियों से डराकर बदला न लेने वाला,<br/>व्यक्ति होना चाहिए।',
+              image: 'troubles_no_exploitation'
+            },
+            {
+              content: 'अक्सर व्यक्तिगत रूप से न मिलने वाला...<br/>दूर से ही समझने वाला व्यक्ति होना चाहिए।',
+              image: 'troubles_distant_understanding'
+            },
+            {
+              content: 'ज्यादा न बोलने वाला,<br/>मौन में भी अर्थ समझने वाला व्यक्ति होना चाहिए।',
+              image: 'troubles_silent_understanding'
+            },
+            {
+              content: 'हमारा कभी बुरा न सोचने वाला,<br/>बल्कि, अच्छा करने की सोचने वाला व्यक्ति होना चाहिए।',
+              image: 'troubles_good_intentions'
+            },
+            {
+              content: 'खुद परेशान होकर भी,<br/>अपने पास आने वाले के लिए,<br/>अपनी शक्ति भर करने की सोच रखने वाला होना चाहिए।',
+              image: 'troubles_selfless_help'
+            },
+            {
+              content: 'अगर आप पुरुष हैं,<br/>तो महिला से अपना दर्द कहें।',
+              image: 'troubles_man_to_woman'
+            },
+            {
+              content: 'अगर आप महिला हैं,<br/>तो पुरुष से अपना दर्द कहें।',
+              image: 'troubles_woman_to_man'
+            },
+            {
+              content: 'ऐसा कोई व्यक्ति हो तभी...<br/>अपने दर्द दूसरों से कहने चाहिए।',
+              image: 'troubles_right_person'
+            },
+            {
+              content: 'वरना...<br/>अपने दर्द किसी से भी,<br/>कभी नहीं कहने चाहिए।',
+              image: 'troubles_keep_silent'
+            }
+          ]
         },
         {
           id: '4.2',
-          title: 'मदद',
-          paragraphs: []
+          title: 'सहायता',
+          paragraphs: [
+            {
+              content: 'खोजकर मदद करने न जाएं...<br/>हमारे पास आने वाले की,<br/>हमसे जो हो सके उतनी मदद करना ही काफी है।',
+              image: 'help_seek_us'
+            },
+            {
+              content: 'हम पर सच्चा भरोसा करने वाले की ही,<br/>हमसे जो हो सके उतनी मदद करनी चाहिए।',
+              image: 'help_true_trust'
+            },
+            {
+              content: 'हमारी मदद को छुपाने वाला...<br/>ज्यादा मदद करने वाला स्वभाव रखता होगा।',
+              image: 'help_hide_received'
+            },
+            {
+              content: 'दिखावे के लिए मदद न करें...<br/>जरूरी, आवश्यक चीजों के लिए ही मदद करना काफी है।',
+              image: 'help_necessity_not_luxury'
+            },
+            {
+              content: 'जरूरतमंदों की मदद करें...<br/>लेकिन...<br/>धोखेबाजों और<br/>हमारा इस्तेमाल करने वालों की मदद न करें।',
+              image: 'help_needy_not_deceivers'
+            },
+            {
+              content: 'कहीं भी मदद मांग सकते हैं।<br/>लेकिन...<br/>लटककर न रहें।',
+              image: 'help_ask_dont_cling'
+            },
+            {
+              content: 'किसी के सपनों में<br/>मदद नहीं कर सकते तो भी...<br/>उसे जिंदा रहने में मदद करें...<br/>वह अपने सपने खुद पूरे कर लेगा।',
+              image: 'help_survival_dreams'
+            }
+          ]
         },
         {
           id: '4.3',
           title: 'गोपनीयता बनाए रखना सीखें',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'हमारी मदद...<br/>हमारी गरीबी...<br/>हमारा दर्द...',
+              image: 'secrets_our_struggles'
+            },
+            {
+              content: 'जो कोई हमसे अपनी<br/>गरीबी और दर्द कहता है...',
+              image: 'secrets_others_trust'
+            },
+            {
+              content: 'ये सब...<br/>गुप्त रखा जाना चाहिए।',
+              image: 'secrets_keep_all'
+            },
+            {
+              content: 'किसी दुखी व्यक्ति को<br/>सांत्वना देने के लिए,<br/>हमारे द्वारा झेले गए या झेले जाने वाले<br/>दुख को बता सकते हैं।',
+              image: 'secrets_comfort_exception'
+            },
+            {
+              content: 'और किसी भी जगह...<br/>कभी भी अपने दुख नहीं बताने चाहिए।',
+              image: 'secrets_never_elsewhere'
+            },
+            {
+              content: 'हमारे दुख...<br/>हमारे अंदर गुप्त रखे जाने चाहिए।',
+              image: 'secrets_our_troubles'
+            }
+          ]
         },
         {
           id: '4.4',
           title: 'झूठ',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'किसी का झूठ,<br/>जब तक हमें नुकसान न पहुंचाए,<br/>हमें गुस्सा होने की जरूरत नहीं।',
+              image: 'lies_others_no_harm'
+            },
+            {
+              content: 'हमारा झूठ,<br/>जब तक किसी को नुकसान न पहुंचाए,<br/>हम झूठ बोल सकते हैं।',
+              image: 'lies_ours_no_harm'
+            },
+            {
+              content: 'प्रेम में झूठ...<br/>निराशा,<br/>गुस्सा,<br/>और घृणा पैदा करता है।',
+              image: 'lies_love_consequences'
+            }
+          ]
         },
         {
           id: '4.5',
           title: 'निराशा',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'निराशा भरी जिंदगी में...<br/>सिर्फ कोशिश को,<br/>अग्रणी बनाएं।',
+              image: 'disappointment_effort_guide'
+            },
+            {
+              content: 'जहाँ हम अत्यधिक प्रेम की उम्मीद करते हैं...<br/>अपेक्षाएँ भर जाती हैं,<br/>और तड़प के साथ,<br/>निराश हो जाते हैं।',
+              image: 'disappointment_excessive_expectations'
+            },
+            {
+              content: 'जो सच्चे प्रेम का नाटक करते हैं...<br/>उनसे सच्चा प्रेम करना ही गलती है।',
+              image: 'disappointment_false_love'
+            },
+            {
+              content: 'दिन में मंदिर की ओर,<br/>और रात में कब्रिस्तान की ओर,<br/>अगर शरीर और मन यात्रा करे...<br/>तो यह बड़ी निराशा सहने का संकेत है।',
+              image: 'disappointment_temple_graveyard'
+            }
+          ]
         },
         {
           id: '4.6',
           title: 'विश्वासघात',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'किसी भी व्यक्ति के बारे में...<br/>अगर कोई ऐसी बात है<br/>जो मरने तक नहीं कह सकते...<br/>वही सच्चा विश्वासघात है।',
+              image: 'betrayal_unspeakable_secret'
+            },
+            {
+              content: 'बाकी...<br/>सब कुछ अनुभव ही है।',
+              image: 'betrayal_everything_else_experience'
+            }
+          ]
         },
         {
           id: '4.7',

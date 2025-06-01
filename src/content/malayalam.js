@@ -197,7 +197,7 @@ export const malayalamContent = {
               image: 'self_loss'
             },
             {
-              content: 'അനാവശ്യമായ ആഗ്രഹങ്ങളെ നിയന്ത്രിക്കാൻ അറിയുമെങ്കിൽ...<br/>ഏറ്റവും ശ്രേഷ്ഠർ നാം തന്നെ.<br/>അതിൽ നമുക്ക് അഭിമാനിക്കാം.',
+              content: 'അനാവശ്യമായ ആഗ്രഹങ്ങളെ നിയന്ത്രിക്കാൻ അറിയുമ്പോൾ...<br/>ഏറ്റവും ശ്രേഷ്ഠർ നാം തന്നെ.<br/>അതിൽ നമുക്ക് അഭിമാനിക്കാം.',
               image: 'self_control'
             },
             {
@@ -694,33 +694,167 @@ export const malayalamContent = {
       subsections: [
         {
           id: '4.1',
-          title: 'നമ്മുടെ കഷ്ടത ആരോട് പറയണം?',
-          paragraphs: []
+          title: 'നമ്മുടെ കഷ്ടങ്ങൾ ആരോട് പറയണം?',
+          paragraphs: [
+            {
+              content: 'നമ്മുടെ കഷ്ടങ്ങൾ...<br/>മറ്റൊരാളോട് പറയാത്ത,<br/>പങ്കുവെക്കാത്ത വ്യക്തിയായിരിക്കണം.',
+              image: 'troubles_confidentiality'
+            },
+            {
+              content: 'നമ്മുടെ കഷ്ടങ്ങളും കുറവുകളും അറിഞ്ഞിട്ട്,<br/>ഒരിക്കലും കൽപ്പന നൽകാത്ത,<br/>അടിമയാക്കാത്ത,<br/>കുറവുകൾ വച്ച് ഭീഷണിപ്പെടുത്തി പ്രതികാരം ചെയ്യാത്ത,<br/>വ്യക്തിയായിരിക്കണം.',
+              image: 'troubles_no_exploitation'
+            },
+            {
+              content: 'പതിവായി നേരിട്ട് കാണാത്ത...<br/>ദൂരെ നിന്ന് തന്നെ മനസ്സിലാക്കുന്ന വ്യക്തിയായിരിക്കണം.',
+              image: 'troubles_distant_understanding'
+            },
+            {
+              content: 'അധികം സംസാരിക്കാത്ത,<br/>മൗനത്തിലും അർത്ഥം മനസ്സിലാക്കുന്ന വ്യക്തിയായിരിക്കണം.',
+              image: 'troubles_silent_understanding'
+            },
+            {
+              content: 'നമുക്ക് ഒരിക്കലും തിന്മ ചെയ്യാൻ ആലോചിക്കാത്ത,<br/>മറിച്ച്, നന്മ ചെയ്യാൻ ആലോചിക്കുന്ന വ്യക്തിയായിരിക്കണം.',
+              image: 'troubles_good_intentions'
+            },
+            {
+              content: 'താൻ വേദനിച്ചാലും,<br/>തന്നെ അന്വേഷിക്കുന്നവർക്കായി,<br/>തനിക്ക് കഴിയുന്നത് ചെയ്യണം എന്ന ചിന്തയുള്ള വ്യക്തിയായിരിക്കണം.',
+              image: 'troubles_selfless_help'
+            },
+            {
+              content: 'പുരുഷനാണെങ്കിൽ,<br/>സ്ത്രീയോട് കഷ്ടങ്ങൾ പറയണം.',
+              image: 'troubles_man_to_woman'
+            },
+            {
+              content: 'സ്ത്രീയാണെങ്കിൽ,<br/>പുരുഷനോട് കഷ്ടങ്ങൾ പറയണം.',
+              image: 'troubles_woman_to_man'
+            },
+            {
+              content: 'ഇങ്ങനെ ഒരാൾ ഉണ്ടെങ്കിൽ മാത്രം...<br/>നമ്മുടെ കഷ്ടങ്ങൾ മറ്റുള്ളവരോട് പറയണം.',
+              image: 'troubles_right_person'
+            },
+            {
+              content: 'അല്ലെങ്കിൽ...<br/>നമ്മുടെ കഷ്ടങ്ങൾ ആരോടും,<br/>ഒരിക്കലും പറയരുത്.',
+              image: 'troubles_keep_silent'
+            }
+          ]
         },
         {
           id: '4.2',
           title: 'സഹായം',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'തിരഞ്ഞുപോയി സഹായം ചെയ്യേണ്ടതില്ല...<br/>നമ്മെ തേടിവരുന്നവർക്ക്,<br/>നമുക്കാവുന്നത് സഹായിച്ചാൽ മതി.',
+              image: 'help_seek_us'
+            },
+            {
+              content: 'നമ്മെ യഥാർത്ഥത്തിൽ വിശ്വസിക്കുന്നവർക്ക് മാത്രം,<br/>നമുക്കാവുന്ന സഹായം ചെയ്യാം.',
+              image: 'help_true_trust'
+            },
+            {
+              content: 'നമുക്ക് ചെയ്യുന്ന സഹായം മറയ്ക്കുന്നവൻ...<br/>കൂടുതൽ സഹായിക്കുന്ന സ്വഭാവമുള്ളവനായിരിക്കും.',
+              image: 'help_hide_received'
+            },
+            {
+              content: 'ആഡംബരത്തിനായി സഹായിക്കേണ്ടതില്ല...<br/>അത്യാവശ്യമായവയ്ക്ക് മാത്രം സഹായിച്ചാൽ മതി.',
+              image: 'help_necessity_not_luxury'
+            },
+            {
+              content: 'ഇല്ലായ്മയ്ക്ക് സഹായിക്കൂ...<br/>പക്ഷേ...<br/>വഞ്ചകർക്കും<br/>നമ്മെ ഉപയോഗിക്കുന്നവർക്കും സഹായിക്കേണ്ടതില്ല.',
+              image: 'help_needy_not_deceivers'
+            },
+            {
+              content: 'എവിടെയും സഹായം ചോദിക്കാം.<br/>പക്ഷേ...<br/>തൂങ്ങിക്കിടക്കരുത്.',
+              image: 'help_ask_dont_cling'
+            },
+            {
+              content: 'ഒരാളുടെ സ്വപ്നത്തിന്<br/>സഹായിക്കാൻ കഴിയുന്നില്ലെങ്കിലും...<br/>അവൻ ജീവിക്കാൻ സഹായിക്കൂ...<br/>അവൻ തന്റെ സ്വപ്നം നേടിയെടുക്കും.',
+              image: 'help_survival_dreams'
+            }
+          ]
         },
         {
           id: '4.3',
           title: 'രഹസ്യം സൂക്ഷിക്കാൻ പഠിക്കുക',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'നമ്മുടെ സഹായവും...<br/>നമ്മിലെ ദാരിദ്ര്യവും...<br/>നമ്മെ വേദനിപ്പിക്കുന്ന വേദനയും...',
+              image: 'secrets_our_struggles'
+            },
+            {
+              content: 'നമ്മോട് ഒരാൾ പറയുന്ന<br/>ദാരിദ്ര്യവും, വേദനയും...',
+              image: 'secrets_others_trust'
+            },
+            {
+              content: 'ഇവയെല്ലാം...<br/>രഹസ്യമായി സംരക്ഷിക്കപ്പെടണം.',
+              image: 'secrets_keep_all'
+            },
+            {
+              content: 'കഷ്ടത്തിലായ ഒരാളെ<br/>ആശ്വസിപ്പിക്കാനായി,<br/>നാം അനുഭവിച്ച അല്ലെങ്കിൽ അനുഭവിക്കാൻ പോകുന്ന<br/>കഷ്ടം പറയാം.',
+              image: 'secrets_comfort_exception'
+            },
+            {
+              content: 'മറ്റെവിടെയും...<br/>ഒരിക്കലും നമ്മുടെ കഷ്ടം പറയരുത്.',
+              image: 'secrets_never_elsewhere'
+            },
+            {
+              content: 'നമ്മുടെ കഷ്ടം...<br/>നമ്മിൽത്തന്നെ രഹസ്യമായി സൂക്ഷിക്കപ്പെടണം.',
+              image: 'secrets_our_troubles'
+            }
+          ]
         },
         {
           id: '4.4',
           title: 'കള്ളം',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'ഒരാളുടെ കള്ളം,<br/>നമ്മെ ബാധിക്കാത്തിടത്തോളം,<br/>നാം ദേഷ്യപ്പെടേണ്ട ആവശ്യമില്ല.',
+              image: 'lies_others_no_harm'
+            },
+            {
+              content: 'നമ്മുടെ കള്ളം,<br/>ഒരാളെ ബാധിക്കാത്തിടത്തോളം,<br/>നാം കള്ളം പറയാം.',
+              image: 'lies_ours_no_harm'
+            },
+            {
+              content: 'പ്രണയത്തിലെ കള്ളം...<br/>നിരാശയും,<br/>കോപവും,<br/>വെറുപ്പും സൃഷ്ടിക്കുന്നു.',
+              image: 'lies_love_consequences'
+            }
+          ]
         },
         {
           id: '4.5',
           title: 'നിരാശ',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'നിരാശ നിറഞ്ഞ ജീവിതത്തിൽ...<br/>ശ്രമത്തെ മാത്രമേ,<br/>മുന്നണിയാക്കി എടുക്കാവൂ.',
+              image: 'disappointment_effort_guide'
+            },
+            {
+              content: 'അധിക സ്നേഹം പ്രതീക്ഷിക്കുന്നിടത്ത്...<br/>പ്രതീക്ഷകൾ നിറഞ്ഞ്,<br/>കാംക്ഷയോടെ,<br/>നിരാശപ്പെടുന്നു.',
+              image: 'disappointment_excessive_expectations'
+            },
+            {
+              content: 'സത്യമായി സ്നേഹിക്കുന്നതുപോലെ നടിക്കുന്നവരെ...<br/>സത്യമായി സ്നേഹിക്കുന്നതാണ് തെറ്റ്.',
+              image: 'disappointment_false_love'
+            },
+            {
+              content: 'പകൽ ക്ഷേത്രത്തിലേക്കും,<br/>രാത്രി ശ്മശാനത്തിലേക്കും,<br/>ഒരു ശരീരവും മനസ്സും യാത്ര ചെയ്താൽ...<br/>അത് വലിയ നിരാശ സഹിച്ചതിന്റെ അടയാളം.',
+              image: 'disappointment_temple_graveyard'
+            }
+          ]
         },
         {
           id: '4.6',
           title: 'വഞ്ചന',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'ഏതെങ്കിലും വ്യക്തിയെ കുറിച്ച്...<br/>മരിക്കുന്നതുവരെ പറയാൻ കഴിയാത്ത<br/>എന്തെങ്കിലും ഉണ്ടെങ്കിൽ...<br/>അതാണ് യഥാർത്ഥ വഞ്ചന.',
+              image: 'betrayal_unspeakable_secret'
+            },
+            {
+              content: 'മറ്റെല്ലാം...<br/>അനുഭവം മാത്രമാണ്.',
+              image: 'betrayal_everything_else_experience'
+            }
+          ]
         },
         {
           id: '4.7',
@@ -731,6 +865,20 @@ export const malayalamContent = {
           id: '4.8',
           title: 'പഠിക്കാം',
           paragraphs: []
+        },
+        {
+          id: '4.9',
+          title: 'വിശ്വാസവഞ്ചന',
+          paragraphs: [
+            {
+              content: 'ഏതെങ്കിലും വ്യക്തിയെ കുറിച്ച്...<br/>മരിക്കുന്നതുവരെ പറയാൻ കഴിയാത്ത<br/>എന്തെങ്കിലും ഉണ്ടെങ്കിൽ...<br/>അതാണ് യഥാർത്ഥ വിശ്വാസവഞ്ചന.',
+              image: 'betrayal_unspeakable_secret'
+            },
+            {
+              content: 'മറ്റെല്ലാം...<br/>അനുഭവം മാത്രമാണ്.',
+              image: 'betrayal_everything_else_experience'
+            }
+          ]
         }
       ]
     },

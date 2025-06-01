@@ -874,33 +874,167 @@ export const englishContent = {
       subsections: [
         {
           id: '4.1',
-          title: 'Whom to Share Our Troubles With?',
-          paragraphs: []
+          title: 'To Whom Should We Tell Our Troubles?',
+          paragraphs: [
+            {
+              content: 'Our troubles...<br/>Should not be told to,<br/>Or shared with someone<br/>Who would tell others.',
+              image: 'troubles_confidentiality'
+            },
+            {
+              content: 'After learning about our troubles and shortcomings,<br/>They should never command us,<br/>Enslave us,<br/>Or threaten and revenge using our weaknesses.',
+              image: 'troubles_no_exploitation'
+            },
+            {
+              content: 'Someone who doesn\'t meet us frequently...<br/>But understands from a distance.',
+              image: 'troubles_distant_understanding'
+            },
+            {
+              content: 'Someone who doesn\'t talk excessively,<br/>But understands meaning even in silence.',
+              image: 'troubles_silent_understanding'
+            },
+            {
+              content: 'Someone who never thinks of harming us,<br/>But instead, thinks of doing good for us.',
+              image: 'troubles_good_intentions'
+            },
+            {
+              content: 'Even if they are suffering,<br/>For those who seek them,<br/>They should have the thought of doing what they can.',
+              image: 'troubles_selfless_help'
+            },
+            {
+              content: 'If you are a man,<br/>Tell your troubles to a woman.',
+              image: 'troubles_man_to_woman'
+            },
+            {
+              content: 'If you are a woman,<br/>Tell your troubles to a man.',
+              image: 'troubles_woman_to_man'
+            },
+            {
+              content: 'Only if such a person exists...<br/>Should we tell our troubles to others.',
+              image: 'troubles_right_person'
+            },
+            {
+              content: 'Otherwise...<br/>We should never tell our troubles<br/>To anyone, ever.',
+              image: 'troubles_keep_silent'
+            }
+          ]
         },
         {
           id: '4.2',
           title: 'Help',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'Don\'t go searching to help others...<br/>Helping those who come seeking us<br/>With whatever we can do is sufficient.',
+              image: 'help_seek_us'
+            },
+            {
+              content: 'Only to those who truly trust us,<br/>Should we offer the help we can provide.',
+              image: 'help_true_trust'
+            },
+            {
+              content: 'One who hides the help they receive from us...<br/>Will be one with a greater nature to help others.',
+              image: 'help_hide_received'
+            },
+            {
+              content: 'Don\'t help for show or luxury...<br/>Helping only for urgent, essential needs is enough.',
+              image: 'help_necessity_not_luxury'
+            },
+            {
+              content: 'Help those in need...<br/>But...<br/>Don\'t help deceivers<br/>And those who exploit us.',
+              image: 'help_needy_not_deceivers'
+            },
+            {
+              content: 'You can ask for help anywhere.<br/>But...<br/>Don\'t cling and depend on others.',
+              image: 'help_ask_dont_cling'
+            },
+            {
+              content: 'Even if you cannot help someone<br/>Achieve their dreams...<br/>Help them survive...<br/>They will achieve their dreams themselves.',
+              image: 'help_survival_dreams'
+            }
+          ]
         },
         {
           id: '4.3',
           title: 'Learn to Keep Secrets',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'The help we provide...<br/>The poverty within us...<br/>The pain that troubles us...',
+              image: 'secrets_our_struggles'
+            },
+            {
+              content: 'The poverty and pain<br/>Someone shares with us...',
+              image: 'secrets_others_trust'
+            },
+            {
+              content: 'All of these...<br/>Must be kept as secrets.',
+              image: 'secrets_keep_all'
+            },
+            {
+              content: 'To comfort someone in distress,<br/>We may share the hardships<br/>We have faced or will face.',
+              image: 'secrets_comfort_exception'
+            },
+            {
+              content: 'In any other place...<br/>We should never speak of our troubles.',
+              image: 'secrets_never_elsewhere'
+            },
+            {
+              content: 'Our troubles...<br/>Must be kept as secrets within ourselves.',
+              image: 'secrets_our_troubles'
+            }
+          ]
         },
         {
           id: '4.4',
           title: 'Lies',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'Someone\'s lies,<br/>As long as they don\'t harm us,<br/>We don\'t need to get angry.',
+              image: 'lies_others_no_harm'
+            },
+            {
+              content: 'Our lies,<br/>As long as they don\'t harm anyone,<br/>We can tell lies.',
+              image: 'lies_ours_no_harm'
+            },
+            {
+              content: 'Lies in love...<br/>Create disappointment,<br/>Anger,<br/>And disgust.',
+              image: 'lies_love_consequences'
+            }
+          ]
         },
         {
           id: '4.5',
           title: 'Disappointment',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'In a life filled with disappointment...<br/>Let us take only effort<br/>As our pioneer.',
+              image: 'disappointment_effort_guide'
+            },
+            {
+              content: 'Where we expect excessive love...<br/>Expectations overflow,<br/>And with yearning,<br/>We become disappointed.',
+              image: 'disappointment_excessive_expectations'
+            },
+            {
+              content: 'To truly love those<br/>Who pretend to truly love...<br/>That is the mistake.',
+              image: 'disappointment_false_love'
+            },
+            {
+              content: 'If a body and mind travel<br/>Towards temple during the day,<br/>And towards graveyard at night...<br/>It is a sign of bearing great disappointment.',
+              image: 'disappointment_temple_graveyard'
+            }
+          ]
         },
         {
           id: '4.6',
           title: 'Betrayal',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'If there is something about any person...<br/>That you cannot tell anyone<br/>Until you die...<br/>That is true betrayal.',
+              image: 'betrayal_unspeakable_secret'
+            },
+            {
+              content: 'Otherwise...<br/>Everything else is just experience.',
+              image: 'betrayal_everything_else_experience'
+            }
+          ]
         },
         {
           id: '4.7',
