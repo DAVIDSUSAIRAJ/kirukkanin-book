@@ -565,37 +565,220 @@ export const englishContent = {
         {
           id: '3.1',
           title: 'Tears',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'Separation... and memories...<br/>The gift that keeps giving are tears.',
+              image: 'tears_separation'
+            },
+            {
+              content: 'Without any comfort...<br/>Trembling and shrinking in loneliness,<br/>Crying and lamenting in a corner,<br/>Only they understand some truths.',
+              image: 'tears_lonely'
+            },
+            {
+              content: 'When responsibilities come,<br/>The corresponding duties come too.<br/>If we fail to fulfill our duties,<br/>Hardships and tears will surely follow.',
+              image: 'tears_responsibility'
+            },
+            {
+              content: 'Tears should be...<br/>For those who love us,<br/>Not for those who hurt us,<br/>Hate us, and reject us.',
+              image: 'tears_love'
+            },
+            {
+              content: 'When I had nothing...<br/>Tears filled with pain<br/>Said "I am here".',
+              image: 'tears_presence'
+            },
+            {
+              content: 'Tears – the mother tongue of eyes.<br/>Many times,<br/>Eyes keep speaking<br/>In their mother tongue.',
+              image: 'tears_language'
+            }
+          ]
         },
         {
           id: '3.2',
           title: 'Acting',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'To improve some people\'s lives,<br/>To escape from places of different thinking,<br/>Acting is necessary.',
+              image: 'acting_necessity'
+            },
+            {
+              content: 'Many times,<br/>We cannot truly hate genuine love;<br/>We can only pretend to hate.',
+              image: 'acting_love'
+            },
+            {
+              content: 'To live...<br/>We must act in this world.',
+              image: 'acting_world'
+            },
+            {
+              content: 'If you desire to rule...<br/>You must be skilled in acting.',
+              image: 'acting_power'
+            }
+          ]
         },
         {
           id: '3.3',
           title: 'Changes in Human Psychology',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'Someone\'s character traits...<br/>When we know 25%,<br/>We think "He\'s a good person".',
+              image: 'psychology_25'
+            },
+            {
+              content: 'When we know 50%,<br/>We think "He\'s a very good person".',
+              image: 'psychology_50'
+            },
+            {
+              content: 'When we know 75%,<br/>We might think "He\'s good... but bad in some traits".',
+              image: 'psychology_75'
+            },
+            {
+              content: 'When we know 100%,<br/>We might think "He\'s completely wicked".',
+              image: 'psychology_100'
+            },
+            {
+              content: 'This is... the nature of human psychology.',
+              image: 'psychology_nature'
+            }
+          ]
         },
         {
           id: '3.4',
           title: 'Peaceful Withdrawal',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'If someone thinks we are a burden...<br/>Stay away; remain distant.',
+              image: 'withdrawal_burden'
+            },
+            {
+              content: 'When someone wants to distance us,<br/>Rather than degrading ourselves and withdrawing,<br/>Realizing our own worth,<br/>Understanding that we should not cause any harm to others,<br/>We should withdraw peacefully.',
+              image: 'withdrawal_dignity'
+            },
+            {
+              content: 'Don\'t regret that I didn\'t speak to you.<br/>You didn\'t have to experience<br/>Any kind of suffering because of me...<br/>For that, I take pride in myself.',
+              image: 'withdrawal_pride'
+            },
+            {
+              content: 'Don\'t try to know too much about anyone.<br/>Don\'t reveal too much about ourselves either.',
+              image: 'withdrawal_privacy'
+            },
+            {
+              content: 'If they do the same thing again...<br/>We can withdraw completely from them; not just a little.',
+              image: 'withdrawal_complete'
+            },
+            {
+              content: 'If we decide to completely withdraw from a place,<br/>Instead of leaving immediately,<br/>For some time,<br/>Acting as if nothing happened...<br/>We should withdraw peacefully and completely.',
+              image: 'withdrawal_gradual'
+            }
+          ]
         },
         {
           id: '3.5',
           title: 'Absence',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'Showing what we dislike...<br/>as if we like it...',
+              image: 'absence_false_like'
+            },
+            {
+              content: 'Showing what we like...<br/>as if we dislike it...',
+              image: 'absence_false_dislike'
+            },
+            {
+              content: 'True absence...<br/>only.',
+              image: 'absence_true'
+            },
+            {
+              content: 'Absence - a mind without expression.',
+              image: 'absence_unexpressed_mind'
+            }
+          ]
         },
         {
           id: '3.6',
           title: 'Emptiness',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'Having everything...<br/>Yet feeling there is nothing,<br/>That is emptiness.',
+              image: 'emptiness_having_nothing'
+            },
+            {
+              content: 'Here...<br/>Many are those who live in emptiness.',
+              image: 'emptiness_many_live'
+            },
+            {
+              content: 'Emptiness – Only the shadow remained standing.',
+              image: 'emptiness_shadow_remains'
+            }
+          ]
         },
         {
           id: '3.7',
           title: 'Solitude',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: 'Only after shedding tears...<br/>With pen in hand, with notes...<br/>Do philosophies also come naturally.',
+              image: 'solitude_tears_philosophy'
+            },
+            {
+              content: 'When immersed in solitude,<br/>We float in imagination and tears.',
+              image: 'solitude_imagination_tears'
+            },
+            {
+              content: 'When deep in imagination and tears,<br/>Without knowing how time passes...<br/>We would have understood the true state of the world.',
+              image: 'solitude_truth_realization'
+            },
+            {
+              content: 'If you hate desires and have interest in solitude...<br/>It is medicine for peace of mind.<br/>Only if you take the medicine in moderation...<br/>Otherwise...<br/>Mental health will be affected,<br/>And you will become a mental patient.',
+              image: 'solitude_medicine_moderation'
+            },
+            {
+              content: 'Giving work to the brain...<br/>Even when working in a corner,<br/>You don\'t know when all three periods of day pass.',
+              image: 'solitude_corner_work'
+            },
+            {
+              content: 'I live in this world...<br/>But am not united with the world.<br/>I live in solitude...<br/>But I am not alone.',
+              image: 'solitude_world_not_alone'
+            },
+            {
+              content: 'Filled with solitude,<br/>Understanding truths,<br/>Identifying lies,<br/>If we learn to think,<br/>We can find the best path.',
+              image: 'solitude_truth_lies_path'
+            },
+            {
+              content: 'Resting in solitude,<br/>Thinking,<br/>Struggling and laying a path,<br/>Moving forward,<br/>We can fully experience the joy of solitude.',
+              image: 'solitude_rest_struggle_joy'
+            },
+            {
+              content: 'If we talk with emotions,<br/>We can understand the true state.<br/>If we talk with tears,<br/>We can understand what our duty is.',
+              image: 'solitude_emotions_duty'
+            },
+            {
+              content: 'When we learn to reduce anger,<br/>We start crying in solitude.',
+              image: 'solitude_anger_crying'
+            },
+            {
+              content: 'When sleep troubles the eyes,<br/>And hardships trouble the heart even more,<br/>We can discover how much pride solitude has.',
+              image: 'solitude_sleep_hardships'
+            },
+            {
+              content: 'Having lost money...<br/>Having lost work...<br/>Having abandoned sleep...<br/>Carrying hunger...<br/>Wasting labor...<br/>With disappointment and tears,<br/>Lying huddled in a single room,<br/>The true state of the world will become clear.',
+              image: 'solitude_losses_understanding'
+            },
+            {
+              content: 'Waking up from sleep,<br/>Unable to get up from bed,<br/>With expectations... yearning...<br/>Love... lust...<br/>Traveling with boundless imagination...<br/>The anguish of youth can be felt in solitude.',
+              image: 'solitude_youth_yearning'
+            },
+            {
+              content: 'During difficult times...<br/>Rather than living with anyone\'s love<br/>And embrace,<br/>Living in solitude is better.',
+              image: 'solitude_difficult_times'
+            },
+            {
+              content: 'In solitude...<br/>Crying thinking of the past,<br/>Being disappointed thinking of the present,<br/>Yearning with expectations of the future,<br/>Have become daily occurrences.',
+              image: 'solitude_past_present_future'
+            },
+            {
+              content: 'Sometimes...<br/>We cry without even knowing why we\'re crying.<br/>Don\'t worry...<br/>This is today\'s foundation for future reflection.',
+              image: 'solitude_unexplained_tears'
+            }
+          ]
         },
         {
           id: '3.8',
