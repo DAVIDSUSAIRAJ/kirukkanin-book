@@ -4,8 +4,40 @@ export const hindiContent = {
   foreword: {
     title: 'किरुक्कन की भूमिका',
     paragraphs: [
-      // भूमिका के पैराग्राफ यहाँ जोड़े जाएंगे
-      // Each paragraph should have: { content: "", image: "" }
+      {
+        content: `
+          <strong>* कहानी नहीं...</strong><br>
+          सच्चाई।<br><br>
+          
+          <strong>* कल्पनाएं नहीं...</strong><br>
+          आंसुओं की बूंदें।<br><br>
+          
+          <strong>* अक्षर नहीं...</strong><br>
+          विचार।<br><br>
+          
+          <strong>* छुपाव नहीं...</strong><br>
+          सत्य का चेहरा।<br><br>
+          
+          <strong>* तस्वीर नहीं...</strong><br>
+          सबक।<br><br>
+          
+          <strong>* कविताएं नहीं...</strong><br>
+          कष्ट।<br><br>
+          
+          <strong>* अंत में…</strong><br>
+          केवल आनंद।
+        `,
+        image: 'helpImage1'
+      },
+      {
+        content: `
+          <em>"इस पुस्तक में स्थान पाने वाली हर पंक्ति...<br>
+          किरुक्कन की डायरी में लिखी गई सच्ची यादें हैं।"</em><br><br>
+          
+          इस पुस्तक के हर विषय में मौजूद पैराग्राफ उसकी भावनाओं के प्रवाह के अनुसार बदलते रहते हैं।
+        `,
+        image: 'helpImage2'
+      }
     ]
   },
 

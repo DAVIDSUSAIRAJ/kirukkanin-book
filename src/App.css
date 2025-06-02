@@ -99,7 +99,7 @@
 .nav-section-header,
 .nav-subsection {
   padding: 12px 20px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.5;
   cursor: pointer;
   border-left: 3px solid transparent;
@@ -109,6 +109,7 @@
 
 .nav-subsection {
   padding-left: 35px;
+  font-size: 0.95rem;
 }
 
 .nav-special-section:hover,
@@ -123,6 +124,7 @@
   background: #e9ecef;
   border-left-color: #007bff;
   color: #007bff;
+  font-weight: 500;
 }
 
 .nav-section {
@@ -146,7 +148,7 @@
 }
 
 .section-title {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #333;
 }
@@ -194,7 +196,7 @@
 
 .selected-title h2 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #1a1a1a;
 }
@@ -246,7 +248,7 @@
   color: white;
   text-align: left;
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.6;
   width: 100%;
   max-width: 500px;
@@ -346,7 +348,7 @@
   }
 
   .selected-title h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .content-card {
@@ -363,7 +365,7 @@
   }
 
   .card-content p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .footer-content {
@@ -391,7 +393,7 @@
   .nav-section-header,
   .nav-subsection {
     padding: 15px;
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .card-navigation {

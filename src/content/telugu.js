@@ -4,8 +4,40 @@ export const teluguContent = {
   foreword: {
     title: 'కిరుక్కన్ ముందుమాట',
     paragraphs: [
-      // ముందుమాట పేరాలు ఇక్కడ చేర్చబడతాయి
-      // Each paragraph should have: { content: "", image: "" }
+      {
+        content: `
+          <strong>* కథ కాదు...</strong><br>
+          వాస్తవం.<br><br>
+          
+          <strong>* కల్పనలు కావు...</strong><br>
+          కన్నీటి చుక్కలు.<br><br>
+          
+          <strong>* అక్షరాలు కావు...</strong><br>
+          ఆలోచనలు.<br><br>
+          
+          <strong>* దాచిపెట్టింది కాదు...</strong><br>
+          సత్యం యొక్క ముఖం.<br><br>
+          
+          <strong>* చిత్రం కాదు...</strong><br>
+          పాఠం.<br><br>
+          
+          <strong>* కవితలు కావు...</strong><br>
+          కష్టాలు.<br><br>
+          
+          <strong>* చివరికి…</strong><br>
+          ఆనందమే.
+        `,
+        image: 'helpImage1'
+      },
+      {
+        content: `
+          <em>"ఈ పుస్తకంలో ఉన్న ప్రతి వరుస...<br>
+          కిరుక్కన్ డైరీలో వ్రాయబడిన నిజమైన జ్ఞాపకాలు."</em><br><br>
+          
+          ఈ పుస్తకంలోని ప్రతి అంశంలోని పేరాగ్రాఫులు దాని భావోద్వేగ ప్రవాహానికి అనుగుణంగా మారుతూ ఉంటాయి.
+        `,
+        image: 'helpImage2'
+      }
     ]
   },
 

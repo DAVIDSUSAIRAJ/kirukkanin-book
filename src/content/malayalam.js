@@ -4,8 +4,40 @@ export const malayalamContent = {
   foreword: {
     title: 'കിരുക്കന്റെ മുഖവുര',
     paragraphs: [
-      // മുഖവുര ഖണ്ഡികകൾ ഇവിടെ ചേർക്കും
-      // Each paragraph should have: { content: "", image: "" }
+      {
+        content: `
+          <strong>* കഥയല്ല...</strong><br>
+          യാഥാർത്ഥ്യം.<br><br>
+          
+          <strong>* കൽപനകളല്ല...</strong><br>
+          കണ്ണുനീരിന്റെ തുള്ളികൾ.<br><br>
+          
+          <strong>* അക്ഷരങ്ങളല്ല...</strong><br>
+          ചിന്തകൾ.<br><br>
+          
+          <strong>* മറവല്ല...</strong><br>
+          സത്യത്തിന്റെ മുഖം.<br><br>
+          
+          <strong>* ചിത്രമല്ല...</strong><br>
+          പാഠം.<br><br>
+          
+          <strong>* കവിതകളല്ല...</strong><br>
+          കഷ്ടതകൾ.<br><br>
+          
+          <strong>* അവസാനം…</strong><br>
+          ആനന്ദം മാത്രം.
+        `,
+        image: 'helpImage1'
+      },
+      {
+        content: `
+          <em>"ഈ പുസ്തകത്തിൽ സ്ഥാനം പിടിച്ചിരിക്കുന്ന ഓരോ വരിയും...<br>
+          കിരുക്കന്റെ ഡയറിയിൽ എഴുതപ്പെട്ട യഥാർത്ഥ ഓർമകളാണ്."</em><br><br>
+          
+          ഈ പുസ്തകത്തിലെ ഓരോ വിഷയത്തിലെയും ഖണ്ഡികകൾ അതിന്റെ വികാര പ്രവാഹത്തിനനുസരിച്ച് വ്യത്യാസപ്പെടുന്നു.
+        `,
+        image: 'helpImage2'
+      }
     ]
   },
 

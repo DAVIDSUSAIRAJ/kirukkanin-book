@@ -4,8 +4,40 @@ export const englishContent = {
   foreword: {
     title: "Madman's Foreword",
     paragraphs: [
-      // Foreword paragraphs will be added here
-      // Each paragraph should have: { content: "", image: "" }
+      {
+        content: `
+          <strong>* Not a story...</strong><br>
+          Reality.<br><br>
+          
+          <strong>* Not fantasies...</strong><br>
+          Teardrops.<br><br>
+          
+          <strong>* Not letters...</strong><br>
+          Thoughts.<br><br>
+          
+          <strong>* Not hidden...</strong><br>
+          Face of truth.<br><br>
+          
+          <strong>* Not a picture...</strong><br>
+          A lesson.<br><br>
+          
+          <strong>* Not poems...</strong><br>
+          Struggles.<br><br>
+          
+          <strong>* In the end…</strong><br>
+          Only joy.
+        `,
+        image: 'helpImage1'
+      },
+      {
+        content: `
+          <em>"Every line found in this book...<br>
+          Are true memories written in the madman's diary."</em><br><br>
+          
+          The paragraphs in each topic of this book vary according to their emotional flow.
+        `,
+        image: 'helpImage2'
+      }
     ]
   },
 
