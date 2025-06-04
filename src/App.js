@@ -90,6 +90,12 @@ const getNoResultsText = (languageCode) => {
   return translations[languageCode] || translations.en;
 };
 
+// Helper function to strip HTML tags
+const stripHtmlTags = (html) => {
+  if (!html) return '';
+  return html.replace(/<[^>]*>/g, '');
+};
+
 function App() {
   const [currentLanguage, setCurrentLanguage] = useState(defaultLanguage);
   const [content, setContent] = useState(contentMap[languages[defaultLanguage].code]);
@@ -594,7 +600,7 @@ function App() {
                   >
                     <div className="search-result-section">{result.sectionTitle}</div>
                     <div className="search-result-content">
-                      {result.content.substring(0, 100)}...
+                      {stripHtmlTags(result.content).substring(0, 100)}...
                     </div>
                   </div>
                 ))}
@@ -973,95 +979,91 @@ function App() {
         }
 
         /* Mobile Specific Styles */
-        .mobile-search-hidden {
-          display: none !important;
-        }
-
-        .mobile-search-active {
-          width: 100% !important;
-          margin-left: 0 !important;
-        }
-
         @media (max-width: 768px) {
-          .header {
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 15px;
+          .mobile-search-hidden {
+            display: none;
           }
 
-          .header-titles {
+          .mobile-search-active {
             width: 100%;
-            margin-bottom: 10px;
-            order: 1;
-          }
-
-          .header h1 {
-            font-size: 1.4em;
-            text-align: center;
-            white-space: normal;
-            overflow: visible;
-            text-overflow: unset;
-          }
-
-          .header .subtitle {
-            font-size: 0.9em;
-            text-align: center;
-            margin-top: 5px;
-            white-space: normal;
-            overflow: visible;
-            text-overflow: unset;
-          }
-
-          .global-search-container {
-            width: 100%;
-            max-width: none;
-            margin: 0;
-            order: 2;
-          }
-
-          .global-search-input {
-            padding: 10px 35px 10px 12px;
-            font-size: 14px;
-            min-width: unset;
-            width: 100%;
-          }
-
-          .section-search-container {
-            margin: 10px 0;
-            max-width: none;
-            width: 100%;
-          }
-
-          .section-search-input {
-            padding: 8px 30px 8px 12px;
-            font-size: 14px;
-            min-width: unset;
-            width: 100%;
-          }
-
-          .back-button {
-            left: 10px;
-            font-size: 20px;
+            margin-left: 0;
+            padding: 10px;
           }
 
           .search-results-cards {
             padding: 10px;
+            margin-top: 10px;
           }
 
-          .search-results-cards .content-cards {
-            grid-template-columns: 1fr !important;
-            gap: 15px;
-          }
-
-          .search-results-header-title {
+          .search-result-card {
             margin-bottom: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
           }
 
-          .search-results-header-title h2 {
-            font-size: 1.2em;
+          .card-content {
+            padding: 15px;
+            min-height: 100px;
+            max-height: 300px;
+            overflow-y: auto;
+          }
+
+          .card-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+          }
+
+          .search-result-content {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #fff;
+            margin-top: 5px;
+          }
+
+          .content-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 10px;
+          }
+
+          .content-card {
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+          }
+
+          /* Improve search visibility */
+          .global-search-container {
+            width: 100%;
+            position: relative;
+            z-index: 1000;
+          }
+
+          .global-search-results {
+            position: fixed;
+            top: 180px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            overflow-y: auto;
+            padding: 15px;
+            z-index: 999;
+          }
+
+          .search-result-item {
+            background: rgba(255, 255, 255, 0.1);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+          }
+
+          .search-result-section {
+            color: #007bff;
+            font-size: 14px;
+            margin-bottom: 8px;
           }
         }
 
