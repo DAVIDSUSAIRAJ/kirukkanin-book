@@ -56,14 +56,17 @@ const LanguageSelector = ({ currentLanguage, onLanguageChange }) => {
         
         @media (max-width: 768px) {
           .language-selector {
-            top: 10px;
-            right: 10px;
+            position: static;
+            top: auto;
+            right: auto;
           }
           
           .language-select {
             padding: 6px 28px 6px 10px;
             font-size: 14px;
             background-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
           }
         }
       `}</style>

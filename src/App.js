@@ -542,10 +542,6 @@ function App() {
 
   return (
     <div className="App">
-      <LanguageSelector
-        currentLanguage={languages[currentLanguage].code}
-        onLanguageChange={handleLanguageChange}
-      />
       
       {/* Header */}
       <header className="header">
@@ -563,74 +559,80 @@ function App() {
           )}
         </div>
         
-        {/* Global Search Bar */}
-        <div className="global-search-container">
-          <input
-            type="text"
-            className="global-search-input"
-            placeholder={getGlobalSearchPlaceholder(languages[currentLanguage].code)}
-            value={globalSearchQuery}
-            onChange={handleGlobalSearchChange}
-          />
-          {globalSearchQuery && (
-            <button 
-              className="clear-global-search-btn"
-              onClick={() => {
-                setGlobalSearchQuery('');
-                setSearchResults([]);
-                setIsGlobalSearching(false);
-              }}
-            >
-              ✕
-            </button>
-          )}
-          
-          {/* Global Search Results - Desktop only */}
-          {isGlobalSearching && searchResults.length > 0 && window.innerWidth > 768 && (
-            <div className="global-search-results">
-              <div className="search-results-header">
-                {getResultsText(languages[currentLanguage].code, searchResults.length)}
-              </div>
-              <div className="search-results-list">
-                {searchResults.slice(0, 10).map((result, index) => (
-                  <div 
-                    key={index} 
-                    className="search-result-item"
-                    onClick={() => handleSearchResultClick(result)}
-                  >
-                    <div className="search-result-section">{result.sectionTitle}</div>
-                    <div className="search-result-content">
-                      {stripHtmlTags(result.content).substring(0, 100)}...
+        {/* Second Row Container for Mobile - contains search and language selector */}
+        <div className="header-second-row">
+          {/* Global Search Bar */}
+          <div className="global-search-container">
+            <input
+              type="text"
+              className="global-search-input"
+              placeholder={getGlobalSearchPlaceholder(languages[currentLanguage].code)}
+              value={globalSearchQuery}
+              onChange={handleGlobalSearchChange}
+            />
+            {globalSearchQuery && (
+              <button 
+                className="clear-global-search-btn"
+                onClick={() => {
+                  setGlobalSearchQuery('');
+                  setSearchResults([]);
+                  setIsGlobalSearching(false);
+                }}
+              >
+                ✕
+              </button>
+            )}
+            
+            {/* Global Search Results - Desktop only */}
+            {isGlobalSearching && searchResults.length > 0 && window.innerWidth > 768 && (
+              <div className="global-search-results">
+                <div className="search-results-header">
+                  {getResultsText(languages[currentLanguage].code, searchResults.length)}
+                </div>
+                <div className="search-results-list">
+                  {searchResults.slice(0, 10).map((result, index) => (
+                    <div 
+                      key={index} 
+                      className="search-result-item"
+                      onClick={() => handleSearchResultClick(result)}
+                    >
+                      <div className="search-result-section">{result.sectionTitle}</div>
+                      <div className="search-result-content">
+                        {stripHtmlTags(result.content).substring(0, 100)}...
+                      </div>
                     </div>
-                  </div>
-                ))}
-                {searchResults.length > 10 && (
-                  <div className="search-results-more">
-                    {languages[currentLanguage].name === 'தமிழ்' ? 
-                      `மேலும் ${searchResults.length - 10} முடிவுகள்...` : 
-                      `${searchResults.length - 10} more results...`}
-                  </div>
-                )}
+                  ))}
+                  {searchResults.length > 10 && (
+                    <div className="search-results-more">
+                      {languages[currentLanguage].name === 'தமிழ்' ? 
+                        `மேலும் ${searchResults.length - 10} முடிவுகள்...` : 
+                        `${searchResults.length - 10} more results...`}
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          )}
+            )}
+            
+            {isGlobalSearching && searchResults.length === 0 && globalSearchQuery && window.innerWidth > 768 && (
+              <div className="global-no-results">
+                {getNoResultsText(languages[currentLanguage].code)}
+              </div>
+            )}
+          </div>
           
-          {isGlobalSearching && searchResults.length === 0 && globalSearchQuery && window.innerWidth > 768 && (
-            <div className="global-no-results">
-              {getNoResultsText(languages[currentLanguage].code)}
-            </div>
-          )}
-        </div>
-        
-        {/* Language Selector Space */}
-        <div className="header-language-space">
-          {/* Empty space for language selector */}
+          {/* Language Selector Space - contains the language selector */}
+          <div className="header-language-space">
+            <LanguageSelector
+              currentLanguage={languages[currentLanguage].code}
+              onLanguageChange={handleLanguageChange}
+            />
+          </div>
         </div>
       </header>
 
       {/* Main Content */}
       <div className="main-content">
-        {/* Left Sidebar */}
+        {/* Limage.png*/}
         <aside className={`sidebar ${!isSidebarVisible ? 'hidden' : ''} ${isGlobalSearching && window.innerWidth <= 768 ? 'mobile-search-hidden' : ''}`}>
           <nav className="section-nav">
             {/* Foreword */}
@@ -711,6 +713,11 @@ function App() {
           gap: 10px;
         }
 
+        /* Desktop header second row - should span grid columns 2 and 3 */
+        .header-second-row {
+          display: contents; /* This makes children participate in grid layout */
+        }
+
         .header-titles {
           justify-self: start;
           min-width: 0; /* Allow text to wrap/truncate */
@@ -752,6 +759,26 @@ function App() {
         }
 
         .back-button:hover {
+          color: #666;
+        }
+
+        /* Main Content Layout */
+        .main-content {
+          display: flex;
+          flex: 1;
+          overflow: hidden;
+        }
+
+        .footer {
+          background: #f8f9fa;
+          padding: 20px;
+          text-align: center;
+          border-top: 1px solid #ddd;
+          margin-top: auto;
+        }
+
+        .footer-content p {
+          margin: 5px 0;
           color: #666;
         }
 
@@ -877,6 +904,12 @@ function App() {
           border: 1px solid #ddd;
           border-radius: 10px;
           margin-top: 10px;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          z-index: 1001;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         /* Section Search Styles */
@@ -980,6 +1013,142 @@ function App() {
 
         /* Mobile Specific Styles */
         @media (max-width: 768px) {
+          /* App Container for Mobile */
+          .App {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+          }
+
+          /* Header Mobile Layout - Fixed at top */
+          .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px 20px;
+            align-items: stretch;
+            min-height: auto;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          }
+
+          .header-titles {
+            order: 1;
+            justify-self: stretch;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 5px;
+          }
+
+          .header h1 {
+            font-size: 1.4em;
+            text-align: center;
+            white-space: normal;
+            margin-bottom: 3px;
+          }
+
+          .header .subtitle {
+            text-align: center;
+            white-space: normal;
+            margin-top: 5px;
+            font-size: 0.9em;
+          }
+
+          /* Second row container for mobile */
+          .header-second-row {
+            order: 2;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            width: 100%;
+          }
+
+          .global-search-container {
+            order: 1;
+            max-width: none;
+            justify-self: stretch;
+            width: 100%;
+            margin: 0;
+            flex: 1;
+          }
+
+          .global-search-input {
+            min-width: auto;
+            width: 100%;
+            font-size: 14px;
+            padding: 8px 35px 8px 12px;
+          }
+
+          .header-language-space {
+            order: 2;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-shrink: 0;
+            position: relative;
+            width: auto;
+            min-width: 60px;
+          }
+
+          /* Main Content Area - Scrollable */
+          .main-content {
+            margin-top: 140px; /* Space for fixed header */
+            margin-bottom: 80px; /* Space for fixed footer */
+            height: calc(100vh - 220px);
+            overflow: hidden;
+            display: flex;
+          }
+
+          /* Footer - Fixed at bottom */
+          .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: #f8f9fa;
+            padding: 15px 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+          }
+
+          .footer-content p {
+            margin: 2px 0;
+            font-size: 14px;
+            color: #666;
+          }
+
+          /* Sidebar - Scrollable */
+          .sidebar {
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+          }
+
+          /* Content Area - Scrollable */
+          .content {
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+          }
+
+          /* Adjust back button for mobile header */
+          .back-button {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            transform: none;
+            font-size: 20px;
+            z-index: 10;
+          }
+
           .mobile-search-hidden {
             display: none;
           }
@@ -1043,10 +1212,10 @@ function App() {
 
           .global-search-results {
             position: fixed;
-            top: 180px;
+            top: 140px; /* Below fixed header */
             left: 0;
             right: 0;
-            bottom: 0;
+            bottom: 80px; /* Above fixed footer */
             background: rgba(0, 0, 0, 0.95);
             overflow-y: auto;
             padding: 15px;
