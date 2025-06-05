@@ -397,6 +397,8 @@ function App() {
   const handleBackClick = () => {
     if (!isSidebarVisible) {
       setIsSidebarVisible(true);
+      setSelectedSection(null);  // Reset selected section
+      setCurrentCardIndex(0);    // Reset card index
     }
   };
 
@@ -1409,11 +1411,11 @@ function App() {
           left: 0;
           right: 0;
           background: rgba(255, 255, 255, 0.9);
-          padding: 10px 20px;
+          padding: 0px 0px;
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 10px;
+          gap: 8px;
           z-index: 999;
           box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
         }
