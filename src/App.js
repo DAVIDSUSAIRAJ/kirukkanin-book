@@ -119,6 +119,7 @@ function App() {
   // Touch handling
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+  const touchStartY = useRef(0);
   const isSwipingRef = useRef(false);
   const cardRef = useRef(null);
   const hasShownHintRef = useRef(false);
@@ -312,7 +313,18 @@ function App() {
   };
 
   const handleTouchStart = (e) => {
+    // Check if the touch started on a scrollable element
+    const target = e.target;
+    const isScrollable = target.scrollHeight > target.clientHeight;
+    
+    // If the element is scrollable, don't start swiping
+    if (isScrollable) {
+      isSwipingRef.current = false;
+      return;
+    }
+    
     touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
     isSwipingRef.current = true;
     if (cardRef.current) {
       cardRef.current.classList.add('swiping');
@@ -321,9 +333,25 @@ function App() {
 
   const handleTouchMove = (e) => {
     if (!isSwipingRef.current) return;
-    touchEndX.current = e.touches[0].clientX;
     
+    // If we're scrolling vertically, don't handle the swipe
+    const touchY = e.touches[0].clientY;
+    const touchX = e.touches[0].clientX;
+    const deltaY = Math.abs(touchY - touchStartY.current);
+    const deltaX = Math.abs(touchX - touchStartX.current);
+    
+    if (deltaY > deltaX) {
+      isSwipingRef.current = false;
+      if (cardRef.current) {
+        cardRef.current.classList.remove('swiping');
+        cardRef.current.style.transform = '';
+      }
+      return;
+    }
+    
+    touchEndX.current = touchX;
     const diff = touchStartX.current - touchEndX.current;
+    
     if (cardRef.current) {
       cardRef.current.style.transform = `translateX(${-diff}px)`;
     }
