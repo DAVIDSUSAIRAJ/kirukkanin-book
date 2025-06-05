@@ -1248,7 +1248,7 @@ function App() {
           .card-content {
             padding: 15px;
             min-height: 100px;
-            max-height: 300px;
+            max-height: 400px;
             overflow-y: auto;
           }
 
