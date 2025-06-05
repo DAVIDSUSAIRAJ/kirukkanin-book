@@ -465,24 +465,26 @@ function App() {
     return (
       <>
         <div className="selected-title">
-          <h2>{title}</h2>
-          {/* Section Search Bar */}
-          <div className="section-search-container">
-            <input
-              type="text"
-              className="section-search-input"
-              placeholder={getSectionSearchPlaceholder(languages[currentLanguage].code)}
-              value={sectionSearchQuery}
-              onChange={handleSectionSearchChange}
-            />
-            {sectionSearchQuery && (
-              <button 
-                className="clear-search-btn"
-                onClick={() => setSectionSearchQuery('')}
-              >
-                ✕
-              </button>
-            )}
+          <div className="title-search-container">
+            <h2>{title}</h2>
+            {/* Section Search Bar */}
+            <div className="section-search-container">
+              <input
+                type="text"
+                className="section-search-input"
+                placeholder={getSectionSearchPlaceholder(languages[currentLanguage].code)}
+                value={sectionSearchQuery}
+                onChange={handleSectionSearchChange}
+              />
+              {sectionSearchQuery && (
+                <button 
+                  className="clear-search-btn"
+                  onClick={() => setSectionSearchQuery('')}
+                >
+                  ✕
+                </button>
+              )}
+            </div>
           </div>
           {sectionSearchQuery && (
             <div className="search-info">
@@ -925,11 +927,25 @@ function App() {
 
         /* Section Search Styles */
         .section-search-container {
-          margin: 15px 0;
           position: relative;
           max-width: 600px;
           margin-left: auto;
           margin-right: auto;
+        }
+
+        .title-search-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          width: 100%;
+        }
+
+        .selected-title h2 {
+          margin: 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         .section-search-input {
@@ -941,7 +957,6 @@ function App() {
           outline: none;
           transition: all 0.3s ease;
           box-sizing: border-box;
-          min-width: 400px;
         }
 
         .section-search-input::placeholder {
@@ -980,10 +995,60 @@ function App() {
           font-weight: bold;
         }
 
-        .no-results {
-          text-align: center;
-          padding: 40px 20px;
-          color: #666;
+        /* Mobile Specific Styles */
+        @media (max-width: 768px) {
+          .title-search-container {
+            display: flex;
+            padding: 0 10px;
+            gap: 15px;
+            min-height: 50px;
+            align-items: flex-start;
+          }
+
+          .selected-title {
+            margin-bottom: 10px;
+          }
+
+          .selected-title h2 {
+            font-size: 1em;
+            width: 50%;
+            white-space: normal;
+            word-wrap: break-word;
+            line-height: 1.4;
+            margin: 0;
+            padding-top: 5px;
+            flex: 1;
+            min-width: 45%;
+            max-width: 50%;
+          }
+
+          .section-search-container {
+            width: 50%;
+            margin: 0;
+            padding-top: 8px;
+            position: relative;
+            flex-shrink: 0;
+          }
+
+          .section-search-input {
+            min-width: auto;
+            width: 100%;
+            font-size: 13px;
+            padding: 6px 30px 6px 12px;
+            height: 32px;
+          }
+
+          .search-info {
+            margin: 8px 0;
+            padding: 0 10px;
+            font-size: 13px;
+            width: 100%;
+            clear: both;
+          }
+
+          .clear-search-btn {
+            top: calc(50% + 4px);
+          }
         }
 
         /* Search Results Cards */
