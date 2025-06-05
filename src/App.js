@@ -104,6 +104,17 @@ function App() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [showSwipeHint, setShowSwipeHint] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  
+  // Handle window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   
   // Touch handling
   const touchStartX = useRef(0);
@@ -555,7 +566,7 @@ function App() {
         <div className="header-titles">
           <h1>{getHeaderTitles().mainTitle}</h1>
           {getHeaderTitles().subTitle && (
-            <h2 className="subtitle">{getHeaderTitles().subTitle}</h2>
+            <h2 className={`subtitle ${isMobile ? 'mobile-hide' : ''}`}>{getHeaderTitles().subTitle}</h2>
           )}
         </div>
         
@@ -751,7 +762,7 @@ function App() {
           left: 20px;
           top: 50%;
           transform: translateY(-50%);
-          font-size: 24px;
+          font-size: 34px;
           cursor: pointer;
           color: #333;
           padding: 10px;
@@ -1142,10 +1153,10 @@ function App() {
           /* Adjust back button for mobile header */
           .back-button {
             position: absolute;
-            left: 15px;
-            top: 15px;
+            left: 0px;
+            top: 0px;
             transform: none;
-            font-size: 20px;
+            font-size: 40px;
             z-index: 10;
           }
 
@@ -1277,6 +1288,10 @@ function App() {
             font-size: 1.1em;
             color: #666;
             z-index: 999;
+          }
+
+          .mobile-hide {
+            display: none !important;
           }
         }
 
