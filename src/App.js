@@ -514,12 +514,14 @@ function App() {
               )}
             </div>
           </div>
-          {sectionSearchQuery && (
-            <div className="search-info">
-              {getResultsText(languages[currentLanguage].code, paragraphs.length)}
-            </div>
-          )}
         </div>
+        
+        {/* Show search info only when there are results and search is active */}
+        {sectionSearchQuery && paragraphs.length >= 1 && (
+          <div className="search-results-info">
+            {getResultsText(languages[currentLanguage].code, paragraphs.length)}
+          </div>
+        )}
         
         {paragraphs.length === 0 && sectionSearchQuery ? (
           <div className="no-results">
@@ -1203,8 +1205,8 @@ function App() {
           /* Main Content Area - Scrollable */
           .main-content {
             margin-top: 140px; /* Space for fixed header */
-            margin-bottom: 80px; /* Space for fixed footer */
-            height: calc(100vh - 220px);
+            margin-bottom: 120px; /* Increased space for navigation + footer */
+            height: calc(100vh - 260px); /* Adjusted height */
             overflow: hidden;
             display: flex;
           }
@@ -1217,7 +1219,7 @@ function App() {
             right: 0;
             z-index: 1000;
             background: #f8f9fa;
-            padding: 15px 20px;
+            padding: 10px 20px;
             text-align: center;
             border-top: 1px solid #ddd;
             box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
@@ -1398,6 +1400,74 @@ function App() {
 
         .header-language-space {
           /* Empty space for language selector */
+        }
+
+        /* Card Navigation Styles */
+        .card-navigation {
+          position: fixed;
+          bottom: 80px; /* Position above footer */
+          left: 0;
+          right: 0;
+          background: rgba(255, 255, 255, 0.9);
+          padding: 10px 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          z-index: 999;
+          box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+
+        .card-dots {
+          display: flex;
+          gap: 8px;
+          justify-content: center;
+          padding: 5px 0;
+        }
+
+        .card-dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #ccc;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .card-dot.active {
+          background: #007bff;
+          transform: scale(1.2);
+        }
+
+        .card-counter {
+          font-size: 14px;
+          color: #666;
+          text-align: center;
+        }
+
+        /* Content Cards Adjustment */
+        .content-cards {
+          padding-bottom: 60px; /* Add space for navigation */
+        }
+
+        .search-results-info {
+          background: #f8f9fa;
+          padding: 10px 15px;
+          margin: 0 10px 15px 10px;
+          border-radius: 8px;
+          color: #28a745;
+          font-size: 14px;
+          font-weight: 500;
+          text-align: left;
+          border-left: 4px solid #28a745;
+        }
+
+        @media (max-width: 768px) {
+          .search-results-info {
+            margin: 0 10px 10px 10px;
+            font-size: 13px;
+            padding: 8px 12px;
+          }
         }
       `}</style>
     </div>
