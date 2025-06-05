@@ -583,9 +583,9 @@ function App() {
               </button>
             )}
             
-            {/* Global Search Results - Desktop only */}
-            {isGlobalSearching && searchResults.length > 0 && window.innerWidth > 768 && (
-              <div className="global-search-results">
+            {/* Global Search Results */}
+            {isGlobalSearching && searchResults.length > 0 && (
+              <div className={`global-search-results ${window.innerWidth <= 768 ? 'mobile-search-results' : ''}`}>
                 <div className="search-results-header">
                   {getResultsText(languages[currentLanguage].code, searchResults.length)}
                 </div>
@@ -613,8 +613,8 @@ function App() {
               </div>
             )}
             
-            {isGlobalSearching && searchResults.length === 0 && globalSearchQuery && window.innerWidth > 768 && (
-              <div className="global-no-results">
+            {isGlobalSearching && searchResults.length === 0 && globalSearchQuery && (
+              <div className={`global-no-results ${window.innerWidth <= 768 ? 'mobile-no-results' : ''}`}>
                 {getNoResultsText(languages[currentLanguage].code)}
               </div>
             )}
@@ -1210,29 +1210,73 @@ function App() {
             z-index: 1000;
           }
 
-          .global-search-results {
+          .global-search-results.mobile-search-results {
             position: fixed;
             top: 140px; /* Below fixed header */
             left: 0;
             right: 0;
             bottom: 80px; /* Above fixed footer */
-            background: rgba(0, 0, 0, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             overflow-y: auto;
             padding: 15px;
             z-index: 999;
+            border-radius: 0;
+            box-shadow: none;
+            max-height: none;
           }
 
-          .search-result-item {
-            background: rgba(255, 255, 255, 0.1);
-            margin-bottom: 10px;
+          .mobile-search-results .search-results-header {
+            background: transparent;
+            color: #333;
+            text-align: center;
+            font-size: 1.1em;
             padding: 15px;
-            border-radius: 8px;
+            border-bottom: 1px solid #eee;
           }
 
-          .search-result-section {
+          .mobile-search-results .search-result-item {
+            background: #fff;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
+          }
+
+          .mobile-search-results .search-result-section {
             color: #007bff;
-            font-size: 14px;
-            margin-bottom: 8px;
+            font-size: 1em;
+            margin-bottom: 10px;
+            font-weight: bold;
+          }
+
+          .mobile-search-results .search-result-content {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.5;
+          }
+
+          .mobile-search-results .search-results-more {
+            text-align: center;
+            padding: 15px;
+            color: #666;
+            font-style: italic;
+            background: transparent;
+          }
+
+          .global-no-results.mobile-no-results {
+            position: fixed;
+            top: 140px;
+            left: 0;
+            right: 0;
+            bottom: 80px;
+            background: rgba(255, 255, 255, 0.98);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1em;
+            color: #666;
+            z-index: 999;
           }
         }
 
