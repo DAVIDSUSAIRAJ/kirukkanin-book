@@ -195,14 +195,62 @@ export const englishContent = {
           id: '1.8',
           title: 'The Strength to Love Oneself',
           paragraphs: [
-            // Self-love and strength thoughts will be added here
+            {
+              content: "Even when hearts are broken,<br>we must remain true to ourselves.<br>That is our pride.",
+              image: "self_love",
+            },
+            {
+              content: "Just because someone betrayed us,<br>we should never forget<br>or change<br>our good qualities.",
+              image: "keep_goodness",
+            },
+            {
+              content: "Being true only to time and heart,<br>we should take pride in ourselves.",
+              image: "true_to_self",
+            },
+            {
+              content: "Don't regret that I'm not speaking to you...<br>You don't have to experience<br>any kind of pain because of me...<br>For that, I take pride in myself.",
+              image: "no_pain_pride",
+            },
+            {
+              content: "We may lose anyone...<br>But if our heart tells us<br>that we were true during the loss,<br>that itself is something to be proud of within us.",
+              image: "true_in_loss",
+            },
+            {
+              content: "If we know how to control unnecessary desires...<br>We are the greatest.<br>We can take pride in that.",
+              image: "control_desire",
+            },
+            {
+              content: "More than reading books...<br>Loving oneself is supreme.",
+              image: "self_love_reading",
+            }
+            // Thoughts about self-love and strength come here
           ]
         },
         {
           id: '1.9',
           title: 'Marriage',
           paragraphs: [
-            // Marriage related thoughts will be added here
+            {
+              content: "If you have a mind that can sacrifice,<br>And a mind that can meditate...<br>Then you can get married.",
+              image: "marriage_mind",
+            },
+            {
+              content: "Only with an understanding<br>of physical intimacy,<br>of the duties after marriage,<br>and of family economics,<br>should one step into<br>the path of marriage.",
+              image: "marriage_understanding",
+            },
+            {
+              content: "Don't get married without an income.<br>Don't have a child without savings.",
+              image: "financial_responsibility",
+            },
+            {
+              content: "In married life,<br>rather than compromising...<br>many times,<br>it's better to ignore and move on.",
+              image: "marriage_wisdom",
+            },
+            {
+              content: "Marriage – a path of understanding.<br>Marriage – two people's journey, one path.",
+              image: "marriage_path",
+            }
+            // Thoughts about marriage come here
           ]
         }
       ]
