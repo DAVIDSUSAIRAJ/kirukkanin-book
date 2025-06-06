@@ -70,10 +70,26 @@ export const englishContent = {
           ]
         },
         {
-          id: '1.2', 
-          title: 'Parents',
+          id: '1.2',
+          title: 'Mother & Father',
           paragraphs: [
-            // Parents related thoughts will be added here
+            {
+              content: "While Mother & Father are with us...<br>Let's learn to live<br>With love,<br>Compromise, and a little patience.",
+              image: "parents_love",
+            },
+            {
+              content: "Making them cry while we live,<br>And crying after they're gone,<br>Is not right.",
+              image: "parents_care",
+            },
+            {
+              content: "In youth they seem like enemies,<br>In old age they appear as divine.",
+              image: "parents_age",
+            },
+            {
+              content: "Mother & Father - The root of our body and soul.",
+              image: "parents_root",
+            }
+            // Thoughts about parents will come here
           ]
         },
         {
