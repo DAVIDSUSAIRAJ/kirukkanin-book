@@ -96,7 +96,35 @@ export const englishContent = {
           id: '1.3',
           title: 'Guru',
           paragraphs: [
-            // Guru/Teacher related thoughts will be added here
+            {
+              content: "A teacher is not a Guru...<br>One who brings out talent is a Guru.",
+              image: "guru_talent",
+            },
+            {
+              content: "A Guru is very essential for a human being.",
+              image: "guru_importance",
+            },
+            {
+              content: "When choosing a Guru,<br>their journey should not start from 0.<br>Rather, they should be on a journey<br>from -100 towards +100.",
+              image: "guru_journey",
+            },
+            {
+              content: "Self-discipline is very essential for a Guru.",
+              image: "guru_discipline",
+            },
+            {
+              content: "Don't worry if you don't have a Guru...<br>You might be gathering many experiences<br>to be a Guru for some people.",
+              image: "guru_experience",
+            },
+            {
+              content: "In our life journey...<br>There may not be just one Guru; there can be many.",
+              image: "guru_many",
+            },
+            {
+              content: "Guru – A guide who shows the light.",
+              image: "guru_light",
+            }
+            // Thoughts about Guru will come here
           ]
         },
         {
