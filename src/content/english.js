@@ -27,7 +27,7 @@ export const englishContent = {
           <strong>* In the end…</strong><br>
           Only joy.
         `,
-        image: 'helpImage1'
+        image: 'munnurai_1'
       },
       {
         content: `

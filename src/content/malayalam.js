@@ -27,7 +27,7 @@ export const malayalamContent = {
           <strong>* അവസാനം…</strong><br>
           ആനന്ദം മാത്രം.
         `,
-        image: 'helpImage1'
+        image: 'munnurai_1'
       },
       {
         content: `

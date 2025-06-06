@@ -27,7 +27,7 @@ export const hindiContent = {
           <strong>* अंत में…</strong><br>
           केवल आनंद।
         `,
-        image: 'helpImage1'
+        image: 'munnurai_1'
       },
       {
         content: `

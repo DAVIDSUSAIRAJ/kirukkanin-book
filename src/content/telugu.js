@@ -27,7 +27,7 @@ export const teluguContent = {
           <strong>* చివరికి…</strong><br>
           ఆనందమే.
         `,
-        image: 'helpImage1'
+        image: 'munnurai_1'
       },
       {
         content: `

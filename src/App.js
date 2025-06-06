@@ -8,12 +8,6 @@ import { malayalamContent } from './content/malayalam';
 import { languages, defaultLanguage, getLanguageFont } from './config/languages';
 import LanguageSelector from './components/LanguageSelector';
 import { images } from './content/images';
-import bookIntroImage from './images/help1.jpg';
-import bookDescriptionImage from './images/help2.png';
-
-// Replace placeholder images with local images
-const bookNotesImage = bookIntroImage;
-const bookAuthenticityImage = bookDescriptionImage;
 
 const contentMap = {
   ta: tamilContent,

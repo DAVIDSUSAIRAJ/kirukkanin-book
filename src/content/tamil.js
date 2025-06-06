@@ -1,3 +1,6 @@
+import munnurai_1 from '../../src/images/munnurai_1.png';
+
+
 export const tamilContent = {
   title: 'கிருக்கனின் பயணத் தத்துவங்கள்',
   
@@ -27,7 +30,7 @@ export const tamilContent = {
           <strong>* இறுதியில்…</strong><br>
           இன்பமே.
         `,
-        image: 'helpImage1'
+        image: 'munnurai_1',
       },
       {
         content: `

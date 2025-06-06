@@ -1,14 +1,9 @@
+import munnurai_1 from '../images/munnurai_1.png';
+import helpImage1 from '../images/help1.jpg';
+import helpImage2 from '../images/help2.png';
+
 export const images = {
-  diary: "",
-  teardrops: "",
-  thoughts: "",
-  truth: "",
-  lesson: "",
-  hardship: "",
-  happiness: "",
-  openDiary: "",
-  help1: "",
-  help2: "",
-  conclusion1: "",
-  conclusion2: ""
+  munnurai_1,
+  helpImage1,
+  helpImage2
 };
