@@ -35,24 +35,24 @@ const getAuthorText = (languageCode) => {
   return translations[languageCode] || translations.en;
 };
 
-const getGlobalSearchPlaceholder = (languageCode) => {
+const getGlobalSearchPlaceholder = (languageCode, isMobile = false) => {
   const translations = {
-    ta: 'முழு புத்தகத்திலும் தேடுங்கள் (ex: காதல், மகிழ்ச்சி)...',
-    en: 'Search entire book (ex: love, happiness)...',
-    hi: 'पूरी किताब में खोजें (ex: प्रेम, खुशी)...',
-    te: 'మొత్తం పుస్తకంలో వెతకండి (ex: ప్రేమ, ఆనందం)...',
-    ml: 'മുഴുവൻ പുസ്തകത്തിലും തിരയുക (ex: സ്നേഹം, സന്തോഷം)...'
+    ta: isMobile ? 'தேடுங்கள்...' : 'முழு புத்தகத்திலும் தேடுங்கள் (ex: காதல், மகிழ்ச்சி)...',
+    en: isMobile ? 'Search...' : 'Search entire book (ex: love, happiness)...',
+    hi: isMobile ? 'खोजें...' : 'पूरी किताब में खोजें (ex: प्रेम, खुशी)...',
+    te: isMobile ? 'వెతకండి...' : 'మొత్తం పుస్తకంలో వెతకండి (ex: ప్రేమ, ఆనందం)...',
+    ml: isMobile ? 'തിരയുക...' : 'മുഴുവൻ പുസ്തകത്തിലും തിരയുക (ex: സ്നേഹം, സന്തോഷം)...'
   };
   return translations[languageCode] || translations.en;
 };
 
-const getSectionSearchPlaceholder = (languageCode) => {
+const getSectionSearchPlaceholder = (languageCode, isMobile = false) => {
   const translations = {
-    ta: 'இந்த பிரிவில் தேடுங்கள் (ex: வார்த்தைகள், கருத்துகள்)...',
-    en: 'Search in this section (ex: words, thoughts)...',
-    hi: 'इस भाग में खोजें (ex: शब्द, विचार)...',
-    te: 'ఈ విభాగంలో వెతకండి (ex: పదాలు, ఆలోచనలు)...',
-    ml: 'ഈ വിഭാഗത്തിൽ തിരയുക (ex: വാക്കുകൾ, ചിന്തകൾ)...'
+    ta: isMobile ? 'பிரிவில் தேடுங்கள்...' : 'இந்த பிரிவில் தேடுங்கள் (ex: வார்த்தைகள், கருத்துகள்)...',
+    en: isMobile ? 'Search section...' : 'Search in this section (ex: words, thoughts)...',
+    hi: isMobile ? 'भाग में खोजें...' : 'इस भाग में खोजें (ex: शब्द, विचार)...',
+    te: isMobile ? 'విభాగంలో వెతకండి...' : 'ఈ విభాగంలో వెతకండి (ex: పదాలు, ఆలోచనలు)...',
+    ml: isMobile ? 'വിഭാഗത്തിൽ തിരയുക...' : 'ഈ വിഭാഗത്തിൽ തിരയുക (ex: വാക്കുകൾ, ചിന്തകൾ)...'
   };
   return translations[languageCode] || translations.en;
 };
@@ -503,7 +503,7 @@ function App() {
               <input
                 type="text"
                 className="section-search-input"
-                placeholder={getSectionSearchPlaceholder(languages[currentLanguage].code)}
+                placeholder={getSectionSearchPlaceholder(languages[currentLanguage].code, window.innerWidth <= 768)}
                 value={sectionSearchQuery}
                 onChange={handleSectionSearchChange}
               />
@@ -612,7 +612,7 @@ function App() {
             <input
               type="text"
               className="global-search-input"
-              placeholder={getGlobalSearchPlaceholder(languages[currentLanguage].code)}
+              placeholder={getGlobalSearchPlaceholder(languages[currentLanguage].code, window.innerWidth <= 768)}
               value={globalSearchQuery}
               onChange={handleGlobalSearchChange}
             />
