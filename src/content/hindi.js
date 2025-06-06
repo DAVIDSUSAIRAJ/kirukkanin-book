@@ -184,6 +184,10 @@ export const hindiContent = {
           id: '1.7',
           title: 'सरलता और मानवता',
           paragraphs: [
+            {
+              content: "सरलता...<br>और मानवता...<br>गरीब के लिए ही उपयुक्त नहीं;<br>धनवान के लिए और भी सहायक है.",
+              image: "simplicity_humanity",
+            }
             // सरलता और मानवता के बारे में विचार यहाँ आएंगे
           ]
         },

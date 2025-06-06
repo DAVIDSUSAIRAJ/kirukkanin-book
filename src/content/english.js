@@ -184,7 +184,11 @@ export const englishContent = {
           id: '1.7',
           title: 'Simplicity and Humanity',
           paragraphs: [
-            // Simplicity and humanity thoughts will be added here
+            {
+              content: "Simplicity...<br>And humanity...<br>Are not just suited for the poor;<br>They are more beneficial for the wealthy.",
+              image: "simplicity_humanity",
+            }
+            // Thoughts about simplicity and humanity come here
           ]
         },
         {
