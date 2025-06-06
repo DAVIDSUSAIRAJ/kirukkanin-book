@@ -1,6 +1,3 @@
-import munnurai_1 from '../../src/images/munnurai_1.png';
-
-
 export const tamilContent = {
   title: 'கிருக்கனின் பயணத் தத்துவங்கள்',
   
@@ -53,6 +50,22 @@ export const tamilContent = {
           id: '1.1',
           title: 'இயற்கை',
           paragraphs: [
+            {
+              content: "<strong>துளசிக்கு...</strong><br>மனமும் உண்டு...<br>மணமும் உண்டு...",
+              image: "munnurai_1",
+            },
+            {
+              content: "இயற்கையோடு ஒன்றி வாழ்ந்தால்,<br>இயற்கை மன அமைதியை அதிகமாக அளிக்கும்.",
+              image: "nature_peace",
+            },
+            {
+              content: "துளசி – இயற்கையின் அருட்கொடை, மன அமைதியின் மூலாதாரம்.",
+              image: "tulsi_gift",
+            },
+            {
+              content: "இயற்கை எய்தும் வரை,<br>இயற்கையின் மடியில் தலைசாய்ந்து,<br>மன அமைதியை பெறுவோம்.",
+              image: "nature_lap",
+            }
             // இயற்கை பற்றிய கருத்துகள் இங்கே வரும்
           ]
         },

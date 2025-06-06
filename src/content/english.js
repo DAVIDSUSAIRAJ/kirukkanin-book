@@ -50,7 +50,23 @@ export const englishContent = {
           id: '1.1',
           title: 'Nature',
           paragraphs: [
-            // Nature related thoughts will be added here
+            {
+              content: "<strong>The Tulsi...</strong><br>Has a mind...<br>Has fragrance...",
+              image: "munnurai_1",
+            },
+            {
+              content: "When we live in harmony with nature,<br>Nature provides more peace of mind.",
+              image: "nature_peace",
+            },
+            {
+              content: "Tulsi – Nature's divine gift, the source of mental peace.",
+              image: "tulsi_gift",
+            },
+            {
+              content: "Until nature departs,<br>Let us rest our heads in nature's lap,<br>And find peace of mind.",
+              image: "nature_lap",
+            }
+            // Thoughts about nature will come here
           ]
         },
         {
