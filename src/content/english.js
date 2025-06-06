@@ -165,7 +165,19 @@ export const englishContent = {
           id: '1.6',
           title: 'Position',
           paragraphs: [
-            // Position/Authority related thoughts will be added here
+            {
+              content: "Position and power...<br>Should be for service...<br>Not for luxury.",
+              image: "position_service",
+            },
+            {
+              content: "A position exists to wipe away the tears of many...<br>To help them live.<br>Not to make many shed tears...<br>Through oppressive rule.",
+              image: "position_tears",
+            },
+            {
+              content: "First understand the duties that come with the position;<br>Then...<br>Not only aspire for that position,<br>But also perfect its responsibilities.",
+              image: "position_duty",
+            }
+            // Thoughts about position come here
           ]
         },
         {
