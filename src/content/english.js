@@ -131,7 +131,19 @@ export const englishContent = {
           id: '1.4',
           title: 'Art',
           paragraphs: [
-            // Art related thoughts will be added here
+            {
+              content: "Art is not just about strength...<br>Art has pain in it;<br>Art has a path in it.",
+              image: "art_strength",
+            },
+            {
+              content: "In art, they teach you only to run;<br>But, no one will run till the end.<br>It's wrong to expect that too.",
+              image: "art_journey",
+            },
+            {
+              content: "Art taught against a Guru may bring happiness;<br>But, it will never bring goodness.",
+              image: "art_guru",
+            }
+            // Thoughts about art will come here
           ]
         },
         {
