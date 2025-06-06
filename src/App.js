@@ -134,6 +134,7 @@ function App() {
     const languageCode = languages[currentLanguage].code;
     setContent(contentMap[languageCode]);
     document.body.style.fontFamily = getLanguageFont(languageCode);
+    document.documentElement.lang = languageCode;
   }, [currentLanguage]);
 
   useEffect(() => {
@@ -1152,6 +1153,17 @@ function App() {
             text-align: center;
             width: 100%;
             margin-bottom: 5px;
+          }
+
+          /* Language specific margins for Hindi and Telugu */
+          html[lang="hi"] .header h1,
+          html[lang="te"] .header h1 {
+            margin-top: 16px;
+          }
+
+          html[lang="hi"] .header-second-row,
+          html[lang="te"] .header-second-row {
+            margin-top: 18px;
           }
 
           .header h1 {
