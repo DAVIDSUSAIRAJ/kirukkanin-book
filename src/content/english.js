@@ -150,7 +150,15 @@ export const englishContent = {
           id: '1.5',
           title: 'Identity',
           paragraphs: [
-            // Identity related thoughts will be added here
+            {
+              content: "Success and failure...<br>Anyone can achieve them.<br>But...",
+              image: "identity_success",
+            },
+            {
+              content: "Identity...<br>Comes only to those who work with truth.",
+              image: "identity_truth",
+            }
+            // Thoughts about identity will come here
           ]
         },
         {

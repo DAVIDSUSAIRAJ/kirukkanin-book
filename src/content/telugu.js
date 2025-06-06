@@ -150,6 +150,14 @@ export const teluguContent = {
           id: '1.5',
           title: 'గుర్తింపు',
           paragraphs: [
+            {
+              content: "విజయం మరియు అపజయం...<br>ఎవరైనా పొందవచ్చు.<br>కానీ...",
+              image: "identity_success",
+            },
+            {
+              content: "గుర్తింపు అనేది...<br>నిజాయితీగా కష్టపడేవారికి మాత్రమే లభిస్తుంది.",
+              image: "identity_truth",
+            }
             // గుర్తింపు గురించి ఆలోచనలు ఇక్కడ వస్తాయి
           ]
         },

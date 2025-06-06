@@ -150,6 +150,14 @@ export const hindiContent = {
           id: '1.5',
           title: 'पहचान',
           paragraphs: [
+            {
+              content: "जीत और हार...<br>कोई भी पा सकता है.<br>लेकिन...",
+              image: "identity_success",
+            },
+            {
+              content: "पहचान...<br>सिर्फ़ सच्चे परिश्रम करने वाले को ही मिलती है.",
+              image: "identity_truth",
+            }
             // पहचान के बारे में विचार यहाँ आएंगे
           ]
         },
