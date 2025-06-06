@@ -8,12 +8,12 @@ import { malayalamContent } from './content/malayalam';
 import { languages, defaultLanguage, getLanguageFont } from './config/languages';
 import LanguageSelector from './components/LanguageSelector';
 import { images } from './content/images';
-import help1 from './images/help1.jpg';
-import help2 from './images/help2.png';
+import bookIntroImage from './images/help1.jpg';
+import bookDescriptionImage from './images/help2.png';
 
 // Replace placeholder images with local images
-const helpImage1 = help1;
-const helpImage2 = help2;
+const bookNotesImage = bookIntroImage;
+const bookAuthenticityImage = bookDescriptionImage;
 
 const contentMap = {
   ta: tamilContent,
@@ -516,11 +516,16 @@ function App() {
                 </button>
               )}
             </div>
+          {sectionSearchQuery && paragraphs.length >= 1 && !isMobile && (
+          <div className="search-results-info">
+            {getResultsText(languages[currentLanguage].code, paragraphs.length)}
+          </div>
+        )}
           </div>
         </div>
         
         {/* Show search info only when there are results and search is active */}
-        {sectionSearchQuery && paragraphs.length >= 1 && (
+        {sectionSearchQuery && paragraphs.length >= 1 && isMobile && (
           <div className="search-results-info">
             {getResultsText(languages[currentLanguage].code, paragraphs.length)}
           </div>
@@ -960,10 +965,11 @@ function App() {
 
         /* Section Search Styles */
         .section-search-container {
-          position: relative;
-          max-width: 600px;
-          margin-left: auto;
-          margin-right: auto;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 30%;
+          margin: 0;
         }
 
         .title-search-container {
@@ -972,6 +978,7 @@ function App() {
           justify-content: space-between;
           gap: 20px;
           width: 100%;
+          position: relative;
         }
 
         .selected-title h2 {
@@ -979,6 +986,8 @@ function App() {
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+          text-align: left;
+          width: 30%;
         }
 
         .section-search-input {
@@ -1020,12 +1029,21 @@ function App() {
           color: #666;
         }
 
-        .search-info {
-          text-align: center;
-          margin: 10px 0;
+        .search-results-info {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background: transparent;
+          padding: 10px 15px;
+          margin: 0;
+          border-radius: 8px;
           color: #28a745;
           font-size: 14px;
-          font-weight: bold;
+          font-weight: 500;
+          text-align: right;
+          border-left: none;
+          width: 30%;
         }
 
         /* Mobile Specific Styles */
@@ -1036,6 +1054,7 @@ function App() {
             gap: 15px;
             min-height: 50px;
             align-items: flex-start;
+            position: relative;
           }
 
           .selected-title {
@@ -1053,6 +1072,7 @@ function App() {
             flex: 1;
             min-width: 45%;
             max-width: 50%;
+            text-align: left;
           }
 
           .section-search-container {
@@ -1061,22 +1081,21 @@ function App() {
             padding-top: 8px;
             position: relative;
             flex-shrink: 0;
+            transform: none;
+            left: auto;
           }
 
-          .section-search-input {
-            min-width: auto;
-            width: 100%;
-            font-size: 13px;
-            padding: 6px 30px 6px 12px;
-            height: 32px;
-          }
-
-          .search-info {
+          .search-results-info {
             margin: 8px 0;
             padding: 0 10px;
             font-size: 13px;
             width: 100%;
             clear: both;
+            position: static;
+            transform: none;
+            text-align: left;
+            background: #f8f9fa;
+            border-left: 4px solid #28a745;
           }
 
           .clear-search-btn {
