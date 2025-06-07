@@ -247,91 +247,311 @@ export const englishContent = {
   ]
 },
 
+{
+  "id": "2",
+  "title": "Humans & Relationships",
+  "subsections": [
     {
-      id: '2',
-      title: 'People & Relationships',
-      subsections: [
+      "id": "2.1",
+      "title": "The Power of Love",
+      "paragraphs": [
         {
-          id: '2.1',
-          title: 'Power of Love',
-          paragraphs: [
-            {
-              content: "Love is not something to be received;<br>it is something to be given.",
-              image: "love_give",
-            },
-            {
-              content: "Being loved until someone dies<br>is not true love...<br>Loving someone until we die is true love.",
-              image: "true_love",
-            },
-            {
-              content: "A brief moment of true love<br>is better than<br>a lifetime of false love.",
-              image: "short_true_love",
-            },
-            {
-              content: "The slap was by me...<br>The cry was by me...<br>Not because love exists,<br>Did not understand love.",
-              image: "love_understanding",
-            }
-            // Thoughts about love will come here
-          ]
+          "content": "Love is not something to be received;<br>It is something to be given.",
+          "image": "love_give"
         },
         {
-          id: '2.2',
-          title: 'Friendship',
-          paragraphs: [
-            // Friendship related thoughts will be added here
-          ]
+          "content": "Being loved until someone dies<br>is not true love...<br>Truly loving someone until we die is true love.",
+          "image": "true_love"
         },
         {
-          id: '2.3',
-          title: 'Youth',
-          paragraphs: [
-            // Youth related thoughts will be added here
-          ]
+          "content": "Better than being in false love for a long time<br>is experiencing true love even for a short while.",
+          "image": "short_true_love"
         },
         {
-          id: '2.4',
-          title: 'Beauty of Masculinity',
-          paragraphs: [
-            // Masculinity related thoughts will be added here
-          ]
+          "content": "Fights and pleading<br>happen only with those who are dear to us.",
+          "image": "love_fight"
         },
         {
-          id: '2.5',
-          title: 'Woman',
-          paragraphs: [
-            // Femininity related thoughts will be added here
-          ]
+          "content": "If someone gives up a bad habit for us,<br>we should not lose that person.<br>The depth of that love is very powerful.",
+          "image": "love_change"
         },
         {
-          id: '2.6',
-          title: 'One-sided Love',
-          paragraphs: [
-            // One-sided love thoughts will be added here
-          ]
+          "content": "We may act like we hate someone...<br>But we never truly hate anyone that easily.",
+          "image": "love_hate"
         },
         {
-          id: '2.7',
-          title: 'Love',
-          paragraphs: [
-            // Love related thoughts will be added here
-          ]
+          "content": "Instead of being with a beautiful woman...<br>It is better to rest in the lap of a loving woman.",
+          "image": "love_beauty"
         },
         {
-          id: '2.8',
-          title: 'Love Separation',
-          paragraphs: [
-            // Love separation thoughts will be added here
-          ]
+          "content": "If we yearn for someone’s love...<br>We might remain enslaved to them until death.",
+          "image": "love_slave"
         },
         {
-          id: '2.9',
-          title: 'Beauty',
-          paragraphs: [
-            // Beauty related thoughts will be added here
-          ]
+          "content": "I slapped…<br>I cried…<br>Not because of love,<br>But because of the lack of understanding in love.",
+          "image": "love_understanding"
+        },
+        {
+          "content": "A heart that yearns for love<br>can be a slave,<br>but will never enslave others.",
+          "image": "love_yearning"
+        },
+        {
+          "content": "Being a slave to love is a dangerous thing.",
+          "image": "love_danger"
+        },
+        {
+          "content": "The power of love – a journey of giving hearts.",
+          "image": "love_journey"
         }
       ]
     },
+    {
+      "id": "2.2",
+      "title": "Friendship",
+      "paragraphs": [
+        {
+          "content": "Even if expected love is not received...<br>Unexpected love comes from a friend.",
+          "image": "friendship_unexpected"
+        },
+        {
+          "content": "If love means leaving because expectations weren’t met...<br>Then friendship means comforting and helping<br>without expecting anything in return.",
+          "image": "friendship_comfort"
+        },
+        {
+          "content": "Love can cause separation...<br>Because we say 'don’t separate',<br>many loves remain only as friendships.",
+          "image": "friendship_love"
+        },
+        {
+          "content": "One should match in pure thoughts and actions;<br>Only then choose them as a friend.",
+          "image": "friendship_pure"
+        },
+        {
+          "content": "A friend is someone...<br>Whose presence elevates us.",
+          "image": "friendship_elevation"
+        },
+        {
+          "content": "Friendship – the light of unconditional love.",
+          "image": "friendship_light"
+        }
+      ]
+    },
+    {
+      "id": "2.3",
+      "title": "Youth",
+      "paragraphs": [
+        {
+          "content": "Youth dreams,<br>seeks love,<br>tries to understand lust,<br>and desires wealth...<br>Is it right? Wrong? Natural?<br>Only one path can be chosen...<br>Let it be a dream.",
+          "image": "youth_dreams"
+        },
+        {
+          "content": "To experience everything,<br>it may take time...<br>But the chances of completeness are higher.",
+          "image": "youth_experience"
+        },
+        {
+          "content": "Youth – the season of searching.",
+          "image": "youth_search"
+        }
+      ]
+    },
+    {
+      "id": "2.4",
+      "title": "The Beauty of Masculinity",
+      "paragraphs": [
+        {
+          "content": "The true beauty of manliness...<br>is in gracefully admiring femininity with character.",
+          "image": "masculinity_respect"
+        },
+        {
+          "content": "True masculinity is not just admiring<br>pure femininity...<br>but respecting, revering, and uplifting it.",
+          "image": "masculinity_honor"
+        }
+      ]
+    },
+    {
+      "id": "2.5",
+      "title": "Woman",
+      "paragraphs": [
+        {
+          "content": "She who revealed the sanctity of the womb to the world...<br>who led to the limits of compassion…<br>Woman...<br>Even if in a grave,<br>until we go to the grave,<br>she must be loved.",
+          "image": "woman_divine"
+        },
+        {
+          "content": "A woman who has lost her husband...<br>is like a flower.<br>If she is in the right place,<br>she will bloom beautifully,<br>but in loneliness,<br>she wilts and withers.",
+          "image": "widow_flower"
+        },
+        {
+          "content": "To women who think,<br>\"If I marry a wealthy man,<br>I’ll be happy...\"",
+          "image": "wealth_marriage"
+        },
+        {
+          "content": "A man with financial wealth<br>may not have emotional wealth;<br>Without emotional wealth,<br>it’s hard to live comfortably.<br>If you want both financial and emotional balance,<br>first understand your current position.",
+          "image": "wealth_mind"
+        },
+        {
+          "content": "Modesty means covering well...<br>not under-covering;<br>but properly covering.",
+          "image": "modesty_beauty"
+        }
+      ]
+    },
+    {
+      "id": "2.6",
+      "title": "One-Sided Love",
+      "paragraphs": [
+        {
+          "content": "Love is not when hearts come together...<br>True love is when hearts stay together without separation.",
+          "image": "eternal_hearts"
+        },
+        {
+          "content": "When I saw you...<br>A new feeling blossomed deep in my heart...<br>Not just that...<br>A sweet vibration filled my mind...<br>Admiring you became the music of my soul.",
+          "image": "heart_music"
+        },
+        {
+          "content": "Taking pride in waiting,<br>in protecting,<br>and in wasting time...<br>That’s love, maybe!",
+          "image": "love_pride"
+        },
+        {
+          "content": "Love can create distance...<br>But not division, not separation, not destruction.",
+          "image": "love_distance"
+        },
+        {
+          "content": "Only when love and lust are balanced<br>is it truly hard to forget someone.",
+          "image": "love_balance"
+        },
+        {
+          "content": "Love has a beginning...<br>but never an end.",
+          "image": "endless_love"
+        },
+        {
+          "content": "Love mixed with patience<br>will one day become sweet like honey.",
+          "image": "sweet_patience"
+        },
+        {
+          "content": "If you truly love,<br>you’ll pass through it<br>without commanding.",
+          "image": "true_love_path"
+        },
+        {
+          "content": "Love – the timeless story of united hearts.",
+          "image": "timeless_love"
+        }
+      ]
+    },
+    {
+      "id": "2.7",
+      "title": "Love",
+      "paragraphs": [
+        {
+          "content": "Love is not when hearts come together...<br>True love is when hearts stay together without separation.",
+          "image": "eternal_hearts"
+        },
+        {
+          "content": "When I saw you...<br>A new feeling blossomed deep in my heart...<br>Not just that...<br>A sweet vibration filled my mind...<br>Admiring you became the music of my soul.",
+          "image": "heart_music"
+        },
+        {
+          "content": "Taking pride in waiting,<br>in protecting,<br>and in wasting time...<br>That’s love, maybe!",
+          "image": "love_pride"
+        },
+        {
+          "content": "Love can create distance...<br>But not division, not separation, not destruction.",
+          "image": "love_distance"
+        },
+        {
+          "content": "Only when love and lust are balanced<br>is it truly hard to forget someone.",
+          "image": "love_balance"
+        },
+        {
+          "content": "Love has a beginning...<br>but never an end.",
+          "image": "endless_love"
+        },
+        {
+          "content": "Love mixed with patience<br>will one day become sweet like honey.",
+          "image": "sweet_patience"
+        },
+        {
+          "content": "If you truly love,<br>you’ll pass through it<br>without commanding.",
+          "image": "true_love_path"
+        },
+        {
+          "content": "Love – the timeless story of united hearts.",
+          "image": "timeless_love"
+        }
+      ]
+    },
+    {
+      "id": "2.8",
+      "title": "Love Separation",
+      "paragraphs": [
+        {
+          "content": "Unwanted thoughts and greed...<br>are the reasons for love separation.",
+          "image": "separation_greed"
+        },
+        {
+          "content": "Seen fake love...<br>Never seen true love.",
+          "image": "false_love"
+        },
+        {
+          "content": "What broke and got lost...<br>wasn’t just a ring;<br>it was love too.",
+          "image": "broken_ring"
+        },
+        {
+          "content": "Tears in the eyes...<br>and buried thoughts in the heart...<br>keep echoing within.",
+          "image": "tears_memories"
+        },
+        {
+          "content": "Denying...<br>Hating...<br>Forgetting...<br>Maybe you are that person.<br>The path is full of tears,<br>I am the one carrying the painful memories.",
+          "image": "painful_memories"
+        },
+        {
+          "content": "A woman is not submissive.<br>She denies.<br>She hates.<br>She forgets.<br>If you go after a woman,<br>only pain will follow.",
+          "image": "woman_nature"
+        },
+        {
+          "content": "You may grow because of a woman...<br>But,<br>if she is with you,<br>or even if she is too close,<br>you may not grow.",
+          "image": "woman_progress"
+        },
+        {
+          "content": "I try to move away knowing it’s fake...<br>I can’t.<br>I try to hate...<br>I can’t.<br>I try to forget...<br>I can’t.<br>I try to leave...<br>I can’t.<br>I try to live...<br>I can’t.<br>I even think of dying...<br>But can’t die either.",
+          "image": "trapped_love"
+        },
+        {
+          "content": "I’m not living by hating...<br>I’m living by tolerating.<br>Not by pushing away...<br>But by withdrawing.<br>Not by rejecting...<br>But by fading.<br>I didn’t live wounding...<br>I live with wounds.<br>I didn’t try to unite...<br>They are always seeking separation.",
+          "image": "wounded_life"
+        },
+        {
+          "content": "In love...<br>Men or women...<br>Depending on circumstances...<br>Can change anytime,<br>in any way.<br>The reason is always<br>unwanted thoughts<br>and selfish desires.",
+          "image": "love_change"
+        },
+        {
+          "content": "Love separation – shadows of parting.",
+          "image": "separation_shadows"
+        }
+      ]
+    },
+    {
+      "id": "2.9",
+      "title": "Beauty",
+      "paragraphs": [
+        {
+          "content": "Green is beauty...<br>Deserts are beauty...<br>The body is beautiful...<br>The soul within the body is also beautiful...",
+          "image": "nature_beauty"
+        },
+        {
+          "content": "Love is beauty...<br>Tears because of love are beauty...<br>Lust is beauty...<br>Even wounds from lust are beautiful...",
+          "image": "love_beauty"
+        },
+        {
+          "content": "Life is beauty...<br>Even the pains in life are beautiful...",
+          "image": "life_beauty"
+        },
+        {
+          "content": "Beauty is in everything...<br>Let’s experience it fully.",
+          "image": "beauty_everywhere"
+        }
+      ]
+    }
+  ]
+}
+,
     {
       id: '3',
       title: 'Emotions & Life\'s Complexities',
