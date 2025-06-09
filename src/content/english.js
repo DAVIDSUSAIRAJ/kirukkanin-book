@@ -602,7 +602,31 @@ export const englishContent = {
               image: "tears_language"
             }
           ]
-        },        
+        },   
+        {
+          id: '3.2',
+          title: 'Acting',
+          paragraphs: [
+            {
+              content: `For some people's lives to improve,<br>
+        And for thoughts to be released in a different place,<br>
+        Acting becomes necessary.`,
+              image: "acting_necessity"
+            },
+            {
+              content: `Many times,<br>
+        True love cannot be hated;<br>
+        You can only act like you hate it.`,
+              image: "acting_love"
+            },
+            {
+              content: `To survive…<br>
+        One must act in this world.<br>If you desire to lead…<br>
+        You must be skilled in the art of acting.`,
+              image: "life_acting"
+            }
+          ]
+        },             
         // More subsections can be added here
       ]
     },
