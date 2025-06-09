@@ -1100,6 +1100,40 @@ And disgust.`,
   ]
 }
 ,
+{
+  id: '4.5',
+  title: 'Deception',
+  paragraphs: [
+    {
+      content: `In places where we expect too much love...<br>
+Expectations overflow,<br>
+Longing builds,<br>
+And we end up disappointed.`,
+      image: "excessive_expectations"
+    },
+    {
+      content: `The real mistake is...<br>
+Loving sincerely<br>
+Those who only pretend to love us.`,
+      image: "false_love"
+    },
+    {
+      content: `If the body and mind travel<br>
+Toward temples by day,<br>
+And toward graves by night...<br>
+It means the soul is burdened<br>
+By deep betrayal and pain.`,
+      image: "troubled_soul"
+    },
+    {
+      content: `In a life full of deceptions...<br>
+Let us carry only effort<br>
+As our true companion.`,
+      image: "perseverance"
+    }
+  ]
+}
+,
 
 
         // More subsections can be added here
