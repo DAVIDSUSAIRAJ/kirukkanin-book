@@ -738,6 +738,131 @@ Many live in that emptiness.`,
   ]
 }
 ,
+{
+  id: '3.7',
+  title: 'Solitude',
+  paragraphs: [
+    {
+      content: `Only after tears have been shed...<br>
+With a pen and notebooks in hand...<br>
+Philosophies will begin to emerge on their own.<br>
+This happens only in solitude.`,
+      image: "solitude_wisdom"
+    },
+    {
+      content: `When filled with solitude,<br>
+We float within imagination and tears.`,
+      image: "solitude_imagination"
+    },
+    {
+      content: `When immersed in imagination and tears,<br>
+Time and space slip by unnoticed...<br>
+And we begin to perceive the true state of the world.`,
+      image: "deep_realization"
+    },
+    {
+      content: `If one renounces desires<br>
+And finds interest in solitude...<br>
+That becomes a medicine for peace of mind.<br>
+But only if taken in measured doses...<br>
+Otherwise...<br>
+Mental health may suffer,<br>
+And one may fall into illness.`,
+      image: "solitude_medicine"
+    },
+    {
+      content: `If the brain is kept engaged...<br>
+Even working in a corner,<br>
+We won’t realize how the day passes.`,
+      image: "time_solitude"
+    },
+    {
+      content: `I live in this world...<br>
+But I am not one with it.<br>
+I live in solitude...<br>
+But I am not alone.`,
+      image: "connected_solitude"
+    },
+    {
+      content: `If solitude fills you,<br>
+If you begin to realize truths,<br>
+If you detect the lies,<br>
+If you learn to reflect...<br>
+You will discover the best path.`,
+      image: "solitude_truth"
+    },
+    {
+      content: `By resting in solitude,<br>
+Thinking deeply,<br>
+Struggling and carving a path,<br>
+If you move forward,<br>
+You can completely feel the comfort of solitude.`,
+      image: "solitude_path"
+    },
+    {
+      content: `If you speak with your emotions,<br>
+You’ll sense the truth of your condition.<br>
+If you speak with your tears,<br>
+You’ll realize your purpose.`,
+      image: "emotional_truth"
+    },
+    {
+      content: `When you learn to reduce anger,<br>
+You may begin to cry in solitude.`,
+      image: "anger_tears"
+    },
+    {
+      content: `If sleep stings your eyes,<br>
+But suffering pierces your heart even more,<br>
+Then you’ll understand the sharpness of solitude.`,
+      image: "solitude_pain"
+    },
+    {
+      content: `Losing money...<br>
+Losing work...<br>
+Sacrificing sleep...<br>
+Carrying hunger...<br>
+Wasting your efforts...<br>
+Lying down in a room,<br>
+With disappointment and tears...<br>
+That’s when you begin to understand the true state of the world.`,
+      image: "loss_truth"
+    },
+    {
+      content: `Waking up from sleep...<br>
+Unable to rise from bed,<br>
+Drifting in longing and desire...<br>
+In love... and lust...<br>
+Carried away by limitless fantasies...<br>
+In solitude, you will feel the ache of youth.`,
+      image: "youth_longing"
+    },
+    {
+      content: `During hard times...<br>
+If you can live without anyone’s love<br>
+Or anyone’s embrace,<br>
+Then living in solitude becomes a strength.`,
+      image: "solitude_strength"
+    },
+    {
+      content: `In solitude...<br>
+Crying over the past,<br>
+Being disappointed with the present,<br>
+Yearning for the future —<br>
+These will become everyday experiences.`,
+      image: "time_emotions"
+    },
+    {
+      content: `Sometimes...<br>
+We cry without knowing why.<br>
+Don’t worry...<br>
+That is the foundation being laid<br>
+For tomorrow’s reflection.`,
+      image: "future_foundation"
+    }
+  ]
+}
+,
         // More subsections can be added here
       ]
     },
