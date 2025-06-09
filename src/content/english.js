@@ -560,9 +560,49 @@ export const englishContent = {
           id: '3.1',
           title: 'Tears',
           paragraphs: [
-            // Tears related thoughts will be added here
+            {
+              content: `Partings… and memories…<br>
+        The gift they keep giving is — tears.`,
+              image: "tears_gift"
+            },
+            {
+              content: `With no comfort at all…<br>
+        Trembling in loneliness, shrinking,<br>
+        Weeping and grieving in a corner —<br>
+        Only the one who has gone through that<br>
+        Will understand certain truths,<br>
+        And the true nature of tears.`,
+              image: "lonely_tears"
+            },
+            {
+              content: `When responsibilities arrive,<br>
+        The duties that come with them arrive too.<br>
+        If we fail to fulfill those duties,<br>
+        Hardships — and tears — will unfailingly follow.`,
+              image: "duty_tears"
+            },
+            {
+              content: `Tears are meant…<br>
+        Only for those who love us.<br>
+        Never for the ones<br>
+        Who wound us, hate us, or abandon us.`,
+              image: "love_tears"
+            },
+            {
+              content: `When I had nothing left with me…<br>
+        A tear, filled with pain,<br>
+        Whispered — "I am here for you."`,
+              image: "pain_tears"
+            },
+            {
+              content: `Tears — the mother tongue of the eyes.<br>
+        Many times,<br>
+        The eyes just keep<br>
+        Speaking in their native tongue.`,
+              image: "tears_language"
+            }
           ]
-        }
+        },        
         // More subsections can be added here
       ]
     },
