@@ -1245,6 +1245,46 @@ Is that what we call maturity...?`,
   ]
 }
 ,
+{
+  id: '4.8',
+  title: 'Let Us Learn',
+  paragraphs: [
+    {
+      content: `At the workplace,<br>
+Let us confine unnecessary thoughts,<br>
+And streamline our actions.`,
+      image: "work_focus"
+    },
+    {
+      content: `Along with training,<br>
+Only one who trusts in self-confidence<br>
+Will reap the benefits.`,
+      image: "self_confidence"
+    },
+    {
+      content: `When someone<br>
+Speaks to us with anger,<br>
+Or with belittlement,<br>
+Let us not React... but Respond.<br>
+Let us not Reflect... but offer Respect.`,
+      image: "respond_respect"
+    },
+    {
+      content: `"Money is not important..."<br>
+"English is not necessary..."<br>
+Many will say these things...<br>
+Do not believe them.`,
+      image: "reality_check"
+    },
+    {
+      content: `One who points out flaws<br>
+Does not do so to belittle us;<br>
+But to help us grow.`,
+      image: "constructive_criticism"
+    }
+  ]
+}
+,
 
 
         // More subsections can be added here
