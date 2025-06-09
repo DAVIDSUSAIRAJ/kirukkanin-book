@@ -1390,6 +1390,173 @@ let us learn to live with imagination.`,
       content: `Instead of living against anyone...<br>
 let us live by keeping them aside.`,
       image: "peaceful_distance"
+    },
+    {
+      content: `With those who have excessive desires and greed,<br>
+And with those who engage in pointless arguments...<br>
+Speaking is pointless.`,
+      image: "pointless_conversation"
+    },
+    {
+      content: `Don't observe humans closely...<br>
+Watch for entertainment.<br>
+If you observe closely...<br>
+We will lose our mental peace.`,
+      image: "observe_entertainment"
+    },
+    {
+      content: `We cannot control thoughts...<br>
+We can only control what we thought about.<br>
+We cannot control thinking...<br>
+We can control words.`,
+      image: "control_actions_words"
+    },
+    {
+      content: `Every evil has...<br>
+an end.<br>
+When deciding to end evils,<br>
+make the decision by calculating with time.`,
+      image: "ending_evil_timing"
+    },
+    {
+      content: `Better than reading books in solitude,<br>
+is writing a book based on<br>
+what we learned from our life.`,
+      image: "writing_over_reading"
+    },
+    {
+      content: `In some places,<br>
+if we act as if we don't know<br>
+something we actually know...<br>
+there will be no tension... or fear.`,
+      image: "strategic_ignorance"
+    },
+    {
+      content: `We should not get caught up<br>
+in someone else's thinking...<br>
+We should not force someone<br>
+into our thinking.`,
+      image: "independent_thinking"
+    },
+    {
+      content: `Instead of living by renouncing...<br>
+let us live by forgetting.<br>
+When there are too many confusions,<br>
+let us remain calm.`,
+      image: "forget_stay_calm"
+    },
+    {
+      content: `The nature of arrogance and<br>
+the nature of belittling others...<br>
+Let us try to live<br>
+by avoiding both of these.`,
+      image: "avoid_pride_belittling"
+    },
+    {
+      content: `Education and character are not related.<br>
+Education and wisdom are not related.<br>
+Wisdom... character... and clarity...<br>
+are formed only through experience.`,
+      image: "experience_over_education"
+    },
+    {
+      content: `Let it go... or... cut it off.<br>
+Don't let it grow and then... cut it off.`,
+      image: "decisive_choices"
+    },
+    {
+      content: `With those who came to bear sorrows,<br>
+accept some sorrows that come from them...`,
+      image: "accept_others_burdens"
+    },
+    {
+      content: `Be truthful.<br>
+Don't struggle to prove the truth.<br>
+Love that comes from proving truth...<br>
+Is not genuine.`,
+      image: "genuine_truth"
+    },
+    {
+      content: `In the place where you are,<br>
+be loving...<br>
+but...<br>
+don't desire to stay in the same place.`,
+      image: "loving_presence_growth"
+    },
+    {
+      content: `If you helped someone in the past,<br>
+and they oppose you in the present...<br>
+Neither respect them nor trample them.<br>
+Let us move away.<br>
+When moving away,<br>
+false accusations will come.<br>
+Unnecessarily... don't pay attention.`,
+      image: "dignified_distance"
+    },
+    {
+      content: `To do any action...<br>
+we will complete all preparations beforehand.<br>
+Then...<br>
+we will be ready to accept the faults and shortcomings<br>
+that arise from it.`,
+      image: "preparation_accountability"
+    },
+    {
+      content: `You can love someone...<br>
+but...<br>
+in the name of love,<br>
+don't become a slave.`,
+      image: "healthy_love_boundaries"
+    },
+    {
+      content: `To eliminate unnecessary desires<br>
+and ego,<br>
+let us carry the thought of death within our minds.`,
+      image: "death_purification"
+    },
+    {
+      content: `In everything...<br>
+the habit of acting with entitlement...<br>
+let us keep it a little aside.`,
+      image: "avoid_entitlement"
+    },
+    {
+      content: `In some places by withdrawing...<br>
+in some places by distancing...<br>
+in some places by staying aside...<br>
+if we learn to live, that is enough.`,
+      image: "adaptive_positioning"
+    },
+    {
+      content: `By defining...<br>
+we should live our life.<br>
+But...<br>
+what others have defined,<br>
+should not be lived as life.`,
+      image: "authentic_boundaries"
+    },
+    {
+      content: `For free...<br>
+we should not take money or<br>
+food from anyone.`,
+      image: "financial_dignity"
+    },
+    {
+      content: `Become experienced...<br>
+or...<br>
+stay with the experienced.<br>
+Become a teacher...<br>
+or...<br>
+stay with a teacher.`,
+      image: "wisdom_paths"
+    },
+    {
+      content: `One should not decide<br>
+someone's character based on<br>
+how they behave with others.<br>
+One should decide their character<br>
+based on how they behave with us.`,
+      image: "character_judgment"
     }
   ]
 }
