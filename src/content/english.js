@@ -863,6 +863,46 @@ For tomorrow’s reflection.`,
   ]
 }
 ,
+{
+  id: '3.8',
+  title: 'Fear',
+  paragraphs: [
+    {
+      content: `When someone unfamiliar...<br>
+Offers food casually,<br>
+We can eat it with peace of mind.<br>
+But when someone close offers it with affection,<br>
+Many eat it with fear.<br>
+Among them… is the madman too.<br>
+Just like how, for the paranoid,<br>
+Every shadow in the dark becomes a ghost!`,
+      image: "fear_of_love"
+    },
+    {
+      content: `When responsibilities are overwhelming,<br>
+There is a certain kind of fear.<br>
+When someone has loved you for a dream,<br>
+There is a certain kind of fear.<br>
+When betrayal becomes unbearable,<br>
+There is a certain kind of fear.`,
+      image: "duty_fear"
+    },
+    {
+      content: `There is no fear in the journey toward death.<br>
+There is no fear even while sleeping in a grave.<br>
+But... when looking at people who are still alive,<br>
+That’s when fear often arises.`,
+      image: "fear_of_living"
+    },
+    {
+      content: `One who sacrifices the desire to live,<br>
+And turns inward toward death,<br>
+Will have no fear at all.`,
+      image: "fearless_death"
+    }
+  ]
+}
+,
         // More subsections can be added here
       ]
     },
