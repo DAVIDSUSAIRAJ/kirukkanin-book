@@ -1010,13 +1010,28 @@ export const tamilContent = {
             }
             ]
         },
-        {
-          id: '3.9',
-          title: 'தோல்வி',
-          paragraphs: [
-            // தோல்வி பற்றிய கருத்துகள் இங்கே வரும்
-          ]
-        },
+                  {
+            id: '3.9',
+            title: 'தோல்வி',
+            paragraphs: [
+              {
+                content: `நல்வழிப்படுத்துவது எதுவாக இருந்தாலும்...<br>
+நாம் கொண்டாடப்பட வேண்டும்.`,
+                image: "failure_celebration"
+              },
+              {
+                content: `தோல்வியை ஏற்றுக்கொண்டு...<br>
+உள்ளத்தில் கொண்டாடுவோம்.<br>
+ஏனெனில்...<br>
+நம்மை நல்வழிப்படுத்துவது அதுதானே...?`,
+                image: "failure_acceptance"
+              },
+              {
+                content: `தோல்வி-வழிநடத்தும் வெளிச்சம்.`,
+                image: "failure_guiding_light"
+              }
+            ]
+          },
         {
           id: '3.10',
           title: 'வீரம்',

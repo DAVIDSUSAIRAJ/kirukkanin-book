@@ -903,6 +903,29 @@ Will have no fear at all.`,
   ]
 }
 ,
+{
+  id: '3.9',
+  title: 'Failure',
+  paragraphs: [
+    {
+      content: `Whatever leads us to the right path...<br>
+Deserves to be celebrated.`,
+      image: "failure_celebration"
+    },
+    {
+      content: `Let us accept failure...<br>
+And celebrate it within.<br>
+Because...<br>
+Isn’t that what truly guides us?`,
+      image: "failure_acceptance"
+    },
+    {
+      content: `Failure — a light that shows the way.`,
+      image: "failure_guiding_light"
+    }
+  ]
+}
+,
         // More subsections can be added here
       ]
     },
