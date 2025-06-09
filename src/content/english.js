@@ -949,13 +949,62 @@ That is our true bravery.`,
       id: '4',
       title: 'Life\'s Lessons & Mental States',
       subsections: [
-        {
-          id: '4.1',
-          title: 'Who Should We Tell Our Troubles To?',
-          paragraphs: [
-            // Thoughts about troubles will be added here
-          ]
-        }
+{
+  id: '4.1',
+  title: 'To Whom Should We Share Our Pain?',
+  paragraphs: [
+    {
+      content: `Our pain...<br>
+Should never be told<br>
+To someone who does not remain a confidant.<br>
+It must be someone who recognizes our pain and flaws,<br>
+But never commands,<br>
+Never enslaves,<br>
+Never uses those flaws to threaten or take revenge.<br>
+They must be someone safe.`,
+      image: "trustworthy_confidant"
+    },
+    {
+      content: `They should be someone<br>
+We do not meet too often,<br>
+But who understands us even from afar.`,
+      image: "distant_understanding"
+    },
+    {
+      content: `They should not talk excessively,<br>
+But should be able to understand us even in silence.`,
+      image: "silent_understanding"
+    },
+    {
+      content: `They should be someone<br>
+Who never wishes harm upon us,<br>
+But instead always hopes to do good for us.`,
+      image: "good_intentions"
+    },
+    {
+      content: `Even if they are hurting inside,<br>
+They should still carry a willingness<br>
+To do whatever they can for the one who seeks them.`,
+      image: "selfless_helper"
+    },
+    {
+      content: `If you are a man,<br>
+Share your pain with a woman.<br><br>
+If you are a woman,<br>
+Share your pain with a man.`,
+      image: "gender_trust"
+    },
+    {
+      content: `Only if someone like this exists...<br>
+Should we share our pain with others.<br>
+Otherwise...<br>
+We should never<br>
+Share our pain with anyone.`,
+      image: "sharing_wisdom"
+    }
+  ]
+}
+
         // More subsections can be added here
       ]
     },
