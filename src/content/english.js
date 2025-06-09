@@ -719,6 +719,25 @@ True absence.`,
     }
   ]
 },
+{
+  id: '3.6',
+  title: 'Emptiness',
+  paragraphs: [
+    {
+      content: `Even when everything is present...<br>
+If it feels like nothing is there,<br>
+That is emptiness.<br>
+Here...<br>
+Many live in that emptiness.`,
+      image: "empty_abundance"
+    },
+    {
+      content: `Emptiness — only the shadow remains still.`,
+      image: "lasting_shadow"
+    }
+  ]
+}
+,
         // More subsections can be added here
       ]
     },
