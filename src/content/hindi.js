@@ -650,8 +650,10 @@ export const hindiContent = {
       image: "full_knowledge"
     },
     {
-      content: `जब किसी के असली स्वभाव सामने आता है और हमारा मन बदलता है —<br>
-वही है मानव स्वभाव।`,
+content: `जब किसी के असली गुण सामने आते हैं,<br>
+मानसिकता में बदलाव आना<br>
+मानव स्वभाव है।`,
+
       image: "human_nature"
     }
   ]

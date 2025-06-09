@@ -767,7 +767,7 @@ export const tamilContent = {
               image: "full_knowledge"
             },
             {
-              content: `ஒருவரை  பற்றி உண்மையான குணங்கள் தெரியும்போது, மனநிலை மாறுவது,<br>
+              content: `ஒருவரின் உண்மையான குணங்கள் தெரியும்போது,<br> மனநிலை மாறுவது,<br>
 மனித இயல்பு`,
               image: "human_nature"
             }

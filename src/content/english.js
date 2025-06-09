@@ -650,8 +650,10 @@ We may think, "He's a terrible person."`,
       image: "full_knowledge"
     },
     {
-      content: `When someone's true qualities become clear and our mindset shifts —<br>
-That is human nature.`,
+content: `When a person's true qualities become known,<br>
+A change in mindset<br>
+Is human nature.`,
+
       image: "human_nature"
     }
   ]

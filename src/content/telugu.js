@@ -649,8 +649,10 @@ export const teluguContent = {
       image: "full_knowledge"
     },
     {
-      content: `ఒకరి నిజమైన స్వభావం తెలిసినప్పుడు మన అభిప్రాయం మారిపోవడం —<br>
+content: `ఒకరి నిజమైన స్వభావం తెలిసినప్పుడు,<br>
+మనసు మారడం<br>
 అది మనిషి స్వభావమే.`,
+
       image: "human_nature"
     }
   ]
