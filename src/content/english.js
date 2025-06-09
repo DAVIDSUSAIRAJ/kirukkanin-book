@@ -700,6 +700,25 @@ Then leave — calmly and completely.`,
     }
   ]
 },
+{
+  id: '3.5',
+  title: 'Absence',
+  paragraphs: [
+    {
+      content: `Showing dislike<br>
+As though it were liking...<br>
+And showing what you like<br>
+As if you don’t like it...<br>
+That is nothing but<br>
+True absence.`,
+      image: "true_absence"
+    },
+    {
+      content: `Absence — a mind without expression.`,
+      image: "unexpressed_mind"
+    }
+  ]
+},
         // More subsections can be added here
       ]
     },
