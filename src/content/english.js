@@ -913,10 +913,11 @@ Deserves to be celebrated.`,
       image: "failure_celebration"
     },
     {
-      content: `Let us accept failure...<br>
+content: `Let us accept failure...<br>
 And celebrate it within.<br>
 Because...<br>
-Isn’t that what truly guides us?`,
+Isn’t that what truly guides us!`,
+
       image: "failure_acceptance"
     },
     {
