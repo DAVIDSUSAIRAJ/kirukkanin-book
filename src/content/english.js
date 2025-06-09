@@ -1293,6 +1293,33 @@ Therefore...<br>
 We should not seek a woman;<br>
 But money & position.`,
       image: "money_position"
+    },
+    {
+      content: `Based on character and actions,<br>
+We should give respect.<br>
+But...<br>
+Based on money, position, age<br>
+We should never give respect.`,
+      image: "respect_character"
+    },
+    {
+      content: `We must understand<br>
+The duties that come with a position.<br>
+Then...<br>
+Not only desire that position,<br>
+But also perfect the responsibilities that come with it.`,
+      image: "position_duty"
+    },
+    {
+      content: `One who has money and position...<br>
+Should not think that whatever he says is right.<br>
+Because...<br>
+His words will have desires in them,<br>
+But not fundamental pain.<br>
+In our thinking...<br>
+Whatever is right,<br>
+We should courageously do that.`,
+      image: "independent_thinking"
     }
   ]
 }
