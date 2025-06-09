@@ -1009,45 +1009,43 @@ Share our pain with anyone.`,
   title: 'Help',
   paragraphs: [
     {
-      content: `Don’t go seeking to help others...<br>
-If someone comes to us in need,<br>
-It’s enough to help them as much as we can.`,
+      content: `Don’t go looking to offer help...<br>
+To those who come seeking us,<br>
+It’s enough to help them as much as we can.<br>
+We should only help those<br>
+Who truly trust us.`,
       image: "helping_seekers"
     },
     {
-      content: `We should help only those<br>
-Who truly trust us.`,
-      image: "true_trust"
-    },
-    {
-      content: `One who hides the help they give us...<br>
-Is often someone with a deeply generous nature.`,
+      content: `One who hides the help they offer us...<br>
+Is often someone with a truly generous heart.`,
       image: "silent_helper"
     },
     {
-      content: `Never help for show or luxury...<br>
-Only help when it is urgent or truly necessary.`,
+      content: `Never help for show or extravagance...<br>
+It’s enough to help only when it’s urgent and essential.`,
       image: "essential_help"
     },
     {
-      content: `Help those who are truly in need...<br>
-But never those who deceive<br>
-Or use us for their own benefit.`,
+      content: `Help the truly needy...<br>
+But never those who deceive,<br>
+Or those who use us.`,
       image: "helping_needy"
     },
     {
-      content: `You may ask for help anywhere...<br>
-But never remain hanging in dependence.`,
+      content: `You can ask for help anywhere...<br>
+But don’t keep hanging on endlessly.`,
       image: "seeking_help"
     },
     {
-      content: `Even if you can’t support a person’s dream...<br>
+      content: `Even if you can’t help someone reach their dream...<br>
 Help them survive —<br>
-And they will reach that dream themselves.`,
+They will one day reach it on their own.`,
       image: "survival_support"
     }
   ]
 }
+,
 
 
         // More subsections can be added here
