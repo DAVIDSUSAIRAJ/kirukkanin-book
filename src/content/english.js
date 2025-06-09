@@ -1074,6 +1074,32 @@ Must be held within us — guarded in silence.`,
   ]
 }
 ,
+{
+  id: '4.4',
+  title: 'Lies',
+  paragraphs: [
+    {
+      content: `Someone else’s lie,<br>
+As long as it doesn’t affect us,<br>
+There is no reason for us to get angry.`,
+      image: "harmless_lies"
+    },
+    {
+      content: `Our own lie,<br>
+As long as it doesn’t harm another,<br>
+We may choose to tell it.`,
+      image: "white_lies"
+    },
+    {
+      content: `Lies in love...<br>
+Lead to betrayal,<br>
+Anger,<br>
+And disgust.`,
+      image: "love_lies"
+    }
+  ]
+}
+,
 
 
         // More subsections can be added here
