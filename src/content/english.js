@@ -1150,6 +1150,101 @@ Is just experience.`,
   ]
 }
 ,
+{
+  id: '4.7',
+  title: 'Couldn’t Understand',
+  paragraphs: [
+    {
+      content: `Is it basic need…?<br>
+Or is it luxury…?<br>
+Is it a dream…?<br>
+Or imagination…?<br>
+Is it the soil that matters…?<br>
+Or the heart…?<br>
+Is it money…?<br>
+Or character…?<br>
+Is it jewelry…?<br>
+Or a sense of humor...?`,
+      image: "life_needs"
+    },
+    {
+      content: `Is a house needed to sleep…?<br>
+Or for comfort and luxury…?<br>
+What is the peak of love…?<br>
+What is the peak of suffering…?<br>
+Those who want to live luxuriously without working hard —<br>
+Are they more often men… or women...?`,
+      image: "life_questions"
+    },
+    {
+      content: `For one who nurtures talent — happiness is certain.<br>
+But…<br>
+For the one who gathers only money and wealth…?<br><br>
+Does love exist — without desire...?`,
+      image: "happiness_wealth"
+    },
+    {
+      content: `When two people are separated,<br>
+And live only in each other’s memories…<br>
+What name can we give that kind of life...?`,
+      image: "separated_love"
+    },
+    {
+      content: `One who never lived with love,<br>
+Who never gave a little and let go while alive...<br>
+If he cries after someone dies…<br>
+Is that real love...?`,
+      image: "true_love"
+    },
+    {
+      content: `In youth…<br>
+The feeling that arises toward a girl…<br>
+Is it love…?<br>
+Or lust…?<br><br>
+Childhood…?<br>
+Youth…?<br>
+Old age…?<br>
+Which stage holds the most happiness...?`,
+      image: "life_stages"
+    },
+    {
+      content: `Is life…<br>
+Meant to be lived…?<br>
+Or…<br>
+Meant to rule over someone...?`,
+      image: "purpose_of_life"
+    },
+    {
+      content: `If one renounces greed…<br>
+Lives with clear thought,<br>
+And unshakable faith…<br>
+Saying "Shiva is the goal"<br>
+And "Family is fate" —<br>
+Then what will happen in that life...?`,
+      image: "spiritual_life"
+    },
+    {
+      content: `If desire is rooted in longing —<br>
+Is that love…?<br>
+If desire is rooted in the body —<br>
+Is that lust…?<br>
+If desire is rooted in solitude —<br>
+Is that tears…?<br>
+If desire is rooted in mental and physical work —<br>
+Is that a dream…?<br>
+Are all these true...?`,
+      image: "human_desires"
+    },
+    {
+      content: `A mind that accepts everything…<br>
+That learns continuously…<br>
+That passes through with peace…<br>
+Is that what we call maturity...?`,
+      image: "mature_mind"
+    }
+  ]
+}
+,
 
 
         // More subsections can be added here
