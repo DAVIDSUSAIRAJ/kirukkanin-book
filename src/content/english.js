@@ -1003,7 +1003,52 @@ Share our pain with anyone.`,
       image: "sharing_wisdom"
     }
   ]
+},
+{
+  id: '4.2',
+  title: 'Help',
+  paragraphs: [
+    {
+      content: `Don’t go seeking to help others...<br>
+If someone comes to us in need,<br>
+It’s enough to help them as much as we can.`,
+      image: "helping_seekers"
+    },
+    {
+      content: `We should help only those<br>
+Who truly trust us.`,
+      image: "true_trust"
+    },
+    {
+      content: `One who hides the help they give us...<br>
+Is often someone with a deeply generous nature.`,
+      image: "silent_helper"
+    },
+    {
+      content: `Never help for show or luxury...<br>
+Only help when it is urgent or truly necessary.`,
+      image: "essential_help"
+    },
+    {
+      content: `Help those who are truly in need...<br>
+But never those who deceive<br>
+Or use us for their own benefit.`,
+      image: "helping_needy"
+    },
+    {
+      content: `You may ask for help anywhere...<br>
+But never remain hanging in dependence.`,
+      image: "seeking_help"
+    },
+    {
+      content: `Even if you can’t support a person’s dream...<br>
+Help them survive —<br>
+And they will reach that dream themselves.`,
+      image: "survival_support"
+    }
+  ]
 }
+
 
         // More subsections can be added here
       ]
