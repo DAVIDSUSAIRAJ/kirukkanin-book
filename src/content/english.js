@@ -1134,6 +1134,22 @@ As our true companion.`,
   ]
 }
 ,
+{
+  id: '4.6',
+  title: 'Betrayal',
+  paragraphs: [
+    {
+      content: `If there is something<br>
+You can never tell someone<br>
+Until the day you die...<br>
+That is true betrayal.<br>
+Everything else...<br>
+Is just experience.`,
+      image: "true_betrayal"
+    }
+  ]
+}
+,
 
 
         // More subsections can be added here
