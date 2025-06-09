@@ -927,7 +927,22 @@ Isn’t that what truly guides us!`,
   ]
 }
 ,
-        // More subsections can be added here
+   {
+  id: '3.10',
+  title: 'Courage',
+  paragraphs: [
+    {
+      content: `Even in defeat,<br>
+If we face it head-on...<br>
+We’ll confront anything, as long as we live.<br>
+In difficult circumstances,<br>
+The courage we hold within —<br>
+That is our true bravery.`,
+      image: "courage_face_failure"
+    }
+  ]
+}
+,     // More subsections can be added here
       ]
     },
     {
