@@ -1046,6 +1046,34 @@ They will one day reach it on their own.`,
   ]
 }
 ,
+{
+  id: '4.3',
+  title: 'Learn to Guard in Secret',
+  paragraphs: [
+    {
+      content: `The help we give...<br>
+The poverty we carry...<br>
+The pain that breaks us...<br>
+And the pain or poverty someone confides in us...<br>
+All of these...<br>
+Must be protected — in complete secrecy.`,
+      image: "keeping_secrets"
+    },
+    {
+      content: `To comfort someone in pain,<br>
+We may speak of the pain we have endured or are enduring.<br>
+But beyond that...<br>
+We should never share our suffering anywhere else.`,
+      image: "sharing_pain"
+    },
+    {
+      content: `Our pain...<br>
+Must be held within us — guarded in silence.`,
+      image: "personal_struggles"
+    }
+  ]
+}
+,
 
 
         // More subsections can be added here
