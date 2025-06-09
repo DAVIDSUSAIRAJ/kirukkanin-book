@@ -523,6 +523,10 @@ export const malayalamContent = {
           "image": "love_change"
         },
         {
+          "content": "പ്രണയ വേർപാട് എന്നത്...<br>മനസ്സിലാക്കലിൽ ആയിരിക്കണം.<br>വേദനയിൽ ആയിരിക്കരുത്.",
+          "image": "understanding_separation"
+        },
+        {
           "content": "പ്രണയ വേർപാട് – വേർപാടിന്റെ നിഴലുകൾ.",
           "image": "separation_shadows"
         }
@@ -1291,6 +1295,14 @@ Reflect ചെയ്യാതെ... Respect നൽകുക.`,
 ഞങ്ങളെ നിന്ദിക്കാൻ അല്ല;<br>
 പകരം ഞങ്ങളുടെ വളർച്ചയ്ക്കാണ്.`,
       image: "constructive_criticism"
+    },
+    {
+      content: `സ്ത്രീ...<br>
+പണവും പദവിയുമുള്ളവനെ മാത്രമേ അന്വേഷിക്കൂ.<br>
+അതിനാൽ...<br>
+തേടേണ്ടത് സ്ത്രീയെയല്ല;<br>
+പണവും പദവിയുമാണ്.`,
+      image: "money_position"
     }
   ]
 }

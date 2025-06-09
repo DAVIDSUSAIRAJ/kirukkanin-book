@@ -522,6 +522,10 @@ export const hindiContent = {
           "image": "love_change"
         },
         {
+          "content": "प्रेम का बिछड़ना...<br>समझ में होना चाहिए।<br>दुख पहुँचाने में नहीं होना चाहिए।",
+          "image": "understanding_separation"
+        },
+        {
           "content": "प्रेम का बिछड़ना – जुदाई की छायाएं।",
           "image": "separation_shadows"
         }
@@ -1282,6 +1286,14 @@ Reflect न करें... Respect करें।`,
 वह आपको नीचा दिखाने के लिए नहीं कहता;<br>
 बल्कि आपकी प्रगति के लिए।`,
       image: "constructive_criticism"
+    },
+    {
+      content: `स्त्री...<br>
+धन और पद वाले से ही विवाह करना चाहती है।<br>
+इसलिए...<br>
+खोजना चाहिए स्त्री को नहीं;<br>
+धन और पद को।`,
+      image: "money_position"
     }
   ]
 }

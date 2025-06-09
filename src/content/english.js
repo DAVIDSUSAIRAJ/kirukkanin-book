@@ -522,6 +522,10 @@ export const englishContent = {
           "image": "love_change"
         },
         {
+          "content": "Love separation should be...<br>Based on understanding.<br>It should not be in causing pain.",
+          "image": "understanding_separation"
+        },
+        {
           "content": "Love separation – shadows of parting.",
           "image": "separation_shadows"
         }
@@ -1281,6 +1285,14 @@ Do not believe them.`,
 Does not do so to belittle us;<br>
 But to help us grow.`,
       image: "constructive_criticism"
+    },
+    {
+      content: `A woman...<br>
+Will only seek one with money and position.<br>
+Therefore...<br>
+We should not seek a woman;<br>
+But money & position.`,
+      image: "money_position"
     }
   ]
 }

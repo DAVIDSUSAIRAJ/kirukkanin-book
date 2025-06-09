@@ -634,6 +634,12 @@ export const tamilContent = {
               image: "love_change"
             },
             {
+              content: `காதல் பிரிவு என்பது,<br>
+புரிதலில் இருக்க வேண்டும்.<br>
+காயப்படுத்துவதில் இருக்கக் கூடாது.`,
+              image: "understanding_separation"
+            },
+            {
               content: `காதல் பிரிவு – பிரிவின் நிழல்கள்.`,
               image: "separation_shadows"
             }
@@ -1385,6 +1391,14 @@ Reflect ஆகாமல்... Respect கொடுப்போம்.`,
 நம்மை தாழ்த்துவதற்காக அல்ல;<br>
 நாம் முன்னேறுவதற்காக.`,
               image: "constructive_criticism"
+            },
+            {
+              content: `பெண் என்பவள்...<br>
+பணம், பதவி இருப்பவனையே நாடுவாள்.<br>
+ஆகவே...<br>
+தேட வேண்டியது பெண்ணை அல்ல;<br>
+பணம் & பதவியே.`,
+              image: "money_position"
             }
           ]
         }
