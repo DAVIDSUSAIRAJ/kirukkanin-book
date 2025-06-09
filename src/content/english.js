@@ -1320,6 +1320,76 @@ In our thinking...<br>
 Whatever is right,<br>
 We should courageously do that.`,
       image: "independent_thinking"
+    },
+    {
+      content: `Teaching and helping...<br>
+Should be for uplifting someone's life.<br>
+It...<br>
+Should not be for lust.<br>
+True happiness...<br>
+Lies in uplifting someone;<br>
+Not in using someone.`,
+      image: "teaching_uplifting"
+    },
+    {
+      content: `Without expecting from anyone...<br>
+It is good to do our actions.<br>
+But...<br>
+Giving respect to those who come<br>
+to help voluntarily is even better.`,
+      image: "voluntary_help_respect"
+    },
+    {
+      content: `When we ask someone for help,<br>
+If they don't help...<br>
+Don't feel sad or angry.<br>
+Here...<br>
+We must do our own work.<br>
+Because...<br>
+Lack, poverty, and emptiness,<br>
+Are ours to deal with.<br>
+As much as possible...<br>
+Let us do our own work.`,
+      image: "self_reliance_acceptance"
+    },
+    {
+      content: `The basic need for humans...<br>
+Is not food, clothing, and shelter.<br>
+The true basic need for humans...<br>
+Is sleep.`,
+      image: "true_basic_need_sleep"
+    },
+    {
+      content: `To recognize someone's change,<br>
+First...<br>
+We must recognize our own change.`,
+      image: "self_change_awareness"
+    },
+    {
+      content: `Don't think of...<br>
+Hurting anyone.<br>
+Here...<br>
+We are all already in pain.`,
+      image: "universal_pain_compassion"
+    },
+    {
+      content: `Let us honor agriculture<br>
+And farmers<br>
+Without pitying them...<br>
+But with respect.`,
+      image: "honor_agriculture_farmers"
+    },
+    {
+      content: `When living with a dream,<br>
+many disappointments will come and go.<br>
+When disappointment comes...<br>
+let us learn to live with imagination.`,
+      image: "dreams_disappointments_imagination"
+    },
+    {
+      content: `Instead of living against anyone...<br>
+let us live by keeping them aside.`,
+      image: "peaceful_distance"
     }
   ]
 }
