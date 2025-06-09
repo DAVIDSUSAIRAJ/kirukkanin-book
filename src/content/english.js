@@ -626,7 +626,36 @@ export const englishContent = {
               image: "life_acting"
             }
           ]
-        },             
+        },   
+        {
+  id: '3.3',
+  title: 'The Variability of the Human Mindset',
+  paragraphs: [
+    {
+      content: `A person's character traits...`,
+      image: "human_nature_intro"
+    },
+    {
+      content: `When we know 25%,<br>
+We think, "He is a good person."<br>
+When we know 50%,<br>
+We think, "He is a very good person."`,
+      image: "partial_knowledge"
+    },
+    {
+      content: `When we know 75%,<br>
+We might feel, "He is good… but has a few bad traits."<br>
+Once we know 100%,<br>
+We may think, "He's a terrible person."`,
+      image: "full_knowledge"
+    },
+    {
+      content: `When someone's true qualities become clear and our mindset shifts —<br>
+That is human nature.`,
+      image: "human_nature"
+    }
+  ]
+},          
         // More subsections can be added here
       ]
     },
