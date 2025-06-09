@@ -657,7 +657,49 @@ Is human nature.`,
       image: "human_nature"
     }
   ]
-},          
+}, 
+{
+  id: '3.4',
+  title: 'Peaceful Withdrawal',
+  paragraphs: [
+    {
+      content: `If someone begins to see us as a burden...<br>
+Step back; stay away.`,
+      image: "peaceful_distance"
+    },
+    {
+      content: `When someone wants to push us away,<br>
+Rather than lowering ourselves and quietly leaving,<br>
+We must first realize our own self-worth,<br>
+Understand that we should never cause harm to others,<br>
+And walk away peacefully.`,
+      image: "dignified_withdrawal"
+    },
+    {
+      content: `Don’t be sad that I’m not speaking to you...<br>
+It’s just that I want to ensure,<br>
+You never have to suffer because of me in the future...<br>
+That’s why I’m stepping away — in peace.`,
+      image: "proud_distance"
+    },
+    {
+      content: `Never learn too much about anyone.<br>
+Never explain too much about yourself.<br>
+If we repeat these mistakes again...<br>
+Don’t just distance a little;<br>
+Walk away completely.`,
+      image: "complete_withdrawal"
+    },
+    {
+      content: `If you decide to fully leave a place,<br>
+Don’t rush out suddenly.<br>
+Wait for a while,<br>
+Pretend as if nothing has changed...<br>
+Then leave — calmly and completely.`,
+      image: "gradual_exit"
+    }
+  ]
+},
         // More subsections can be added here
       ]
     },
