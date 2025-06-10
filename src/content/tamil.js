@@ -2402,7 +2402,28 @@ Block செய்துவிட்டுப் போனால்...<br>
         {
           id: '6.4',
           title: 'படிப்பு',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `படித்தவன் எல்லாம்...<br>
+பண்பானவன் அல்ல.`,
+              image: "education_not_all_educated_refined"
+            },
+            {
+              content: `படிப்பு என்பது...<br>
+ஏட்டை படித்து வாங்கும் பட்டம் அல்ல.<br>
+பண்பு, அறிவு, திறமை கொண்டு<br>
+வாங்கும் பட்டம்.`,
+              image: "education_culture_knowledge_skill"
+            },
+            {
+              content: `ஏட்டு படிப்பு வீணாகிவிட்டது என்று...<br>
+ஒருபோதும் எண்ணிவிட வேண்டாம்.<br>
+ஏட்டு படிப்பாக இருந்தாலும்...<br>
+தக்க இடத்தில்,<br>
+தக்க பலன் கிடைக்கும்.`,
+              image: "education_book_learning_never_waste"
+            }
+          ]
         },
         {
           id: '6.5',

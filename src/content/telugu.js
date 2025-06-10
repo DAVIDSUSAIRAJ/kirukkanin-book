@@ -2300,7 +2300,28 @@ Block చేసి వెళ్లిపోతే...<br>
         {
           id: '6.4',
           title: 'చదువు',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `చదివినవాళ్ళందరూ...<br>
+మంచి స్వభావం గలవారు కారు.`,
+              image: "education_not_all_educated_refined"
+            },
+            {
+              content: `చదువు అంటే...<br>
+పుస్తకాలు చదివి పొందిన డిగ్రీ కాదు.<br>
+సంస్కారం, జ్ఞానం, నైపుణ్యంతో<br>
+పొందిన డిగ్రీ.`,
+              image: "education_culture_knowledge_skill"
+            },
+            {
+              content: `పుస్తక చదువు వృధా అయిందని...<br>
+ఎప్పుడూ అనుకోకూడదు.<br>
+పుస్తక చదువు అయినా...<br>
+సరైన చోట,<br>
+సరైన ఫలితం వస్తుంది.`,
+              image: "education_book_learning_never_waste"
+            }
+          ]
         },
         {
           id: '6.5',

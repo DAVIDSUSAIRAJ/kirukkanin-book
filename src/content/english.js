@@ -2295,7 +2295,28 @@ some food also comes along.`,
         {
           id: '6.4',
           title: 'Education',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Not everyone who is educated...<br>
+is refined.`,
+              image: "education_not_all_educated_refined"
+            },
+            {
+              content: `Education is not...<br>
+a degree obtained by reading books.<br>
+It's a degree earned through<br>
+culture, knowledge, and skill.`,
+              image: "education_culture_knowledge_skill"
+            },
+            {
+              content: `Never think that...<br>
+book learning has gone to waste.<br>
+Even if it's just book learning...<br>
+at the right place,<br>
+it will yield the right benefits.`,
+              image: "education_book_learning_never_waste"
+            }
+          ]
         },
         {
           id: '6.5',

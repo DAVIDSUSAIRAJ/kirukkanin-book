@@ -2307,7 +2307,28 @@ Block ചെയ്ത് പോയാൽ...<br>
         {
           id: '6.4',
           title: 'വിദ്യാഭ്യാസം',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `പഠിച്ചവരെല്ലാം...<br>
+സംസ്കാരമുള്ളവരല്ല.`,
+              image: "education_not_all_educated_refined"
+            },
+            {
+              content: `വിദ്യാഭ്യാസം എന്നത്...<br>
+പുസ്തകങ്ങൾ വായിച്ച് നേടിയ ബിരുദമല്ല.<br>
+സംസ്കാരം, അറിവ്, കഴിവ് കൊണ്ട്<br>
+നേടിയ ബിരുദം.`,
+              image: "education_culture_knowledge_skill"
+            },
+            {
+              content: `പുസ്തക പഠനം വെറുതെയായി എന്ന്...<br>
+ഒരിക്കലും ചിന്തിക്കരുത്.<br>
+പുസ്തക പഠനം ആയാലും...<br>
+ഉചിതമായ സ്ഥലത്ത്,<br>
+ഉചിതമായ ഫലം കിട്ടും.`,
+              image: "education_book_learning_never_waste"
+            }
+          ]
         },
         {
           id: '6.5',

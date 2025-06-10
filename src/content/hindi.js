@@ -2298,7 +2298,28 @@ Block कर दे और चला जाए...<br>
         {
           id: '6.4',
           title: 'शिक्षा',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `हर पढ़ा-लिखा व्यक्ति...<br>
+संस्कारी नहीं होता।`,
+              image: "education_not_all_educated_refined"
+            },
+            {
+              content: `शिक्षा का मतलब...<br>
+किताबें पढ़कर मिली डिग्री नहीं है।<br>
+संस्कार, ज्ञान, प्रतिभा से<br>
+मिली डिग्री है।`,
+              image: "education_culture_knowledge_skill"
+            },
+            {
+              content: `कभी भी यह न सोचें कि...<br>
+किताबी पढ़ाई बेकार गई है।<br>
+भले ही वह सिर्फ किताबी पढ़ाई हो...<br>
+सही जगह पर,<br>
+सही फायदा मिलेगा।`,
+              image: "education_book_learning_never_waste"
+            }
+          ]
         },
         {
           id: '6.5',
