@@ -2031,12 +2031,133 @@ Block कर दे और चला जाए...<br>
         {
           id: '5.7',
           title: 'खुशी',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `आंसू, खून, पसीना...<br>
+इनमें से किसका मूल्य अधिक है?<br>
+उससे भी बढ़कर...<br>
+जब ये तीनों एक साथ मिलते हैं<br>
+तभी सच्ची खुशी महसूस होती है।`,
+              image: "happiness_tears_blood_sweat"
+            },
+            {
+              content: `लालच त्यागो...<br>
+शांति से जुड़ो...<br>
+सिर्फ रहो...<br>
+खुश रहो।`,
+              image: "happiness_renounce_greed"
+            },
+            {
+              content: `अपनी योग्यता जानने वाले के लिए,<br>
+हमेशा खुशी ही है।`,
+              image: "happiness_know_worth"
+            },
+            {
+              content: `एकांत में भरकर,<br>
+कल्पना में डूबकर...<br>
+वर्तमान को सच बनाकर,<br>
+दुनिया को वश में करके...<br>
+हमेशा खुशी ही है।`,
+              image: "happiness_solitude_imagination"
+            },
+            {
+              content: `पैसे के अनुसार,<br>
+ठाट-बाट हो सकता है।<br>
+मन के अनुसार ही,<br>
+खुशी होती है।`,
+              image: "happiness_mind_over_money"
+            },
+            {
+              content: `जो खुश हैं...<br>
+वे खुशी की तलाश में गए नहीं थे।<br>
+वे...<br>
+अपने साथ रहने वाले लोगों को<br>
+प्रेम से गले लगाने के कारण<br>
+खुश हैं।`,
+              image: "happiness_embrace_others"
+            },
+            {
+              content: `प्रेम में...<br>
+कुछ मिनट की मुलाकात<br>
+और कुछ मिनट की बातचीत...<br>
+तड़प भी देती है...<br>
+बहुत खुशी भी देती है।`,
+              image: "happiness_love_brief_meetings"
+            },
+            {
+              content: `दिन में खुशी नहीं...<br>
+रात में ही खुशी होती है।`,
+              image: "happiness_night_not_day"
+            },
+            {
+              content: `नए वस्त्र पहनने में<br>
+खुशी नहीं...<br>
+नए वस्त्र उतारने में ही<br>
+खुशी होती है।`,
+              image: "happiness_undressing_not_dressing"
+            },
+            {
+              content: `प्रवेश में खुशी नहीं...<br>
+कसकर पकड़ने के दर्द में ही<br>
+खुशी महसूस होती है।`,
+              image: "happiness_tight_grip_pain"
+            },
+            {
+              content: `पाने में खुशी नहीं...<br>
+खोने में ही खुशी महसूस होती है।`,
+              image: "happiness_loss_not_gain"
+            },
+            {
+              content: `काम अप्रत्यक्ष रूप से...<br>
+हमें एक सत्य सिखाता है।<br>
+हानि और दर्द में भी खुशी है...<br>
+जीवन में आने वाली हानियों<br>
+और दर्दों को सहने के लिए तैयार हों...<br>
+खुश रहें!`,
+              image: "happiness_lust_teaches_truth"
+            },
+            {
+              content: `खुशी – हानि में भी होती है।`,
+              image: "happiness_exists_in_loss"
+            }
+          ]
         },
         {
           id: '5.8',
           title: 'स्वार्थ',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `ईश्वर और गुरु को...<br>
+हमें ही खोजकर जाना चाहिए।<br>
+क्योंकि...<br>
+ये स्वार्थी हैं।`,
+              image: "selfishness_god_guru_selfish"
+            },
+            {
+              content: `जब भगवान और गुरु स्वार्थी हैं...<br>
+तो हमारा स्वार्थी होना गलत नहीं।<br>
+लेकिन...<br>
+जैसे उनके स्वार्थ में सामान्य कल्याण है...<br>
+वैसे ही हमें भी होना चाहिए।`,
+              image: "selfishness_common_good_within"
+            },
+            {
+              content: `अपना समय<br>
+केवल अपने लिए ही खर्च करेंगे...<br>
+उसमें स्वार्थी रहेंगे।`,
+              image: "selfishness_spend_time_ourselves"
+            },
+            {
+              content: `हमारा स्वार्थ...<br>
+जब तक दूसरों को प्रभावित न करे...<br>
+तब तक हम स्वार्थी रह सकते हैं।`,
+              image: "selfishness_not_affecting_others"
+            },
+            {
+              content: `स्वार्थ – जब तक किसी को प्रभावित न करे।`,
+              image: "selfishness_not_affecting_anyone"
+            }
+          ]
         }
       ]
     },

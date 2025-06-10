@@ -2031,12 +2031,129 @@ enjoy lust completely and rejoice.`,
         {
           id: '5.7',
           title: 'Happiness',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Tears, blood, sweat...<br>
+which among these has more value?<br>
+More than that...<br>
+only when all three come together<br>
+can true happiness be felt.`,
+              image: "happiness_tears_blood_sweat"
+            },
+            {
+              content: `Renounce greed...<br>
+join peace...<br>
+simply be...<br>
+be happy.`,
+              image: "happiness_renounce_greed"
+            },
+            {
+              content: `For one who knows their worth,<br>
+there is always happiness.`,
+              image: "happiness_know_worth"
+            },
+            {
+              content: `Filled in solitude,<br>
+immersed in imagination...<br>
+making the present real,<br>
+controlling the world...<br>
+there is always happiness.`,
+              image: "happiness_solitude_imagination"
+            },
+            {
+              content: `Depending on money,<br>
+luxury may be arranged.<br>
+Depending on the mind alone,<br>
+happiness is arranged.`,
+              image: "happiness_mind_over_money"
+            },
+            {
+              content: `Those who are happy...<br>
+are not those who went searching for happiness.<br>
+They...<br>
+are happy because they lovingly embrace<br>
+the people who are with them.`,
+              image: "happiness_embrace_others"
+            },
+            {
+              content: `In love...<br>
+brief meetings<br>
+and brief conversations...<br>
+bring both longing...<br>
+and great happiness.`,
+              image: "happiness_love_brief_meetings"
+            },
+            {
+              content: `There is no happiness in the day...<br>
+happiness exists only at night.`,
+              image: "happiness_night_not_day"
+            },
+            {
+              content: `There is no joy in wearing new clothes...<br>
+joy exists only in removing new clothes.`,
+              image: "happiness_undressing_not_dressing"
+            },
+            {
+              content: `There is no joy in penetration...<br>
+joy is felt only in the pain of tight embrace.`,
+              image: "happiness_tight_grip_pain"
+            },
+            {
+              content: `There is no joy in receiving...<br>
+joy is felt only in loss.`,
+              image: "happiness_loss_not_gain"
+            },
+            {
+              content: `Lust indirectly...<br>
+teaches us a truth.<br>
+There is joy in loss and pain...<br>
+let us prepare to bear the losses<br>
+and pains that come in life...<br>
+and be happy!`,
+              image: "happiness_lust_teaches_truth"
+            },
+            {
+              content: `Happiness – exists even in loss.`,
+              image: "happiness_exists_in_loss"
+            }
+          ]
         },
         {
           id: '5.8',
           title: 'Selfishness',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `We must seek out<br>
+God and Guru ourselves...<br>
+Because...<br>
+they are selfish.`,
+              image: "selfishness_god_guru_selfish"
+            },
+            {
+              content: `When God and Guru are selfish...<br>
+there's nothing wrong with us being selfish too.<br>
+But...<br>
+just as their selfishness contains common good...<br>
+we too must be that way.`,
+              image: "selfishness_common_good_within"
+            },
+            {
+              content: `We will spend our time<br>
+only for ourselves...<br>
+we will be selfish in that.`,
+              image: "selfishness_spend_time_ourselves"
+            },
+            {
+              content: `Our selfishness...<br>
+as long as it doesn't affect others...<br>
+we can be selfish.`,
+              image: "selfishness_not_affecting_others"
+            },
+            {
+              content: `Selfishness – as long as it doesn't affect anyone.`,
+              image: "selfishness_not_affecting_anyone"
+            }
+          ]
         }
       ]
     },
