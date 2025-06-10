@@ -1863,7 +1863,181 @@ Block कर दे और चला जाए...<br>
       id: '5',
       title: 'मनोवैज्ञानिक परिवर्तन & इच्छाएं',
       subsections: [
-        // subsections यहाँ जोड़े जा सकते हैं
+        {
+          id: '5.1',
+          title: 'नशा और ध्यान',
+          paragraphs: [
+            {
+              content: `नशा और... ध्यान...<br>
+दोनों स्वयं को भूलने की अवस्था हैं।`,
+              image: "intoxication_meditation_forgetting"
+            },
+            {
+              content: `स्वयं को भूलने की अवस्था...<br>
+जो भी हो,<br>
+वह ध्यान ही है।`,
+              image: "self_forgetting_meditation"
+            }
+          ]
+        },
+        {
+          id: '5.2',
+          title: 'सपने',
+          paragraphs: [
+            {
+              content: `सपनों की ओर बढ़ते समय...<br>
+अतीत की यादों का बोझ मत ढोओ।`,
+              image: "dreams_without_past"
+            },
+            {
+              content: `सपनों के लिए...<br>
+रास्ता बदला जा सकता है।<br>
+लेकिन...<br>
+रास्ते के लिए और पैसे के लिए,<br>
+सपने नहीं बदलने चाहिए।`,
+              image: "dreams_paths_money"
+            },
+            {
+              content: `शारीरिक दृढ़ता खो देने वाले के पास...<br>
+सपने नहीं होते।<br>
+यदि हों भी...<br>
+तो उन्हें साकार नहीं कर सकते।`,
+              image: "physical_strength_dreams"
+            },
+            {
+              content: `अत्यधिक खोज होने पर,<br>
+उतनी ही मात्रा में विपत्ति और<br>
+कष्ट भी होते हैं।<br>
+खोज मिल जाने पर...<br>
+विपत्ति और कष्टों को<br>
+एक पल में भूलकर...<br>
+आनंद पाते हैं।<br>
+एक पल के लिए...<br>
+हर पल तरसने वाली तड़प ही...<br>
+कई लोग "स्वप्न" कहते हैं।<br>
+उनमें...<br>
+यह पागल भी एक है।`,
+              image: "dreams_yearning_madman"
+            }
+          ]
+        },
+        {
+          id: '5.3',
+          title: 'कल्पना',
+          paragraphs: [
+            {
+              content: `सपने...<br>
+वे हैं जिनकी हम अपेक्षा करते हैं।<br>
+यादें...<br>
+वे हैं जिनकी हम अपेक्षा नहीं करते।<br>
+केवल कल्पना...<br>
+हमारी अपनी है।`,
+              image: "imagination_ownership"
+            },
+            {
+              content: `कल्पना के लिए...<br>
+न जीत है... न हार है।<br>
+जिसने सपने खो दिए...<br>
+वह कल्पना में जीता है।`,
+              image: "imagination_no_failure"
+            },
+            {
+              content: `कल्पना – असीमित संसार।`,
+              image: "imagination_limitless_world"
+            }
+          ]
+        },
+        {
+          id: '5.4',
+          title: 'कुछ मिनट',
+          paragraphs: [
+            {
+              content: `प्रतिदिन कुछ मिनट...<br>
+मन से बात करें।`,
+              image: "few_minutes_mind_conversation"
+            },
+            {
+              content: `कुछ मिनट की वासना के लिए...<br>
+पूरा जीवन न खोकर,<br>
+रहने का प्रयास करें।`,
+              image: "few_minutes_lust_life"
+            },
+            {
+              content: `दूसरों द्वारा दिए गए<br>
+कुछ मिनट के विश्वासघात से...<br>
+अपने पूरे जीवन को प्रभावित न होने दें।`,
+              image: "few_minutes_betrayal_life"
+            }
+          ]
+        },
+        {
+          id: '5.5',
+          title: 'बुरी आदतें',
+          paragraphs: [
+            {
+              content: `25 साल की उम्र से पहले...<br>
+सभी प्रकार की बुरी आदतों का<br>
+गुलाम बने बिना अनुभव कर लेंगे।`,
+              image: "bad_habits_experience_before_25"
+            },
+            {
+              content: `बुरी आदतें...<br>
+इंसान के लिए आवश्यक हैं।<br>
+उनसे बाहर निकलने पर ही...<br>
+उनका सुख अद्भुत लगता है।`,
+              image: "bad_habits_necessary_exit_pleasure"
+            }
+          ]
+        },
+        {
+          id: '5.6',
+          title: 'कामना',
+          paragraphs: [
+            {
+              content: `जीवों की उत्पत्ति का कारखाना...<br>
+काम है।`,
+              image: "lust_creation_factory"
+            },
+            {
+              content: `काम...<br>
+मृगतृष्णा के समान है।`,
+              image: "lust_like_mirage"
+            },
+            {
+              content: `काम से उत्पन्न सभी दुःख...<br>
+सृष्टिकर्ता के हैं...<br>
+हमारे नहीं।`,
+              image: "lust_sufferings_creator"
+            },
+            {
+              content: `स्वयं का सुख...<br>
+केवल स्वार्थ के लिए नहीं...<br>
+सामान्य कल्याण के लिए भी है।`,
+              image: "self_pleasure_common_good"
+            },
+            {
+              content: `अंतरंगता और काम...<br>
+पवित्र हैं।<br>
+इसलिए...<br>
+काम को पूर्णतः अनुभव करें और आनंद लें।`,
+              image: "intimacy_lust_sacred"
+            },
+            {
+              content: `काम – जहाँ मन और शरीर एकजुट हो सकते हैं।`,
+              image: "lust_mind_body_unity"
+            }
+          ]
+        },
+        {
+          id: '5.7',
+          title: 'खुशी',
+          paragraphs: []
+        },
+        {
+          id: '5.8',
+          title: 'स्वार्थ',
+          paragraphs: []
+        }
       ]
     },
     {

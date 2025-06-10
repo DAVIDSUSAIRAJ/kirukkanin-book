@@ -1865,7 +1865,181 @@ Block చేసి వెళ్లిపోతే...<br>
       id: '5',
       title: 'మనోవైజ్ఞానిక మార్పులు & కోరికలు',
       subsections: [
-        // subsections ఇక్కడ చేర్చవచ్చు
+        {
+          id: '5.1',
+          title: 'మత్తు మరియు ధ్యానం',
+          paragraphs: [
+            {
+              content: `మత్తు మరియు... ధ్యానం...<br>
+రెండూ తనను మరచిపోయిన స్థితులే.`,
+              image: "intoxication_meditation_forgetting"
+            },
+            {
+              content: `తనను మరచిపోయిన స్థితి...<br>
+ఏదైనా అయినా,<br>
+అది ధ్యానమే.`,
+              image: "self_forgetting_meditation"
+            }
+          ]
+        },
+        {
+          id: '5.2',
+          title: 'కలలు',
+          paragraphs: [
+            {
+              content: `కలల వైపు వెళ్లుతున్నప్పుడు...<br>
+గత జ్ఞాపకాలను మోసుకెళ్లవద్దు.`,
+              image: "dreams_without_past"
+            },
+            {
+              content: `కలల కోసం...<br>
+మార్గాన్ని మార్చవచ్చు.<br>
+కానీ...<br>
+మార్గం కోసం మరియు డబ్బు కోసం,<br>
+కలలను మార్చకూడదు.`,
+              image: "dreams_paths_money"
+            },
+            {
+              content: `శారీరిక దృఢత్వం కోల్పోయిన వారికి...<br>
+కలలు ఉండవు.<br>
+ఉన్నా...<br>
+వాటిని అమలు చేయలేరు.`,
+              image: "physical_strength_dreams"
+            },
+            {
+              content: `అధిక వెతుకులు ఉన్నప్పుడు,<br>
+అంతే మేరకు వైపరీత్యం మరియు<br>
+కష్టాలు కూడా ఉంటాయి.<br>
+వెతుకులు దొరికినప్పుడు...<br>
+వైపరీత్యాన్ని, కష్టాలను<br>
+ఒక క్షణంలో మరచిపోయి...<br>
+ఆనందం పొందుతాం.<br>
+ఒక క్షణం కోసం...<br>
+ప్రతి క్షణం వేడుకున్న వాంఛే...<br>
+చాలామంది "కల" అంటారు.<br>
+వారిలో...<br>
+ఈ వెర్రివాడు కూడా ఒకడు.`,
+              image: "dreams_yearning_madman"
+            }
+          ]
+        },
+        {
+          id: '5.3',
+          title: 'కల్పన',
+          paragraphs: [
+            {
+              content: `కలలు...<br>
+మనం ఆశించేవి.<br>
+జ్ఞాపకాలు...<br>
+మనం ఆశించనివి.<br>
+కల్పన మాత్రమే...<br>
+మనకు సొంతం.`,
+              image: "imagination_ownership"
+            },
+            {
+              content: `కల్పనకు...<br>
+విజయం లేదు... ఓటమి లేదు.<br>
+కలలను కోల్పోయిన వాడు...<br>
+కల్పనలో జీవిస్తాడు.`,
+              image: "imagination_no_failure"
+            },
+            {
+              content: `కల్పన – హద్దులేని లోకం.`,
+              image: "imagination_limitless_world"
+            }
+          ]
+        },
+        {
+          id: '5.4',
+          title: 'కొన్ని నిమిషాలు',
+          paragraphs: [
+            {
+              content: `రోజుకు కొన్ని నిమిషాలు...<br>
+మనసుతో మాట్లాడుదాం.`,
+              image: "few_minutes_mind_conversation"
+            },
+            {
+              content: `కొన్ని నిమిషాల కామం కోసం...<br>
+మొత్తం జీవితాన్ని కోల్పోకుండా,<br>
+ఉండేందుకు ప్రయత్నిద్దాం.`,
+              image: "few_minutes_lust_life"
+            },
+            {
+              content: `ఇతరులు మనకు ఇచ్చిన<br>
+కొన్ని నిమిషాల ద్రోహాలతో...<br>
+మన మొత్తం జీవితాన్ని ప్రభావితం చేయకుండా చూసుకుందాం.`,
+              image: "few_minutes_betrayal_life"
+            }
+          ]
+        },
+        {
+          id: '5.5',
+          title: 'చెడు అలవాట్లు',
+          paragraphs: [
+            {
+              content: `25 వయస్సుకు ముందు...<br>
+అన్ని రకాల చెడు అలవాట్లను<br>
+బానిసలుగా కాకుండా అనుభవించేద్దాం.`,
+              image: "bad_habits_experience_before_25"
+            },
+            {
+              content: `చెడు అలవాట్లు...<br>
+మనుషులకు అవసరమైనవి.<br>
+వాటి నుండి బయటకు వచ్చేటప్పుడు మాత్రమే...<br>
+వాటి సుఖం అద్భుతంగా ఉంటుంది.`,
+              image: "bad_habits_necessary_exit_pleasure"
+            }
+          ]
+        },
+        {
+          id: '5.6',
+          title: 'వాంఛ',
+          paragraphs: [
+            {
+              content: `జీవుల సృష్టి కర్మాగారం...<br>
+కామం.`,
+              image: "lust_creation_factory"
+            },
+            {
+              content: `కామం...<br>
+ఎండమావి లాంటిది.`,
+              image: "lust_like_mirage"
+            },
+            {
+              content: `కామం వల్ల కలిగే అన్ని దుఃఖాలు...<br>
+సృష్టికర్తకు చెందినవి...<br>
+మనకు చెందినవి కావు.`,
+              image: "lust_sufferings_creator"
+            },
+            {
+              content: `స్వయం ఆనందం...<br>
+కేవలం స్వార్థం కోసం మాత్రమే కాదు...<br>
+సామాన్య ప్రయోజనం కోసం కూడా.`,
+              image: "self_pleasure_common_good"
+            },
+            {
+              content: `అంతరంగత మరియు కామం...<br>
+పవిత్రమైనవి.<br>
+కాబట్టి...<br>
+కామాన్ని పూర్తిగా అనుభవించి ఆనందించండి.`,
+              image: "intimacy_lust_sacred"
+            },
+            {
+              content: `కామం – మనసు మరియు శరీరం ఐక్యమయ్యేది.`,
+              image: "lust_mind_body_unity"
+            }
+          ]
+        },
+        {
+          id: '5.7',
+          title: 'సంతోషం',
+          paragraphs: []
+        },
+        {
+          id: '5.8',
+          title: 'స్వార్థం',
+          paragraphs: []
+        }
       ]
     },
     {

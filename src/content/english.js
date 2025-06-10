@@ -1866,32 +1866,167 @@ expecting humanity is a great mistake.`,
         {
           id: '5.1',
           title: 'Intoxication and Meditation',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Intoxication and... meditation...<br>
+are both states of forgetting oneself.`,
+              image: "intoxication_meditation_forgetting"
+            },
+            {
+              content: `Any state of forgetting oneself...<br>
+whatever it may be,<br>
+is meditation.`,
+              image: "self_forgetting_meditation"
+            }
+          ]
         },
         {
           id: '5.2',
           title: 'Dreams',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `When moving towards your dreams...<br>
+don't carry the burden of past memories.`,
+              image: "dreams_without_past"
+            },
+            {
+              content: `For the sake of dreams...<br>
+paths can be changed.<br>
+But...<br>
+for the sake of paths and money,<br>
+dreams should not be changed.`,
+              image: "dreams_paths_money"
+            },
+            {
+              content: `Those who have lost physical strength...<br>
+will have no dreams.<br>
+Even if they do...<br>
+they cannot implement them.`,
+              image: "physical_strength_dreams"
+            },
+            {
+              content: `When there is excessive seeking,<br>
+there will be equal amounts of adversity<br>
+and hardship.<br>
+When the search bears fruit...<br>
+we forget the adversity and hardships<br>
+in an instant...<br>
+and find joy.<br>
+For one moment...<br>
+the yearning that longs every moment...<br>
+many call this "dream."<br>
+Among them...<br>
+the madman is also one.`,
+              image: "dreams_yearning_madman"
+            }
+          ]
         },
         {
           id: '5.3',
           title: 'Imagination',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Dreams...<br>
+are what we expect.<br>
+Memories...<br>
+are what we don't expect.<br>
+Only imagination...<br>
+truly belongs to us.`,
+              image: "imagination_ownership"
+            },
+            {
+              content: `For imagination...<br>
+there is neither victory... nor defeat.<br>
+One who has lost dreams...<br>
+lives in imagination.`,
+              image: "imagination_no_failure"
+            },
+            {
+              content: `Imagination – a limitless world.`,
+              image: "imagination_limitless_world"
+            }
+          ]
         },
         {
           id: '5.4',
           title: 'Few Moments',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `A few minutes each day...<br>
+let us talk with our mind.`,
+              image: "few_minutes_mind_conversation"
+            },
+            {
+              content: `For a few minutes of lust...<br>
+let us try not to lose<br>
+our entire life.`,
+              image: "few_minutes_lust_life"
+            },
+            {
+              content: `From the few minutes of betrayal<br>
+that others have given us...<br>
+let us take care not to let it affect our entire life.`,
+              image: "few_minutes_betrayal_life"
+            }
+          ]
         },
         {
           id: '5.5',
           title: 'Bad Habits',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Before the age of 25...<br>
+let us experience all kinds of bad habits<br>
+without becoming addicted to them.`,
+              image: "bad_habits_experience_before_25"
+            },
+            {
+              content: `Bad habits...<br>
+are necessary for humans.<br>
+Only when coming out of them...<br>
+will their pleasure be truly amazing.`,
+              image: "bad_habits_necessary_exit_pleasure"
+            }
+          ]
         },
         {
           id: '5.6',
           title: 'Lust',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `The factory of life creation...<br>
+is lust.`,
+              image: "lust_creation_factory"
+            },
+            {
+              content: `Lust...<br>
+is like mirage water.`,
+              image: "lust_like_mirage"
+            },
+            {
+              content: `All sufferings caused by lust...<br>
+belong to the creator...<br>
+not to us.`,
+              image: "lust_sufferings_creator"
+            },
+            {
+              content: `Self-pleasure...<br>
+is not just for selfishness...<br>
+but also for the common good.`,
+              image: "self_pleasure_common_good"
+            },
+            {
+              content: `Intimacy and lust...<br>
+are sacred.<br>
+Therefore...<br>
+enjoy lust completely and rejoice.`,
+              image: "intimacy_lust_sacred"
+            },
+            {
+              content: `Lust – where mind and body can unite.`,
+              image: "lust_mind_body_unity"
+            }
+          ]
         },
         {
           id: '5.7',
