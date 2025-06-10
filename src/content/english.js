@@ -1593,6 +1593,137 @@ brings true pleasure.`,
 No need for a golden cage.<br>
 Cage = Home.`,
       image: "simple_shelter"
+    },
+    {
+      content: `If we learn to protect<br>
+our secret struggles...<br>
+we need not fear anyone.`,
+      image: "inner_strength"
+    },
+    {
+      content: `Luxurious living means...<br>
+keeping our body refreshed<br>
+and mind at peace.`,
+      image: "true_luxury"
+    },
+    {
+      content: `Don't force someone...<br>
+to do an action.<br>
+Explain its benefits<br>
+and ask them to do it.<br>
+Then...<br>
+if they don't do it,<br>
+let it go.<br>
+Their suffering, with them.<br>
+My suffering, with me.`,
+      image: "respecting_choice"
+    },
+    {
+      content: `Understanding is higher than love.<br>
+Only when understanding endures,<br>
+love not only endures<br>
+but also grows.`,
+      image: "understanding_love"
+    },
+    {
+      content: `Only understanding, charity, and righteousness...<br>
+can protect us.`,
+      image: "three_protectors"
+    },
+    {
+      content: `Within us...<br>
+a change keeps happening continuously.<br>
+Are we changing...?<br>
+Or...<br>
+is time changing us...?<br>
+Or...<br>
+are we changing according to time...?<br>
+Or...<br>
+are we changing for those around us...?<br>
+Or...<br>
+are those around us<br>
+changing us...?<br>
+We don't understand this;<br>
+even if we don't understand, it's okay,<br>
+we'll move towards the next place<br>
+or the next action.<br>
+What needs to be understood<br>
+will definitely be understood<br>
+at the right time.`,
+      image: "mystery_of_change"
+    },
+    {
+      content: `Change is necessary for humans.<br>
+Let them...<br>
+be from evil towards good.`,
+      image: "positive_change"
+    },
+    {
+      content: `If we absorb others' actions and words...<br>
+we get mental stress.<br>
+If we absorb our own thoughts and actions...<br>
+we get mental peace.`,
+      image: "inner_focus_peace"
+    },
+    {
+      content: `With a little devotion to God and<br>
+a little self-wisdom...<br>
+we can change generational habits.`,
+      image: "breaking_traditions"
+    },
+    {
+      content: `If there's something you cannot tell<br>
+your parents, siblings,<br>
+or even your teacher...<br>
+and someone supports it<br>
+in the name of friend or friends...<br>
+please,<br>
+distance yourself from that person and live.`,
+      image: "avoiding_toxic_friends"
+    },
+    {
+      content: `Without taking a loan,<br>
+in the name of frugality...<br>
+if we explain our lack to someone<br>
+and take money...<br>
+while solving our temporary lack,<br>
+they satisfy their philanthropic hunger.`,
+      image: "financial_dependency"
+    },
+    {
+      content: `Those who have helped you...<br>
+don't preach to them;<br>
+unnecessarily, don't speak ill of them;<br>
+and, don't tell the outside world.`,
+      image: "gratitude_respect"
+    },
+    {
+      content: `Let us try to be one who moves forward,<br>
+rather than one who looks back at everything.`,
+      image: "moving_forward"
+    },
+    {
+      content: `If someone blocks us on social media<br>
+and moves on...<br>
+don't worry.<br>
+They are indirectly...<br>
+telling us a truth.<br>
+"There will be no more expectations...<br>
+no more troubles from now on."<br>
+In this...<br>
+neither their freedom is compromised,<br>
+nor our freedom.<br>
+This is true love...<br>
+Kirukkan feels.`,
+      image: "social_media_freedom"
+    },
+    {
+      content: `Are we happy...?<br>
+Or not...?<br>
+If we act as if we are happy...<br>
+just thinking about it,<br>
+we can be happy for some time.`,
+      image: "acting_happiness"
     }
   ]
 }
