@@ -2005,12 +2005,12 @@ Block कर दे और चला जाए...<br>
             },
             {
               content: `काम से उत्पन्न सभी दुःख...<br>
-सृष्टिकर्ता के हैं...<br>
+भगवान के हैं...<br>
 हमारे नहीं।`,
               image: "lust_sufferings_creator"
             },
             {
-              content: `स्वयं का सुख...<br>
+              content: `हस्तमैथुन...<br>
 केवल स्वार्थ के लिए नहीं...<br>
 सामान्य कल्याण के लिए भी है।`,
               image: "self_pleasure_common_good"

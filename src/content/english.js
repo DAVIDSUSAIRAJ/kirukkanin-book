@@ -2005,12 +2005,12 @@ is like mirage water.`,
             },
             {
               content: `All sufferings caused by lust...<br>
-belong to the creator...<br>
+belong to God...<br>
 not to us.`,
               image: "lust_sufferings_creator"
             },
             {
-              content: `Self-pleasure...<br>
+              content: `Masturbation...<br>
 is not just for selfishness...<br>
 but also for the common good.`,
               image: "self_pleasure_common_good"
