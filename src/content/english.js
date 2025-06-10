@@ -2164,17 +2164,133 @@ we can be selfish.`,
         {
           id: '6.1',
           title: 'Money',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Money is ours...<br>
+mind is ours too...`,
+              image: "money_mind_both_ours"
+            },
+            {
+              content: `As long as it's in our hands...<br>
+that's our money.<br>
+In the name of debt...<br>
+if it goes to others' hands...<br>
+one who realizes it's not our money anymore,<br>
+doesn't have great suffering.`,
+              image: "money_ours_till_in_hands"
+            },
+            {
+              content: `If you borrow money from money lenders...<br>
+the problem with them is only money.<br>
+But...<br>
+if you borrow money from acquaintances,<br>
+many problems arise.`,
+              image: "money_lender_vs_acquaintance"
+            },
+            {
+              content: `Only one who lives in<br>
+stomach hunger,<br>
+dream hunger,<br>
+and debt...<br>
+will clearly understand<br>
+the pain of having no money<br>
+and the value of money.`,
+              image: "money_value_hunger_debt"
+            },
+            {
+              content: `Hunger and money have no connection...<br>
+but...<br>
+many times we feel as if they do.`,
+              image: "hunger_money_no_connection"
+            },
+            {
+              content: `It's best never to borrow money<br>
+from places where we are close<br>
+or want to be close.<br>
+If you've borrowed money in difficult situations...<br>
+if you don't forget it<br>
+and pay it back no matter how many years later...<br>
+it will benefit us many times over.`,
+              image: "money_borrow_close_relationships"
+            }
+          ]
         },
         {
           id: '6.2',
           title: 'Debt',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `We can borrow for basic needs...<br>
+but...<br>
+we should not borrow for luxury needs..`,
+              image: "debt_basic_vs_luxury_needs"
+            },
+            {
+              content: `Even begging can save us in a day...<br>
+but...<br>
+debt never saves us.`,
+              image: "debt_begging_vs_borrowing"
+            }
+          ]
         },
         {
           id: '6.3',
           title: 'Hunger',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `What suits living beings very well...<br>
+suits the poor<br>
+even better than that - hunger.`,
+              image: "hunger_suits_poor_better"
+            },
+            {
+              content: `For food eaten while enduring...<br>
+the mind must be dead.`,
+              image: "hunger_enduring_food_dead_mind"
+            },
+            {
+              content: `One who fights for success<br>
+can live with dream hunger.<br>
+But should not live with stomach hunger.<br>
+For stomach hunger...<br>
+many destroy their dream hunger.`,
+              image: "hunger_dream_vs_stomach"
+            },
+            {
+              content: `Between stomach hunger and us,<br>
+a war takes place at some point;<br>
+in that war...<br>
+the one who wins<br>
+will always be stomach hunger.`,
+              image: "hunger_war_always_wins"
+            },
+            {
+              content: `Many times...<br>
+in stomach hunger we become a child.`,
+              image: "hunger_makes_us_child"
+            },
+            {
+              content: `When a rich person's food gets scattered...<br>
+the heart of one in hunger trembles.`,
+              image: "hunger_rich_food_scattered"
+            },
+            {
+              content: `Taking and eating scattered food...<br>
+is a habit that hunger has taught many.`,
+              image: "hunger_scattered_food_habit"
+            },
+            {
+              content: `Can steal for stomach hunger...<br>
+but should not steal for tongue taste.`,
+              image: "hunger_steal_vs_taste"
+            },
+            {
+              content: `Where our memories reside...<br>
+along with emotions...<br>
+some food also comes along.`,
+              image: "hunger_memories_emotions_food"
+            }
+          ]
         },
         {
           id: '6.4',
