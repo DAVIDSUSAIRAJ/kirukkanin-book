@@ -1724,6 +1724,132 @@ If we act as if we are happy...<br>
 just thinking about it,<br>
 we can be happy for some time.`,
       image: "acting_happiness"
+    },
+    {
+      content: `When thoughts become firm,<br>
+the troubles that come in between...<br>
+get broken away.`,
+      image: "firm_thoughts"
+    },
+    {
+      content: `Relocation... is very, very necessary.<br>
+If relocation comes our way,<br>
+let us accept it immediately.<br>
+When relocation happens,<br>
+change in thinking occurs.<br>
+When change in thinking occurs,<br>
+certainly change in action also occurs.<br>
+In that action...<br>
+whether success... or failure...<br>
+whatever it may be...<br>
+accepting that experience,<br>
+let us move forward.`,
+      image: "relocation_transformation"
+    },
+    {
+      content: `Experience and<br>
+the knowledge born from experience alone<br>
+guide us to the right path,<br>
+love and concern<br>
+never guide us to the right path.`,
+      image: "experience_over_love"
+    },
+    {
+      content: `Someone should be sculpted into a statue...<br>
+not destroyed like stone.<br>
+Be a sculptor...<br>
+don't be a destroyer.`,
+      image: "sculpt_not_destroy"
+    },
+    {
+      content: `To one who struggles for success...<br>
+give support.<br>
+To one who has achieved success...<br>
+don't give support.`,
+      image: "support_strugglers"
+    },
+    {
+      content: `Don't think of skipping past<br>
+anything.<br>
+Let us experience<br>
+and move through.`,
+      image: "experience_not_skip"
+    },
+    {
+      content: `Learning to save and spend time<br>
+is superior to...<br>
+learning to spend and<br>
+save money.`,
+      image: "time_over_money"
+    },
+    {
+      content: `Relationships...<br>
+don't leave quietly.<br>
+But...<br>
+they cut and go.`,
+      image: "relationships_cut_not_leave"
+    },
+    {
+      content: `We are born...<br>
+to live with mental peace...<br>
+not to live luxuriously before relatives<br>
+or to rule luxuriously.`,
+      image: "born_for_peace"
+    },
+    {
+      content: `When asked for a way to live,<br>
+after hearing and understanding the pain...<br>
+instead of giving a way to live,<br>
+some people will only give more pain.`,
+      image: "pain_guidance"
+    },
+    {
+      content: `In difficult situations,<br>
+rather than money,<br>
+let us give importance to action.<br>
+First let us learn to live.<br>
+Then...<br>
+let us try to move forward.`,
+      image: "action_over_money"
+    },
+    {
+      content: `To those who show love,<br>
+even if you cannot show embrace in return,<br>
+it's alright.<br>
+But...<br>
+don't be indifferent.`,
+      image: "respect_love_givers"
+    },
+    {
+      content: `Money, women, gold, land, alcohol, meat...<br>
+All of these are illusions.<br>
+These 6 things destroy our 6 senses.<br>
+Without becoming slaves to them,<br>
+let us use them and transcend beyond.`,
+      image: "six_illusions"
+    },
+    {
+      content: `Don't consider advice...<br>
+as knowledge.<br>
+True knowledge comes only from experience.<br>
+For us...<br>
+other than ourselves,<br>
+no one here can give us knowledge.<br>
+The knowledge gained through experience<br>
+and its clarity is our dawn.`,
+      image: "experiential_knowledge"
+    },
+    {
+      content: `One who is about to commit suicide...<br>
+can be stopped.<br>
+But...<br>
+one who is dying naturally should not be stopped.`,
+      image: "death_wisdom"
+    },
+    {
+      content: `Among people who are watching for entertainment,<br>
+expecting humanity is a great mistake.`,
+      image: "spectator_humanity"
     }
   ]
 }
