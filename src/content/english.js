@@ -1557,6 +1557,42 @@ how they behave with others.<br>
 One should decide their character<br>
 based on how they behave with us.`,
       image: "character_judgment"
+    },
+    {
+      content: `If you dare to face the present,<br>
+there's no need to long for the future.<br>
+Today's present is...<br>
+yesterday's future.`,
+      image: "present_moment_strength"
+    },
+    {
+      content: `To gain completeness...<br>
+we must accept our shortcomings.<br>
+Shortcomings...<br>
+are not meant to diminish us;<br>
+but to fulfill us.`,
+      image: "acceptance_completeness"
+    },
+    {
+      content: `Instead of teaching lessons<br>
+to those who don't understand...<br>
+let us journey together<br>
+with those who do.`,
+      image: "wise_companionship"
+    },
+    {
+      content: `In nothing...<br>
+achieve complete perfection.<br>
+Only the endless journey...<br>
+through pain,<br>
+brings true pleasure.`,
+      image: "endless_journey"
+    },
+    {
+      content: `A cage is enough to dwell in.<br>
+No need for a golden cage.<br>
+Cage = Home.`,
+      image: "simple_shelter"
     }
   ]
 }
