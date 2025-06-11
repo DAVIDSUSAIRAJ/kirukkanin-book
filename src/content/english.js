@@ -2408,7 +2408,117 @@ it teaches us that it is something worthy of labor's value.`,
         {
           id: '7.1',
           title: 'Time',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Desires may not be fulfilled...<br>
+But...<br>
+If one stays alive,<br>
+dreams will be fulfilled.<br>
+To fulfill the dream...?<br>
+Or...<br>
+To take away life...?<br>
+In the end,<br>
+only time will decide.`,
+              image: "time_dreams_vs_desires"
+            },
+            {
+              content: `In youth and<br>
+married life,<br>
+eyes don't waver...<br>
+only the heart wavers.<br>
+Give your wavering heart...<br>
+to God and...<br>
+to time.<br>
+Time<br>
+will surely give us<br>
+what is meant for us.`,
+              image: "time_heart_surrender"
+            },
+            {
+              content: `Even knowing that<br>
+"our labor is being absorbed,"<br>
+without thinking<br>
+"Should we continue working?"...<br>
+At that place,<br>
+let us perform our duties with skill.<br>
+What we deserve to receive,<br>
+time will surely give.<br>
+Or...<br>
+to emerge from that place,<br>
+the opportunity meant for us...<br>
+time will create.`,
+              image: "time_work_dedication"
+            },
+            {
+              content: `With a hungry stomach,<br>
+with a heavy heart,<br>
+with flowing tears...<br>
+body exhausted,<br>
+if you are crouched in a corner,<br>
+do not worry.<br>
+Through someone...<br>
+what is meant for us,<br>
+time will surely give.<br>
+This is...<br>
+the miracle of time.`,
+              image: "time_miracle_despair"
+            },
+            {
+              content: `Knowing our helpful nature<br>
+within us...<br>
+if someone deceives us,<br>
+do not worry.<br>
+What is meant for us,<br>
+time will surely give.<br>
+To those who deceived us too,<br>
+what is meant for them...<br>
+time will surely give.`,
+              image: "time_justice_deception"
+            },
+            {
+              content: `Actions done against time...<br>
+do not reach completion.<br>
+For an action<br>
+to reach completion...<br>
+some time is also needed.`,
+              image: "time_actions_completion"
+            },
+            {
+              content: `For money...<br>
+one might think that dignity will never<br>
+become a slave.<br>
+But...<br>
+when time and period join together...<br>
+they will enslave it.`,
+              image: "time_dignity_money_slavery"
+            },
+            {
+              content: `Only when we fail to perform<br>
+the duties that should be done at the right time...<br>
+the value of time<br>
+becomes clearly understood.`,
+              image: "time_value_missed_duties"
+            },
+            {
+              content: `If we remain true to time and heart...<br>
+if something wrong happens around us,<br>
+we will move away from that place...<br>
+or...<br>
+those around us<br>
+will move away from that place.<br>
+Without us even knowing,<br>
+time will do its work.`,
+              image: "time_truth_heart_movement"
+            },
+            {
+              content: `Making a pain<br>
+painful...<br>
+and healing<br>
+the same pain...<br>
+it is only time.`,
+              image: "time_pain_healing"
+            }
+          ]
         },
         {
           id: '7.2',
@@ -2433,6 +2543,11 @@ it teaches us that it is something worthy of labor's value.`,
         {
           id: '7.6',
           title: 'Destruction',
+          paragraphs: []
+        },
+        {
+          id: '7.7',
+          title: 'Waste',
           paragraphs: []
         }
       ]
