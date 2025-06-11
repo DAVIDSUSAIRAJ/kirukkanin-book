@@ -2537,12 +2537,111 @@ the changes that are about to happen.`,
         {
           id: '7.3',
           title: 'Life... An Endless Journey',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `In every ending,<br>
+another beginning...<br>
+In every beginning,<br>
+a path...<br>
+In every path,<br>
+an opportunity...<br>
+In every opportunity,<br>
+a struggle...<br>
+In every struggle,<br>
+a learning...<br>
+In every learning,<br>
+an experience...<br>
+Life is<br>
+about crossing through many experiences.<br>
+Let us accept it wholeheartedly.`,
+              image: "life_endless_journey_cycle"
+            },
+            {
+              content: `Searching before losing...<br>
+is not a search;<br>
+Searching after losing<br>
+is the true search..`,
+              image: "true_search_after_loss"
+            },
+            {
+              content: `If we remain true to time and heart,<br>
+even if we die physically,<br>
+within someone's life,<br>
+we will continue to live on...`,
+              image: "true_living_after_death"
+            },
+            {
+              content: `In search,<br>
+a pleasure;<br>
+in imagination,<br>
+many eras...`,
+              image: "search_pleasure_imagination_eras"
+            }
+          ]
         },
         {
           id: '7.4',
           title: 'Let Us Move On',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Only when we lose physical health,<br>
+have we lost something;<br>
+otherwise, everything is just experience.`,
+              image: "physical_health_experience"
+            },
+            {
+              content: `If we have the desire to love,<br>
+let us love time;<br>
+let us learn to journey with it.<br>
+That is eternal.`,
+              image: "love_time_eternal_journey"
+            },
+            {
+              content: `In this world,<br>
+understanding others' hearts,<br>
+how to act with them,<br>
+how to be happy in that place -<br>
+this is what we need to learn.`,
+              image: "understanding_hearts_happiness"
+            },
+            {
+              content: `Let us experience emotions;<br>
+but without getting soaked in them,<br>
+let us protect ourselves.`,
+              image: "experience_emotions_protect_self"
+            },
+            {
+              content: `Let us do the work we can do;<br>
+the work we cannot do,<br>
+let us leave in the hands of time.`,
+              image: "do_possible_leave_impossible_to_time"
+            },
+            {
+              content: `In difficult situations,<br>
+to what extent our mind accepts suffering<br>
+and takes the next step,<br>
+to what extent we have confidence in ourselves -<br>
+that is the wealth we have accumulated.<br>
+Until death,<br>
+that wealth alone is permanent.`,
+              image: "resilience_confidence_true_wealth"
+            },
+            {
+              content: `When we are true only to time and heart,<br>
+whoever comes, whoever goes,<br>
+there is no need to worry.`,
+              image: "true_to_time_heart_no_worry"
+            },
+            {
+              content: `Beyond compulsions,<br>
+let our journey be<br>
+a quest for eternal things.<br>
+Learning with time,<br>
+alone, courageously, peacefully,<br>
+let us move on.`,
+              image: "journey_beyond_compulsions_eternal_peace"
+            }
+          ]
         },
         {
           id: '7.5',
