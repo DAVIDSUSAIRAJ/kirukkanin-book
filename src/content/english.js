@@ -2523,7 +2523,16 @@ it is only time.`,
         {
           id: '7.2',
           title: 'Future & Change',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `If we understand<br>
+the changes that have happened<br>
+and the changes that are happening...<br>
+we can somewhat predict<br>
+the changes that are about to happen.`,
+              image: "future_change_prediction"
+            }
+          ]
         },
         {
           id: '7.3',
