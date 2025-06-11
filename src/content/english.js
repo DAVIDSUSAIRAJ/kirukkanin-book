@@ -2321,17 +2321,83 @@ it will yield the right benefits.`,
         {
           id: '6.5',
           title: 'Talent',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `For talent...<br>
+poverty is necessary.<br>
+Poverty is what...<br>
+creates talent.<br>
+Talent...<br>
+doesn't just benefit oneself;<br>
+it also removes some people's poverty.`,
+              image: "talent_poverty_creates_talent"
+            },
+            {
+              content: `Countless thoughts...<br>
+everyone has.<br>
+The talent to control them;<br>
+only a few have.`,
+              image: "talent_control_thoughts_few_have"
+            },
+            {
+              content: `Can desire talent...<br>
+but...<br>
+should not desire wealth.`,
+              image: "talent_desire_talent_not_wealth"
+            },
+            {
+              content: `Talent – success that emerges from poverty.`,
+              image: "talent_success_from_poverty"
+            }
+          ]
         },
         {
           id: '6.6',
           title: 'Courage',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Standing alone...<br>
+Knowing one's capability in solitude...<br>
+Without anyone's help,<br>
+One who dares to act...<br>
+Is the courageous one.`,
+              image: "courage_solitude"
+            },
+            {
+              content: `Courage is...<br>
+Not the mindset we have when we exclude someone;<br>
+When someone excludes us,<br>
+What mindset we have then - that is courage.`,
+              image: "courage_mindset"
+            },
+            {
+              content: `Courage - can only be understood by those who have realized themselves.`,
+              image: "courage_self_realization"
+            }
+          ]
         },
         {
           id: '6.7',
           title: 'Luck',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `With stomach hunger...<br>
+in whatever action we remain firm<br>
+and keep working...<br>
+only then,<br>
+can we realize the continuous luck within it.`,
+              image: "luck_hard_work_hunger"
+            },
+            {
+              content: `Luck is not just something predictable...<br>
+it teaches us that it is something worthy of labor's value.`,
+              image: "luck_not_prediction_but_labor_value"
+            },
+            {
+              content: `Luck – the reward of labor.`,
+              image: "luck_reward_of_labor"
+            }
+          ]
         }
       ]
     },

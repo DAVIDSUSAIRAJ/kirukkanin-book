@@ -2324,17 +2324,83 @@ Block कर दे और चला जाए...<br>
         {
           id: '6.5',
           title: 'प्रतिभा',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `प्रतिभा के लिए...<br>
+गरीबी जरूरी है।<br>
+गरीबी ही...<br>
+प्रतिभा का निर्माण करती है।<br>
+प्रतिभा...<br>
+सिर्फ खुद का भला नहीं करती;<br>
+कुछ लोगों की गरीबी भी दूर करती है।`,
+              image: "talent_poverty_creates_talent"
+            },
+            {
+              content: `अनगिनत विचार...<br>
+सभी के पास हैं।<br>
+उन्हें नियंत्रित करने की प्रतिभा;<br>
+केवल कुछ के पास है।`,
+              image: "talent_control_thoughts_few_have"
+            },
+            {
+              content: `प्रतिभा की इच्छा कर सकते हैं...<br>
+लेकिन...<br>
+धन की इच्छा नहीं करनी चाहिए।`,
+              image: "talent_desire_talent_not_wealth"
+            },
+            {
+              content: `प्रतिभा – गरीबी से उत्पन्न सफलता।`,
+              image: "talent_success_from_poverty"
+            }
+          ]
         },
         {
           id: '6.6',
           title: 'साहस',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `अकेले रहकर...<br>
+अपनी योग्यता को एकांत में जानकर...<br>
+किसी की सहायता के बिना,<br>
+साहस से कार्य करने वाला...<br>
+वही साहसी है।`,
+              image: "courage_solitude"
+            },
+            {
+              content: `साहस वह है...<br>
+जब हम किसी को अलग करते हैं तो हमारी मानसिकता नहीं;<br>
+जब कोई हमें अलग करता है,<br>
+तब हमारी क्या मानसिकता होती है - वही साहस है।`,
+              image: "courage_mindset"
+            },
+            {
+              content: `साहस - केवल उसी को समझ आता है जिसने स्वयं को पहचाना हो।`,
+              image: "courage_self_realization"
+            }
+          ]
         },
         {
           id: '6.7',
           title: 'भाग्य',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `पेट की भूख के साथ...<br>
+जिस भी काम में दृढ़ता से रहकर,<br>
+मेहनत करते रहते हैं...<br>
+तभी,<br>
+उसमें निहित निरंतर भाग्य को महसूस कर सकते हैं।`,
+              image: "luck_hard_work_hunger"
+            },
+            {
+              content: `भाग्य केवल अनुमान लगाने वाली चीज नहीं है...<br>
+यह सिखाता है कि यह मेहनत के मूल्य के योग्य चीज है।`,
+              image: "luck_not_prediction_but_labor_value"
+            },
+            {
+              content: `भाग्य – मेहनत का इनाम।`,
+              image: "luck_reward_of_labor"
+            }
+          ]
         }
       ]
     },
