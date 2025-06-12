@@ -3463,15 +3463,24 @@ continue to relate with you...`,
     }
   ],
   conclusion: {
-    title: 'Conclusion',
+    title: 'A Light for Minds Seeking Truth…',
     paragraphs: [
       {
-        content: 'Those who hide the help they receive from us will have the nature to help more...',
-        image: 'conclusion1'
+        content: `Behind every word...<br>
+lies every pain,<br>
+hours of contemplation,<br>
+and years of experience.`,
+        image: 'words_behind_pain'
       },
       {
-        content: 'Our hardships are not for us... they are to make happy those who come seeking us...',
-        image: 'conclusion2'
+        content: `Let the lines in this book...<br>
+be a light for minds seeking truth.<br>
+In every stage of life...<br>
+let our journey continue!<br>
+Finally...<br>
+seeking the path that leads to happiness,<br>
+we shall pass through peacefully.`,
+        image: 'light_for_truth_seekers'
       }
     ]
   }
