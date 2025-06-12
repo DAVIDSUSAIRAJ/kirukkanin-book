@@ -3260,17 +3260,204 @@ why tears...?`,
         {
           id: '9.1',
           title: 'Who is this Madman?',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `From a young age...<br>
+one who was left alone.`,
+              image: "childhood_isolation_left_alone"
+            },
+            {
+              content: `Despite some experiences<br>
+and learning...<br>
+unable to think clearly,<br>
+became addicted to intoxication.<br>
+One who doesn't know<br>
+how to respect parents<br>
+and siblings.`,
+              image: "addiction_despite_learning_family_disrespect"
+            },
+            {
+              content: `One attracted to lust.<br>
+One who has hurt many...<br>
+and continues to hurt others.`,
+              image: "lust_attraction_hurting_others_continuously"
+            },
+            {
+              content: `One who has lived<br>
+in many family tears.`,
+              image: "living_in_family_tears"
+            },
+            {
+              content: `Through anger...<br>
+made the guru bow his head.<br>
+Starting with the guru...<br>
+uses everyone<br>
+for his own selfish purposes.`,
+              image: "anger_guru_disrespect_selfish_exploitation"
+            },
+            {
+              content: `One who lacks the strength<br>
+to keep promises made.`,
+              image: "unable_keep_promises_made"
+            },
+            {
+              content: `One who insulted love...<br>
+and abandoned those who trusted.`,
+              image: "insulted_love_abandoned_trust"
+            },
+            {
+              content: `Except for a few included in his life...<br>
+doesn't wish to follow<br>
+anyone else.`,
+              image: "selective_following_unwilling_others"
+            }
+          ]
         },
         {
           id: '9.2',
           title: 'Desires of a Madman',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Kirukkan should be useful to everyone,<br>
+rather than being possessed<br>
+by anyone to the extent of claiming ownership.`,
+              image: "useful_to_all"
+            },
+            {
+              content: `Use Kirukkan.<br>
+Don't trust and get deceived.`,
+              image: "use_dont_trust"
+            },
+            {
+              content: `Avoiding compulsions...<br>
+seeking permanence is the desire.`,
+              image: "seek_permanent_avoid_compulsions"
+            },
+            {
+              content: `No desire to receive love,<br>
+only desire to share love.`,
+              image: "share_love"
+            },
+            {
+              content: `No desire to live ahead of others,<br>
+only desire to live as one likes.`,
+              image: "live_own_way"
+            },
+            {
+              content: `No desire to live with good money,<br>
+only desire to live with a good mind.`,
+              image: "good_mind"
+            },
+            {
+              content: `No desire to receive help,<br>
+only desire to give help.`,
+              image: "give_help"
+            },
+            {
+              content: `To live withdrawn in secluded places,<br>
+to live away from rejected places is the desire.`,
+              image: "live_secluded"
+            },
+            {
+              content: `To live in a heart with pain,<br>
+to die in a heart that gave pain is the desire.`,
+              image: "painful_heart"
+            },
+            {
+              content: `No rest in old age needed...<br>
+After youth, death is wanted.`,
+              image: "death_after_youth"
+            },
+            {
+              content: `No good life needed...<br>
+A good death is wanted.`,
+              image: "good_death"
+            },
+            {
+              content: `Not struggling to live peacefully...<br>
+Struggling to die peacefully.`,
+              image: "peaceful_death"
+            },
+            {
+              content: `Not waiting to enjoy the earth...<br>
+Waiting to give myself to the earth.`,
+              image: "give_to_earth"
+            },
+            {
+              content: `Tomorrow if my journey<br>
+is known to be in a funeral vehicle...<br>
+Like how I am with you today,<br>
+the desire is to be present every day and then die peacefully.`,
+              image: "funeral_journey"
+            },
+            {
+              content: `Oh God!<br>
+Nature!<br>
+What I have asked most from you...<br>
+am asking now...<br>
+and will ask...<br>
+is only one thing.<br>
+To those I love,<br>
+and those who love me,<br>
+whether you give a good life or not...<br>
+please give a good death.`,
+              image: "prayer_to_god"
+            }
+          ]
         },
         {
           id: '9.3',
           title: 'Final Words...',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Finally...<br>
+What is Kirukkan's journey philosophy trying to say...?`,
+              image: "final_message"
+            },
+            {
+              content: `Let us strengthen our body.`,
+              image: "strengthen_body"
+            },
+            {
+              content: `We are traveling on the determined path;<br>
+There is no need to fear...`,
+              image: "determined_path"
+            },
+            {
+              content: `We will keep trying...<br>
+While we keep trying,<br>
+we will also realize that no work...<br>
+is degrading.`,
+              image: "continuous_effort"
+            },
+            {
+              content: `When we are true to time and heart...<br>
+false blame will come.<br>
+Without paying heed to it unnecessarily...<br>
+we will move forward.`,
+              image: "truth_brings_blame"
+            },
+            {
+              content: `We will try to protect<br>
+our struggles secretly.<br>
+We will firmly believe that<br>
+there is certainly a good life...`,
+              image: "protect_struggles"
+            },
+            {
+              content: `In youth itself...<br>
+we will realize God and nature.<br>
+In the end...<br>
+we will accept a good death.`,
+              image: "realize_god_nature"
+            },
+            {
+              content: `Kirukkan may perish.<br>
+Let Kirukkan's painful lines...<br>
+continue to relate with you...`,
+              image: "kirukkan_may_perish"
+            }
+          ]
         }
       ]
     }
