@@ -3056,38 +3056,200 @@ that is the path.`,
         {
           id: '7.6',
           title: 'Destruction',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Those who give money for luxury will be destroyed...<br>
+Those who take money for luxury will also be destroyed.`,
+              image: "luxury_money_destruction"
+            },
+            {
+              content: `Never lend money after borrowing...<br>
+If you do this again...<br>
+destruction is certain.`,
+              image: "debt_cycle_destruction"
+            },
+            {
+              content: `Excessive greed and luxuries<br>
+beyond one's economic capacity...<br>
+will surely bring destruction.`,
+              image: "greed_beyond_means_destruction"
+            },
+            {
+              content: `If the mind goes wherever it pleases,<br>
+one will have to live without mental peace.<br>
+A life without mental peace...<br>
+is a journey towards destruction.`,
+              image: "mind_wandering_peace_destruction"
+            },
+            {
+              content: `One can live with longing...<br>
+But living in hardship is difficult.<br>
+Here, many people<br>
+are eliminating their longings<br>
+and drowning in hardships.<br>
+If one falls into the ocean of hardship,<br>
+there won't even be time to reach the shore.<br>
+In the end... only destruction.<br>
+For example...<br>
+A middle-class family<br>
+having more than one child.`,
+              image: "longing_vs_hardship_destruction"
+            },
+            {
+              content: `The one who creates desire...<br>
+is woman.<br>
+If you can recognize this change,<br>
+control and rule over it.<br>
+Otherwise, destruction is certain.`,
+              image: "desire_woman_control_destruction"
+            },
+            {
+              content: `In the bush, a burial pit...<br>
+In the burial pit, spring water...<br>
+If you drown in the spring water,<br>
+you'll have to drown in the burial pit.<br>
+Experience lust...<br>
+but don't drown in it.`,
+              image: "lust_experience_not_drown"
+            },
+            {
+              content: `Without realizing our own mistakes,<br>
+the thought of seeking revenge against someone...<br>
+is destruction we bring upon ourselves.`,
+              image: "revenge_without_awareness_self_destruction"
+            }
+          ]
         },
         {
           id: '7.7',
           title: 'Waste',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `If there is no attention to waste...<br>
+one will have to float<br>
+on top of the waste.<br>
+Waste – if it stagnates, destruction.`,
+              image: "waste_attention_stagnation_destruction"
+            }
+          ]
         }
       ]
     },
     {
       id: '8',
-      title: 'Death & Final Journey',
+      title: 'Final Journey & Death',
       subsections: [
         {
           id: '8.1',
           title: 'Love Death',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Daily journey...<br>
+is not towards life...<br>
+but towards death.`,
+              image: "daily_journey_towards_death_not_life"
+            },
+            {
+              content: `To eliminate unnecessary desires<br>
+and thoughts...<br>
+love death.`,
+              image: "eliminate_unnecessary_desires_love_death"
+            },
+            {
+              content: `In certain circumstances,<br>
+if the desire to live is less<br>
+and the desire to die is more...<br>
+we can realize our true nature.<br>
+When we realize our true nature...<br>
+we will love death.`,
+              image: "death_desire_reveals_true_nature"
+            },
+            {
+              content: `In this world...<br>
+without knowing that what we seek is death,<br>
+we keep searching for various things.<br>
+We keep lamenting<br>
+that what we sought was not found.<br>
+In a life where the answer is unknown,<br>
+receiving the answer is death.`,
+              image: "unknowingly_seeking_death_in_life"
+            },
+            {
+              content: `Living naturally with nature,<br>
+we will eventually return to it.`,
+              image: "live_naturally_attain_nature"
+            },
+            {
+              content: `We...<br>
+need not go seeking death.<br>
+When death comes,<br>
+if we love death<br>
+and accept it courageously, that is enough.`,
+              image: "no_need_seek_death_accept_courageously"
+            },
+            {
+              content: `Death alone...<br>
+is the final solution.`,
+              image: "death_only_final_solution"
+            }
+          ]
         },
         {
           id: '8.2',
           title: 'Die on Earth to Live',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `That mental comfort is better<br>
+than financial comfort,<br>
+that physical health is better<br>
+than indulgence,<br>
+that death is better<br>
+than life...<br>
+one day will surely be understood.<br>
+When it is understood, the time to leave this world will have come.`,
+              image: "mental_peace_health_death_better_realization"
+            },
+            {
+              content: `Until we don't know how to live...<br>
+we will keep living;<br>
+Once we know how to live...<br>
+we will die.`,
+              image: "live_until_learn_die_when_understand"
+            }
+          ]
         },
         {
           id: '8.3',
           title: 'Death - The Predetermined End',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Death...<br>
+is a date predetermined in advance.<br>
+The one with money...<br>
+will lie in the hospital.<br>
+The one without money...<br>
+will lie on the street.<br>
+But...<br>
+when the time comes, the end is the same.`,
+              image: "death_predetermined_rich_poor_same_end"
+            }
+          ]
         },
         {
           id: '8.4',
           title: 'Birth & Death - Why These Feelings?',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `Birth...<br>
+Death...<br>
+A nature of nature...<br>
+In that...<br>
+why celebration...?<br>
+In that...<br>
+why tears...?`,
+              image: "birth_death_nature_why_celebrate_cry"
+            }
+          ]
         }
       ]
     },
