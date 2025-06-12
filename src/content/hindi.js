@@ -2650,7 +2650,410 @@ Block कर दे और चला जाए...<br>
         {
           id: '7.5',
           title: 'व्यावहारिक सत्य',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `कार्यस्थल पर...<br>
+यदि अच्छी प्रतिष्ठा पाना चाहते हैं,<br>
+समय, मेहनत, पैसा...<br>
+इन्हें अधिक खर्च करने पर ही यह संभव होता है।`,
+              image: "workplace_reputation_investment"
+            },
+            {
+              content: `जिनके पास नहीं है उनसे ही...<br>
+समय, मेहनत, पैसा, सदाचार...<br>
+इन्हें चुराया जा सकता है।`,
+              image: "stealing_from_have_nots"
+            },
+            {
+              content: `जो प्रेम करता है उसके साथ ही...<br>
+आंसू भी आते हैं।`,
+              image: "love_brings_tears"
+            },
+            {
+              content: `जीवन को खोजो...<br>
+स्त्री तुम्हें खोजती आएगी।<br>
+स्त्री को खोजोगे तो...<br>
+जीवन को खोजना पड़ेगा।`,
+              image: "seek_life_not_woman"
+            },
+            {
+              content: `अधिकतर स्त्रियां...<br>
+पैसा, पद वाले को ही खोजती हैं।`,
+              image: "women_seek_money_status"
+            },
+            {
+              content: `धोखेबाज कौन है...?<br>
+जिसे हमने ही चुना है..!`,
+              image: "betrayer_is_chosen_one"
+            },
+            {
+              content: `अपेक्षा को पा लिया तो...<br>
+वह सपना है।<br>
+नहीं तो...<br>
+वह कल्पना है।`,
+              image: "expectation_dream_vs_fantasy"
+            },
+            {
+              content: `अमीर और गरीब दोनों के लिए...<br>
+प्रकृति और ईश्वर का एकमात्र समाधान...<br>
+केवल मृत्यु है।`,
+              image: "death_equal_solution_rich_poor"
+            },
+            {
+              content: `मनुष्यों को समझने की कोशिश करते करते<br>
+हृदय गूंगा होता जाता है।<br>
+मौनता...<br>
+और थोड़ा सा अभिनय...<br>
+अपने आप आ जाता है।`,
+              image: "understanding_humans_silence_acting"
+            },
+            {
+              content: `क्या संसार स्थायी रहेगा...?<br>
+यदि शायद रहे तो...<br>
+संसार स्थायी है,<br>
+जीव स्थायी नहीं हैं।<br>
+मिट्टी स्थायी है...<br>
+मनुष्य स्थायी नहीं है।`,
+              image: "world_permanent_life_impermanent"
+            },
+            {
+              content: `जवानी में...<br>
+ईश्वर को भूलने वाला,<br>
+प्रकृति को पाने के समय...<br>
+ईश्वर को खोजेगा।<br>
+प्रकृति और ईश्वर को समझने के बाद...<br>
+सच्ची खोज शुरू होगी।`,
+              image: "youth_forgets_god_maturity_seeks_true_search"
+            },
+            {
+              content: `मन...<br>
+ईश्वर को अधिक खोजता है तो,<br>
+एक:<br>
+सपने को ढोते समय...<br>
+या,<br>
+दूसरों की दी गई यादों को ढोते समय।`,
+              image: "mind_seeks_god_dreams_memories"
+            },
+            {
+              content: `मंदिर जाने वाले अधिकतर लोग...<br>
+"आदर्श" के नाम पर,<br>
+अत्यधिक लालच को ढोने वाले ही होते हैं।<br>
+उनमें पागल भी एक है।`,
+              image: "temple_goers_carry_greed_as_ideals"
+            },
+            {
+              content: `ईश्वर की रचना में...<br>
+दो अद्भुत चीजें:<br>
+प्रकृति,<br>
+और प्रकृति को पाना।`,
+              image: "gods_two_wonders_nature_reaching_nature"
+            },
+            {
+              content: `मन जो बनाता है...<br>
+इच्छाएं,<br>
+और बेचैनी...<br>
+प्रेम...<br>
+मोहब्बत...<br>
+काम...<br>
+सपने...`,
+              image: "mind_creates_desires_restlessness_love_dreams"
+            },
+            {
+              content: `अच्छे इंसान की तरह जीने में,<br>
+और बुरे इंसान की तरह जीने में,<br>
+सुख नहीं है।<br>
+अगर अच्छे इंसान हो...<br>
+तो बुरे इंसान की तरह जीने में सुख है।<br>
+अगर बुरे इंसान हो...<br>
+तो अच्छे इंसान की तरह जीने में सुख है।`,
+              image: "paradox_good_bad_living_pleasure"
+            },
+            {
+              content: `सुविधा का रास्ता खोजते हैं...<br>
+कई लोग।<br>
+जीवन का रास्ता खोजते हैं...<br>
+कुछ लोग।<br>
+जीवित रहने का रास्ता खोजते हैं...<br>
+कुछ गिने-चुने।<br>
+फिर भी...<br>
+सभी का एक ही अंत...<br>
+केवल मृत्यु।`,
+              image: "paths_to_comfort_life_survival_death"
+            },
+            {
+              content: `पैसे से नहीं खरीदा जा सकता...<br>
+अनुभव से भरी यादें।`,
+              image: "money_cannot_buy_experience_memories"
+            },
+            {
+              content: `कुछ भी स्थायी नहीं है।<br>
+इसे जानने वाला भी...<br>
+स्थायी नहीं रहा है।`,
+              image: "nothing_permanent_even_knower_impermanent"
+            },
+            {
+              content: `इंसान के लिए...<br>
+कष्ट कभी नहीं छोड़ते।<br>
+जैसे मौसम बदलते रहते हैं...<br>
+कष्ट भी बदलते रहते हैं।`,
+              image: "human_struggles_never_leave_change_like_seasons"
+            },
+            {
+              content: `काम कम होकर,<br>
+कर्तव्य बढ़ने पर ही...<br>
+जीवन की वास्तविक सच्चाई को,<br>
+कई लोग समझते हैं।`,
+              image: "desire_decreases_duties_increase_realize_life_reality"
+            },
+            {
+              content: `"मैं सबसे प्रेम से रहूंगा" कहने वाले के पास,<br>
+जरूरतें बहुत होंगी।<br>
+"मैं सिर्फ सच बोलूंगा" कहने वाले के पास,<br>
+झूठ बहुत होगा।<br>
+"मैं सीधे-सीधे बात करूंगा" कहने वाले के पास,<br>
+छुपाव बहुत होगा।<br>
+"मैं खुलकर बात करूंगा" कहने वाले के पास,<br>
+राज बहुत होंगे।`,
+              image: "claims_vs_reality_contradictions_human_nature"
+            },
+            {
+              content: `शारीरिक दर्द...<br>
+मानसिक दर्द...<br>
+सपनों की भूख...<br>
+पेट की भूख...<br>
+जब ये सब एक साथ आ जाते हैं...<br>
+तो "मरना चाहिए" का ही विचार आता है;<br>
+बाधाओं को पार करके...<br>
+जीना चाहिए का विचार आना,<br>
+बहुत बहुत दुर्लभ है।`,
+              image: "convergence_pain_death_thoughts_rare_will_to_live"
+            },
+            {
+              content: `सपनों और कर्तव्यों को लेकर दौड़ते रहने वाले के लिए...<br>
+कई जगहों पर, कई समयों में...<br>
+जीने की इच्छा स्वाभाविक रूप से रहेगी।`,
+              image: "carrying_dreams_duties_natural_desire_to_live"
+            },
+            {
+              content: `अमीर के लिए...<br>
+समय से डर होगा।<br>
+गरीब के लिए...<br>
+समय के प्रति करुणा होगी।`,
+              image: "rich_fear_time_poor_compassion_time"
+            },
+            {
+              content: `कभी-कभी...<br>
+हम किसी का इस्तेमाल करने की सोचते हैं।<br>
+लेकिन...<br>
+हमें पता भी नहीं चलता...<br>
+वो हमारा इस्तेमाल कर रहा होता है।`,
+              image: "mutual_exploitation_without_knowing"
+            },
+            {
+              content: `मृत्यु शैया पर...<br>
+बीते हुए अनुभवों को याद करना ही...<br>
+जीवन है,<br>
+यह पागल समझता है।<br>
+बाकी...<br>
+सब अनुभव ही हैं।`,
+              image: "deathbed_memories_life_realization_madman"
+            },
+            {
+              content: `मानवता खो देने वाला...<br>
+भगवान को खोजता है।<br>
+भगवान से नफरत करने वाला...<br>
+मानवता को खोजता है।`,
+              image: "lost_humanity_seeks_god_hates_god_seeks_humanity"
+            },
+            {
+              content: `आत्मविश्वास खोते जाकर<br>
+लालच करने वाला ही<br>
+आत्महत्या का शिकार होता है।`,
+              image: "losing_confidence_greed_leads_suicide"
+            },
+            {
+              content: `किसी के...<br>
+हत्या करने,<br>
+चोरी करने,<br>
+झूठ बोलने का कारण...<br>
+दूसरों द्वारा दिया गया दुख,<br>
+या...<br>
+उसका लालच।`,
+              image: "reasons_for_crime_suffering_or_greed"
+            },
+            {
+              content: `जो छोड़ना नहीं सीखा,<br>
+और जो इंतज़ार करना नहीं सीखा,<br>
+वह प्रेम पाने के योग्य नहीं।<br>
+प्रेम पाने के अयोग्य व्यक्ति...<br>
+कभी मानसिक शांति नहीं पा सकता।`,
+              image: "unworthy_of_love_no_peace"
+            },
+            {
+              content: `कम से कम 20 साल पहले घटी घटनाओं को...<br>
+अगर हमारी कलम लिखे,<br>
+तो जीवन के दर्द<br>
+स्वाभाविक रूप से समझ आ जाएंगे।`,
+              image: "writing_past_events_understanding_life_pain"
+            },
+            {
+              content: `IT कंपनियों में काम करने वाले अधिकतर लोग...<br>
+बुद्धिजीवियों की तरह बात करते हैं।<br>
+बुद्धिजीवियों की तरह बात करने वाले सभी...<br>
+स्वार्थी ही होते हैं।<br>
+उनमें...<br>
+पागल भी एक है।`,
+              image: "it_workers_speak_like_intellectuals_selfish"
+            },
+            {
+              content: `ऐश्वर्य की तलाश करने वाले...<br>
+जब शारीरिक बीमारी<br>
+और मानसिक तनाव ढोते हैं...<br>
+तो "इन चीजों के बिना जीवन ही अच्छा जीवन है"<br>
+कहना, मानवीय स्वभाव है।`,
+              image: "luxury_seekers_illness_stress_realize_simple_life"
+            },
+            {
+              content: `जवानी में...<br>
+धनवानों को तलाशना।<br>
+बुढ़ापे में...<br>
+जीवन की देखभाल करने वालों को तलाशना,<br>
+मानवीय स्वभाव है।`,
+              image: "youth_seeks_wealthy_old_age_seeks_caring"
+            },
+            {
+              content: `शाश्वत नींद की ओर यात्रा में...<br>
+इंसान,<br>
+अस्थायी रूप से सो रहा है।<br>
+लेकिन...<br>
+कई लोगों को, वह भी ठीक से नहीं मिलती।`,
+              image: "journey_to_eternal_sleep_temporary_sleep_denied"
+            },
+            {
+              content: `अगर किसी पर निर्भर हो गए हैं...<br>
+जब वे नहीं होते,<br>
+तो हम मुरझा जाते हैं।`,
+              image: "depending_on_someone_wither_without_them"
+            },
+            {
+              content: `इंसान...<br>
+मरने तक,<br>
+किसी न किसी काम के लिए<br>
+या...<br>
+किसी न किसी व्यक्ति के लिए,<br>
+गुलाम बना ही रहता है।`,
+              image: "human_slave_to_action_or_person_until_death"
+            },
+            {
+              content: `कर्ज़ में... या मुफ्त में...<br>
+कुछ भी मिले...<br>
+उस जगह,<br>
+हम गुलाम बन गए हैं, यही मतलब है।`,
+              image: "receiving_debt_or_free_means_becoming_slave"
+            },
+            {
+              content: `समय से...<br>
+जो भी कर्ज़ लिया है,<br>
+वह हमेशा कर्ज़ ही रहेगा।`,
+              image: "debts_to_time_remain_debts_forever"
+            },
+            {
+              content: `सही समय पर...<br>
+सही तरीके से सोचकर...<br>
+सही फैसले नहीं लिए गए तो...<br>
+उसी समय,<br>
+सही मार मिलेगी..<br>
+अपेक्षित जीवन...<br>
+किसी को भी नहीं मिलता।`,
+              image: "right_time_thinking_decisions_or_face_consequences"
+            },
+            {
+              content: `पैसे से भरपूर व्यक्ति,<br>
+चरित्र में कम हो जाता है।<br>
+चरित्र से भरपूर व्यक्ति,<br>
+पैसे में कम हो जाता है।`,
+              image: "money_rich_character_poor_character_rich_money_poor"
+            },
+            {
+              content: `जब भी हमें कष्ट आते हैं,<br>
+जो हमारे विचारों में आते हैं,<br>
+हमने उन्हें सच्चे दिल से प्रेम किया होगा।<br>
+या,<br>
+उन्होंने हमें सच्चे दिल से प्रेम किया होगा।`,
+              image: "troubles_bring_thoughts_of_true_love_mutual"
+            },
+            {
+              content: `दुश्मन,<br>
+हमारी ताकत जान ले...<br>
+धोखेबाज़,<br>
+हमारी कमज़ोरी जान ले...<br>
+ये दोनों,<br>
+हमारे अनुभव को नहीं जान सकते।`,
+              image: "enemy_knows_strength_traitor_knows_weakness_neither_knows_experience"
+            },
+            {
+              content: `अभाव और खालीपन ढोने वाले दिल में...<br>
+उपहास भी...<br>
+साथ में ढोना पड़ता है।`,
+              image: "heart_burden_mockery"
+            },
+            {
+              content: `अभाव में रहने पर...<br>
+तलाश होगी।<br>
+तलाश होने पर...<br>
+नींद कम होगी।<br>
+नींद कम होने पर...<br>
+काम बढ़ेगा।<br>
+काम बढ़ने पर...<br>
+कुछ बाधाएं आने पर भी...<br>
+हमारा सोचा हुआ जरूर पूरा होगा।<br>
+लेकिन, नींद लगातार कम होने पर,<br>
+मानसिक स्थिति प्रभावित होगी।`,
+              image: "lack_cycle_consequences"
+            },
+            {
+              content: `हमारे कष्ट...<br>
+हमारे लिए नहीं हैं।<br>
+वे...<br>
+हमें खोजकर आने वालों को खुश करने के लिए हैं।`,
+              image: "hardships_purpose"
+            },
+            {
+              content: `अगर किसी से एक बार भी व्यक्तिगत रूप से न मिलकर,<br>
+उससे एक शब्द भी न बोलकर,<br>
+वह इस दुनिया छोड़ने के बाद, हम दुनिया छोड़ने तक,<br>
+उससे प्रेम कर सकें-<br>
+तो हमें ईश्वर को खोजने जाने की जरूरत नहीं;<br>
+हमारे भीतर खोजकर ईश्वर आएगा।<br>
+व्यक्तिगत रूप से उन्हें पा न सकें तो भी,<br>
+सपनों के माध्यम से उन्हें पा सकते हैं।`,
+              image: "pure_love_divine"
+            },
+            {
+              content: `हद से ज्यादा प्रेम<br>
+और हद से ज्यादा इश्क<br>
+कुछ पागलपन को<br>
+स्वाभाविक रूप से रखते हैं।`,
+              image: "excessive_love_naturally_contains_some_madness"
+            },
+            {
+              content: `जो भी भटक गया,<br>
+वह रास्ते के किनारे नहीं,<br>
+रास्ते के बीच में भटका।`,
+              image: "astray_middle_path"
+            },
+            {
+              content: `अनुभव बढ़ते बढ़ते...<br>
+हमारे आसपास,<br>
+लोग कम होते जाते हैं।`,
+              image: "experience_isolation"
+            },
+            {
+              content: `जो भी किस्मत है...<br>
+वही रास्ता है।`,
+              image: "destiny_path"
+            }
+          ]
         },
         {
           id: '7.6',

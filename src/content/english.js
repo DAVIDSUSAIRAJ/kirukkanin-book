@@ -2646,7 +2646,412 @@ let us move on.`,
         {
           id: '7.5',
           title: 'Practical Truths',
-          paragraphs: []
+          paragraphs: [
+            {
+              content: `At the workplace...<br>
+If you want to gain a good reputation,<br>
+time, effort, money...<br>
+it happens only when you spend these abundantly.`,
+              image: "workplace_reputation_investment"
+            },
+            {
+              content: `Only from those who don't have...<br>
+time, effort, money, virtue...<br>
+these can be stolen.`,
+              image: "stealing_from_have_nots"
+            },
+            {
+              content: `Only to the one who gives love...<br>
+tears also come along.`,
+              image: "love_brings_tears"
+            },
+            {
+              content: `Seek life...<br>
+a woman will come seeking you.<br>
+If you seek a woman...<br>
+you will have to seek life.`,
+              image: "seek_life_not_woman"
+            },
+            {
+              content: `Most women...<br>
+seek only those who have money and position.`,
+              image: "women_seek_money_status"
+            },
+            {
+              content: `Who is the betrayer...?<br>
+The one we chose ourselves..!`,
+              image: "betrayer_is_chosen_one"
+            },
+            {
+              content: `If you achieve what you expect...<br>
+that is a dream.<br>
+If not...<br>
+that is fantasy.`,
+              image: "expectation_dream_vs_fantasy"
+            },
+            {
+              content: `For both the rich and the poor...<br>
+the only solution that nature and God provide...<br>
+is death alone.`,
+              image: "death_equal_solution_rich_poor"
+            },
+            {
+              content: `The more we try to understand humans,<br>
+the heart keeps becoming mute.<br>
+Silence...<br>
+and a bit of acting...<br>
+come naturally.`,
+              image: "understanding_humans_silence_acting"
+            },
+            {
+              content: `Will the world remain permanent...?<br>
+If perhaps it does...<br>
+the world is permanent,<br>
+living beings are not permanent.<br>
+The earth is permanent...<br>
+humans are not permanent.`,
+              image: "world_permanent_life_impermanent"
+            },
+            {
+              content: `In youth...<br>
+one who forgot God,<br>
+when reaching nature...<br>
+will seek God.<br>
+Upon understanding both nature and God...<br>
+the true search begins.`,
+              image: "youth_forgets_god_maturity_seeks_true_search"
+            },
+            {
+              content: `The mind...<br>
+seeks God most intensely when,<br>
+either:<br>
+carrying dreams...<br>
+or,<br>
+carrying memories given by others.`,
+              image: "mind_seeks_god_dreams_memories"
+            },
+            {
+              content: `Most of those who go to temples...<br>
+in the name of "ideals,"<br>
+are actually carrying excessive greed.<br>
+The madman is one among them.`,
+              image: "temple_goers_carry_greed_as_ideals"
+            },
+            {
+              content: `In God's creation...<br>
+two wonders:<br>
+nature,<br>
+and reaching nature.`,
+              image: "gods_two_wonders_nature_reaching_nature"
+            },
+            {
+              content: `What the mind creates...<br>
+desires,<br>
+and restlessness...<br>
+love...<br>
+romance...<br>
+lust...<br>
+dreams...`,
+              image: "mind_creates_desires_restlessness_love_dreams"
+            },
+            {
+              content: `In living as a good person,<br>
+and in living as a bad person,<br>
+there is no pleasure.<br>
+If you are a good person...<br>
+there is pleasure in living as a bad person.<br>
+If you are a bad person...<br>
+there is pleasure in living as a good person.`,
+              image: "paradox_good_bad_living_pleasure"
+            },
+            {
+              content: `Many people...<br>
+seek ways to comfort.<br>
+Some people...<br>
+seek ways to live.<br>
+A few...<br>
+seek ways to survive.<br>
+Yet...<br>
+for all of them there's only one end...<br>
+Death alone.`,
+              image: "paths_to_comfort_life_survival_death"
+            },
+            {
+              content: `What money cannot buy...<br>
+memories filled with experience.`,
+              image: "money_cannot_buy_experience_memories"
+            },
+            {
+              content: `Nothing is permanent.<br>
+Even the one who knows this...<br>
+has never remained permanent.`,
+              image: "nothing_permanent_even_knower_impermanent"
+            },
+            {
+              content: `For humans...<br>
+struggles never leave.<br>
+Just as seasons change...<br>
+struggles too keep changing.`,
+              image: "human_struggles_never_leave_change_like_seasons"
+            },
+            {
+              content: `Only when desires decrease,<br>
+and duties increase...<br>
+do many people realize<br>
+the realistic truth of life.`,
+              image: "desire_decreases_duties_increase_realize_life_reality"
+            },
+            {
+              content: `One who says "I will be loving to everyone"<br>
+will have many needs.<br>
+One who says "I will speak only truth"<br>
+will have many lies.<br>
+One who says "I will speak directly"<br>
+will have much indirectness.<br>
+One who says "I will speak openly"<br>
+will have many secrets.`,
+              image: "claims_vs_reality_contradictions_human_nature"
+            },
+            {
+              content: `Physical pain...<br>
+Mental pain...<br>
+Hunger for dreams...<br>
+Hunger of the stomach...<br>
+When all these come together...<br>
+only the thought "I want to die" comes;<br>
+The thought of overcoming obstacles<br>
+and wanting to live<br>
+is very, very rare.`,
+              image: "convergence_pain_death_thoughts_rare_will_to_live"
+            },
+            {
+              content: `For one who carries both dreams and duties<br>
+and keeps running...<br>
+in many places, at many times...<br>
+the desire to live will naturally exist.`,
+              image: "carrying_dreams_duties_natural_desire_to_live"
+            },
+            {
+              content: `The rich person...<br>
+will have fear of time.<br>
+The poor person...<br>
+will have compassion towards time.`,
+              image: "rich_fear_time_poor_compassion_time"
+            },
+            {
+              content: `Sometimes...<br>
+we think of using someone.<br>
+But...<br>
+without our knowledge...<br>
+they are using us.`,
+              image: "mutual_exploitation_without_knowing"
+            },
+            {
+              content: `On the deathbed...<br>
+recalling past experiences<br>
+is what life is,<br>
+this madman realizes.<br>
+Otherwise...<br>
+everything is just experiences.`,
+              image: "deathbed_memories_life_realization_madman"
+            },
+            {
+              content: `One who has lost humanity...<br>
+seeks God.<br>
+One who hates God...<br>
+seeks humanity.`,
+              image: "lost_humanity_seeks_god_hates_god_seeks_humanity"
+            },
+            {
+              content: `One who keeps losing self-confidence<br>
+while being greedy<br>
+becomes a victim of suicide.`,
+              image: "losing_confidence_greed_leads_suicide"
+            },
+            {
+              content: `The reasons for someone...<br>
+to kill,<br>
+to steal,<br>
+to lie...<br>
+are the suffering others cause them,<br>
+or...<br>
+their own greed.`,
+              image: "reasons_for_crime_suffering_or_greed"
+            },
+            {
+              content: `One who hasn't learned to give up,<br>
+and one who hasn't learned to wait,<br>
+is unworthy of receiving love.<br>
+One unworthy of receiving love...<br>
+can never attain peace of mind.`,
+              image: "unworthy_of_love_no_peace"
+            },
+            {
+              content: `If our pen writes about events<br>
+that happened at least 20 years ago...<br>
+the pains about life<br>
+would naturally be understood.`,
+              image: "writing_past_events_understanding_life_pain"
+            },
+            {
+              content: `Most people working in IT companies...<br>
+speak like intellectuals.<br>
+All those who speak like intellectuals...<br>
+are selfish.<br>
+Among them...<br>
+the madman is also one.`,
+              image: "it_workers_speak_like_intellectuals_selfish"
+            },
+            {
+              content: `Those who sought luxury...<br>
+when they carry physical illness<br>
+and mental stress...<br>
+saying "A life without these is a good life"<br>
+is human nature.`,
+              image: "luxury_seekers_illness_stress_realize_simple_life"
+            },
+            {
+              content: `In youth...<br>
+seeking the wealthy.<br>
+In old age...<br>
+seeking those who care for life,<br>
+is human nature.`,
+              image: "youth_seeks_wealthy_old_age_seeks_caring"
+            },
+            {
+              content: `On the journey toward eternal sleep...<br>
+man<br>
+sleeps temporarily.<br>
+But...<br>
+for many, even that is not properly available.`,
+              image: "journey_to_eternal_sleep_temporary_sleep_denied"
+            },
+            {
+              content: `If we have depended on someone...<br>
+when they are not there,<br>
+we will wither away.`,
+              image: "depending_on_someone_wither_without_them"
+            },
+            {
+              content: `Man...<br>
+until death,<br>
+to some action<br>
+or...<br>
+to some person,<br>
+remains enslaved.`,
+              image: "human_slave_to_action_or_person_until_death"
+            },
+            {
+              content: `Whether on debt... or for free...<br>
+if we receive anything...<br>
+in that place,<br>
+it means we have become slaves.`,
+              image: "receiving_debt_or_free_means_becoming_slave"
+            },
+            {
+              content: `What we owe to time...<br>
+all those debts,<br>
+will remain debts throughout time.`,
+              image: "debts_to_time_remain_debts_forever"
+            },
+            {
+              content: `At the right time...<br>
+thinking correctly...<br>
+if right decisions are not made...<br>
+at that same time,<br>
+the right blows will be received..<br>
+The expected life...<br>
+never comes to anyone.`,
+              image: "right_time_thinking_decisions_or_face_consequences"
+            },
+            {
+              content: `One who is rich in money,<br>
+becomes poor in character.<br>
+One who is rich in character,<br>
+becomes poor in money.`,
+              image: "money_rich_character_poor_character_rich_money_poor"
+            },
+            {
+              content: `Whenever troubles come to us,<br>
+whoever comes into our thoughts,<br>
+we must have truly loved them.<br>
+Or,<br>
+they must have truly loved us.`,
+              image: "troubles_bring_thoughts_of_true_love_mutual"
+            },
+            {
+              content: `The enemy,<br>
+even if they know our strength...<br>
+The traitor,<br>
+even if they know our weakness...<br>
+Neither of these two<br>
+can know our experience.`,
+              image: "enemy_knows_strength_traitor_knows_weakness_neither_knows_experience"
+            },
+            {
+              content: `In a heart that carries lack and emptiness...<br>
+mockery too...<br>
+must be carried along.`,
+              image: "heart_burden_mockery"
+            },
+            {
+              content: `When in a state of lack...<br>
+there will be searching.<br>
+When there is searching...<br>
+sleep will decrease.<br>
+When sleep decreases...<br>
+action will increase.<br>
+When action increases...<br>
+even if some obstacles come...<br>
+what we thought will surely be fulfilled.<br>
+But when sleep continues to decrease,<br>
+mental state will be affected.`,
+              image: "lack_cycle_consequences"
+            },
+            {
+              content: `Our hardships...<br>
+are not for us.<br>
+They are...<br>
+to make happy those who come seeking us.`,
+              image: "hardships_purpose"
+            },
+            {
+              content: `If we can love someone<br>
+without ever meeting them in person even once,<br>
+without speaking a single word to them,<br>
+after they have left this world, until we leave this world,<br>
+if we can continue to love them-<br>
+we need not go seeking God;<br>
+God will come seeking within us.<br>
+Even if we couldn't have them in person,<br>
+we can have them through dreams.`,
+              image: "pure_love_divine"
+            },
+            {
+              content: `Excessive love<br>
+and excessive passion<br>
+will naturally contain<br>
+some madness.`,
+              image: "excessive_love_naturally_contains_some_madness"
+            },
+            {
+              content: `All that went astray,<br>
+happened not along the path,<br>
+but in the middle of the path.`,
+              image: "astray_middle_path"
+            },
+            {
+              content: `As experiences increase and increase...<br>
+around us,<br>
+people keep decreasing.`,
+              image: "experience_isolation"
+            },
+            {
+              content: `Whatever is destiny...<br>
+that is the path.`,
+              image: "destiny_path"
+            }
+          ]
         },
         {
           id: '7.6',
