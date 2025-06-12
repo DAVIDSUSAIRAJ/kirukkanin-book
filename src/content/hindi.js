@@ -2826,7 +2826,7 @@ Block कर दे और चला जाए...<br>
 बाधाओं को पार करके...<br>
 जीना चाहिए का विचार आना,<br>
 बहुत बहुत दुर्लभ है।`,
-              image: "convergence_pain_death_thoughts_rare_will_to_live"
+              image: "pain_convergence_death_thoughts"
             },
             {
               content: `सपनों और कर्तव्यों को लेकर दौड़ते रहने वाले के लिए...<br>
@@ -2989,7 +2989,7 @@ Block कर दे और चला जाए...<br>
 हमारी कमज़ोरी जान ले...<br>
 ये दोनों,<br>
 हमारे अनुभव को नहीं जान सकते।`,
-              image: "enemy_knows_strength_traitor_knows_weakness_neither_knows_experience"
+              image: "enemy_traitor_knowledge_limits"
             },
             {
               content: `अभाव और खालीपन ढोने वाले दिल में...<br>

@@ -2822,7 +2822,7 @@ only the thought "I want to die" comes;<br>
 The thought of overcoming obstacles<br>
 and wanting to live<br>
 is very, very rare.`,
-              image: "convergence_pain_death_thoughts_rare_will_to_live"
+              image: "pain_convergence_death_thoughts"
             },
             {
               content: `For one who carries both dreams and duties<br>
@@ -2986,7 +2986,7 @@ The traitor,<br>
 even if they know our weakness...<br>
 Neither of these two<br>
 can know our experience.`,
-              image: "enemy_knows_strength_traitor_knows_weakness_neither_knows_experience"
+              image: "enemy_traitor_knowledge_limits"
             },
             {
               content: `In a heart that carries lack and emptiness...<br>

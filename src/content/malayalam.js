@@ -2834,7 +2834,7 @@ Block ചെയ്ത് പോയാൽ...<br>
 തടസ്സങ്ങളെ മറികടന്ന്...<br>
 ജീവിക്കണം എന്ന ചിന്ത വരുന്നത്,<br>
 വളരെ വളരെ അപൂർവമാണ്.`,
-              image: "convergence_pain_death_thoughts_rare_will_to_live"
+              image: "pain_convergence_death_thoughts"
             },
             {
               content: `സ്വപ്നങ്ങളും, കടമകളും ചുമന്നു ഓടിക്കൊണ്ടിരിക്കുന്നവനു...<br>
@@ -2997,7 +2997,7 @@ Block ചെയ്ത് പോയാൽ...<br>
 നമ്മുടെ ബലഹീനത അറിഞ്ഞാലും...<br>
 ഈ രണ്ടുപേർക്കും,<br>
 നമ്മുടെ അനുഭവം അറിയാൻ കഴിയില്ല.`,
-              image: "enemy_knows_strength_traitor_knows_weakness_neither_knows_experience"
+              image: "enemy_traitor_knowledge_limits"
             },
             {
               content: `ഇല്ലായ്മയും, ശൂന്യതയും ചുമക്കുന്ന ഹൃദയത്തിൽ...<br>

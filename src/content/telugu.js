@@ -2827,7 +2827,7 @@ Block చేసి వెళ్లిపోతే...<br>
 అడ్డంకులను దాటి...<br>
 బ్రతకాలి అనే ఆలోచన రావడం,<br>
 చాలా చాలా అరుదు.`,
-              image: "convergence_pain_death_thoughts_rare_will_to_live"
+              image: "pain_convergence_death_thoughts"
             },
             {
               content: `కలలను, కర్తవ్యాలను మోసుకుని పరుగెత్తుకుంటూ ఉండేవాడికి...<br>
@@ -2990,7 +2990,7 @@ Block చేసి వెళ్లిపోతే...<br>
 మన బలహీనతను తెలుసుకున్నా...<br>
 ఈ ఇద్దరూ,<br>
 మన అనుభవాన్ని తెలుసుకోలేరు.`,
-              image: "enemy_knows_strength_traitor_knows_weakness_neither_knows_experience"
+              image: "enemy_traitor_knowledge_limits"
             },
             {
               content: `లేకపోవడం, ఖాళీతనం మోస్తున్న హృదయంలో...<br>

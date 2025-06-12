@@ -2929,7 +2929,7 @@ Block செய்துவிட்டுப் போனால்...<br>
 தடைகளை தாண்டி...<br>
 வாழ வேண்டும் என்ற எண்ணம் வருவது,<br>
 மிக மிக அரிது.`,
-              image: "convergence_pain_death_thoughts_rare_will_to_live"
+              image: "pain_convergence_death_thoughts"
             },
             {
               content: `கனவையும், கடமைகளையும் சுமந்து ஓடிக்கொண்டிருப்பவனுக்கு...<br>
@@ -3067,14 +3067,14 @@ Block செய்துவிட்டுப் போனால்...<br>
 சரியான அடிகள் கிடைக்கும்..<br>
 எதிர்ப்பார்த்த வாழ்வு...<br>
 எவருக்கும் அமைவதில்லை.`,
-              image: "right_time_thinking_decisions_or_face_consequences"
+              image: "right_time_decisions_consequences"
             },
             {
               content: `பணத்தால் நிறைந்தவன்,<br>
 குணத்தில் குறைகிறான்.<br>
 குணத்தால் நிறைந்தவன்,<br>
 பணத்தில் குறைகிறான்.`,
-              image: "money_rich_character_poor_character_rich_money_poor"
+              image: "money_character_inverse"
             },
             {
               content: `நமக்கு கஷ்டம் வரும்போதெல்லாம்,<br>
@@ -3091,7 +3091,7 @@ Block செய்துவிட்டுப் போனால்...<br>
 நம் பலவீனத்தை அறிந்துகொண்டாலும்...<br>
 இந்த இருவரும்,<br>
 நம் அனுபவத்தை அறிந்துகொள்ள முடியாது.`,
-              image: "enemy_knows_strength_traitor_knows_weakness_neither_knows_experience"
+              image: "enemy_traitor_knowledge_limits"
             },
             {
               content: `இல்லாமையும், வெறுமையும் சுமந்திருக்கிற இதயத்தில்...<br>
