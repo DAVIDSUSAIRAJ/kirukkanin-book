@@ -36,7 +36,7 @@ export const tamilContent = {
           
           இந்த புத்தகத்தில் உள்ள ஒவ்வொரு தலைப்பிலும் உள்ள பத்திகள், அதன் உணர்வுப் பாய்ச்சலுக்கு ஏற்ப மாறுபடும்.
         `,
-        image: 'helpImage2'
+        image: 'diaryWriten'
       }
     ]
   },
@@ -52,7 +52,7 @@ export const tamilContent = {
           paragraphs: [
             {
               content: "<strong>துளசிக்கு...</strong><br>மனமும் உண்டு...<br>மணமும் உண்டு...",
-              image: "munnurai_1",
+              image: "tulasi",
             },
             {
               content: "இயற்கையோடு ஒன்றி வாழ்ந்தால்,<br>இயற்கை மன அமைதியை அதிகமாக அளிக்கும்.",

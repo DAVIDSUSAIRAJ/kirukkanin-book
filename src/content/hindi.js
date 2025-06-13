@@ -36,7 +36,7 @@ export const hindiContent = {
           
           इस पुस्तक के हर विषय में मौजूद पैराग्राफ उसकी भावनाओं के प्रवाह के अनुसार बदलते रहते हैं।
         `,
-        image: 'helpImage2'
+        image: 'diaryWriten'
       }
     ]
   },
@@ -52,7 +52,7 @@ export const hindiContent = {
       "paragraphs": [
         {
           "content": "<strong>तुलसी के लिए...</strong><br>उसके पास मन है...<br>उसमें सुगंध है...",
-          "image": "munnurai_1"
+          "image": "tulasi"
         },
         {
           "content": "यदि हम प्रकृति के साथ मिलकर जीवन जीते हैं,<br>तो प्रकृति हमें अत्यधिक मानसिक शांति देती है।",

@@ -36,7 +36,7 @@ export const malayalamContent = {
           
           ഈ പുസ്തകത്തിലെ ഓരോ വിഷയത്തിലെയും ഖണ്ഡികകൾ അതിന്റെ വികാര പ്രവാഹത്തിനനുസരിച്ച് വ്യത്യാസപ്പെടുന്നു.
         `,
-        image: 'helpImage2'
+        image: 'diaryWriten'
       }
     ]
   },
@@ -52,7 +52,7 @@ export const malayalamContent = {
       "paragraphs": [
         {
           "content": "<strong>തുളസിക്ക്...</strong><br>മനസ്സും ഉണ്ട്...<br>മണവും ഉണ്ട്...",
-          "image": "munnurai_1"
+          "image": "tulasi"
         },
         {
           "content": "പ്രകൃതിയുമായി ഒത്തുചേരുന്നതിലൂടെ,<br>പ്രകൃതി നമ്മെ അധികമായ മാനസിക സമാധാനം നൽകുന്നു.",

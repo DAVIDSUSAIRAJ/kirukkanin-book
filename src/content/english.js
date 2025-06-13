@@ -36,7 +36,7 @@ export const englishContent = {
           
           The paragraphs in each topic of this book vary according to their emotional flow.
         `,
-        image: 'helpImage2'
+        image: 'diaryWriten'
       }
     ]
   },
@@ -52,7 +52,7 @@ export const englishContent = {
       "paragraphs": [
         {
           "content": "<strong>To Tulsi...</strong><br>Has a mind...<br>Has fragrance...",
-          "image": "munnurai_1"
+          "image": "tulasi"
         },
         {
           "content": "If we live in harmony with nature,<br>Nature gives us immense peace of mind.",

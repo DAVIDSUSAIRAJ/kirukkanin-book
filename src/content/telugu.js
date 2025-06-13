@@ -36,7 +36,7 @@ export const teluguContent = {
           
           ఈ పుస్తకంలోని ప్రతి అంశంలోని పేరాగ్రాఫులు దాని భావోద్వేగ ప్రవాహానికి అనుగుణంగా మారుతూ ఉంటాయి.
         `,
-        image: 'helpImage2'
+        image: 'diaryWriten'
       }
     ]
   },
@@ -52,7 +52,7 @@ export const teluguContent = {
       "paragraphs": [
         {
           "content": "<strong>తులసికి...</strong><br>మనస్సు ఉంది...<br>సువాసన ఉంది...",
-          "image": "munnurai_1"
+          "image": "tulasi"
         },
         {
           "content": "ప్రకృతితో కలసి జీవిస్తే,<br>ప్రకృతి మనకు గొప్ప మనశ్శాంతిని అందిస్తుంది.",
