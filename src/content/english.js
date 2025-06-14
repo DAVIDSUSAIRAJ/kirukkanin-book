@@ -393,90 +393,88 @@ export const englishContent = {
         }
       ]
     },
+{
+  "id": "2.6",
+  "title": "One-sided Love",
+  "paragraphs": [
     {
-      "id": "2.6",
-      "title": "One-Sided Love",
-      "paragraphs": [
-        {
-          "content": "Love is not when hearts come together...<br>True love is when hearts stay together without separation.",
-          "image": "eternal_hearts"
-        },
-        {
-          "content": "When I saw you...<br>A new feeling blossomed deep in my heart...<br>Not just that...<br>A sweet vibration filled my mind...<br>Admiring you became the music of my soul.",
-          "image": "heart_music"
-        },
-        {
-          "content": "Taking pride in waiting,<br>in protecting,<br>and in wasting time...<br>That’s love, maybe!",
-          "image": "love_pride"
-        },
-        {
-          "content": "Love can create distance...<br>But not division, not separation, not destruction.",
-          "image": "love_distance"
-        },
-        {
-          "content": "Only when love and lust are balanced<br>is it truly hard to forget someone.",
-          "image": "love_balance"
-        },
-        {
-          "content": "Love has a beginning...<br>but never an end.",
-          "image": "endless_love"
-        },
-        {
-          "content": "Love mixed with patience<br>will one day become sweet like honey.",
-          "image": "sweet_patience"
-        },
-        {
-          "content": "If you truly love,<br>you’ll pass through it<br>without commanding.",
-          "image": "true_love_path"
-        },
-        {
-          "content": "Love – the timeless story of united hearts.",
-          "image": "timeless_love"
-        }
-      ]
+      "content": "Unable to confess true love...<br>I stand silently by your side.",
+      "image": "silent_love"
     },
     {
-      "id": "2.7",
-      "title": "Love",
-      "paragraphs": [
-        {
-          "content": "Love is not when hearts come together...<br>True love is when hearts stay together without separation.",
-          "image": "eternal_hearts"
-        },
-        {
-          "content": "When I saw you...<br>A new feeling blossomed deep in my heart...<br>Not just that...<br>A sweet vibration filled my mind...<br>Admiring you became the music of my soul.",
-          "image": "heart_music"
-        },
-        {
-          "content": "Taking pride in waiting,<br>in protecting,<br>and in wasting time...<br>That’s love, maybe!",
-          "image": "love_pride"
-        },
-        {
-          "content": "Love can create distance...<br>But not division, not separation, not destruction.",
-          "image": "love_distance"
-        },
-        {
-          "content": "Only when love and lust are balanced<br>is it truly hard to forget someone.",
-          "image": "love_balance"
-        },
-        {
-          "content": "Love has a beginning...<br>but never an end.",
-          "image": "endless_love"
-        },
-        {
-          "content": "Love mixed with patience<br>will one day become sweet like honey.",
-          "image": "sweet_patience"
-        },
-        {
-          "content": "If you truly love,<br>you’ll pass through it<br>without commanding.",
-          "image": "true_love_path"
-        },
-        {
-          "content": "Love – the timeless story of united hearts.",
-          "image": "timeless_love"
-        }
-      ]
+      "content": "A love I cannot express...<br>like a thorn in the heart,<br>piercing me constantly.",
+      "image": "heart_thorn"
     },
+    {
+      "content": "I don't even wish to see you often...<br>Just the thought that we share a space,<br>is enough for me.<br>Many aren't lucky even for that.",
+      "image": "distant_together"
+    },
+    {
+      "content": "Longing tears apart...<br>forsaking sleep...<br>my heart turns mute,<br>and continues to wither...<br>a love I cannot express.",
+      "image": "sleepless_heart"
+    },
+    {
+      "content": "With just a glance,<br>or a ring on the phone...<br>like a body shivering in cold,<br>like a heart struggling in pain,<br>our bodies tremble...<br>our hearts throb…<br>whether we grow closer,<br>or farther,<br>the anxiety only deepens...",
+      "image": "trembling_heart"
+    },
+    {
+      "content": "Even knowing<br>your heart belongs to someone else...<br>my heart gets trapped<br>in just a glance of yours…",
+      "image": "trapped_glance"
+    },
+    {
+      "content": "Till my last breath...<br>I’ll try to stay with you.<br>With undying memories...<br>You and I...",
+      "image": "eternal_memories"
+    },
+    {
+      "content": "One-sided love – an affection that lives like a shadow.",
+      "image": "shadow_love"
+    }
+  ]
+}
+,
+{
+  "id": "2.7",
+  "title": "Love",
+  "paragraphs": [
+    {
+      "content": "Love is not just when hearts come together...<br>It's when they unite<br>and stay together without parting.",
+      "image": "eternal_hearts"
+    },
+    {
+      "content": "The moment I see you...<br>a new emotion blossoms deep within my heart...<br>Not just that...<br>a sweet vibration fills my soul...<br>Admiring you is the music of my heart.",
+      "image": "heart_music"
+    },
+    {
+      "content": "Taking pride in waiting,<br>pride in holding on,<br>and even in wasting time...<br>that's love, perhaps!",
+      "image": "love_pride"
+    },
+    {
+      "content": "Love may create distance...<br>But it never causes separation, division, or breakage.",
+      "image": "love_distance"
+    },
+    {
+      "content": "Only when love and desire are balanced,<br>does forgetting the beloved become difficult.",
+      "image": "love_balance"
+    },
+    {
+      "content": "Love has a beginning...<br>but no end.",
+      "image": "endless_love"
+    },
+    {
+      "content": "A love filled with patience<br>will one day become honey-sweet.",
+      "image": "sweet_patience"
+    },
+    {
+      "content": "When you love truly,<br>you move forward<br>without commands or control.",
+      "image": "true_love_path"
+    },
+    {
+      "content": "Love – a timeless tale of united hearts.",
+      "image": "timeless_love"
+    }
+  ]
+}
+,
     {
       "id": "2.8",
       "title": "Love Separation",
