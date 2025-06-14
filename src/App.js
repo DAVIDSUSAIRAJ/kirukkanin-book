@@ -42,11 +42,11 @@ const getGlobalSearchPlaceholder = (languageCode, isMobile = false) => {
 
 const getSectionSearchPlaceholder = (languageCode, isMobile = false) => {
   const translations = {
-    ta: isMobile ? 'பிரிவில் தேடுங்கள்...' : 'இந்த பிரிவில் தேடுங்கள் (ex: வார்த்தைகள், கருத்துகள்)...',
-    en: isMobile ? 'Search section...' : 'Search in this section (ex: words, thoughts)...',
-    hi: isMobile ? 'भाग में खोजें...' : 'इस भाग में खोजें (ex: शब्द, विचार)...',
-    te: isMobile ? 'విభాగంలో వెతకండి...' : 'ఈ విభాగంలో వెతకండి (ex: పదాలు, ఆలోచనలు)...',
-    ml: isMobile ? 'വിഭാഗത്തിൽ തിരയുക...' : 'ഈ വിഭാഗത്തിൽ തിരയുക (ex: വാക്കുകൾ, ചിന്തകൾ)...'
+    ta: 'பிரிவில் தேடுங்கள்...',
+    en: 'Search section...',
+    hi: 'भाग में खोजें...',
+    te: 'విభాగంలో వెతకండి...',
+    ml: 'വിഭാഗത്തിൽ തിരയുക...'
   };
   return translations[languageCode] || translations.en;
 };
@@ -100,6 +100,10 @@ function App() {
   const [showSwipeHint, setShowSwipeHint] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   
+  // Add new state for tracking search-selected paragraph
+  const [searchSelectedParagraph, setSearchSelectedParagraph] = useState(null);
+  const [isFromSearch, setIsFromSearch] = useState(false);
+  
   // Handle window resize
   useEffect(() => {
     const handleResize = () => {
@@ -149,6 +153,41 @@ function App() {
       return () => clearTimeout(timer);
     }
   }, [selectedSection]);
+
+  // Auto-scroll to selected paragraph on desktop when from search
+  useEffect(() => {
+    if (!isMobile && isFromSearch && searchSelectedParagraph && selectedSection) {
+      setTimeout(() => {
+        // Scroll to highlighted paragraph in content area
+        const targetParagraph = document.querySelector('.content-card.search-highlighted');
+        if (targetParagraph) {
+          targetParagraph.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'center' 
+          });
+        }
+      }, 300);
+      
+      // Scroll to selected subsection in sidebar (with longer delay to allow expansion)
+      setTimeout(() => {
+        const selectedSubsection = document.querySelector('.nav-subsection.active');
+        const sidebarNav = document.querySelector('.section-nav');
+        
+        if (selectedSubsection && sidebarNav) {
+          // Calculate the position of the selected subsection relative to the sidebar
+          const subsectionRect = selectedSubsection.getBoundingClientRect();
+          const sidebarRect = sidebarNav.getBoundingClientRect();
+          const relativeTop = subsectionRect.top - sidebarRect.top;
+          
+          // Scroll the sidebar to center the selected subsection
+          sidebarNav.scrollTo({
+            top: sidebarNav.scrollTop + relativeTop - (sidebarRect.height / 2),
+            behavior: 'smooth'
+          });
+        }
+      }, 500);
+    }
+  }, [selectedSection, isFromSearch, searchSelectedParagraph, isMobile]);
 
   // Global search functionality
   const performGlobalSearch = (query) => {
@@ -266,6 +305,21 @@ function App() {
     setGlobalSearchQuery('');
     setSearchResults([]);
     setIsGlobalSearching(false);
+    setSearchSelectedParagraph(result.content);
+    setIsFromSearch(true);
+    
+    // Auto-expand the parent section in sidebar
+    if (result.sectionId !== 'foreword' && result.sectionId !== 'conclusion') {
+      const section = content.sections.find(section =>
+        section.subsections.some(sub => sub.id === result.sectionId)
+      );
+      if (section) {
+        setExpandedSections(prev => ({
+          ...prev,
+          [section.id]: true
+        }));
+      }
+    }
   };
 
   // Function to render search results as cards
@@ -389,6 +443,8 @@ function App() {
     setSelectedSection(section);
     setIsSidebarVisible(false);
     setCurrentCardIndex(0); // Reset card index when selecting new section
+    setSearchSelectedParagraph(null); // Clear search selection
+    setIsFromSearch(false); // Reset search flag
     setTimeout(() => {
       const contentCards = document.querySelector('.content-cards');
       if (contentCards) {
@@ -402,6 +458,8 @@ function App() {
       setIsSidebarVisible(true);
       setSelectedSection(null);  // Reset selected section
       setCurrentCardIndex(0);    // Reset card index
+      setSearchSelectedParagraph(null); // Clear search selection
+      setIsFromSearch(false); // Reset search flag
     }
   };
 
@@ -493,6 +551,8 @@ function App() {
     }
 
     const isMobile = window.innerWidth <= 768;
+    // For mobile: show single paragraph at currentCardIndex
+    // For desktop: show all paragraphs, but scroll to selected one if from search
     const displayParagraphs = isMobile ? [paragraphs[currentCardIndex]] : paragraphs;
 
     return (
@@ -547,29 +607,43 @@ function App() {
                   <span className="swipe-icon">→</span>
                 </div>
               )}
-              {displayParagraphs.map((paragraph, index) => (
-                <div 
-                  key={index} 
-                  className="content-card"
-                  style={{ backgroundImage: `url(${paragraph.image})` }}
-                  ref={cardRef}
-                  onTouchStart={handleTouchStart}
-                  onTouchMove={handleTouchMove}
-                  onTouchEnd={() => handleTouchEnd(paragraphs)}
-                >
+              {displayParagraphs.map((paragraph, index) => {
+                // Check if this paragraph is the one selected from search
+                const isSearchHighlighted = isFromSearch && 
+                  searchSelectedParagraph && 
+                  paragraph.content === searchSelectedParagraph;
+                
+                // For desktop, use the actual index from all paragraphs
+                // For mobile, use the display index
+                const actualIndex = isMobile ? currentCardIndex : paragraphs.findIndex(p => p.content === paragraph.content);
+                
+                return (
                   <div 
-                    className="card-content"
-                    ref={(el) => {
-                      if (el) {
-                        const isScrollable = el.scrollHeight > el.clientHeight;
-                        el.classList.toggle('no-scroll', !isScrollable);
-                      }
-                    }}
+                    key={actualIndex} 
+                    className={`content-card ${isSearchHighlighted ? 'search-highlighted' : ''}`}
+                    style={{ backgroundImage: `url(${paragraph.image})` }}
+                    ref={cardRef}
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={() => handleTouchEnd(paragraphs)}
                   >
-                    <p dangerouslySetInnerHTML={{ __html: paragraph.content }}></p>
+                    <div 
+                      className="card-content"
+                      ref={(el) => {
+                        if (el) {
+                          const isScrollable = el.scrollHeight > el.clientHeight;
+                          el.classList.toggle('no-scroll', !isScrollable);
+                        }
+                      }}
+                    >
+                      <p 
+                        className={isSearchHighlighted ? 'search-highlighted-text' : ''}
+                        dangerouslySetInnerHTML={{ __html: paragraph.content }}
+                      ></p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
             {isMobile && paragraphs.length > 1 && (
               <div className="card-navigation">
@@ -1140,6 +1214,35 @@ function App() {
           font-weight: bold;
           margin-bottom: 10px;
           display: inline-block;
+        }
+
+        /* Search Highlighting Styles */
+        .content-card.search-highlighted {
+          border: 3px solid #28a745;
+          box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+          animation: searchHighlight 2s ease-in-out;
+        }
+
+        .search-highlighted-text {
+          background: linear-gradient(120deg, rgba(40, 167, 69, 0.3) 0%, rgba(40, 167, 69, 0.1) 100%);
+          padding: 5px;
+          border-radius: 5px;
+          border-left: 4px solid #28a745;
+        }
+
+        @keyframes searchHighlight {
+          0% { 
+            border-color: #28a745;
+            box-shadow: 0 0 20px rgba(40, 167, 69, 0.8);
+          }
+          50% { 
+            border-color: #34ce57;
+            box-shadow: 0 0 25px rgba(40, 167, 69, 0.6);
+          }
+          100% { 
+            border-color: #28a745;
+            box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+          }
         }
 
         /* Mobile Specific Styles */
