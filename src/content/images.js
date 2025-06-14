@@ -18,6 +18,13 @@ import guru_light from '../images/guru_light.png';
 import art_strength from '../images/art_strength.png';
 import art_journey from '../images/art_journey.png';
 import art_guru from '../images/art_guru.png';
+import identity_success from '../images/identity_success.png';
+import identity_truth from '../images/identity_truth.png';
+import position_service from '../images/position_service.png';
+import position_tears from '../images/position_tears.png';
+import position_duty from '../images/position_duty.png';
+import simplicity_humanity from '../images/simplicity_humanity.png';
+
 
 export const images = {
   munnurai_1,
@@ -40,5 +47,11 @@ export const images = {
   art_strength,
   art_journey,
   art_guru,
+  identity_success,
+  identity_truth,
+  position_service,
+  position_tears,
+  position_duty,
+  simplicity_humanity,
 
 };
