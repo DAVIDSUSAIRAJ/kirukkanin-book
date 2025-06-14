@@ -24,6 +24,14 @@ import position_service from '../images/position_service.png';
 import position_tears from '../images/position_tears.png';
 import position_duty from '../images/position_duty.png';
 import simplicity_humanity from '../images/simplicity_humanity.png';
+import self_love from '../images/self_love.png';
+import keep_goodness from '../images/keep_goodness.png';    
+import true_to_self from '../images/true_to_self.png';
+import no_pain_pride from '../images/no_pain_pride.png';
+import true_in_loss from '../images/true_in_loss.png';
+import control_desire from '../images/control_desire.png';
+import self_love_reading from '../images/self_love_reading.png';
+
 
 
 export const images = {
@@ -53,5 +61,12 @@ export const images = {
   position_tears,
   position_duty,
   simplicity_humanity,
+  self_love,
+  keep_goodness,
+  true_to_self,
+  no_pain_pride,
+  true_in_loss,
+  control_desire,
+  self_love_reading,
 
 };
