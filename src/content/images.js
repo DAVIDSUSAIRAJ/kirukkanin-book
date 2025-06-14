@@ -8,6 +8,16 @@ import parents_love from '../images/parents_love.png';
 import parents_care from '../images/parents_care.png';
 import parents_age from '../images/parents_age.png';
 import parents_root from '../images/parents_root.png';
+import guru_talent from '../images/guru_talent.png';
+import guru_importance from '../images/guru_importance.png';
+import guru_journey from '../images/guru_journey.png';
+import guru_discipline from '../images/guru_discipline.png';
+import guru_experience from '../images/guru_experience.png';
+import guru_many from '../images/guru_many.png';
+import guru_light from '../images/guru_light.png';
+import art_strength from '../images/art_strength.png';
+import art_journey from '../images/art_journey.png';
+import art_guru from '../images/art_guru.png';
 
 export const images = {
   munnurai_1,
@@ -19,6 +29,16 @@ export const images = {
   parents_love,
   parents_care, 
   parents_age,
-  parents_root
+  parents_root,
+  guru_talent,
+  guru_importance,
+  guru_journey,
+  guru_discipline,
+  guru_experience,
+  guru_many,
+  guru_light,
+  art_strength,
+  art_journey,
+  art_guru,
 
 };
