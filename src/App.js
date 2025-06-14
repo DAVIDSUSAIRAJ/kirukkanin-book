@@ -143,6 +143,8 @@ function App() {
           setShowSwipeHint(false);
         }, 3000);
       }, 500);
+      // content-cards
+  
       
       return () => clearTimeout(timer);
     }
@@ -387,6 +389,12 @@ function App() {
     setSelectedSection(section);
     setIsSidebarVisible(false);
     setCurrentCardIndex(0); // Reset card index when selecting new section
+    setTimeout(() => {
+      const contentCards = document.querySelector('.content-cards');
+      if (contentCards) {
+        contentCards.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   const handleBackClick = () => {
@@ -707,6 +715,7 @@ function App() {
                       key={subsection.id} 
                       className={`nav-subsection ${selectedSection === subsection.id ? 'active' : ''}`}
                       onClick={(e) => {
+                        
                         e.stopPropagation();
                         handleSectionSelect(subsection.id);
                       }}
