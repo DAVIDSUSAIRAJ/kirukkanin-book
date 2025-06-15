@@ -104,6 +104,11 @@ function App() {
   const [searchSelectedParagraph, setSearchSelectedParagraph] = useState(null);
   const [isFromSearch, setIsFromSearch] = useState(false);
   
+  // Add new states for image loading and card transitions
+  const [isCardTransitioning, setIsCardTransitioning] = useState(false);
+  const [preloadedImages, setPreloadedImages] = useState(new Set());
+  const [cardLoadingState, setCardLoadingState] = useState({});
+  
   // Handle window resize
   useEffect(() => {
     const handleResize = () => {
@@ -127,6 +132,77 @@ function App() {
   const [sectionSearchQuery, setSectionSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [isGlobalSearching, setIsGlobalSearching] = useState(false);
+
+  // Image preloading function
+  const preloadImage = (imageUrl) => {
+    return new Promise((resolve, reject) => {
+      if (!imageUrl) {
+        reject(new Error('No image URL provided'));
+        return;
+      }
+      
+      if (preloadedImages.has(imageUrl)) {
+        resolve(imageUrl);
+        return;
+      }
+      
+      const img = new Image();
+      img.onload = () => {
+        setPreloadedImages(prev => new Set([...prev, imageUrl]));
+        resolve(imageUrl);
+      };
+      img.onerror = (error) => {
+        console.warn('Image loading failed:', imageUrl);
+        reject(error);
+      };
+      img.src = imageUrl;
+    });
+  };
+
+  // Preload adjacent card images
+  const preloadAdjacentImages = (paragraphs, currentIndex) => {
+    if (!paragraphs || paragraphs.length === 0 || currentIndex < 0 || currentIndex >= paragraphs.length) {
+      return;
+    }
+    
+    const imagesToPreload = [];
+    
+    try {
+      // Preload next image
+      if (currentIndex < paragraphs.length - 1 && paragraphs[currentIndex + 1]?.image) {
+        const nextImage = paragraphs[currentIndex + 1].image;
+        if (nextImage && typeof nextImage === 'string') {
+          imagesToPreload.push(nextImage);
+        }
+      }
+      
+      // Preload previous image
+      if (currentIndex > 0 && paragraphs[currentIndex - 1]?.image) {
+        const prevImage = paragraphs[currentIndex - 1].image;
+        if (prevImage && typeof prevImage === 'string') {
+          imagesToPreload.push(prevImage);
+        }
+      }
+      
+      // Preload current image if not already loaded
+      if (paragraphs[currentIndex]?.image) {
+        const currentImage = paragraphs[currentIndex].image;
+        if (currentImage && typeof currentImage === 'string') {
+          imagesToPreload.push(currentImage);
+        }
+      }
+      
+      imagesToPreload.forEach(imageUrl => {
+        if (imageUrl && typeof imageUrl === 'string' && !preloadedImages.has(imageUrl)) {
+          preloadImage(imageUrl).catch(error => {
+            console.warn('Failed to preload image:', imageUrl, error);
+          });
+        }
+      });
+    } catch (error) {
+      console.warn('Error in preloadAdjacentImages:', error);
+    }
+  };
 
   useEffect(() => {
     const languageCode = languages[currentLanguage].code;
@@ -168,7 +244,7 @@ function App() {
         }
       }, 300);
       
-      // Scroll to selected subsection in sidebar (with longer delay to allow expansion)
+      // Scroll to selected subsection in sidebar (with longer delay to allow expansion)  
       setTimeout(() => {
         const selectedSubsection = document.querySelector('.nav-subsection.active');
         const sidebarNav = document.querySelector('.section-nav');
@@ -188,6 +264,33 @@ function App() {
       }, 500);
     }
   }, [selectedSection, isFromSearch, searchSelectedParagraph, isMobile]);
+
+  // Preload images when section changes or card index changes  
+  useEffect(() => {
+    if (selectedSection && isMobile && content) {
+      let paragraphs = [];
+      
+      try {
+        if (selectedSection === 'foreword' && content.foreword) {
+          paragraphs = content.foreword.paragraphs || [];
+        } else if (selectedSection === 'conclusion' && content.conclusion) {
+          paragraphs = content.conclusion.paragraphs || [];
+        } else if (content.sections) {
+          const section = content.sections.find(section =>
+            section.subsections && section.subsections.some(sub => sub.id === selectedSection)
+          );
+          const subsection = section?.subsections?.find(sub => sub.id === selectedSection);
+          paragraphs = subsection?.paragraphs || [];
+        }
+        
+        if (paragraphs.length > 0 && currentCardIndex >= 0 && currentCardIndex < paragraphs.length) {
+          preloadAdjacentImages(paragraphs, currentCardIndex);
+        }
+      } catch (error) {
+        console.warn('Error in preloading images:', error);
+      }
+    }
+  }, [selectedSection, currentCardIndex, content?.sections, isMobile]);
 
   // Global search functionality
   const performGlobalSearch = (query) => {
@@ -415,12 +518,54 @@ function App() {
     const threshold = window.innerWidth * 0.2; // 20% of screen width
 
     if (Math.abs(diff) > threshold) {
+      let newIndex = currentCardIndex;
+      
       if (diff > 0 && currentCardIndex < paragraphs.length - 1) {
-        // Swipe left
-        setCurrentCardIndex(prev => prev + 1);
+        // Swipe left - next card
+        newIndex = currentCardIndex + 1;
       } else if (diff < 0 && currentCardIndex > 0) {
-        // Swipe right
-        setCurrentCardIndex(prev => prev - 1);
+        // Swipe right - previous card
+        newIndex = currentCardIndex - 1;
+      }
+      
+                    if (newIndex !== currentCardIndex && paragraphs && paragraphs[newIndex]) {
+        try {
+          // Start card transition animation
+          setIsCardTransitioning(true);
+          
+          // Set loading state for the new card only if image needs to be loaded
+          const newImageUrl = paragraphs[newIndex]?.image;
+          if (newImageUrl && typeof newImageUrl === 'string' && !preloadedImages.has(newImageUrl)) {
+            setCardLoadingState(prev => ({ ...prev, [newIndex]: true }));
+            
+            // Preload the new image
+            preloadImage(newImageUrl).then(() => {
+              setCardLoadingState(prev => ({ ...prev, [newIndex]: false }));
+            }).catch((error) => {
+              console.warn('Failed to preload image:', newImageUrl, error);
+              setCardLoadingState(prev => ({ ...prev, [newIndex]: false }));
+            });
+          } else {
+            // Image already loaded or no image, ensure loading state is false
+            setCardLoadingState(prev => ({ ...prev, [newIndex]: false }));
+          }
+          
+          // Change card index with smooth transition
+          setTimeout(() => {
+            setCurrentCardIndex(newIndex);
+            // Preload adjacent images for the new current card
+            preloadAdjacentImages(paragraphs, newIndex);
+            
+            // End transition after animation completes
+            setTimeout(() => {
+              setIsCardTransitioning(false);
+            }, 500);
+          }, 50);
+        } catch (error) {
+          console.warn('Error in card transition:', error);
+          setIsCardTransitioning(false);
+          setCardLoadingState(prev => ({ ...prev, [newIndex]: false }));
+        }
       }
     }
 
@@ -445,10 +590,43 @@ function App() {
     setCurrentCardIndex(0); // Reset card index when selecting new section
     setSearchSelectedParagraph(null); // Clear search selection
     setIsFromSearch(false); // Reset search flag
+    setIsCardTransitioning(false); // Reset transition state
+    setCardLoadingState({}); // Clear loading states
+    
+    // Immediately preload first card image to avoid loading state
     setTimeout(() => {
-      const contentCards = document.querySelector('.content-cards');
-      if (contentCards) {
-        contentCards.scrollTo({ top: 0, behavior: 'smooth' });
+      try {
+        if (isMobile && content) {
+          let paragraphs = [];
+          
+          if (section === 'foreword' && content.foreword) {
+            paragraphs = content.foreword.paragraphs || [];
+          } else if (section === 'conclusion' && content.conclusion) {
+            paragraphs = content.conclusion.paragraphs || [];
+          } else if (content.sections) {
+            const sectionData = content.sections.find(s =>
+              s.subsections && s.subsections.some(sub => sub.id === section)
+            );
+            const subsection = sectionData?.subsections?.find(sub => sub.id === section);
+            paragraphs = subsection?.paragraphs || [];
+          }
+          
+          if (paragraphs.length > 0 && paragraphs[0]?.image && typeof paragraphs[0].image === 'string') {
+            const firstImageUrl = paragraphs[0].image;
+            if (!preloadedImages.has(firstImageUrl)) {
+              preloadImage(firstImageUrl).catch(error => {
+                console.warn('Failed to preload first card image:', error);
+              });
+            }
+          }
+        }
+        
+        const contentCards = document.querySelector('.content-cards');
+        if (contentCards) {
+          contentCards.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      } catch (error) {
+        console.warn('Error in handleSectionSelect:', error);
       }
     }, 100);
   };
@@ -617,16 +795,28 @@ function App() {
                 // For mobile, use the display index
                 const actualIndex = isMobile ? currentCardIndex : paragraphs.findIndex(p => p.content === paragraph.content);
                 
+                // Check if card is loading or transitioning
+                const isCardLoading = cardLoadingState[actualIndex] || false;
+                const imageUrl = paragraph?.image;
+                const isImagePreloaded = imageUrl ? preloadedImages.has(imageUrl) : true; // Default to true if no image
+                
                 return (
                   <div 
                     key={actualIndex} 
-                    className={`content-card ${isSearchHighlighted ? 'search-highlighted' : ''}`}
-                    style={{ backgroundImage: `url(${paragraph.image})` }}
+                    className={`content-card ${isSearchHighlighted ? 'search-highlighted' : ''} ${isCardTransitioning && isMobile ? 'card-transitioning' : ''} ${isCardLoading ? 'card-loading' : ''}`}
+                    style={{ backgroundImage: paragraph?.image ? `url(${paragraph.image})` : 'none' }}
                     ref={cardRef}
                     onTouchStart={handleTouchStart}
                     onTouchMove={handleTouchMove}
                     onTouchEnd={() => handleTouchEnd(paragraphs)}
                   >
+                    {/* Loading spinner for mobile cards */}
+                    {isMobile && isCardLoading && (
+                      <div className="card-loading-overlay">
+                        <div className="card-loading-spinner"></div>
+                      </div>
+                    )}
+                    
                     <div 
                       className="card-content"
                       ref={(el) => {
@@ -652,7 +842,47 @@ function App() {
                     <div 
                       key={index}
                       className={`card-dot ${index === currentCardIndex ? 'active' : ''}`}
-                      onClick={() => setCurrentCardIndex(index)}
+                      onClick={() => {
+                                                 if (index !== currentCardIndex && paragraphs && paragraphs[index]) {
+                          try {
+                           // Start card transition animation
+                           setIsCardTransitioning(true);
+                           
+                           // Set loading state for the new card only if image needs to be loaded
+                          const newImageUrl = paragraphs[index]?.image;
+                          if (newImageUrl && typeof newImageUrl === 'string' && !preloadedImages.has(newImageUrl)) {
+                            setCardLoadingState(prev => ({ ...prev, [index]: true }));
+                            
+                            // Preload the new image
+                            preloadImage(newImageUrl).then(() => {
+                              setCardLoadingState(prev => ({ ...prev, [index]: false }));
+                            }).catch((error) => {
+                              console.warn('Failed to preload image:', newImageUrl, error);
+                              setCardLoadingState(prev => ({ ...prev, [index]: false }));
+                            });
+                          } else {
+                            // Image already loaded or no image, ensure loading state is false
+                            setCardLoadingState(prev => ({ ...prev, [index]: false }));
+                          }
+                          
+                          // Change card index with smooth transition
+                          setTimeout(() => {
+                            setCurrentCardIndex(index);
+                            // Preload adjacent images for the new current card
+                            preloadAdjacentImages(paragraphs, index);
+                            
+                            // End transition after animation completes
+                            setTimeout(() => {
+                              setIsCardTransitioning(false);
+                            }, 500);
+                          }, 50);
+                          } catch (error) {
+                            console.warn('Error in dot navigation:', error);
+                            setIsCardTransitioning(false);
+                            setCardLoadingState(prev => ({ ...prev, [index]: false }));
+                          }
+                        }
+                      }}
                     />
                   ))}
                 </div>
@@ -1555,6 +1785,65 @@ function App() {
           gap: 8px;
           z-index: 999;
           box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Card Loading and Transition Styles */
+        .card-loading-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.7);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 10;
+          border-radius: inherit;
+        }
+
+        .card-loading-spinner {
+          width: 40px;
+          height: 40px;
+          border: 4px solid rgba(255, 255, 255, 0.3);
+          border-top: 4px solid #fff;
+          border-radius: 50%;
+          animation: cardSpinnerRotate 1s linear infinite;
+        }
+
+        @keyframes cardSpinnerRotate {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        /* Card Transition Animation */
+        .content-card.card-transitioning {
+          animation: cardZoomIn 0.5s ease-out forwards;
+        }
+
+        @keyframes cardZoomIn {
+          0% {
+            transform: scale(0);
+            opacity: 0;
+          }
+          50% {
+            transform: scale(0.8);
+            opacity: 0.8;
+          }
+          100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+
+        /* Smooth card appearance */
+        .content-card {
+          transition: all 0.3s ease;
+        }
+
+        .content-card.card-loading {
+          background-color: #f0f0f0;
+          background-image: none !important;
         }
 
         .card-dots {
