@@ -645,7 +645,7 @@ function App() {
                 );
               })}
             </div>
-            {isMobile && paragraphs.length > 1 && (
+            {isMobile && paragraphs.length > 1 && !isSidebarVisible && (
               <div className="card-navigation">
                 <div className="card-dots">
                   {paragraphs.map((_, index) => (
