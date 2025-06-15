@@ -636,16 +636,16 @@ function App() {
                 return (
                   <div 
                     key={actualIndex} 
-                    className={`content-card ${isSearchHighlighted ? 'search-highlighted' : ''}`}
+                    className={`content-card ${isSearchHighlighted ? 'search-highlighted' : ''} ${!imageLoaded ? 'loading-placeholder' : ''}`}
                     style={{ 
-                      backgroundImage: imageLoaded ? `url(${paragraph.image})` : 'none',
-                      visibility: imageLoaded ? 'visible' : 'hidden'
+                      backgroundImage: imageLoaded ? `url(${paragraph.image})` : 'none'
                     }}
                     ref={cardRef}
                     onTouchStart={handleTouchStart}
                     onTouchMove={handleTouchMove}
                     onTouchEnd={() => handleTouchEnd(paragraphs)}
                   >
+
                     <div 
                       className="card-content"
                       ref={(el) => {
@@ -1628,13 +1628,9 @@ function App() {
           }
         }
 
-        /* Content Cards Smooth Background Loading */
-        .content-card {
-          background-color: #f8f9fa; /* Placeholder background while image loads */
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          transition: background-image 0.3s ease-in-out;
+        /* Simple background loading without interference */
+        .content-card.loading-placeholder {
+          background: #f8f9fa; /* Simple placeholder while loading */
         }
 
         /* Ensure search highlighting still works */
