@@ -104,9 +104,6 @@ function App() {
   const [searchSelectedParagraph, setSearchSelectedParagraph] = useState(null);
   const [isFromSearch, setIsFromSearch] = useState(false);
   
-  // Add state for loaded images
-  const [loadedImages, setLoadedImages] = useState(new Set());
-  
   // Handle window resize
   useEffect(() => {
     const handleResize = () => {
@@ -448,7 +445,6 @@ function App() {
     setCurrentCardIndex(0); // Reset card index when selecting new section
     setSearchSelectedParagraph(null); // Clear search selection
     setIsFromSearch(false); // Reset search flag
-    setLoadedImages(new Set()); // Reset loaded images for new section
     setTimeout(() => {
       const contentCards = document.querySelector('.content-cards');
       if (contentCards) {
@@ -621,26 +617,11 @@ function App() {
                 // For mobile, use the display index
                 const actualIndex = isMobile ? currentCardIndex : paragraphs.findIndex(p => p.content === paragraph.content);
                 
-                // Check if image is loaded
-                const imageLoaded = loadedImages.has(paragraph.image);
-                
-                // Preload image
-                if (!imageLoaded && paragraph.image) {
-                  const img = new Image();
-                  img.onload = () => {
-                    setLoadedImages(prev => new Set([...prev, paragraph.image]));
-                  };
-                  img.src = paragraph.image;
-                }
-                
                 return (
                   <div 
                     key={actualIndex} 
                     className={`content-card ${isSearchHighlighted ? 'search-highlighted' : ''}`}
-                    style={{ 
-                      backgroundImage: imageLoaded ? `url(${paragraph.image})` : 'none',
-                      visibility: imageLoaded ? 'visible' : 'hidden'
-                    }}
+                    style={{ backgroundImage: `url(${paragraph.image})` }}
                     ref={cardRef}
                     onTouchStart={handleTouchStart}
                     onTouchMove={handleTouchMove}
@@ -1625,44 +1606,6 @@ function App() {
             margin: 0 10px 10px 10px;
             font-size: 13px;
             padding: 8px 12px;
-          }
-        }
-
-        /* Content Cards Smooth Background Loading */
-        .content-card {
-          background-color: #f8f9fa; /* Placeholder background while image loads */
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          transition: background-image 0.3s ease-in-out;
-        }
-
-        /* Ensure search highlighting still works */
-        .content-card.search-highlighted {
-          border: 3px solid #28a745;
-          box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
-          animation: searchHighlight 2s ease-in-out;
-        }
-
-        .search-highlighted-text {
-          background: linear-gradient(120deg, rgba(40, 167, 69, 0.3) 0%, rgba(40, 167, 69, 0.1) 100%);
-          padding: 5px;
-          border-radius: 5px;
-          border-left: 4px solid #28a745;
-        }
-
-        @keyframes searchHighlight {
-          0% { 
-            border-color: #28a745;
-            box-shadow: 0 0 20px rgba(40, 167, 69, 0.8);
-          }
-          50% { 
-            border-color: #34ce57;
-            box-shadow: 0 0 25px rgba(40, 167, 69, 0.6);
-          }
-          100% { 
-            border-color: #28a745;
-            box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
           }
         }
       `}</style>
