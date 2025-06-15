@@ -456,7 +456,7 @@ function App() {
   const handleBackClick = () => {
     if (!isSidebarVisible) {
       setIsSidebarVisible(true);
-      setSelectedSection(null);  // Reset selected section
+      // Keep selectedSection to show which section was selected
       setCurrentCardIndex(0);    // Reset card index
       setSearchSelectedParagraph(null); // Clear search selection
       setIsFromSearch(false); // Reset search flag
