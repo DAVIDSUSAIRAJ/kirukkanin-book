@@ -590,45 +590,81 @@ function App() {
     setCurrentCardIndex(0); // Reset card index when selecting new section
     setSearchSelectedParagraph(null); // Clear search selection
     setIsFromSearch(false); // Reset search flag
-    setIsCardTransitioning(false); // Reset transition state
     setCardLoadingState({}); // Clear loading states
     
-    // Immediately preload first card image to avoid loading state
-    setTimeout(() => {
-      try {
-        if (isMobile && content) {
-          let paragraphs = [];
-          
-          if (section === 'foreword' && content.foreword) {
-            paragraphs = content.foreword.paragraphs || [];
-          } else if (section === 'conclusion' && content.conclusion) {
-            paragraphs = content.conclusion.paragraphs || [];
-          } else if (content.sections) {
-            const sectionData = content.sections.find(s =>
-              s.subsections && s.subsections.some(sub => sub.id === section)
-            );
-            const subsection = sectionData?.subsections?.find(sub => sub.id === section);
-            paragraphs = subsection?.paragraphs || [];
-          }
-          
-          if (paragraphs.length > 0 && paragraphs[0]?.image && typeof paragraphs[0].image === 'string') {
-            const firstImageUrl = paragraphs[0].image;
-            if (!preloadedImages.has(firstImageUrl)) {
-              preloadImage(firstImageUrl).catch(error => {
-                console.warn('Failed to preload first card image:', error);
-              });
+    // Start loading animation for first card on mobile
+    if (isMobile) {
+      setIsCardTransitioning(true);
+      
+      // Get first card image and show loading if needed
+      setTimeout(() => {
+        try {
+          if (content) {
+            let paragraphs = [];
+            
+            if (section === 'foreword' && content.foreword) {
+              paragraphs = content.foreword.paragraphs || [];
+            } else if (section === 'conclusion' && content.conclusion) {
+              paragraphs = content.conclusion.paragraphs || [];
+            } else if (content.sections) {
+              const sectionData = content.sections.find(s =>
+                s.subsections && s.subsections.some(sub => sub.id === section)
+              );
+              const subsection = sectionData?.subsections?.find(sub => sub.id === section);
+              paragraphs = subsection?.paragraphs || [];
             }
+            
+            if (paragraphs.length > 0 && paragraphs[0]?.image && typeof paragraphs[0].image === 'string') {
+              const firstImageUrl = paragraphs[0].image;
+              if (!preloadedImages.has(firstImageUrl)) {
+                // Show loading state for first card
+                setCardLoadingState(prev => ({ ...prev, [0]: true }));
+                
+                // Preload the first image
+                preloadImage(firstImageUrl).then(() => {
+                  setCardLoadingState(prev => ({ ...prev, [0]: false }));
+                }).catch(error => {
+                  console.warn('Failed to preload first card image:', error);
+                  setCardLoadingState(prev => ({ ...prev, [0]: false }));
+                });
+              } else {
+                // Image already loaded
+                setCardLoadingState(prev => ({ ...prev, [0]: false }));
+              }
+              
+              // Preload adjacent images for smooth navigation
+              preloadAdjacentImages(paragraphs, 0);
+            } else {
+              // No image, ensure loading state is false
+              setCardLoadingState(prev => ({ ...prev, [0]: false }));
+            }
+            
+            // End transition after animation completes
+            setTimeout(() => {
+              setIsCardTransitioning(false);
+            }, 500);
           }
+          
+          const contentCards = document.querySelector('.content-cards');
+          if (contentCards) {
+            contentCards.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        } catch (error) {
+          console.warn('Error in handleSectionSelect:', error);
+          setIsCardTransitioning(false);
+          setCardLoadingState(prev => ({ ...prev, [0]: false }));
         }
-        
+      }, 50);
+    } else {
+      // Desktop - no loading animation needed
+      setIsCardTransitioning(false);
+      setTimeout(() => {
         const contentCards = document.querySelector('.content-cards');
         if (contentCards) {
           contentCards.scrollTo({ top: 0, behavior: 'smooth' });
         }
-      } catch (error) {
-        console.warn('Error in handleSectionSelect:', error);
-      }
-    }, 100);
+      }, 100);
+    }
   };
 
   const handleBackClick = () => {
