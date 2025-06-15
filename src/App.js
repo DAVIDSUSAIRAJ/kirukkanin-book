@@ -265,6 +265,30 @@ function App() {
     }
   }, [selectedSection, isFromSearch, searchSelectedParagraph, isMobile]);
 
+  // Auto-scroll to selected subsection in sidebar on mobile when sidebar becomes visible
+  useEffect(() => {
+    if (isMobile && isSidebarVisible && selectedSection) {
+      // Add delay to ensure sidebar is fully rendered
+      setTimeout(() => {
+        const selectedSubsection = document.querySelector('.nav-subsection.active');
+        const sidebarNav = document.querySelector('.section-nav');
+        
+        if (selectedSubsection && sidebarNav) {
+          // Calculate the position of the selected subsection relative to the sidebar
+          const subsectionRect = selectedSubsection.getBoundingClientRect();
+          const sidebarRect = sidebarNav.getBoundingClientRect();
+          const relativeTop = subsectionRect.top - sidebarRect.top;
+          
+          // Scroll the sidebar to center the selected subsection
+          sidebarNav.scrollTo({
+            top: sidebarNav.scrollTop + relativeTop - (sidebarRect.height / 2),
+            behavior: 'smooth'
+          });
+        }
+      }, 300);
+    }
+  }, [isSidebarVisible, selectedSection, isMobile]);
+
   // Preload images when section changes or card index changes  
   useEffect(() => {
     if (selectedSection && isMobile && content) {
