@@ -31,6 +31,11 @@ import no_pain_pride from '../images/no_pain_pride.jpg';
 import true_in_loss from '../images/true_in_loss.jpg';
 import control_desire from '../images/control_desire.jpg';
 import self_love_reading from '../images/self_love_reading.jpg';
+import marriage_mind from '../images/marriage_mind.jpg';
+import marriage_understanding from '../images/marriage_understanding.jpg';    
+import financial_responsibility from '../images/financial_responsibility.jpg';
+import marriage_wisdom from '../images/marriage_wisdom.jpg';
+import marriage_path from '../images/marriage_path.jpg';
 
 
 
@@ -68,5 +73,9 @@ export const images = {
   true_in_loss,
   control_desire,
   self_love_reading,
-
+  marriage_mind,
+  marriage_understanding,
+  financial_responsibility,
+  marriage_wisdom,
+  marriage_path
 };

@@ -3470,6 +3470,12 @@ hours of contemplation,<br>
 and years of experience.`,
         image: 'words_behind_pain'
       },
+            {
+        content:`Though the paths I walked were in darkness,<br> my search continued behind every light."
+ `,
+ 
+image: 'journey_in_darkness_light_search'
+      },
       {
         content: `Let the lines in this book...<br>
 be a light for minds seeking truth.<br>
