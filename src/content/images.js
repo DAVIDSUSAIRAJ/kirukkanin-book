@@ -48,6 +48,12 @@ import love_understanding from '../images/love_understanding.jpg';
 import love_yearning from '../images/love_yearning.jpg';
 import love_danger from '../images/love_danger.jpg';
 import love_journey from '../images/love_journey.jpg';
+import friendship_unexpected from '../images/friendship_unexpected.jpg';
+import friendship_comfort from '../images/friendship_comfort.jpg';
+import friendship_love from '../images/friendship_love.jpg';
+import friendship_pure from '../images/friendship_pure.jpg';
+import friendship_elevation from '../images/friendship_elevation.jpg';
+import friendship_light from '../images/friendship_light.jpg';
 
 
 
@@ -102,4 +108,10 @@ export const images = {
   love_yearning,
   love_danger,
   love_journey,
+  friendship_unexpected,
+  friendship_comfort,
+  friendship_love,
+  friendship_pure,
+  friendship_elevation,
+  friendship_light,
 };
