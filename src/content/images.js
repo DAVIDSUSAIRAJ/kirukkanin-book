@@ -1,4 +1,4 @@
-import tulasi from '../images/tulasiImg.jpg';
+import tulasi from '../images/tulasi.jpg';
 import munnurai_1 from '../images/munnurai_1.jpg';
 import diaryWriten from '../images/diaryWriten.jpg';
 import nature_peace from '../images/nature_peace.jpg';
