@@ -36,6 +36,18 @@ import marriage_understanding from '../images/marriage_understanding.jpg';
 import financial_responsibility from '../images/financial_responsibility.jpg';
 import marriage_wisdom from '../images/marriage_wisdom.jpg';
 import marriage_path from '../images/marriage_path.jpg';
+import love_give from '../images/love_give.jpg';
+import true_love from '../images/true_love.jpg';  
+import short_true_love from '../images/short_true_love.jpg';
+import love_fight from '../images/love_fight.jpg';
+import love_change from '../images/love_change.jpg';
+import love_hate from '../images/love_hate.jpg';
+import love_beauty from '../images/love_beauty.jpg';
+import love_slave from '../images/love_slave.jpg';
+import love_understanding from '../images/love_understanding.jpg';
+import love_yearning from '../images/love_yearning.jpg';
+import love_danger from '../images/love_danger.jpg';
+import love_journey from '../images/love_journey.jpg';
 
 
 
@@ -77,5 +89,17 @@ export const images = {
   marriage_understanding,
   financial_responsibility,
   marriage_wisdom,
-  marriage_path
+  marriage_path,
+  love_give,
+  true_love,
+  short_true_love,
+  love_fight,
+  love_change,
+  love_hate,
+  love_beauty,
+  love_slave,
+  love_understanding,
+  love_yearning,
+  love_danger,
+  love_journey,
 };
