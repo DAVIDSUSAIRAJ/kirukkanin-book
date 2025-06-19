@@ -64,6 +64,14 @@ import widow_flower from '../images/widow_flower.jpg';
 import wealth_marriage from '../images/wealth_marriage.jpg';
 import wealth_mind from '../images/wealth_mind.jpg';
 import modesty_beauty from '../images/modesty_beauty.jpg';
+import silent_love from '../images/silent_love.jpg';
+import heart_thorn from '../images/heart_thorn.jpg';
+import distant_together from '../images/distant_together.jpg';
+import sleepless_heart from '../images/sleepless_heart.jpg';
+import trembling_heart from '../images/trembling_heart.jpg';
+import trapped_glance from '../images/trapped_glance.jpg';
+import eternal_memories from '../images/eternal_memories.jpg';
+import shadow_love from '../images/shadow_love.jpg';
 
 
 
@@ -138,5 +146,13 @@ export const images = {
   wealth_marriage,
   wealth_mind,
   modesty_beauty,
+  silent_love,
+  heart_thorn,
+  distant_together,
+  sleepless_heart,
+  trembling_heart,
+  trapped_glance,
+  eternal_memories,
+  shadow_love,
 
 };
