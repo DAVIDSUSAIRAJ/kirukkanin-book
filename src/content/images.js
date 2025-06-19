@@ -54,6 +54,20 @@ import friendship_love from '../images/friendship_love.jpg';
 import friendship_pure from '../images/friendship_pure.jpg';
 import friendship_elevation from '../images/friendship_elevation.jpg';
 import friendship_light from '../images/friendship_light.jpg';
+import youth_dreams from '../images/youth_dreams.jpg';
+import youth_experience from '../images/youth_experience.jpg';
+import youth_search from '../images/youth_search.jpg';
+import masculinity_respect from '../images/masculinity_respect.jpg';
+import masculinity_honor from '../images/masculinity_honor.jpg';
+import woman_divine from '../images/woman_divine.jpg';
+import widow_flower from '../images/widow_flower.jpg';
+import wealth_marriage from '../images/wealth_marriage.jpg';
+import wealth_mind from '../images/wealth_mind.jpg';
+import modesty_beauty from '../images/modesty_beauty.jpg';
+
+
+
+
 
 
 
@@ -114,4 +128,15 @@ export const images = {
   friendship_pure,
   friendship_elevation,
   friendship_light,
+  youth_dreams,
+  youth_experience,
+  youth_search,
+  masculinity_respect,
+  masculinity_honor,
+  woman_divine,
+  widow_flower,
+  wealth_marriage,
+  wealth_mind,
+  modesty_beauty,
+
 };
