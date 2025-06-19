@@ -636,7 +636,7 @@ export const tamilContent = {
 அதற்கான காரணம்...<br>
 தேவையற்ற எண்ணங்களும்,<br>
 தேவையற்ற பேராசைகளும்தான்.`,
-              image: "love_change"
+              image: "love_change_desires"
             },
             {
               content: `காதல் பிரிவு என்பது,<br>
@@ -666,7 +666,7 @@ export const tamilContent = {
 காதலால் உண்டான கண்ணீரும் அழகு...<br>
 காமமும் அழகு...<br>
 காமத்தால் உண்டான காயங்களும் அழகு...`,
-              image: "love_beauty"
+              image: "love_lust_beauty"
             },
             {
               content: `வாழ்வும் அழகு...<br>

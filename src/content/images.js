@@ -72,6 +72,16 @@ import trembling_heart from '../images/trembling_heart.jpg';
 import trapped_glance from '../images/trapped_glance.jpg';
 import eternal_memories from '../images/eternal_memories.jpg';
 import shadow_love from '../images/shadow_love.jpg';
+import eternal_hearts from '../images/eternal_hearts.jpg';
+import heart_music from '../images/heart_music.jpg';
+import love_pride from '../images/love_pride.jpg';
+import love_distance from '../images/love_distance.jpg';
+import love_balance from '../images/love_balance.jpg';
+import endless_love from '../images/endless_love.jpg';
+import sweet_patience from '../images/sweet_patience.jpg';
+import true_love_path from '../images/true_love_path.jpg';
+import timeless_love from '../images/timeless_love.jpg';
+
 
 
 
@@ -154,5 +164,14 @@ export const images = {
   trapped_glance,
   eternal_memories,
   shadow_love,
+  eternal_hearts,
+  heart_music,
+  love_pride,
+  love_distance,
+  love_balance,
+  endless_love,
+  sweet_patience,
+  true_love_path,
+  timeless_love,
 
 };

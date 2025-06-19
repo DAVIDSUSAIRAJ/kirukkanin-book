@@ -517,7 +517,7 @@ export const englishContent = {
         },
         {
           "content": "In love...<br>Men or women...<br>Depending on circumstances...<br>Can change anytime,<br>in any way.<br>The reason is always<br>unwanted thoughts<br>and selfish desires.",
-          "image": "love_change"
+          "image": "love_change_desires"
         },
         {
           "content": "Love separation should be...<br>Based on understanding.<br>It should not be in causing pain.",
@@ -539,7 +539,7 @@ export const englishContent = {
         },
         {
           "content": "Love is beauty...<br>Tears because of love are beauty...<br>Lust is beauty...<br>Even wounds from lust are beautiful...",
-          "image": "love_beauty"
+          "image": "love_lust_beauty"
         },
         {
           "content": "Life is beauty...<br>Even the pains in life are beautiful...",
