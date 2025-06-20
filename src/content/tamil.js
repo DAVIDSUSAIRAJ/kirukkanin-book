@@ -589,7 +589,7 @@ export const tamilContent = {
               image: "woman_nature"
             },
             {
-              content: `பெண்ணால் முன்னேறலாம்...<br>
+              content: `ஒரு ஆண்,<br>பெண்ணால முன்னேறலாம்...<br>
 ஆனால்,<br>
 பெண் கூடஇருந்தாலோ...<br>
 அல்லது,<br>

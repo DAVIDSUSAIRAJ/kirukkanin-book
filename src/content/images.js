@@ -81,6 +81,22 @@ import endless_love from '../images/endless_love.jpg';
 import sweet_patience from '../images/sweet_patience.jpg';
 import true_love_path from '../images/true_love_path.jpg';
 import timeless_love from '../images/timeless_love.jpg';
+import separation_greed from '../images/separation_greed.jpg';
+import false_love from '../images/false_love.jpg';
+import broken_ring from '../images/broken_ring.jpg';
+import tears_memories from '../images/tears_memories.jpg';
+import painful_memories from '../images/painful_memories.jpg';
+import woman_nature from '../images/woman_nature.jpg';
+import woman_progress from '../images/woman_progress.jpg';
+import trapped_love from '../images/trapped_love.jpg';
+import wounded_life from '../images/wounded_life.jpg';
+import love_change_desires from '../images/love_change_desires.jpg';
+import understanding_separation from '../images/understanding_separation.jpg';
+import separation_shadows from '../images/separation_shadows.jpg';
+import nature_beauty from '../images/nature_beauty.jpg';
+import love_lust_beauty from '../images/love_lust_beauty.jpg';
+import life_beauty from '../images/life_beauty.jpg';
+import beauty_everywhere from '../images/beauty_everywhere.jpg';
 
 
 
@@ -173,5 +189,21 @@ export const images = {
   sweet_patience,
   true_love_path,
   timeless_love,
+  separation_greed,
+  false_love,
+  broken_ring,
+  tears_memories,
+  painful_memories,
+  woman_nature,
+  woman_progress,
+  trapped_love,
+  wounded_life,
+  love_change_desires,
+  understanding_separation,
+  separation_shadows,
+  nature_beauty,
+  love_lust_beauty,
+  life_beauty,
+  beauty_everywhere,
 
 };

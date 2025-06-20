@@ -504,7 +504,7 @@ export const englishContent = {
           "image": "woman_nature"
         },
         {
-          "content": "You may grow because of a woman...<br>But,<br>if she is with you,<br>or even if she is too close,<br>you may not grow.",
+          "content": "A man,<br>can progress through a woman...<br>But,<br>if a woman is together with him...<br>or,<br>if he is together with a woman...<br>he cannot progress.",
           "image": "woman_progress"
         },
         {
