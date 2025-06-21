@@ -110,6 +110,11 @@ import human_nature_intro from '../images/human_nature_intro.jpg';
 import partial_knowledge from '../images/partial_knowledge.jpg';
 import full_knowledge from '../images/full_knowledge.jpg';
 import human_nature from '../images/human_nature.jpg';
+import peaceful_distance from '../images/peaceful_distance.jpg';
+import dignified_withdrawal from '../images/dignified_withdrawal.jpg';
+import proud_distance from '../images/proud_distance.jpg';
+import complete_withdrawal from '../images/complete_withdrawal.jpg';
+import gradual_exit from '../images/gradual_exit.jpg';
 
 export const images = {
   munnurai_1,
@@ -224,4 +229,9 @@ export const images = {
   partial_knowledge,
   full_knowledge,
   human_nature,
+  peaceful_distance,
+  dignified_withdrawal,
+  proud_distance,
+  complete_withdrawal,
+  gradual_exit,
 };
