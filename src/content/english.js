@@ -503,10 +503,16 @@ export const englishContent = {
           "content": "A woman is not submissive.<br>She denies.<br>She hates.<br>She forgets.<br>If you go after a woman,<br>only pain will follow.",
           "image": "woman_nature"
         },
-        {
-          "content": "A man,<br>can progress through a woman...<br>But,<br>if a woman is together with him...<br>or,<br>if he is together with a woman...<br>he cannot progress.",
-          "image": "woman_progress"
-        },
+{
+  content: `A man<br>can succeed with a woman’s support...<br>
+But,<br>
+if a woman is with him and becomes a distraction...<br>
+Or,<br>
+if he himself is distracted by being with a woman...<br>
+he cannot progress.`,
+  image: "woman_progress"
+}
+,
         {
           "content": "I try to move away knowing it’s fake...<br>I can’t.<br>I try to hate...<br>I can’t.<br>I try to forget...<br>I can’t.<br>I try to leave...<br>I can’t.<br>I try to live...<br>I can’t.<br>I even think of dying...<br>But can’t die either.",
           "image": "trapped_love"
