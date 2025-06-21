@@ -106,6 +106,10 @@ import tears_language from '../images/tears_language.jpg';
 import acting_necessity from '../images/acting_necessity.jpg';
 import acting_love from '../images/acting_love.jpg';
 import life_acting from '../images/life_acting.jpg';
+import human_nature_intro from '../images/human_nature_intro.jpg';
+import partial_knowledge from '../images/partial_knowledge.jpg';
+import full_knowledge from '../images/full_knowledge.jpg';
+import human_nature from '../images/human_nature.jpg';
 
 export const images = {
   munnurai_1,
@@ -216,4 +220,8 @@ export const images = {
   acting_necessity,
   acting_love,
   life_acting,
+  human_nature_intro,
+  partial_knowledge,
+  full_knowledge,
+  human_nature,
 };
