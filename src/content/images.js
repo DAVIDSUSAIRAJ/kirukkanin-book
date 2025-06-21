@@ -97,13 +97,15 @@ import nature_beauty from '../images/nature_beauty.jpg';
 import love_lust_beauty from '../images/love_lust_beauty.jpg';
 import life_beauty from '../images/life_beauty.jpg';
 import beauty_everywhere from '../images/beauty_everywhere.jpg';
-
-
-
-
-
-
-
+import tears_gift from '../images/tears_gift.jpg';
+import lonely_tears from '../images/lonely_tears.jpg';
+import duty_tears from '../images/duty_tears.jpg';
+import love_tears from '../images/love_tears.jpg';
+import pain_tears from '../images/pain_tears.jpg';
+import tears_language from '../images/tears_language.jpg';
+import acting_necessity from '../images/acting_necessity.jpg';
+import acting_love from '../images/acting_love.jpg';
+import life_acting from '../images/life_acting.jpg';
 
 export const images = {
   munnurai_1,
@@ -205,5 +207,13 @@ export const images = {
   love_lust_beauty,
   life_beauty,
   beauty_everywhere,
-
+  tears_gift,
+  lonely_tears,
+  duty_tears,
+  love_tears,
+  pain_tears,
+  tears_language,
+  acting_necessity,
+  acting_love,
+  life_acting,
 };
