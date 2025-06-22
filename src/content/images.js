@@ -135,6 +135,14 @@ import youth_longing from '../images/youth_longing.jpg';
 import solitude_strength from '../images/solitude_strength.jpg';
 import time_emotions from '../images/time_emotions.jpg';
 import future_foundation from '../images/future_foundation.jpg';
+import fear_of_love from '../images/fear_of_love.jpg';
+import duty_fear from '../images/duty_fear.jpg';
+import fear_of_living from '../images/fear_of_living.jpg';
+import fearless_death from '../images/fearless_death.jpg';
+import failure_celebration from '../images/failure_celebration.jpg';
+import failure_acceptance from '../images/failure_acceptance.jpg';
+import failure_guiding_light from '../images/failure_guiding_light.jpg';
+import courage_face_failure from '../images/courage_face_failure.jpg';
 
 export const images = {
   munnurai_1,
@@ -274,4 +282,12 @@ export const images = {
   solitude_strength,
   time_emotions,
   future_foundation,
+  fear_of_love,
+  duty_fear,
+  fear_of_living,
+  fearless_death,
+  failure_celebration,
+  failure_acceptance,
+  failure_guiding_light,
+  courage_face_failure,
 };
