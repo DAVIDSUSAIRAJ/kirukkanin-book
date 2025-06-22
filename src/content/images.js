@@ -115,6 +115,26 @@ import dignified_withdrawal from '../images/dignified_withdrawal.jpg';
 import proud_distance from '../images/proud_distance.jpg';
 import complete_withdrawal from '../images/complete_withdrawal.jpg';
 import gradual_exit from '../images/gradual_exit.jpg';
+import true_absence from '../images/true_absence.jpg';
+import unexpressed_mind from '../images/unexpressed_mind.jpg';
+import empty_abundance from '../images/empty_abundance.jpg';
+import lasting_shadow from '../images/lasting_shadow.jpg';
+import solitude_wisdom from '../images/solitude_wisdom.jpg';
+import solitude_imagination from '../images/solitude_imagination.jpg';
+import deep_realization from '../images/deep_realization.jpg';
+import solitude_medicine from '../images/solitude_medicine.jpg';
+import time_solitude from '../images/time_solitude.jpg';
+import connected_solitude from '../images/connected_solitude.jpg';
+import solitude_truth from '../images/solitude_truth.jpg';
+import solitude_path from '../images/solitude_path.jpg';
+import emotional_truth from '../images/emotional_truth.jpg';
+import anger_tears from '../images/anger_tears.jpg';
+import solitude_pain from '../images/solitude_pain.jpg';
+import loss_truth from '../images/loss_truth.jpg';
+import youth_longing from '../images/youth_longing.jpg';
+import solitude_strength from '../images/solitude_strength.jpg';
+import time_emotions from '../images/time_emotions.jpg';
+import future_foundation from '../images/future_foundation.jpg';
 
 export const images = {
   munnurai_1,
@@ -234,4 +254,24 @@ export const images = {
   proud_distance,
   complete_withdrawal,
   gradual_exit,
+  true_absence,
+  unexpressed_mind,
+  empty_abundance,
+  lasting_shadow,
+  solitude_wisdom,
+  solitude_imagination,
+  deep_realization,
+  solitude_medicine,
+  time_solitude,
+  connected_solitude,
+  solitude_truth,
+  solitude_path,
+  emotional_truth,
+  anger_tears,
+  solitude_pain,
+  loss_truth,
+  youth_longing,
+  solitude_strength,
+  time_emotions,
+  future_foundation,
 };
