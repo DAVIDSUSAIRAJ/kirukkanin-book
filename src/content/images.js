@@ -143,6 +143,13 @@ import failure_celebration from '../images/failure_celebration.jpg';
 import failure_acceptance from '../images/failure_acceptance.jpg';
 import failure_guiding_light from '../images/failure_guiding_light.jpg';
 import courage_face_failure from '../images/courage_face_failure.jpg';
+import trustworthy_confidant from '../images/trustworthy_confidant.jpg';
+import distant_understanding from '../images/distant_understanding.jpg';
+import silent_understanding from '../images/silent_understanding.jpg';
+import good_intentions from '../images/good_intentions.jpg';
+import selfless_helper from '../images/selfless_helper.jpg';
+import gender_trust from '../images/gender_trust.jpg';
+import sharing_wisdom from '../images/sharing_wisdom.jpg';
 
 export const images = {
   munnurai_1,
@@ -290,4 +297,11 @@ export const images = {
   failure_acceptance,
   failure_guiding_light,
   courage_face_failure,
+  trustworthy_confidant,
+  distant_understanding,
+  silent_understanding,
+  good_intentions,
+  selfless_helper,
+  gender_trust,
+  sharing_wisdom,
 };
