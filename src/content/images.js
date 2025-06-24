@@ -150,6 +150,18 @@ import good_intentions from '../images/good_intentions.jpg';
 import selfless_helper from '../images/selfless_helper.jpg';
 import gender_trust from '../images/gender_trust.jpg';
 import sharing_wisdom from '../images/sharing_wisdom.jpg';
+import helping_seekers from '../images/helping_seekers.jpg';
+import silent_helper from '../images/silent_helper.jpg';
+import essential_help from '../images/essential_help.jpg';
+import helping_needy from '../images/helping_needy.jpg';
+import seeking_help from '../images/seeking_help.jpg';
+import survival_support from '../images/survival_support.jpg';
+import keeping_secrets from '../images/keeping_secrets.jpg';
+import sharing_pain from '../images/sharing_pain.jpg';
+import personal_struggles from '../images/personal_struggles.jpg';
+import harmless_lies from '../images/harmless_lies.jpg';
+import white_lies from '../images/white_lies.jpg';
+import love_lies from '../images/love_lies.jpg';
 
 export const images = {
   munnurai_1,
@@ -304,4 +316,16 @@ export const images = {
   selfless_helper,
   gender_trust,
   sharing_wisdom,
+  helping_seekers,
+  silent_helper,
+  essential_help,
+  helping_needy,
+  seeking_help,
+  survival_support,
+  keeping_secrets,
+  sharing_pain,
+  personal_struggles,
+  harmless_lies,
+  white_lies,
+  love_lies,
 };

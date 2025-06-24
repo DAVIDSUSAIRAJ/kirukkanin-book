@@ -1229,7 +1229,7 @@ export const tamilContent = {
             {
               content: `உண்மையாக நேசிப்பதுபோல் நடிப்பவர்களை...<br>
 உண்மையாக நேசிப்பதுதான் தவறு.`,
-              image: "false_love"
+              image: "falsy_love"
             },
             {
               content: `பகலில் கோவிலை நோக்கியும்,<br>
