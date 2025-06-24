@@ -162,6 +162,11 @@ import personal_struggles from '../images/personal_struggles.jpg';
 import harmless_lies from '../images/harmless_lies.jpg';
 import white_lies from '../images/white_lies.jpg';
 import love_lies from '../images/love_lies.jpg';
+import excessive_expectations from '../images/excessive_expectations.jpg';
+import falsy_love from '../images/falsy_love.jpg';
+import troubled_soul from '../images/troubled_soul.jpg';
+import perseverance from '../images/perseverance.jpg';
+import true_betrayal from '../images/true_betrayal.jpg';
 
 export const images = {
   munnurai_1,
@@ -328,4 +333,9 @@ export const images = {
   harmless_lies,
   white_lies,
   love_lies,
+  excessive_expectations,
+  falsy_love,
+  troubled_soul,
+  perseverance,
+  true_betrayal,
 };

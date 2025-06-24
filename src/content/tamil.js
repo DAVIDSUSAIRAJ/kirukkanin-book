@@ -1307,7 +1307,7 @@ export const tamilContent = {
 கொஞ்சம் விட்டுக்கொடுத்தும் வாழாதவன்...<br>
 இறந்த பின்பு அழுகிறானே...<br>
 அது உண்மையான அன்பா...?`,
-              image: "true_love"
+              image: "true_loves"
             },
             {
               content: `இளமையில்...<br>
