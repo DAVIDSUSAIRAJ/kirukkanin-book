@@ -167,6 +167,16 @@ import falsy_love from '../images/falsy_love.jpg';
 import troubled_soul from '../images/troubled_soul.jpg';
 import perseverance from '../images/perseverance.jpg';
 import true_betrayal from '../images/true_betrayal.jpg';
+import life_needs from '../images/life_needs.jpg';
+import life_questions from '../images/life_questions.jpg';
+import happiness_wealth from '../images/happiness_wealth.jpg';
+import separated_love from '../images/separated_love.jpg';
+import true_loves from '../images/true_loves.jpg';
+import life_stages from '../images/life_stages.jpg';
+import purpose_of_life from '../images/purpose_of_life.jpg';
+import spiritual_life from '../images/spiritual_life.jpg';
+import human_desires from '../images/human_desires.jpg';
+import mature_mind from '../images/mature_mind.jpg';
 
 export const images = {
   munnurai_1,
@@ -338,4 +348,14 @@ export const images = {
   troubled_soul,
   perseverance,
   true_betrayal,
+  life_needs,
+  life_questions,
+  happiness_wealth,
+  separated_love,
+  true_loves,
+  life_stages,
+  purpose_of_life,
+  spiritual_life,
+  human_desires,
+  mature_mind,
 };
