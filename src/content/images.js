@@ -177,6 +177,21 @@ import purpose_of_life from '../images/purpose_of_life.jpg';
 import spiritual_life from '../images/spiritual_life.jpg';
 import human_desires from '../images/human_desires.jpg';
 import mature_mind from '../images/mature_mind.jpg';
+import work_focus from '../images/work_focus.jpg';
+import self_confidence from '../images/self_confidence.jpg';
+import respond_respect from '../images/respond_respect.jpg';
+import reality_check from '../images/reality_check.jpg';
+import constructive_criticism from '../images/constructive_criticism.jpg';
+import money_position from '../images/money_position.jpg';
+import respect_character from '../images/respect_character.jpg';
+import independent_thinking from '../images/independent_thinking.jpg';
+import teaching_uplifting from '../images/teaching_uplifting.jpg';
+import voluntary_help_respect from '../images/voluntary_help_respect.jpg';
+import self_reliance_acceptance from '../images/self_reliance_acceptance.jpg';
+import true_basic_need_sleep from '../images/true_basic_need_sleep.jpg';
+import self_change_awareness from '../images/self_change_awareness.jpg';
+import universal_pain_compassion from '../images/universal_pain_compassion.jpg';
+import honor_agriculture_farmers from '../images/honor_agriculture_farmers.jpg';
 
 export const images = {
   munnurai_1,
@@ -358,4 +373,19 @@ export const images = {
   spiritual_life,
   human_desires,
   mature_mind,
+  work_focus,
+  self_confidence,
+  respond_respect,
+  reality_check,
+  constructive_criticism,
+  money_position,
+  respect_character,
+  independent_thinking,
+  teaching_uplifting,
+  voluntary_help_respect,
+  self_reliance_acceptance,
+  true_basic_need_sleep,
+  self_change_awareness,
+  universal_pain_compassion,
+  honor_agriculture_farmers
 };
