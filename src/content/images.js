@@ -216,6 +216,29 @@ import adaptive_positioning from '../images/adaptive_positioning.jpg';
 import authentic_boundaries from '../images/authentic_boundaries.jpg';
 import financial_dignity from '../images/financial_dignity.jpg';
 import wisdom_paths from '../images/wisdom_paths.jpg';
+import character_judgment from '../images/character_judgment.jpg';
+import present_moment_strength from '../images/present_moment_strength.jpg';
+import acceptance_completeness from '../images/acceptance_completeness.jpg';
+import wise_companionship from '../images/wise_companionship.jpg';
+import endless_journey from '../images/endless_journey.jpg';
+import simple_shelter from '../images/simple_shelter.jpg';
+import inner_strength from '../images/inner_strength.jpg';
+import true_luxury from '../images/true_luxury.jpg';
+import respecting_choice from '../images/respecting_choice.jpg';
+import understanding_love from '../images/understanding_love.jpg';
+import three_protectors from '../images/three_protectors.jpg';
+import mystery_of_change from '../images/mystery_of_change.jpg';
+import positive_change from '../images/positive_change.jpg';
+import inner_focus_peace from '../images/inner_focus_peace.jpg';
+import breaking_traditions from '../images/breaking_traditions.jpg';
+import avoiding_toxic_friends from '../images/avoiding_toxic_friends.jpg';
+import financial_dependency from '../images/financial_dependency.jpg';
+import gratitude_respect from '../images/gratitude_respect.jpg';
+import moving_forward from '../images/moving_forward.jpg';
+import social_media_freedom from '../images/social_media_freedom.jpg';
+import acting_happiness from '../images/acting_happiness.jpg';
+import firm_thoughts from '../images/firm_thoughts.jpg';
+import relocation_transformation from '../images/relocation_transformation.jpg';
 
 export const images = {
   munnurai_1,
@@ -435,5 +458,28 @@ export const images = {
   adaptive_positioning,
   authentic_boundaries,
   financial_dignity,
-  wisdom_paths
+  wisdom_paths,
+  character_judgment,
+  present_moment_strength,
+  acceptance_completeness,
+  wise_companionship,
+  endless_journey,
+  simple_shelter,
+  inner_strength,
+  true_luxury,
+  respecting_choice,
+  understanding_love,
+  three_protectors,
+  mystery_of_change,
+  positive_change,
+  inner_focus_peace,
+  breaking_traditions,
+  avoiding_toxic_friends,
+  financial_dependency,
+  gratitude_respect,
+  moving_forward,
+  social_media_freedom,
+  acting_happiness,
+  firm_thoughts,
+  relocation_transformation
 };
