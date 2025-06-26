@@ -192,6 +192,29 @@ import true_basic_need_sleep from '../images/true_basic_need_sleep.jpg';
 import self_change_awareness from '../images/self_change_awareness.jpg';
 import universal_pain_compassion from '../images/universal_pain_compassion.jpg';
 import honor_agriculture_farmers from '../images/honor_agriculture_farmers.jpg';
+import dreams_disappointments_imagination from '../images/dreams_disappointments_imagination.jpg';
+import pointless_conversation from '../images/pointless_conversation.jpg';
+import observe_entertainment from '../images/observe_entertainment.jpg';
+import control_actions_words from '../images/control_actions_words.jpg';
+import ending_evil_timing from '../images/ending_evil_timing.jpg';
+import writing_over_reading from '../images/writing_over_reading.jpg';
+import strategic_ignorance from '../images/strategic_ignorance.jpg';
+import forget_stay_calm from '../images/forget_stay_calm.jpg';
+import avoid_pride_belittling from '../images/avoid_pride_belittling.jpg';
+import experience_over_education from '../images/experience_over_education.jpg';
+import decisive_choices from '../images/decisive_choices.jpg';
+import accept_others_burdens from '../images/accept_others_burdens.jpg';
+import genuine_truth from '../images/genuine_truth.jpg';
+import loving_presence_growth from '../images/loving_presence_growth.jpg';
+import dignified_distance from '../images/dignified_distance.jpg';
+import preparation_accountability from '../images/preparation_accountability.jpg';
+import healthy_love_boundaries from '../images/healthy_love_boundaries.jpg';
+import death_purification from '../images/death_purification.jpg';
+import avoid_entitlement from '../images/avoid_entitlement.jpg';
+import adaptive_positioning from '../images/adaptive_positioning.jpg';
+import authentic_boundaries from '../images/authentic_boundaries.jpg';
+import financial_dignity from '../images/financial_dignity.jpg';
+import wisdom_paths from '../images/wisdom_paths.jpg';
 
 export const images = {
   munnurai_1,
@@ -387,5 +410,28 @@ export const images = {
   true_basic_need_sleep,
   self_change_awareness,
   universal_pain_compassion,
-  honor_agriculture_farmers
+  honor_agriculture_farmers,
+  dreams_disappointments_imagination,
+  pointless_conversation,
+  observe_entertainment,
+  control_actions_words,
+  ending_evil_timing,
+  writing_over_reading,
+  strategic_ignorance,
+  forget_stay_calm,
+  avoid_pride_belittling,
+  experience_over_education,
+  decisive_choices,
+  accept_others_burdens,
+  genuine_truth,
+  loving_presence_growth,
+  dignified_distance,
+  preparation_accountability,
+  healthy_love_boundaries,
+  death_purification,
+  avoid_entitlement,
+  adaptive_positioning,
+  authentic_boundaries,
+  financial_dignity,
+  wisdom_paths
 };
