@@ -1546,7 +1546,7 @@ Reflect ஆகாமல்... Respect கொடுப்போம்.`,
 நாம் உட்படக்கூடாது.<br>
 நம்முடைய சிந்தனைக்குள்,<br>
 ஒருவரை உட்படுத்தக்கூடாது.`,
-              image: "independent_thinking"
+              image: "independent_think"
             },
             {
               content: `துறந்து வாழாமல்...<br>

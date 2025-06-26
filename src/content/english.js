@@ -1323,7 +1323,7 @@ But not fundamental pain.<br>
 In our thinking...<br>
 Whatever is right,<br>
 We should courageously do that.`,
-      image: "independent_thinking"
+      image: "independent_think"
     },
     {
       content: `Teaching and helping...<br>

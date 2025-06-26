@@ -1441,7 +1441,7 @@ Reflect न करें... Respect करें।`,
 हमें शामिल नहीं होना चाहिए।<br>
 अपने विचारों के अंदर,<br>
 किसी को शामिल नहीं करना चाहिए।`,
-      image: "independent_thinking"
+      image: "independent_think"
     },
     {
       content: `त्याग करके जीने के बजाय...<br>

@@ -1450,7 +1450,7 @@ Reflect ചെയ്യാതെ... Respect നൽകുക.`,
 നാം കടക്കരുത്.<br>
 നമ്മുടെ ചിന്തകളിലേക്ക്,<br>
 ഒരാളെ കടത്തരുത്.`,
-      image: "independent_thinking"
+      image: "independent_think"
     },
     {
       content: `ത്യാഗിച്ച് ജീവിക്കാതെ...<br>

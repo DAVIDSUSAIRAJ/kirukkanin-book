@@ -1442,7 +1442,7 @@ Reflect కాకుండా... Respect చేద్దాం.`,
 మనం చేరకూడాదు.<br>
 మన ఆలోచనల్లోకి,<br>
 ఒకరిని చేర్చకూడాదు.`,
-      image: "independent_thinking"
+      image: "independent_think"
     },
     {
       content: `త్యాగం చేసి జీవించకుండా...<br>

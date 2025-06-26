@@ -199,6 +199,7 @@ import control_actions_words from '../images/control_actions_words.jpg';
 import ending_evil_timing from '../images/ending_evil_timing.jpg';
 import writing_over_reading from '../images/writing_over_reading.jpg';
 import strategic_ignorance from '../images/strategic_ignorance.jpg';
+import independent_think from '../images/independent_think.jpg';
 import forget_stay_calm from '../images/forget_stay_calm.jpg';
 import avoid_pride_belittling from '../images/avoid_pride_belittling.jpg';
 import experience_over_education from '../images/experience_over_education.jpg';
@@ -418,6 +419,7 @@ export const images = {
   ending_evil_timing,
   writing_over_reading,
   strategic_ignorance,
+  independent_think,
   forget_stay_calm,
   avoid_pride_belittling,
   experience_over_education,
