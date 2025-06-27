@@ -239,6 +239,20 @@ import social_media_freedom from '../images/social_media_freedom.jpg';
 import acting_happiness from '../images/acting_happiness.jpg';
 import firm_thoughts from '../images/firm_thoughts.jpg';
 import relocation_transformation from '../images/relocation_transformation.jpg';
+import experience_over_love from '../images/experience_over_love.jpg';
+import sculpt_not_destroy from '../images/sculpt_not_destroy.jpg';
+import support_strugglers from '../images/support_strugglers.jpg';
+import experience_not_skip from '../images/experience_not_skip.jpg';
+import time_over_money from '../images/time_over_money.jpg';
+import relationships_cut_not_leave from '../images/relationships_cut_not_leave.jpg';
+import born_for_peace from '../images/born_for_peace.jpg';
+import pain_guidance from '../images/pain_guidance.jpg';
+import six_illusions from '../images/six_illusions.jpg';
+import spectator_humanity from '../images/spectator_humanity.jpg';
+import death_wisdom from '../images/death_wisdom.jpg';
+import experiential_knowledge from '../images/experiential_knowledge.jpg';
+import action_over_money from '../images/action_over_money.jpg';
+import respect_love_givers from '../images/respect_love_givers.jpg';
 
 export const images = {
   munnurai_1,
@@ -481,5 +495,19 @@ export const images = {
   social_media_freedom,
   acting_happiness,
   firm_thoughts,
-  relocation_transformation
+  relocation_transformation,
+  experience_over_love,
+  sculpt_not_destroy,
+  support_strugglers,
+  experience_not_skip,
+  time_over_money,
+  relationships_cut_not_leave,
+  born_for_peace,
+  pain_guidance,
+  six_illusions,
+  spectator_humanity,
+  death_wisdom,
+  experiential_knowledge,
+  action_over_money,
+  respect_love_givers
 };
