@@ -253,6 +253,15 @@ import death_wisdom from '../images/death_wisdom.jpg';
 import experiential_knowledge from '../images/experiential_knowledge.jpg';
 import action_over_money from '../images/action_over_money.jpg';
 import respect_love_givers from '../images/respect_love_givers.jpg';
+import intoxication_meditation_forgetting from '../images/intoxication_meditation_forgetting.jpg';
+import self_forgetting_meditation from '../images/self_forgetting_meditation.jpg';
+import dreams_without_past from '../images/dreams_without_past.jpg';
+import dreams_paths_money from '../images/dreams_paths_money.jpg';
+import physical_strength_dreams from '../images/physical_strength_dreams.jpg';
+import dreams_yearning_madman from '../images/dreams_yearning_madman.jpg';
+import imagination_ownership from '../images/imagination_ownership.jpg';
+import imagination_no_failure from '../images/imagination_no_failure.jpg';
+import imagination_limitless_world from '../images/imagination_limitless_world.jpg';
 
 export const images = {
   munnurai_1,
@@ -509,5 +518,14 @@ export const images = {
   death_wisdom,
   experiential_knowledge,
   action_over_money,
-  respect_love_givers
+  respect_love_givers,
+  intoxication_meditation_forgetting,
+  self_forgetting_meditation,
+  dreams_without_past,
+  dreams_paths_money,
+  physical_strength_dreams,
+  dreams_yearning_madman,
+  imagination_ownership,
+  imagination_no_failure,
+  imagination_limitless_world
 };
