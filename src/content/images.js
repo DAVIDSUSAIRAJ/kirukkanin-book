@@ -262,6 +262,35 @@ import dreams_yearning_madman from '../images/dreams_yearning_madman.jpg';
 import imagination_ownership from '../images/imagination_ownership.jpg';
 import imagination_no_failure from '../images/imagination_no_failure.jpg';
 import imagination_limitless_world from '../images/imagination_limitless_world.jpg';
+import few_minutes_mind_conversation from '../images/few_minutes_mind_conversation.jpg';
+import few_minutes_lust_life from '../images/few_minutes_lust_life.jpg';
+import few_minutes_betrayal_life from '../images/few_minutes_betrayal_life.jpg';
+import bad_habits_experience_before_25 from '../images/bad_habits_experience_before_25.jpg';
+import bad_habits_necessary_exit_pleasure from '../images/bad_habits_necessary_exit_pleasure.jpg';
+import lust_creation_factory from '../images/lust_creation_factory.jpg';
+import lust_like_mirage from '../images/lust_like_mirage.jpg';
+import lust_sufferings_creator from '../images/lust_sufferings_creator.jpg';
+import self_pleasure_common_good from '../images/self_pleasure_common_good.jpg';
+import intimacy_lust_sacred from '../images/intimacy_lust_sacred.jpg';
+import lust_mind_body_unity from '../images/lust_mind_body_unity.jpg';
+import happiness_tears_blood_sweat from '../images/happiness_tears_blood_sweat.jpg';
+import happiness_renounce_greed from '../images/happiness_renounce_greed.jpg';
+import happiness_know_worth from '../images/happiness_know_worth.jpg';
+import happiness_solitude_imagination from '../images/happiness_solitude_imagination.jpg';
+import happiness_mind_over_money from '../images/happiness_mind_over_money.jpg';
+import happiness_embrace_others from '../images/happiness_embrace_others.jpg';
+import happiness_love_brief_meetings from '../images/happiness_love_brief_meetings.jpg';
+import happiness_night_not_day from '../images/happiness_night_not_day.jpg';
+import happiness_undressing_not_dressing from '../images/happiness_undressing_not_dressing.jpg';
+import happiness_tight_grip_pain from '../images/happiness_tight_grip_pain.jpg';
+import happiness_loss_not_gain from '../images/happiness_loss_not_gain.jpg';
+import happiness_lust_teaches_truth from '../images/happiness_lust_teaches_truth.jpg';
+import happiness_exists_in_loss from '../images/happiness_exists_in_loss.jpg';
+import selfishness_god_guru_selfish from '../images/selfishness_god_guru_selfish.jpg';
+import selfishness_common_good_within from '../images/selfishness_common_good_within.jpg';
+import selfishness_spend_time_ourselves from '../images/selfishness_spend_time_ourselves.jpg';
+import selfishness_not_affecting_others from '../images/selfishness_not_affecting_others.jpg';
+import selfishness_not_affecting_anyone from '../images/selfishness_not_affecting_anyone.jpg';
 
 export const images = {
   munnurai_1,
@@ -527,5 +556,34 @@ export const images = {
   dreams_yearning_madman,
   imagination_ownership,
   imagination_no_failure,
-  imagination_limitless_world
+  imagination_limitless_world,
+  few_minutes_mind_conversation,
+  few_minutes_lust_life,
+  few_minutes_betrayal_life,
+  bad_habits_experience_before_25,
+  bad_habits_necessary_exit_pleasure,
+  lust_creation_factory,
+  lust_like_mirage,
+  lust_sufferings_creator,
+  self_pleasure_common_good,
+  intimacy_lust_sacred,
+  lust_mind_body_unity,
+  happiness_tears_blood_sweat,
+  happiness_renounce_greed,
+  happiness_know_worth,
+  happiness_solitude_imagination,
+  happiness_mind_over_money,
+  happiness_embrace_others,
+  happiness_love_brief_meetings,
+  happiness_night_not_day,
+  happiness_undressing_not_dressing,
+  happiness_tight_grip_pain,
+  happiness_loss_not_gain,
+  happiness_lust_teaches_truth,
+  happiness_exists_in_loss,
+  selfishness_god_guru_selfish,
+  selfishness_common_good_within,
+  selfishness_spend_time_ourselves,
+  selfishness_not_affecting_others,
+  selfishness_not_affecting_anyone
 };
