@@ -291,6 +291,36 @@ import selfishness_common_good_within from '../images/selfishness_common_good_wi
 import selfishness_spend_time_ourselves from '../images/selfishness_spend_time_ourselves.jpg';
 import selfishness_not_affecting_others from '../images/selfishness_not_affecting_others.jpg';
 import selfishness_not_affecting_anyone from '../images/selfishness_not_affecting_anyone.jpg';
+import money_mind_both_ours from '../images/money_mind_both_ours.jpg';
+import money_ours_till_in_hands from '../images/money_ours_till_in_hands.jpg';
+import money_lender_vs_acquaintance from '../images/money_lender_vs_acquaintance.jpg';
+import money_value_hunger_debt from '../images/money_value_hunger_debt.jpg';
+import hunger_money_no_connection from '../images/hunger_money_no_connection.jpg';
+import money_borrow_close_relationships from '../images/money_borrow_close_relationships.jpg';
+import debt_basic_vs_luxury_needs from '../images/debt_basic_vs_luxury_needs.jpg';
+import debt_begging_vs_borrowing from '../images/debt_begging_vs_borrowing.jpg';
+import hunger_suits_poor_better from '../images/hunger_suits_poor_better.jpg';
+import hunger_enduring_food_dead_mind from '../images/hunger_enduring_food_dead_mind.jpg';
+import hunger_dream_vs_stomach from '../images/hunger_dream_vs_stomach.jpg';
+import hunger_war_always_wins from '../images/hunger_war_always_wins.jpg';
+import hunger_makes_us_child from '../images/hunger_makes_us_child.jpg';
+import hunger_rich_food_scattered from '../images/hunger_rich_food_scattered.jpg';
+import hunger_scattered_food_habit from '../images/hunger_scattered_food_habit.jpg';
+import hunger_steal_vs_taste from '../images/hunger_steal_vs_taste.jpg';
+import hunger_memories_emotions_food from '../images/hunger_memories_emotions_food.jpg';
+import education_not_all_educated_refined from '../images/education_not_all_educated_refined.jpg';
+import education_culture_knowledge_skill from '../images/education_culture_knowledge_skill.jpg';
+import education_book_learning_never_waste from '../images/education_book_learning_never_waste.jpg';
+import talent_poverty_creates_talent from '../images/talent_poverty_creates_talent.jpg';
+import talent_control_thoughts_few_have from '../images/talent_control_thoughts_few_have.jpg';
+import talent_desire_talent_not_wealth from '../images/talent_desire_talent_not_wealth.jpg';
+import talent_success_from_poverty from '../images/talent_success_from_poverty.jpg';
+import courage_solitude from '../images/courage_solitude.jpg';
+import courage_mindset from '../images/courage_mindset.jpg';
+import courage_self_realization from '../images/courage_self_realization.jpg';
+import luck_hard_work_hunger from '../images/luck_hard_work_hunger.jpg';
+import luck_not_prediction_but_labor_value from '../images/luck_not_prediction_but_labor_value.jpg';
+import luck_reward_of_labor from '../images/luck_reward_of_labor.jpg';
 
 export const images = {
   munnurai_1,
@@ -585,5 +615,35 @@ export const images = {
   selfishness_common_good_within,
   selfishness_spend_time_ourselves,
   selfishness_not_affecting_others,
-  selfishness_not_affecting_anyone
+  selfishness_not_affecting_anyone,
+  money_mind_both_ours,
+  money_ours_till_in_hands,
+  money_lender_vs_acquaintance,
+  money_value_hunger_debt,
+  hunger_money_no_connection,
+  money_borrow_close_relationships,
+  debt_basic_vs_luxury_needs,
+  debt_begging_vs_borrowing,
+  hunger_suits_poor_better,
+  hunger_enduring_food_dead_mind,
+  hunger_dream_vs_stomach,
+  hunger_war_always_wins,
+  hunger_makes_us_child,
+  hunger_rich_food_scattered,
+  hunger_scattered_food_habit,
+  hunger_steal_vs_taste,
+  hunger_memories_emotions_food,
+  education_not_all_educated_refined,
+  education_culture_knowledge_skill,
+  education_book_learning_never_waste,
+  talent_poverty_creates_talent,
+  talent_control_thoughts_few_have,
+  talent_desire_talent_not_wealth,
+  talent_success_from_poverty,
+  courage_solitude,
+  courage_mindset,
+  courage_self_realization,
+  luck_hard_work_hunger,
+  luck_not_prediction_but_labor_value,
+  luck_reward_of_labor
 };
