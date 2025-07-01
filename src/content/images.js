@@ -321,6 +321,29 @@ import courage_self_realization from '../images/courage_self_realization.jpg';
 import luck_hard_work_hunger from '../images/luck_hard_work_hunger.jpg';
 import luck_not_prediction_but_labor_value from '../images/luck_not_prediction_but_labor_value.jpg';
 import luck_reward_of_labor from '../images/luck_reward_of_labor.jpg';
+import time_dreams_vs_desires from '../images/time_dreams_vs_desires.jpg';
+import time_heart_surrender from '../images/time_heart_surrender.jpg';
+import time_work_dedication from '../images/time_work_dedication.jpg';
+import time_miracle_despair from '../images/time_miracle_despair.jpg';
+import time_justice_deception from '../images/time_justice_deception.jpg';
+import time_actions_completion from '../images/time_actions_completion.jpg';
+import time_dignity_money_slavery from '../images/time_dignity_money_slavery.jpg';
+import time_value_missed_duties from '../images/time_value_missed_duties.jpg';
+import time_truth_heart_movement from '../images/time_truth_heart_movement.jpg';
+import time_pain_healing from '../images/time_pain_healing.jpg';
+import future_change_prediction from '../images/future_change_prediction.jpg';
+import life_endless_journey_cycle from '../images/life_endless_journey_cycle.jpg';
+import true_search_after_loss from '../images/true_search_after_loss.jpg';
+import true_living_after_death from '../images/true_living_after_death.jpg';
+import search_pleasure_imagination_eras from '../images/search_pleasure_imagination_eras.jpg';
+import physical_health_experience from '../images/physical_health_experience.jpg';
+import love_time_eternal_journey from '../images/love_time_eternal_journey.jpg';
+import understanding_hearts_happiness from '../images/understanding_hearts_happiness.jpg';
+import experience_emotions_protect_self from '../images/experience_emotions_protect_self.jpg';
+import do_possible_leave_impossible_to_time from '../images/do_possible_leave_impossible_to_time.jpg';
+import resilience_confidence_true_wealth from '../images/resilience_confidence_true_wealth.jpg';
+import true_to_time_heart_no_worry from '../images/true_to_time_heart_no_worry.jpg';
+import journey_beyond_compulsions_eternal_peace from '../images/journey_beyond_compulsions_eternal_peace.jpg';
 
 export const images = {
   munnurai_1,
@@ -645,5 +668,28 @@ export const images = {
   courage_self_realization,
   luck_hard_work_hunger,
   luck_not_prediction_but_labor_value,
-  luck_reward_of_labor
+  luck_reward_of_labor,
+  time_dreams_vs_desires,
+  time_heart_surrender,
+  time_work_dedication,
+  time_miracle_despair,
+  time_justice_deception,
+  time_actions_completion,
+  time_dignity_money_slavery,
+  time_value_missed_duties,
+  time_truth_heart_movement,
+  time_pain_healing,
+  future_change_prediction,
+  life_endless_journey_cycle,
+  true_search_after_loss,
+  true_living_after_death,
+  search_pleasure_imagination_eras,
+  physical_health_experience,
+  love_time_eternal_journey,
+  understanding_hearts_happiness,
+  experience_emotions_protect_self,
+  do_possible_leave_impossible_to_time,
+  resilience_confidence_true_wealth,
+  true_to_time_heart_no_worry,
+  journey_beyond_compulsions_eternal_peace
 };
