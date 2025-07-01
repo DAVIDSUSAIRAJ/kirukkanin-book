@@ -344,6 +344,15 @@ import do_possible_leave_impossible_to_time from '../images/do_possible_leave_im
 import resilience_confidence_true_wealth from '../images/resilience_confidence_true_wealth.jpg';
 import true_to_time_heart_no_worry from '../images/true_to_time_heart_no_worry.jpg';
 import journey_beyond_compulsions_eternal_peace from '../images/journey_beyond_compulsions_eternal_peace.jpg';
+import luxury_money_destruction from '../images/luxury_money_destruction.jpg';
+import debt_cycle_destruction from '../images/debt_cycle_destruction.jpg';
+import greed_beyond_means_destruction from '../images/greed_beyond_means_destruction.jpg';
+import mind_wandering_peace_destruction from '../images/mind_wandering_peace_destruction.jpg';
+import longing_vs_hardship_destruction from '../images/longing_vs_hardship_destruction.jpg';
+import desire_woman_control_destruction from '../images/desire_woman_control_destruction.jpg';
+import lust_experience_not_drown from '../images/lust_experience_not_drown.jpg';
+import revenge_without_awareness_self_destruction from '../images/revenge_without_awareness_self_destruction.jpg';
+import waste_attention_stagnation_destruction from '../images/waste_attention_stagnation_destruction.jpg';
 
 export const images = {
   munnurai_1,
@@ -691,5 +700,14 @@ export const images = {
   do_possible_leave_impossible_to_time,
   resilience_confidence_true_wealth,
   true_to_time_heart_no_worry,
-  journey_beyond_compulsions_eternal_peace
+  journey_beyond_compulsions_eternal_peace,
+  luxury_money_destruction,
+  debt_cycle_destruction,
+  greed_beyond_means_destruction,
+  mind_wandering_peace_destruction,
+  longing_vs_hardship_destruction,
+  desire_woman_control_destruction,
+  lust_experience_not_drown,
+  revenge_without_awareness_self_destruction,
+  waste_attention_stagnation_destruction
 };
