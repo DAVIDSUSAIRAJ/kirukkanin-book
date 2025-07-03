@@ -3259,7 +3259,7 @@ Block செய்துவிட்டுப் போனால்...<br>
             },
             {
               content: `தேவையற்ற ஆசைகளும்,<br>
-எண்ணங்களும் ஒழிய...<br>
+ஆணவங்களும் ஒழிய...<br>
 மரணத்தை நேசியுங்கள்.`,
               image: "eliminate_unnecessary_desires_love_death"
             },
