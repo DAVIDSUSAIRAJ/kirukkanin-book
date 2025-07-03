@@ -353,6 +353,58 @@ import desire_woman_control_destruction from '../images/desire_woman_control_des
 import lust_experience_not_drown from '../images/lust_experience_not_drown.jpg';
 import revenge_without_awareness_self_destruction from '../images/revenge_without_awareness_self_destruction.jpg';
 import waste_attention_stagnation_destruction from '../images/waste_attention_stagnation_destruction.jpg';
+import workplace_reputation_investment from '../images/workplace_reputation_investment.jpg';
+import stealing_from_have_nots from '../images/stealing_from_have_nots.jpg';
+import love_brings_tears from '../images/love_brings_tears.jpg';
+import seek_life_not_woman from '../images/seek_life_not_woman.jpg';
+import women_seek_money_status from '../images/women_seek_money_status.jpg';
+import betrayer_is_chosen_one from '../images/betrayer_is_chosen_one.jpg';
+import expectation_dream_vs_fantasy from '../images/expectation_dream_vs_fantasy.jpg';
+import death_equal_solution_rich_poor from '../images/death_equal_solution_rich_poor.jpg';
+import understanding_humans_silence_acting from '../images/understanding_humans_silence_acting.jpg';
+import world_permanent_life_impermanent from '../images/world_permanent_life_impermanent.jpg';
+import youth_forgets_god_maturity_seeks_true_search from '../images/youth_forgets_god_maturity_seeks_true_search.jpg';
+import mind_seeks_god_dreams_memories from '../images/mind_seeks_god_dreams_memories.jpg';
+import temple_goers_carry_greed_as_ideals from '../images/temple_goers_carry_greed_as_ideals.jpg';
+import gods_two_wonders_nature_reaching_nature from '../images/gods_two_wonders_nature_reaching_nature.jpg';
+import mind_creates_desires_restlessness_love_dreams from '../images/mind_creates_desires_restlessness_love_dreams.jpg';
+import paradox_good_bad_living_pleasure from '../images/paradox_good_bad_living_pleasure.jpg';
+import paths_to_comfort_life_survival_death from '../images/paths_to_comfort_life_survival_death.jpg';
+import money_cannot_buy_experience_memories from '../images/money_cannot_buy_experience_memories.jpg';
+import nothing_permanent_even_knower_impermanent from '../images/nothing_permanent_even_knower_impermanent.jpg';
+import human_struggles_never_leave_change_like_seasons from '../images/human_struggles_never_leave_change_like_seasons.jpg';
+import desire_decreases_duties_increase_realize_life_reality from '../images/desire_decreases_duties_increase_realize_life_reality.jpg';
+import claims_vs_reality_contradictions_human_nature from '../images/claims_vs_reality_contradictions_human_nature.jpg';
+import pain_convergence_death_thoughts from '../images/pain_convergence_death_thoughts.jpg';
+import carrying_dreams_duties_natural_desire_to_live from '../images/carrying_dreams_duties_natural_desire_to_live.jpg';
+import rich_fear_time_poor_compassion_time from '../images/rich_fear_time_poor_compassion_time.jpg';
+import mutual_exploitation_without_knowing from '../images/mutual_exploitation_without_knowing.jpg';
+import deathbed_memories_life_realization_madman from '../images/deathbed_memories_life_realization_madman.jpg';
+import lost_humanity_seeks_god_hates_god_seeks_humanity from '../images/lost_humanity_seeks_god_hates_god_seeks_humanity.jpg';
+import losing_confidence_greed_leads_suicide from '../images/losing_confidence_greed_leads_suicide.jpg';
+import reasons_for_crime_suffering_or_greed from '../images/reasons_for_crime_suffering_or_greed.jpg';
+import unworthy_of_love_no_peace from '../images/unworthy_of_love_no_peace.jpg';
+import writing_past_events_understanding_life_pain from '../images/writing_past_events_understanding_life_pain.jpg';
+import it_workers_speak_like_intellectuals_selfish from '../images/it_workers_speak_like_intellectuals_selfish.jpg';
+import luxury_seekers_illness_stress_realize_simple_life from '../images/luxury_seekers_illness_stress_realize_simple_life.jpg';
+import youth_seeks_wealthy_old_age_seeks_caring from '../images/youth_seeks_wealthy_old_age_seeks_caring.jpg';
+import journey_to_eternal_sleep_temporary_sleep_denied from '../images/journey_to_eternal_sleep_temporary_sleep_denied.jpg';
+import depending_on_someone_wither_without_them from '../images/depending_on_someone_wither_without_them.jpg';
+import human_slave_to_action_or_person_until_death from '../images/human_slave_to_action_or_person_until_death.jpg';
+import receiving_debt_or_free_means_becoming_slave from '../images/receiving_debt_or_free_means_becoming_slave.jpg';
+import debts_to_time_remain_debts_forever from '../images/debts_to_time_remain_debts_forever.jpg';
+import right_time_decisions_consequences from '../images/right_time_decisions_consequences.jpg';
+import money_character_inverse from '../images/money_character_inverse.jpg';
+import troubles_bring_thoughts_of_true_love_mutual from '../images/troubles_bring_thoughts_of_true_love_mutual.jpg';
+import enemy_traitor_knowledge_limits from '../images/enemy_traitor_knowledge_limits.jpg';
+import heart_burden_mockery from '../images/heart_burden_mockery.jpg';
+import lack_cycle_consequences from '../images/lack_cycle_consequences.jpg';
+import hardships_purpose from '../images/hardships_purpose.jpg';
+import pure_love_divine from '../images/pure_love_divine.jpg';
+import excessive_love_naturally_contains_some_madness from '../images/excessive_love_naturally_contains_some_madness.jpg';
+import astray_middle_path from '../images/astray_middle_path.jpg';
+import experience_isolation from '../images/experience_isolation.jpg';
+import destiny_path from '../images/destiny_path.jpg';
 
 export const images = {
   munnurai_1,
@@ -709,5 +761,57 @@ export const images = {
   desire_woman_control_destruction,
   lust_experience_not_drown,
   revenge_without_awareness_self_destruction,
-  waste_attention_stagnation_destruction
+  waste_attention_stagnation_destruction,
+  workplace_reputation_investment,
+  stealing_from_have_nots,
+  love_brings_tears,
+  seek_life_not_woman,
+  women_seek_money_status,
+  betrayer_is_chosen_one,
+  expectation_dream_vs_fantasy,
+  death_equal_solution_rich_poor,
+  understanding_humans_silence_acting,
+  world_permanent_life_impermanent,
+  youth_forgets_god_maturity_seeks_true_search,
+  mind_seeks_god_dreams_memories,
+  temple_goers_carry_greed_as_ideals,
+  gods_two_wonders_nature_reaching_nature,
+  mind_creates_desires_restlessness_love_dreams,
+  paradox_good_bad_living_pleasure,
+  paths_to_comfort_life_survival_death,
+  money_cannot_buy_experience_memories,
+  nothing_permanent_even_knower_impermanent,
+  human_struggles_never_leave_change_like_seasons,
+  desire_decreases_duties_increase_realize_life_reality,
+  claims_vs_reality_contradictions_human_nature,
+  pain_convergence_death_thoughts,
+  carrying_dreams_duties_natural_desire_to_live,
+  rich_fear_time_poor_compassion_time,
+  mutual_exploitation_without_knowing,
+  deathbed_memories_life_realization_madman,
+  lost_humanity_seeks_god_hates_god_seeks_humanity,
+  losing_confidence_greed_leads_suicide,
+  reasons_for_crime_suffering_or_greed,
+  unworthy_of_love_no_peace,
+  writing_past_events_understanding_life_pain,
+  it_workers_speak_like_intellectuals_selfish,
+  luxury_seekers_illness_stress_realize_simple_life,
+  youth_seeks_wealthy_old_age_seeks_caring,
+  journey_to_eternal_sleep_temporary_sleep_denied,
+  depending_on_someone_wither_without_them,
+  human_slave_to_action_or_person_until_death,
+  receiving_debt_or_free_means_becoming_slave,
+  debts_to_time_remain_debts_forever,
+  right_time_decisions_consequences,
+  money_character_inverse,
+  troubles_bring_thoughts_of_true_love_mutual,
+  enemy_traitor_knowledge_limits,
+  heart_burden_mockery,
+  lack_cycle_consequences,
+  hardships_purpose,
+  pure_love_divine,
+  excessive_love_naturally_contains_some_madness,
+  astray_middle_path,
+  experience_isolation,
+  destiny_path
 };
