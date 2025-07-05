@@ -15,19 +15,28 @@ export const hindiContent = {
           <strong>* अक्षर नहीं...</strong><br>
           विचार।<br><br>
           
-          <strong>* छुपाव नहीं...</strong><br>
+         
+          
+          
+        `,
+        image: 'munnurai_1'
+      },
+      {
+        content: ` <strong>* छुपाव नहीं...</strong><br>
           सत्य का चेहरा।<br><br>
           
           <strong>* तस्वीर नहीं...</strong><br>
           सबक।<br><br>
           
           <strong>* कविताएं नहीं...</strong><br>
-          कष्ट।<br><br>
-          
-          <strong>* अंत में…</strong><br>
-          केवल आनंद।
-        `,
-        image: 'munnurai_1'
+          कष्ट।<br><br>`,
+          image: 'life_lesson'
+
+      },
+      {
+content:`<strong>* अंत में…</strong><br>
+          केवल आनंद।`,
+image: 'last_joy'
       },
       {
         content: `

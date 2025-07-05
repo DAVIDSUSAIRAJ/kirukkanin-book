@@ -15,19 +15,28 @@ export const malayalamContent = {
           <strong>* അക്ഷരങ്ങളല്ല...</strong><br>
           ചിന്തകൾ.<br><br>
           
-          <strong>* മറവല്ല...</strong><br>
+         
+          
+       
+        `,
+        image: 'munnurai_1'
+      },
+      {
+        content: ` <strong>* മറവല്ല...</strong><br>
           സത്യത്തിന്റെ മുഖം.<br><br>
           
           <strong>* ചിത്രമല്ല...</strong><br>
           പാഠം.<br><br>
           
           <strong>* കവിതകളല്ല...</strong><br>
-          കഷ്ടതകൾ.<br><br>
-          
-          <strong>* അവസാനം…</strong><br>
-          ആനന്ദം മാത്രം.
-        `,
-        image: 'munnurai_1'
+          കഷ്ടതകൾ.<br><br>`,
+        image: 'life_lesson'
+      },
+      {
+       content:`   <strong>* അവസാനം…</strong><br>
+          ആനന്ദം മാത്രം.`,
+        image: 'last_joy'
+
       },
       {
         content: `

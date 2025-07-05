@@ -15,19 +15,31 @@ export const tamilContent = {
           <strong>* எழுத்துக்கள் அல்ல...</strong><br>
           எண்ணங்கள்.<br><br>
           
+        `,
+        image: 'munnurai_1',
+      },
+
+      {
+        content:`
           <strong>* மறைமுகம் அல்ல...</strong><br>
           உண்மையின் முகம்.<br><br>
           
-          <strong>* படம் அல்ல...</strong><br>
+        <strong>* படம் அல்ல...</strong><br>
           பாடம்.<br><br>
           
           <strong>* கவிதைகள் அல்ல...</strong><br>
-          கஷ்டங்கள்.<br><br>
+          கஷ்டங்கள்.<br><br>`
+          ,
+          image:"life_lesson"
+
+      },
+            {
+        content:`
           
           <strong>* இறுதியில்…</strong><br>
-          இன்பமே.
-        `,
-        image: 'munnurai_1',
+          இன்பமே.`,
+          image: "last_joy"
+
       },
       {
         content: `

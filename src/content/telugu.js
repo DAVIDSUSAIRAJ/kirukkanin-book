@@ -15,19 +15,27 @@ export const teluguContent = {
           <strong>* అక్షరాలు కావు...</strong><br>
           ఆలోచనలు.<br><br>
           
-          <strong>* దాచిపెట్టింది కాదు...</strong><br>
+          
+          
+         
+        `,
+        image: 'munnurai_1'
+      },
+      {
+      content:`<strong>* దాచిపెట్టింది కాదు...</strong><br>
           సత్యం యొక్క ముఖం.<br><br>
           
           <strong>* చిత్రం కాదు...</strong><br>
           పాఠం.<br><br>
           
           <strong>* కవితలు కావు...</strong><br>
-          కష్టాలు.<br><br>
-          
-          <strong>* చివరికి…</strong><br>
-          ఆనందమే.
-        `,
-        image: 'munnurai_1'
+          కష్టాలు.<br><br>`,
+          image: 'life_lesson',
+      },
+      {
+        content:` <strong>* చివరికి…</strong><br>
+          ఆనందమే.`,
+      image: 'last_joy',
       },
       {
         content: `

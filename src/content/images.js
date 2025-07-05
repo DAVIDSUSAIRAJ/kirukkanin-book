@@ -1,5 +1,7 @@
 import tulasi from '../images/tulasi.jpg';
 import munnurai_1 from '../images/munnurai_1.jpg';
+import life_lesson from '../images/life_lesson.jpg';
+import last_joy from '../images/last_joy.jpg';
 import diaryWriten from '../images/diaryWriten.jpg';
 import nature_peace from '../images/nature_peace.jpg';
 import tulsi_gift from '../images/tulsi_gift.jpg';
@@ -427,6 +429,8 @@ import selective_following_unwilling_others from '../images/selective_following_
 
 export const images = {
   munnurai_1,
+  life_lesson,
+  last_joy,
   diaryWriten,
   tulasi,
   nature_peace,

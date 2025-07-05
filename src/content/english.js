@@ -15,19 +15,28 @@ export const englishContent = {
           <strong>* Not letters...</strong><br>
           Thoughts.<br><br>
           
-          <strong>* Not hidden...</strong><br>
+          
+          
+        
+        `,
+        image: 'munnurai_1'
+      },
+      {
+content:`<strong>* Not hidden...</strong><br>
           Face of truth.<br><br>
           
           <strong>* Not a picture...</strong><br>
           A lesson.<br><br>
           
           <strong>* Not poems...</strong><br>
-          Struggles.<br><br>
-          
-          <strong>* In the end…</strong><br>
-          Only joy.
-        `,
-        image: 'munnurai_1'
+          Struggles.<br><br>`,
+          image: 'life_lesson'
+      },
+      {
+        content: `  <strong>* In the end…</strong><br>
+          Only joy.`,
+        image: 'last_joy'
+
       },
       {
         content: `
