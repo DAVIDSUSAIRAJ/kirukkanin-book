@@ -405,6 +405,17 @@ import excessive_love_naturally_contains_some_madness from '../images/excessive_
 import astray_middle_path from '../images/astray_middle_path.jpg';
 import experience_isolation from '../images/experience_isolation.jpg';
 import destiny_path from '../images/destiny_path.jpg';
+import daily_journey_towards_death_not_life from '../images/daily_journey_towards_death_not_life.jpg';
+import eliminate_unnecessary_desires_love_death from '../images/eliminate_unnecessary_desires_love_death.jpg';
+import death_desire_reveals_true_nature from '../images/death_desire_reveals_true_nature.jpg';
+import unknowingly_seeking_death_in_life from '../images/unknowingly_seeking_death_in_life.jpg';
+import live_naturally_attain_nature from '../images/live_naturally_attain_nature.jpg';
+import no_need_seek_death_accept_courageously from '../images/no_need_seek_death_accept_courageously.jpg';
+import death_only_final_solution from '../images/death_only_final_solution.jpg';
+import mental_peace_health_death_better_realization from '../images/mental_peace_health_death_better_realization.jpg';
+import live_until_learn_die_when_understand from '../images/live_until_learn_die_when_understand.jpg';
+import death_predetermined_rich_poor_same_end from '../images/death_predetermined_rich_poor_same_end.jpg';
+import birth_death_nature_why_celebrate_cry from '../images/birth_death_nature_why_celebrate_cry.jpg';
 
 export const images = {
   munnurai_1,
@@ -813,5 +824,16 @@ export const images = {
   excessive_love_naturally_contains_some_madness,
   astray_middle_path,
   experience_isolation,
-  destiny_path
+  destiny_path,
+  daily_journey_towards_death_not_life,
+  eliminate_unnecessary_desires_love_death,
+  death_desire_reveals_true_nature,
+  unknowingly_seeking_death_in_life,
+  live_naturally_attain_nature,
+  no_need_seek_death_accept_courageously,
+  death_only_final_solution,
+  mental_peace_health_death_better_realization,
+  live_until_learn_die_when_understand,
+  death_predetermined_rich_poor_same_end,
+  birth_death_nature_why_celebrate_cry,
 };
