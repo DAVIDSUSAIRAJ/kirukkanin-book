@@ -416,6 +416,14 @@ import mental_peace_health_death_better_realization from '../images/mental_peace
 import live_until_learn_die_when_understand from '../images/live_until_learn_die_when_understand.jpg';
 import death_predetermined_rich_poor_same_end from '../images/death_predetermined_rich_poor_same_end.jpg';
 import birth_death_nature_why_celebrate_cry from '../images/birth_death_nature_why_celebrate_cry.jpg';
+import childhood_isolation_left_alone from '../images/childhood_isolation_left_alone.jpg';
+import addiction_despite_learning_family_disrespect from '../images/addiction_despite_learning_family_disrespect.jpg';
+import lust_attraction_hurting_others_continuously from '../images/lust_attraction_hurting_others_continuously.jpg';
+import living_in_family_tears from '../images/living_in_family_tears.jpg';
+import anger_guru_disrespect_selfish_exploitation from '../images/anger_guru_disrespect_selfish_exploitation.jpg';
+import unable_keep_promises_made from '../images/unable_keep_promises_made.jpg';
+import insulted_love_abandoned_trust from '../images/insulted_love_abandoned_trust.jpg';
+import selective_following_unwilling_others from '../images/selective_following_unwilling_others.jpg';
 
 export const images = {
   munnurai_1,
@@ -836,4 +844,12 @@ export const images = {
   live_until_learn_die_when_understand,
   death_predetermined_rich_poor_same_end,
   birth_death_nature_why_celebrate_cry,
+  childhood_isolation_left_alone,
+  addiction_despite_learning_family_disrespect,
+  lust_attraction_hurting_others_continuously,
+  living_in_family_tears,
+  anger_guru_disrespect_selfish_exploitation,
+  unable_keep_promises_made,
+  insulted_love_abandoned_trust,
+  selective_following_unwilling_others
 };
