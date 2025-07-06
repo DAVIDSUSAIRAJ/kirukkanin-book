@@ -426,6 +426,22 @@ import anger_guru_disrespect_selfish_exploitation from '../images/anger_guru_dis
 import unable_keep_promises_made from '../images/unable_keep_promises_made.jpg';
 import insulted_love_abandoned_trust from '../images/insulted_love_abandoned_trust.jpg';
 import selective_following_unwilling_others from '../images/selective_following_unwilling_others.jpg';
+import useful_to_all from '../images/useful_to_all.jpg';
+import use_dont_trust from '../images/use_dont_trust.jpg';
+import seek_permanent_avoid_compulsions from '../images/seek_permanent_avoid_compulsions.jpg';
+import share_love from '../images/share_love.jpg';
+import live_own_way from '../images/live_own_way.jpg';
+import good_mind from '../images/good_mind.jpg';
+import give_help from '../images/give_help.jpg';
+import live_secluded from '../images/live_secluded.jpg';
+import painful_heart from '../images/painful_heart.jpg';
+import death_after_youth from '../images/death_after_youth.jpg';
+import good_death from '../images/good_death.jpg';
+import peaceful_death from '../images/peaceful_death.jpg';
+import give_to_earth from '../images/give_to_earth.jpg';
+import funeral_journey from '../images/funeral_journey.jpg';
+import prayer_to_god from '../images/prayer_to_god.jpg';
+import final_message from '../images/final_message.jpg';
 
 export const images = {
   munnurai_1,
@@ -855,5 +871,21 @@ export const images = {
   anger_guru_disrespect_selfish_exploitation,
   unable_keep_promises_made,
   insulted_love_abandoned_trust,
-  selective_following_unwilling_others
+  selective_following_unwilling_others,
+  useful_to_all,
+  use_dont_trust,
+  seek_permanent_avoid_compulsions,
+  share_love,
+  live_own_way,
+  good_mind,
+  give_help,
+  live_secluded,
+  painful_heart,
+  death_after_youth,
+  good_death,
+  peaceful_death,
+  give_to_earth,
+  funeral_journey,
+  prayer_to_god,
+  final_message
 };
