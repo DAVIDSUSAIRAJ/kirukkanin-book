@@ -1976,10 +1976,10 @@ Block செய்துவிட்டுப் போனால்...<br>
               image: "spectator_humanity"
             }
           ]
-        }
-      ]
-    },
-    {
+            }
+          ]
+        },
+        {
       id: '5',
       title: 'உளவியல் மாற்றங்கள் & ஆசைகள்',
       subsections: [
@@ -3597,9 +3597,105 @@ image: 'journey_in_darkness_light_search'
               image: "kirukkan_may_perish"
             }
           ]
-        }
+        },
       ]
-    }
+    },
+          {
+          id: '10',
+          title: "நன்றியுரை",
+          subsections: [
+            {
+              id: '10.1',
+              title: "இறைவனும், இயற்கையும்,துளசியும்",
+              paragraphs: [
+                {
+                  content: `இறைவனும், இயற்கையும்,துளசியும்`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
+            {
+              id: '10.2',
+              title: "குமரன் மகாகுரு",
+              paragraphs: [
+                {
+                  content: `குமரன் மகாகுரு`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
+            {
+              id: '10.3',
+              title: "Dr.செந்தில் முருகன்",
+              paragraphs: [
+                {
+                  content: `Dr.செந்தில் முருகன்`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
+            {
+              id: '10.4',
+              title: "வான்மதி Teacher",
+              paragraphs: [
+                {
+                  content: `வான்மதி Teacher`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
+            {
+              id: '10.5',
+              title: "கார்த்திக் குரு",
+              paragraphs: [
+                {
+                  content: `கார்த்திக் குரு`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
+            {
+              id: '10.6',
+              title: "கஜேந்திரன் friend",
+              paragraphs: [
+                {
+                  content: `கஜேந்திரன் friend`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
+            {
+              id: '10.7',
+              title: "சுப்ரமணியன் AI Engineer",
+              paragraphs: [
+                {
+                  content: `சுப்ரமணியன் AI Engineer`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
+            {
+              id: '10.8',
+              title: "இருதய ஜோவிட் மேரி Teacher",
+              paragraphs: [
+                {
+                  content: `இருதய ஜோவிட் மேரி Teacher`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
+            {
+              id: '10.9',
+              title: "கிருக்கனின் அனைத்து நண்பர்களும்",
+              paragraphs: [
+                {
+                  content: `கிருக்கனின் அனைத்து நண்பர்களும்`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            }
+          ]
+        }
   ],
 
   conclusion: {
