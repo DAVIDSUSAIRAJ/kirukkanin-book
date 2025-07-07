@@ -3479,7 +3479,77 @@ Block చేసి వెళ్లిపోతే...<br>
           ]
         }
       ]
+    },
+    {
+  "id": "10",
+  "title": "కృతజ్ఞతాభాషణం",
+  "subsections": [
+    {
+      "id": "10.1",
+      "title": "దేవుడు, ప్రకృతి, తులసి",
+      "paragraphs": [
+        { "content": "దేవుడు, ప్రకృతి, తులసి", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.2",
+      "title": "కుమారన్ మహాగురు",
+      "paragraphs": [
+        { "content": "కుమారన్ మహాగురు", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.3",
+      "title": "డా. సెంటిల్ మురుగన్",
+      "paragraphs": [
+        { "content": "డా. సెంటిల్ మురుగన్", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.4",
+      "title": "వాన్మతి టీచర్",
+      "paragraphs": [
+        { "content": "వాన్మతి టీచర్", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.5",
+      "title": "కార్తిక్ గురు",
+      "paragraphs": [
+        { "content": "కార్తిక్ గురు", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.6",
+      "title": "గజేంద్రన్ ఫ్రెండ్",
+      "paragraphs": [
+        { "content": "గజేంద్రన్ ఫ్రెండ్", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.7",
+      "title": "సుబ్రమణియన్ AI ఇంజనీర్",
+      "paragraphs": [
+        { "content": "సుబ్రమణియన్ AI ఇంజనీర్", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.8",
+      "title": "ఇరుధయా జోవిట్ మేరీ టీచర్",
+      "paragraphs": [
+        { "content": "ఇరుధయా జోవిట్ మేరీ టీచర్", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.9",
+      "title": "కిరుక్కన్ స్నేహితులు అందరూ",
+      "paragraphs": [
+        { "content": "కిరుక్కన్ స్నేహితులు అందరూ", "image": "thanksgiving_speech" }
+      ]
     }
+  ]
+}
+
   ],
 
   conclusion: {

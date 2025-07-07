@@ -3487,7 +3487,77 @@ Block ചെയ്ത് പോയാൽ...<br>
           ]
         }
       ]
+    },
+    {
+  "id": "10",
+  "title": "നന്ദി പ്രസംഗം",
+  "subsections": [
+    {
+      "id": "10.1",
+      "title": "ദൈവം, പ്രകൃതി, തുളസി",
+      "paragraphs": [
+        { "content": "ദൈവം, പ്രകൃതി, തുളസി", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.2",
+      "title": "കുമാരൻ മഹാഗുരു",
+      "paragraphs": [
+        { "content": "കുമാരൻ മഹാഗുരു", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.3",
+      "title": "ഡോ. സെന്തിൽ മുരുകൻ",
+      "paragraphs": [
+        { "content": "ഡോ. സെന്തിൽ മുരുകൻ", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.4",
+      "title": "വാന്മതി ടീച്ചർ",
+      "paragraphs": [
+        { "content": "വാന്മതി ടീച്ചർ", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.5",
+      "title": "കാർത്തിക്ഗുരു",
+      "paragraphs": [
+        { "content": "കാർത്തിക്ഗുരു", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.6",
+      "title": "ഗജേന്ദ്രൻ സുഹൃത്ത്",
+      "paragraphs": [
+        { "content": "ഗജേന്ദ്രൻ സുഹൃത്ത്", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.7",
+      "title": "സുബ്രമണ്യൻ എഐ എഞ്ചിനീയർ",
+      "paragraphs": [
+        { "content": "സുബ്രമണ്യൻ എഐ എഞ്ചിനീയർ", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.8",
+      "title": "ഇരുദയ ജോവിറ്റ് മേരി ടീച്ചർ",
+      "paragraphs": [
+        { "content": "ഇരുദയ ജോവിറ്റ് മേരി ടീച്ചർ", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.9",
+      "title": "കിറുക്കന്റെ എല്ലാ സുഹൃത്തുക്കളും",
+      "paragraphs": [
+        { "content": "കിറുക്കന്റെ എല്ലാ സുഹൃത്തുക്കളും", "image": "thanksgiving_speech" }
+      ]
     }
+  ]
+}
+
   ],
 
   conclusion: {

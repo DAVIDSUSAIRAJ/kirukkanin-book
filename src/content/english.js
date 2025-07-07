@@ -3479,7 +3479,77 @@ continue to relate with you...`,
           ]
         }
       ]
+    },
+    {
+  "id": "10",
+  "title": "Thanksgiving Speech",
+  "subsections": [
+    {
+      "id": "10.1",
+      "title": "God, Nature, and Tulsi",
+      "paragraphs": [
+        { "content": "God, Nature, and Tulsi", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.2",
+      "title": "Kumaran Mahaguru",
+      "paragraphs": [
+        { "content": "Kumaran Mahaguru", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.3",
+      "title": "Dr. Senthil Murugan",
+      "paragraphs": [
+        { "content": "Dr. Senthil Murugan", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.4",
+      "title": "Vanmathi Teacher",
+      "paragraphs": [
+        { "content": "Vanmathi Teacher", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.5",
+      "title": "Karthik Guru",
+      "paragraphs": [
+        { "content": "Karthik Guru", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.6",
+      "title": "Gajendran Friend",
+      "paragraphs": [
+        { "content": "Gajendran Friend", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.7",
+      "title": "Subramanian AI Engineer",
+      "paragraphs": [
+        { "content": "Subramanian AI Engineer", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.8",
+      "title": "Irudhaya Jovit Mary Teacher",
+      "paragraphs": [
+        { "content": "Irudhaya Jovit Mary Teacher", "image": "thanksgiving_speech" }
+      ]
+    },
+    {
+      "id": "10.9",
+      "title": "All Friends of Kirukkan",
+      "paragraphs": [
+        { "content": "All Friends of Kirukkan", "image": "thanksgiving_speech" }
+      ]
     }
+  ]
+}
+
   ],
   conclusion: {
     title: 'A Light for Minds Seeking Truth…',
