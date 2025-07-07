@@ -442,6 +442,16 @@ import give_to_earth from '../images/give_to_earth.jpg';
 import funeral_journey from '../images/funeral_journey.jpg';
 import prayer_to_god from '../images/prayer_to_god.jpg';
 import final_message from '../images/final_message.jpg';
+import strengthen_body from '../images/strengthen_body.jpg';
+import determined_path from '../images/determined_path.jpg';
+import journey_in_darkness_light_search from '../images/journey_in_darkness_light_search.jpg';
+import continuous_effort from '../images/continuous_effort.jpg';
+import truth_brings_blame from '../images/truth_brings_blame.jpg';
+import protect_struggles from '../images/protect_struggles.jpg';
+import realize_god_nature from '../images/realize_god_nature.jpg';
+import kirukkan_may_perish from '../images/kirukkan_may_perish.jpg';
+import words_behind_pain from '../images/words_behind_pain.jpg';
+import light_for_truth_seekers from '../images/light_for_truth_seekers.jpg';
 
 export const images = {
   munnurai_1,
@@ -887,5 +897,15 @@ export const images = {
   give_to_earth,
   funeral_journey,
   prayer_to_god,
-  final_message
+  final_message,
+  strengthen_body,
+  determined_path,
+  journey_in_darkness_light_search,
+  continuous_effort,
+  truth_brings_blame,
+  protect_struggles,
+  realize_god_nature,
+  kirukkan_may_perish,
+  words_behind_pain,
+  light_for_truth_seekers
 };
