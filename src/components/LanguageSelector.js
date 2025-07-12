@@ -15,7 +15,7 @@ const LanguageSelector = ({ currentLanguage, onLanguageChange }) => {
           </option>
         ))}
       </select>
-      <style jsx>{`
+      <style >{`
         .language-selector {
           position: fixed;
           top: 20px;

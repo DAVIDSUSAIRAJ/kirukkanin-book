@@ -485,10 +485,38 @@ function App() {
   };
 
   const handleSectionSearchChange = (e) => {
-    setSectionSearchQuery(e.target.value);
+    const query = e.target.value;
+    setSectionSearchQuery(query);
+    // Immediately perform section search when query changes
+    if (query.trim()) {
+      const filteredParagraphs = performSectionSearch(query);
+      if (filteredParagraphs) {
+        setCurrentCardIndex(0); // Reset to first result
+      }
+    }
+  };
+
+  // Add this new function to handle section search clear
+  const handleSectionSearchClear = () => {
+    setSectionSearchQuery("");
+    // Ensure content is properly set
+    const languageCode = languages[currentLanguage].code;
+    const currentContent = contentMap[languageCode];
+    setContent(currentContent);
+    
+    // Reset card index to 0 when clearing search
+    if (isMobile) {
+      setCurrentCardIndex(0);
+    }
   };
 
   const handleSearchResultClick = (result) => {
+    // First ensure content is properly set
+    const languageCode = languages[currentLanguage].code;
+    const currentContent = contentMap[languageCode];
+    setContent(currentContent);
+
+    // Then update other states
     setSelectedSection(result.sectionId);
     setIsSidebarVisible(false);
     setCurrentCardIndex(result.paragraphIndex);
@@ -500,7 +528,7 @@ function App() {
 
     // Auto-expand the parent section in sidebar
     if (result.sectionId !== "foreword" && result.sectionId !== "conclusion") {
-      const section = content.sections.find((section) =>
+      const section = currentContent.sections.find((section) =>
         section.subsections.some((sub) => sub.id === result.sectionId)
       );
       if (section) {
@@ -950,7 +978,7 @@ function App() {
     // For mobile: show single paragraph at currentCardIndex
     // For desktop: show all paragraphs, but scroll to selected one if from search
     const displayParagraphs = isMobile
-      ? [paragraphs[currentCardIndex]]
+      ? paragraphs[currentCardIndex] ? [paragraphs[currentCardIndex]] : []
       : paragraphs;
 
     return (
@@ -973,7 +1001,7 @@ function App() {
               {sectionSearchQuery && (
                 <button
                   className="clear-search-btn"
-                  onClick={() => setSectionSearchQuery("")}
+                  onClick={handleSectionSearchClear}
                 >
                   ✕
                 </button>
@@ -1217,7 +1245,7 @@ function App() {
             )}
 
             {/* Global Search Results */}
-            {isGlobalSearching && searchResults.length > 0 && (
+            {isGlobalSearching && (
               <div
                 className={`global-search-results ${
                   window.innerWidth <= 768 ? "mobile-search-results" : ""
@@ -1230,9 +1258,7 @@ function App() {
                   )}
                 </div>
                 <div className="search-results-list">
-                  {searchResults
-                  // .slice(0, 10)
-                  .map((result, index) => (
+                  {searchResults.map((result, index) => (
                     <div
                       key={index}
                       className="search-result-item"
@@ -1246,28 +1272,19 @@ function App() {
                       </div>
                     </div>
                   ))}
-                  {/* {searchResults.length > 10 && (
-                    <div className="search-results-more">
-                      {languages[currentLanguage].name === "தமிழ்"
-                        ? `மேலும் ${searchResults.length - 10} முடிவுகள்...`
-                        : `${searchResults.length - 10} more results...`}
-                    </div>
-                  )} */}
                 </div>
               </div>
             )}
 
-            {isGlobalSearching &&
-              searchResults.length === 0 &&
-              globalSearchQuery && (
-                <div
-                  className={`global-no-results ${
-                    window.innerWidth <= 768 ? "mobile-no-results" : ""
-                  }`}
-                >
-                  {getNoResultsText(languages[currentLanguage].code)}
-                </div>
-              )}
+            {isGlobalSearching && searchResults.length === 0 && globalSearchQuery && (
+              <div
+                className={`global-no-results ${
+                  window.innerWidth <= 768 ? "mobile-no-results" : ""
+                }`}
+              >
+                {getNoResultsText(languages[currentLanguage].code)}
+              </div>
+            )}
           </div>
 
           {/* Language Selector Space - contains the language selector */}
@@ -1379,7 +1396,7 @@ function App() {
         </div>
       </footer>
 
-      <style jsx>{`
+      <style>{`
         .header {
           padding: 20px;
           position: relative;
