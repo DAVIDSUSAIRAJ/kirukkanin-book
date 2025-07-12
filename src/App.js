@@ -1091,6 +1091,7 @@ function App() {
                     style={{
                       display: "flex",
                       justifyContent: justify, // <-- dynamically updates
+                      paddingLeft: justify === "center" ? "0px" : "5px",
                       alignItems: "center",
                       gap: "8px",
                       width: `${window.innerWidth}px`,
@@ -1908,7 +1909,7 @@ function App() {
             right: 0;
             z-index: 1000;
             background: #f8f9fa;
-            padding: 10px 20px;
+            padding: 8px 20px;
             text-align: center;
             border-top: 1px solid #ddd;
             box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
@@ -2094,7 +2095,7 @@ function App() {
         /* Card Navigation Styles */
         .card-navigation {
           position: fixed;
-          bottom: 55px;
+          bottom: 53px;
           left: 0;
           right: 0;
           background: rgba(255, 255, 255, 0.95);
