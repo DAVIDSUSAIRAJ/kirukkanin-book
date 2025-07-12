@@ -1107,6 +1107,7 @@ function App() {
                     {paragraphs.map((_, index) => (
                       <div
                         key={index}
+                        style={{marginRight: "20px"}}
                         className={`card-dot ${
                           index === currentCardIndex ? "active" : ""
                         }`}
