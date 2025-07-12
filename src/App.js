@@ -1091,9 +1091,10 @@ function App() {
                     style={{
                       display: "flex",
                       justifyContent: justify, // <-- dynamically updates
+                      alignItems: "center",
                       gap: "8px",
                       width: `${window.innerWidth}px`,
-                      // height: "20px",
+                      height: "20px",
                       // backgroundColor: "yellow",
                       overflowX: "auto",
                       whiteSpace: "nowrap",
@@ -2093,7 +2094,7 @@ function App() {
         /* Card Navigation Styles */
         .card-navigation {
           position: fixed;
-          bottom: 80px;
+          bottom: 55px;
           left: 0;
           right: 0;
           background: rgba(255, 255, 255, 0.95);
