@@ -1093,7 +1093,7 @@ function App() {
                       justifyContent: justify, // <-- dynamically updates
                       gap: "8px",
                       width: `${window.innerWidth}px`,
-                      height: "20px",
+                      // height: "20px",
                       // backgroundColor: "yellow",
                       overflowX: "auto",
                       whiteSpace: "nowrap",
