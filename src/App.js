@@ -1230,7 +1230,9 @@ function App() {
                   )}
                 </div>
                 <div className="search-results-list">
-                  {searchResults.slice(0, 10).map((result, index) => (
+                  {searchResults
+                  // .slice(0, 10)
+                  .map((result, index) => (
                     <div
                       key={index}
                       className="search-result-item"
@@ -1244,13 +1246,13 @@ function App() {
                       </div>
                     </div>
                   ))}
-                  {searchResults.length > 10 && (
+                  {/* {searchResults.length > 10 && (
                     <div className="search-results-more">
                       {languages[currentLanguage].name === "தமிழ்"
                         ? `மேலும் ${searchResults.length - 10} முடிவுகள்...`
                         : `${searchResults.length - 10} more results...`}
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             )}
