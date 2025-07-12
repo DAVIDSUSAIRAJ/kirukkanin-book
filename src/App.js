@@ -1,52 +1,62 @@
-import React, { useState, useRef, useEffect } from 'react';
-import './App.css';
-import { tamilContent } from './content/tamil';
-import { englishContent } from './content/english';
-import { hindiContent } from './content/hindi';
-import { teluguContent } from './content/telugu';
-import { malayalamContent } from './content/malayalam';
-import { languages, defaultLanguage, getLanguageFont } from './config/languages';
-import LanguageSelector from './components/LanguageSelector';
-import { images } from './content/images';
+import React, { useState, useRef, useEffect } from "react";
+import "./App.css";
+import { tamilContent } from "./content/tamil";
+import { englishContent } from "./content/english";
+import { hindiContent } from "./content/hindi";
+import { teluguContent } from "./content/telugu";
+import { malayalamContent } from "./content/malayalam";
+import {
+  languages,
+  defaultLanguage,
+  getLanguageFont,
+} from "./config/languages";
+import LanguageSelector from "./components/LanguageSelector";
+import { images } from "./content/images";
 
 const contentMap = {
   ta: tamilContent,
   en: englishContent,
   hi: hindiContent,
   te: teluguContent,
-  ml: malayalamContent
+  ml: malayalamContent,
 };
 
 // Translation functions
 const getAuthorText = (languageCode) => {
   const translations = {
-    ta: 'ஆசிரியர்: டேவிட் சூசைராஜ்',
-    en: 'Author: David Susairaj',
-    hi: 'लेखक: डेविड सुसैराज',
-    te: 'రచయిత: డేవిడ్ సుసైరాజ్',
-    ml: 'രചയിതാവ്: ഡേവിഡ് സുസൈരാജ്'
+    ta: "ஆசிரியர்: டேவிட் சூசைராஜ்",
+    en: "Author: David Susairaj",
+    hi: "लेखक: डेविड सुसैराज",
+    te: "రచయిత: డేవిడ్ సుసైరాజ్",
+    ml: "രചയിതാവ്: ഡേവിഡ് സുസൈരാജ്",
   };
   return translations[languageCode] || translations.en;
 };
 
 const getGlobalSearchPlaceholder = (languageCode, isMobile = false) => {
   const translations = {
-    ta: isMobile ? 'தேடுங்கள்...' : 'முழு புத்தகத்திலும் தேடுங்கள் (ex: காதல், மகிழ்ச்சி)...',
-    en: isMobile ? 'Search...' : 'Search entire book (ex: love, happiness)...',
-    hi: isMobile ? 'खोजें...' : 'पूरी किताब में खोजें (ex: प्रेम, खुशी)...',
-    te: isMobile ? 'వెతకండి...' : 'మొత్తం పుస్తకంలో వెతకండి (ex: ప్రేమ, ఆనందం)...',
-    ml: isMobile ? 'തിരയുക...' : 'മുഴുവൻ പുസ്തകത്തിലും തിരയുക (ex: സ്നേഹം, സന്തോഷം)...'
+    ta: isMobile
+      ? "தேடுங்கள்..."
+      : "முழு புத்தகத்திலும் தேடுங்கள் (ex: காதல், மகிழ்ச்சி)...",
+    en: isMobile ? "Search..." : "Search entire book (ex: love, happiness)...",
+    hi: isMobile ? "खोजें..." : "पूरी किताब में खोजें (ex: प्रेम, खुशी)...",
+    te: isMobile
+      ? "వెతకండి..."
+      : "మొత్తం పుస్తకంలో వెతకండి (ex: ప్రేమ, ఆనందం)...",
+    ml: isMobile
+      ? "തിരയുക..."
+      : "മുഴുവൻ പുസ്തകത്തിലും തിരയുക (ex: സ്നേഹം, സന്തോഷം)...",
   };
   return translations[languageCode] || translations.en;
 };
 
 const getSectionSearchPlaceholder = (languageCode, isMobile = false) => {
   const translations = {
-    ta: 'பிரிவில் தேடுங்கள்...',
-    en: 'Search section...',
-    hi: 'भाग में खोजें...',
-    te: 'విభాగంలో వెతకండి...',
-    ml: 'വിഭാഗത്തിൽ തിരയുക...'
+    ta: "பிரிவில் தேடுங்கள்...",
+    en: "Search section...",
+    hi: "भाग में खोजें...",
+    te: "విభాగంలో వెతకండి...",
+    ml: "വിഭാഗത്തിൽ തിരയുക...",
   };
   return translations[languageCode] || translations.en;
 };
@@ -57,7 +67,7 @@ const getResultsText = (languageCode, count) => {
     en: `${count} results found`,
     hi: `${count} परिणाम मिले`,
     te: `${count} ఫలితాలు దొరికాయి`,
-    ml: `${count} ഫലങ്ങൾ കണ്ടെത്തി`
+    ml: `${count} ഫലങ്ങൾ കണ്ടെത്തി`,
   };
   return translations[languageCode] || translations.en;
 };
@@ -68,57 +78,61 @@ const getSearchResultsTitle = (languageCode, count) => {
     en: `Search Results (${count})`,
     hi: `खोज परिणाम (${count})`,
     te: `వెతుకుడు ఫలితాలు (${count})`,
-    ml: `തിരയൽ ഫലങ്ങൾ (${count})`
+    ml: `തിരയൽ ഫലങ്ങൾ (${count})`,
   };
   return translations[languageCode] || translations.en;
 };
 
 const getNoResultsText = (languageCode) => {
   const translations = {
-    ta: 'தேடல் முடிவுகள் எதுவும் கிடைக்கவில்லை',
-    en: 'No search results found',
-    hi: 'कोई खोज परिणाम नहीं मिला',
-    te: 'వెతుకుడు ఫలితాలు దొరకలేదు',
-    ml: 'തിരയൽ ഫലങ്ങൾ കണ്ടെത്തിയില്ല'
+    ta: "தேடல் முடிவுகள் எதுவும் கிடைக்கவில்லை",
+    en: "No search results found",
+    hi: "कोई खोज परिणाम नहीं मिला",
+    te: "వెతుకుడు ఫలితాలు దొరకలేదు",
+    ml: "തിരയൽ ഫലങ്ങൾ കണ്ടെത്തിയില്ല",
   };
   return translations[languageCode] || translations.en;
 };
 
 // Helper function to strip HTML tags
 const stripHtmlTags = (html) => {
-  if (!html) return '';
-  return html.replace(/<[^>]*>/g, '');
+  if (!html) return "";
+  return html.replace(/<[^>]*>/g, "");
 };
 
 function App() {
   const [currentLanguage, setCurrentLanguage] = useState(defaultLanguage);
-  const [content, setContent] = useState(contentMap[languages[defaultLanguage].code]);
+  const [content, setContent] = useState(
+    contentMap[languages[defaultLanguage].code]
+  );
   const [selectedSection, setSelectedSection] = useState(null);
   const [expandedSections, setExpandedSections] = useState({});
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [showSwipeHint, setShowSwipeHint] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  
+
   // Add new state for tracking search-selected paragraph
   const [searchSelectedParagraph, setSearchSelectedParagraph] = useState(null);
   const [isFromSearch, setIsFromSearch] = useState(false);
-  
+
   // Add new states for image loading and card transitions
   const [isCardTransitioning, setIsCardTransitioning] = useState(false);
   const [preloadedImages, setPreloadedImages] = useState(new Set());
   const [cardLoadingState, setCardLoadingState] = useState({});
-  
+
+  const [justify, setJustify] = useState("center");
+
   // Handle window resize
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
-  
+
   // Touch handling
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
@@ -128,8 +142,8 @@ function App() {
   const hasShownHintRef = useRef(false);
 
   // Search states
-  const [globalSearchQuery, setGlobalSearchQuery] = useState('');
-  const [sectionSearchQuery, setSectionSearchQuery] = useState('');
+  const [globalSearchQuery, setGlobalSearchQuery] = useState("");
+  const [sectionSearchQuery, setSectionSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [isGlobalSearching, setIsGlobalSearching] = useState(false);
 
@@ -137,22 +151,22 @@ function App() {
   const preloadImage = (imageUrl) => {
     return new Promise((resolve, reject) => {
       if (!imageUrl) {
-        reject(new Error('No image URL provided'));
+        reject(new Error("No image URL provided"));
         return;
       }
-      
+
       if (preloadedImages.has(imageUrl)) {
         resolve(imageUrl);
         return;
       }
-      
+
       const img = new Image();
       img.onload = () => {
-        setPreloadedImages(prev => new Set([...prev, imageUrl]));
+        setPreloadedImages((prev) => new Set([...prev, imageUrl]));
         resolve(imageUrl);
       };
       img.onerror = (error) => {
-        console.warn('Image loading failed:', imageUrl);
+        console.warn("Image loading failed:", imageUrl);
         reject(error);
       };
       img.src = imageUrl;
@@ -161,46 +175,58 @@ function App() {
 
   // Preload adjacent card images
   const preloadAdjacentImages = (paragraphs, currentIndex) => {
-    if (!paragraphs || paragraphs.length === 0 || currentIndex < 0 || currentIndex >= paragraphs.length) {
+    if (
+      !paragraphs ||
+      paragraphs.length === 0 ||
+      currentIndex < 0 ||
+      currentIndex >= paragraphs.length
+    ) {
       return;
     }
-    
+
     const imagesToPreload = [];
-    
+
     try {
       // Preload next image
-      if (currentIndex < paragraphs.length - 1 && paragraphs[currentIndex + 1]?.image) {
+      if (
+        currentIndex < paragraphs.length - 1 &&
+        paragraphs[currentIndex + 1]?.image
+      ) {
         const nextImage = paragraphs[currentIndex + 1].image;
-        if (nextImage && typeof nextImage === 'string') {
+        if (nextImage && typeof nextImage === "string") {
           imagesToPreload.push(nextImage);
         }
       }
-      
+
       // Preload previous image
       if (currentIndex > 0 && paragraphs[currentIndex - 1]?.image) {
         const prevImage = paragraphs[currentIndex - 1].image;
-        if (prevImage && typeof prevImage === 'string') {
+        if (prevImage && typeof prevImage === "string") {
           imagesToPreload.push(prevImage);
         }
       }
-      
+
       // Preload current image if not already loaded
       if (paragraphs[currentIndex]?.image) {
         const currentImage = paragraphs[currentIndex].image;
-        if (currentImage && typeof currentImage === 'string') {
+        if (currentImage && typeof currentImage === "string") {
           imagesToPreload.push(currentImage);
         }
       }
-      
-      imagesToPreload.forEach(imageUrl => {
-        if (imageUrl && typeof imageUrl === 'string' && !preloadedImages.has(imageUrl)) {
-          preloadImage(imageUrl).catch(error => {
-            console.warn('Failed to preload image:', imageUrl, error);
+
+      imagesToPreload.forEach((imageUrl) => {
+        if (
+          imageUrl &&
+          typeof imageUrl === "string" &&
+          !preloadedImages.has(imageUrl)
+        ) {
+          preloadImage(imageUrl).catch((error) => {
+            console.warn("Failed to preload image:", imageUrl, error);
           });
         }
       });
     } catch (error) {
-      console.warn('Error in preloadAdjacentImages:', error);
+      console.warn("Error in preloadAdjacentImages:", error);
     }
   };
 
@@ -217,48 +243,56 @@ function App() {
       const timer = setTimeout(() => {
         setShowSwipeHint(true);
         hasShownHintRef.current = true;
-        
+
         // Hide hint after animation
         setTimeout(() => {
           setShowSwipeHint(false);
         }, 3000);
       }, 500);
       // content-cards
-  
-      
+
       return () => clearTimeout(timer);
     }
   }, [selectedSection]);
 
   // Auto-scroll to selected paragraph on desktop when from search
   useEffect(() => {
-    if (!isMobile && isFromSearch && searchSelectedParagraph && selectedSection) {
+    if (
+      !isMobile &&
+      isFromSearch &&
+      searchSelectedParagraph &&
+      selectedSection
+    ) {
       setTimeout(() => {
         // Scroll to highlighted paragraph in content area
-        const targetParagraph = document.querySelector('.content-card.search-highlighted');
+        const targetParagraph = document.querySelector(
+          ".content-card.search-highlighted"
+        );
         if (targetParagraph) {
-          targetParagraph.scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'center' 
+          targetParagraph.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
           });
         }
       }, 300);
-      
-      // Scroll to selected subsection in sidebar (with longer delay to allow expansion)  
+
+      // Scroll to selected subsection in sidebar (with longer delay to allow expansion)
       setTimeout(() => {
-        const selectedSubsection = document.querySelector('.nav-subsection.active');
-        const sidebarNav = document.querySelector('.section-nav');
-        
+        const selectedSubsection = document.querySelector(
+          ".nav-subsection.active"
+        );
+        const sidebarNav = document.querySelector(".section-nav");
+
         if (selectedSubsection && sidebarNav) {
           // Calculate the position of the selected subsection relative to the sidebar
           const subsectionRect = selectedSubsection.getBoundingClientRect();
           const sidebarRect = sidebarNav.getBoundingClientRect();
           const relativeTop = subsectionRect.top - sidebarRect.top;
-          
+
           // Scroll the sidebar to center the selected subsection
           sidebarNav.scrollTo({
-            top: sidebarNav.scrollTop + relativeTop - (sidebarRect.height / 2),
-            behavior: 'smooth'
+            top: sidebarNav.scrollTop + relativeTop - sidebarRect.height / 2,
+            behavior: "smooth",
           });
         }
       }, 500);
@@ -270,48 +304,58 @@ function App() {
     if (isMobile && isSidebarVisible && selectedSection) {
       // Add delay to ensure sidebar is fully rendered
       setTimeout(() => {
-        const selectedSubsection = document.querySelector('.nav-subsection.active');
-        const sidebarNav = document.querySelector('.section-nav');
-        
+        const selectedSubsection = document.querySelector(
+          ".nav-subsection.active"
+        );
+        const sidebarNav = document.querySelector(".section-nav");
+
         if (selectedSubsection && sidebarNav) {
           // Calculate the position of the selected subsection relative to the sidebar
           const subsectionRect = selectedSubsection.getBoundingClientRect();
           const sidebarRect = sidebarNav.getBoundingClientRect();
           const relativeTop = subsectionRect.top - sidebarRect.top;
-          
+
           // Scroll the sidebar to center the selected subsection
           sidebarNav.scrollTo({
-            top: sidebarNav.scrollTop + relativeTop - (sidebarRect.height / 2),
-            behavior: 'smooth'
+            top: sidebarNav.scrollTop + relativeTop - sidebarRect.height / 2,
+            behavior: "smooth",
           });
         }
       }, 300);
     }
   }, [isSidebarVisible, selectedSection, isMobile]);
 
-  // Preload images when section changes or card index changes  
+  // Preload images when section changes or card index changes
   useEffect(() => {
     if (selectedSection && isMobile && content) {
       let paragraphs = [];
-      
+
       try {
-        if (selectedSection === 'foreword' && content.foreword) {
+        if (selectedSection === "foreword" && content.foreword) {
           paragraphs = content.foreword.paragraphs || [];
-        } else if (selectedSection === 'conclusion' && content.conclusion) {
+        } else if (selectedSection === "conclusion" && content.conclusion) {
           paragraphs = content.conclusion.paragraphs || [];
         } else if (content.sections) {
-          const section = content.sections.find(section =>
-            section.subsections && section.subsections.some(sub => sub.id === selectedSection)
+          const section = content.sections.find(
+            (section) =>
+              section.subsections &&
+              section.subsections.some((sub) => sub.id === selectedSection)
           );
-          const subsection = section?.subsections?.find(sub => sub.id === selectedSection);
+          const subsection = section?.subsections?.find(
+            (sub) => sub.id === selectedSection
+          );
           paragraphs = subsection?.paragraphs || [];
         }
-        
-        if (paragraphs.length > 0 && currentCardIndex >= 0 && currentCardIndex < paragraphs.length) {
+
+        if (
+          paragraphs.length > 0 &&
+          currentCardIndex >= 0 &&
+          currentCardIndex < paragraphs.length
+        ) {
           preloadAdjacentImages(paragraphs, currentCardIndex);
         }
       } catch (error) {
-        console.warn('Error in preloading images:', error);
+        console.warn("Error in preloading images:", error);
       }
     }
   }, [selectedSection, currentCardIndex, content?.sections, isMobile]);
@@ -325,40 +369,49 @@ function App() {
     }
 
     setIsGlobalSearching(true);
-    const searchTerms = query.split(',').map(term => term.trim().toLowerCase()).filter(term => term);
+    const searchTerms = query
+      .split(",")
+      .map((term) => term.trim().toLowerCase())
+      .filter((term) => term);
     const results = [];
 
     // Search in foreword
     if (content.foreword.paragraphs) {
       content.foreword.paragraphs.forEach((paragraph, index) => {
-        if (paragraph.content && searchTerms.some(term => 
-          paragraph.content.toLowerCase().includes(term)
-        )) {
+        if (
+          paragraph.content &&
+          searchTerms.some((term) =>
+            paragraph.content.toLowerCase().includes(term)
+          )
+        ) {
           results.push({
-            sectionId: 'foreword',
+            sectionId: "foreword",
             sectionTitle: content.foreword.title,
             paragraphIndex: index,
             content: paragraph.content,
-            image: paragraph.image
+            image: paragraph.image,
           });
         }
       });
     }
 
     // Search in sections
-    content.sections.forEach(section => {
-      section.subsections.forEach(subsection => {
+    content.sections.forEach((section) => {
+      section.subsections.forEach((subsection) => {
         if (subsection.paragraphs) {
           subsection.paragraphs.forEach((paragraph, index) => {
-            if (paragraph.content && searchTerms.some(term => 
-              paragraph.content.toLowerCase().includes(term)
-            )) {
+            if (
+              paragraph.content &&
+              searchTerms.some((term) =>
+                paragraph.content.toLowerCase().includes(term)
+              )
+            ) {
               results.push({
                 sectionId: subsection.id,
                 sectionTitle: `${section.title} - ${subsection.title}`,
                 paragraphIndex: index,
                 content: paragraph.content,
-                image: paragraph.image
+                image: paragraph.image,
               });
             }
           });
@@ -369,15 +422,18 @@ function App() {
     // Search in conclusion
     if (content.conclusion.paragraphs) {
       content.conclusion.paragraphs.forEach((paragraph, index) => {
-        if (paragraph.content && searchTerms.some(term => 
-          paragraph.content.toLowerCase().includes(term)
-        )) {
+        if (
+          paragraph.content &&
+          searchTerms.some((term) =>
+            paragraph.content.toLowerCase().includes(term)
+          )
+        ) {
           results.push({
-            sectionId: 'conclusion',
+            sectionId: "conclusion",
             sectionTitle: content.conclusion.title,
             paragraphIndex: index,
             content: paragraph.content,
-            image: paragraph.image
+            image: paragraph.image,
           });
         }
       });
@@ -392,25 +448,32 @@ function App() {
       return null;
     }
 
-    const searchTerms = query.split(',').map(term => term.trim().toLowerCase()).filter(term => term);
+    const searchTerms = query
+      .split(",")
+      .map((term) => term.trim().toLowerCase())
+      .filter((term) => term);
     let paragraphs = [];
 
-    if (selectedSection === 'foreword') {
+    if (selectedSection === "foreword") {
       paragraphs = content.foreword.paragraphs || [];
-    } else if (selectedSection === 'conclusion') {
+    } else if (selectedSection === "conclusion") {
       paragraphs = content.conclusion.paragraphs || [];
     } else {
-      const section = content.sections.find(section =>
-        section.subsections.some(sub => sub.id === selectedSection)
+      const section = content.sections.find((section) =>
+        section.subsections.some((sub) => sub.id === selectedSection)
       );
-      const subsection = section?.subsections.find(sub => sub.id === selectedSection);
+      const subsection = section?.subsections.find(
+        (sub) => sub.id === selectedSection
+      );
       paragraphs = subsection?.paragraphs || [];
     }
 
-    return paragraphs.filter(paragraph => 
-      paragraph.content && searchTerms.some(term => 
-        paragraph.content.toLowerCase().includes(term)
-      )
+    return paragraphs.filter(
+      (paragraph) =>
+        paragraph.content &&
+        searchTerms.some((term) =>
+          paragraph.content.toLowerCase().includes(term)
+        )
     );
   };
 
@@ -429,21 +492,21 @@ function App() {
     setSelectedSection(result.sectionId);
     setIsSidebarVisible(false);
     setCurrentCardIndex(result.paragraphIndex);
-    setGlobalSearchQuery('');
+    setGlobalSearchQuery("");
     setSearchResults([]);
     setIsGlobalSearching(false);
     setSearchSelectedParagraph(result.content);
     setIsFromSearch(true);
-    
+
     // Auto-expand the parent section in sidebar
-    if (result.sectionId !== 'foreword' && result.sectionId !== 'conclusion') {
-      const section = content.sections.find(section =>
-        section.subsections.some(sub => sub.id === result.sectionId)
+    if (result.sectionId !== "foreword" && result.sectionId !== "conclusion") {
+      const section = content.sections.find((section) =>
+        section.subsections.some((sub) => sub.id === result.sectionId)
       );
       if (section) {
-        setExpandedSections(prev => ({
+        setExpandedSections((prev) => ({
           ...prev,
-          [section.id]: true
+          [section.id]: true,
         }));
       }
     }
@@ -452,38 +515,37 @@ function App() {
   // Function to render search results as cards
   const renderSearchResultsAsCards = () => {
     const isMobile = window.innerWidth <= 768;
-    
+
     return (
       <div className="search-results-cards">
         <div className="search-results-header-title">
           <h2>
-            {getSearchResultsTitle(languages[currentLanguage].code, searchResults.length)}
+            {getSearchResultsTitle(
+              languages[currentLanguage].code,
+              searchResults.length
+            )}
           </h2>
         </div>
-        
+
         <div className="content-cards">
           {searchResults.map((result, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="content-card search-result-card"
               style={{ backgroundImage: `url(${images[result.image]})` }}
               onClick={() => handleSearchResultClick(result)}
             >
               <div className="card-content">
-                <div className="search-card-section">
-                  {result.sectionTitle}
-                </div>
+                <div className="search-card-section">{result.sectionTitle}</div>
                 <p dangerouslySetInnerHTML={{ __html: result.content }}></p>
               </div>
             </div>
           ))}
         </div>
-        
+
         {searchResults.length === 0 && globalSearchQuery && (
           <div className="no-results">
-            <p>
-              {getNoResultsText(languages[currentLanguage].code)}
-            </p>
+            <p>{getNoResultsText(languages[currentLanguage].code)}</p>
           </div>
         )}
       </div>
@@ -494,42 +556,42 @@ function App() {
     // Check if the touch started on a scrollable element
     const target = e.target;
     const isScrollable = target.scrollHeight > target.clientHeight;
-    
+
     // If the element is scrollable, don't start swiping
     if (isScrollable) {
       isSwipingRef.current = false;
       return;
     }
-    
+
     touchStartX.current = e.touches[0].clientX;
     touchStartY.current = e.touches[0].clientY;
     isSwipingRef.current = true;
     if (cardRef.current) {
-      cardRef.current.classList.add('swiping');
+      cardRef.current.classList.add("swiping");
     }
   };
 
   const handleTouchMove = (e) => {
     if (!isSwipingRef.current) return;
-    
+
     // If we're scrolling vertically, don't handle the swipe
     const touchY = e.touches[0].clientY;
     const touchX = e.touches[0].clientX;
     const deltaY = Math.abs(touchY - touchStartY.current);
     const deltaX = Math.abs(touchX - touchStartX.current);
-    
+
     if (deltaY > deltaX) {
       isSwipingRef.current = false;
       if (cardRef.current) {
-        cardRef.current.classList.remove('swiping');
-        cardRef.current.style.transform = '';
+        cardRef.current.classList.remove("swiping");
+        cardRef.current.style.transform = "";
       }
       return;
     }
-    
+
     touchEndX.current = touchX;
     const diff = touchStartX.current - touchEndX.current;
-    
+
     if (cardRef.current) {
       cardRef.current.style.transform = `translateX(${-diff}px)`;
     }
@@ -537,13 +599,13 @@ function App() {
 
   const handleTouchEnd = (paragraphs) => {
     if (!isSwipingRef.current) return;
-    
+
     const diff = touchStartX.current - touchEndX.current;
     const threshold = window.innerWidth * 0.2; // 20% of screen width
 
     if (Math.abs(diff) > threshold) {
       let newIndex = currentCardIndex;
-      
+
       if (diff > 0 && currentCardIndex < paragraphs.length - 1) {
         // Swipe left - next card
         newIndex = currentCardIndex + 1;
@@ -551,60 +613,66 @@ function App() {
         // Swipe right - previous card
         newIndex = currentCardIndex - 1;
       }
-      
-                    if (newIndex !== currentCardIndex && paragraphs && paragraphs[newIndex]) {
+
+      if (newIndex !== currentCardIndex && paragraphs && paragraphs[newIndex]) {
         try {
           // Start card transition animation
           setIsCardTransitioning(true);
-          
+
           // Set loading state for the new card only if image needs to be loaded
           const newImageUrl = paragraphs[newIndex]?.image;
-          if (newImageUrl && typeof newImageUrl === 'string' && !preloadedImages.has(newImageUrl)) {
-            setCardLoadingState(prev => ({ ...prev, [newIndex]: true }));
-            
+          if (
+            newImageUrl &&
+            typeof newImageUrl === "string" &&
+            !preloadedImages.has(newImageUrl)
+          ) {
+            setCardLoadingState((prev) => ({ ...prev, [newIndex]: true }));
+
             // Preload the new image
-            preloadImage(newImageUrl).then(() => {
-              setCardLoadingState(prev => ({ ...prev, [newIndex]: false }));
-            }).catch((error) => {
-              console.warn('Failed to preload image:', newImageUrl, error);
-              setCardLoadingState(prev => ({ ...prev, [newIndex]: false }));
-            });
+            preloadImage(newImageUrl)
+              .then(() => {
+                setCardLoadingState((prev) => ({ ...prev, [newIndex]: false }));
+              })
+              .catch((error) => {
+                console.warn("Failed to preload image:", newImageUrl, error);
+                setCardLoadingState((prev) => ({ ...prev, [newIndex]: false }));
+              });
           } else {
             // Image already loaded or no image, ensure loading state is false
-            setCardLoadingState(prev => ({ ...prev, [newIndex]: false }));
+            setCardLoadingState((prev) => ({ ...prev, [newIndex]: false }));
           }
-          
+
           // Change card index with smooth transition
           setTimeout(() => {
             setCurrentCardIndex(newIndex);
             // Preload adjacent images for the new current card
             preloadAdjacentImages(paragraphs, newIndex);
-            
+
             // End transition after animation completes
             setTimeout(() => {
               setIsCardTransitioning(false);
             }, 500);
           }, 50);
         } catch (error) {
-          console.warn('Error in card transition:', error);
+          console.warn("Error in card transition:", error);
           setIsCardTransitioning(false);
-          setCardLoadingState(prev => ({ ...prev, [newIndex]: false }));
+          setCardLoadingState((prev) => ({ ...prev, [newIndex]: false }));
         }
       }
     }
 
     // Reset
     if (cardRef.current) {
-      cardRef.current.style.transform = '';
-      cardRef.current.classList.remove('swiping');
+      cardRef.current.style.transform = "";
+      cardRef.current.classList.remove("swiping");
     }
     isSwipingRef.current = false;
   };
 
   const toggleSection = (sectionId) => {
-    setExpandedSections(prev => ({
+    setExpandedSections((prev) => ({
       ...prev,
-      [sectionId]: !prev[sectionId]
+      [sectionId]: !prev[sectionId],
     }));
   };
 
@@ -615,77 +683,87 @@ function App() {
     setSearchSelectedParagraph(null); // Clear search selection
     setIsFromSearch(false); // Reset search flag
     setCardLoadingState({}); // Clear loading states
-    
+
     // Start loading animation for first card on mobile
     if (isMobile) {
       setIsCardTransitioning(true);
-      
+
       // Get first card image and show loading if needed
       setTimeout(() => {
         try {
           if (content) {
             let paragraphs = [];
-            
-            if (section === 'foreword' && content.foreword) {
+
+            if (section === "foreword" && content.foreword) {
               paragraphs = content.foreword.paragraphs || [];
-            } else if (section === 'conclusion' && content.conclusion) {
+            } else if (section === "conclusion" && content.conclusion) {
               paragraphs = content.conclusion.paragraphs || [];
             } else if (content.sections) {
-              const sectionData = content.sections.find(s =>
-                s.subsections && s.subsections.some(sub => sub.id === section)
+              const sectionData = content.sections.find(
+                (s) =>
+                  s.subsections &&
+                  s.subsections.some((sub) => sub.id === section)
               );
-              const subsection = sectionData?.subsections?.find(sub => sub.id === section);
+              const subsection = sectionData?.subsections?.find(
+                (sub) => sub.id === section
+              );
               paragraphs = subsection?.paragraphs || [];
             }
-            
-            if (paragraphs.length > 0 && paragraphs[0]?.image && typeof paragraphs[0].image === 'string') {
+
+            if (
+              paragraphs.length > 0 &&
+              paragraphs[0]?.image &&
+              typeof paragraphs[0].image === "string"
+            ) {
               const firstImageUrl = paragraphs[0].image;
               if (!preloadedImages.has(firstImageUrl)) {
                 // Show loading state for first card
-                setCardLoadingState(prev => ({ ...prev, [0]: true }));
-                
+                setCardLoadingState((prev) => ({ ...prev, [0]: true }));
+
                 // Preload the first image
-                preloadImage(firstImageUrl).then(() => {
-                  setCardLoadingState(prev => ({ ...prev, [0]: false }));
-                }).catch(error => {
-                  console.warn('Failed to preload first card image:', error);
-                  setCardLoadingState(prev => ({ ...prev, [0]: false }));
-                });
+                preloadImage(firstImageUrl)
+                  .then(() => {
+                    setCardLoadingState((prev) => ({ ...prev, [0]: false }));
+                  })
+                  .catch((error) => {
+                    console.warn("Failed to preload first card image:", error);
+                    setCardLoadingState((prev) => ({ ...prev, [0]: false }));
+                  });
               } else {
                 // Image already loaded
-                setCardLoadingState(prev => ({ ...prev, [0]: false }));
+                setCardLoadingState((prev) => ({ ...prev, [0]: false }));
               }
-              
+
               // Preload adjacent images for smooth navigation
               preloadAdjacentImages(paragraphs, 0);
             } else {
               // No image, ensure loading state is false
-              setCardLoadingState(prev => ({ ...prev, [0]: false }));
+              setCardLoadingState((prev) => ({ ...prev, [0]: false }));
             }
-            
+
             // End transition after animation completes
             setTimeout(() => {
               setIsCardTransitioning(false);
             }, 500);
           }
-          
-          const contentCards = document.querySelector('.content-cards');
+
+          const contentCards = document.querySelector(".content-cards");
           if (contentCards) {
-            contentCards.scrollTo({ top: 0, behavior: 'smooth' });
+            contentCards.scrollTo({ top: 0, behavior: "smooth" });
           }
         } catch (error) {
-          console.warn('Error in handleSectionSelect:', error);
+          console.warn("Error in handleSectionSelect:", error);
           setIsCardTransitioning(false);
-          setCardLoadingState(prev => ({ ...prev, [0]: false }));
+          setCardLoadingState((prev) => ({ ...prev, [0]: false }));
         }
       }, 50);
     } else {
       // Desktop - no loading animation needed
       setIsCardTransitioning(false);
       setTimeout(() => {
-        const contentCards = document.querySelector('.content-cards');
+        const contentCards = document.querySelector(".content-cards");
         if (contentCards) {
-          contentCards.scrollTo({ top: 0, behavior: 'smooth' });
+          contentCards.scrollTo({ top: 0, behavior: "smooth" });
         }
       }, 100);
     }
@@ -695,7 +773,7 @@ function App() {
     if (!isSidebarVisible) {
       setIsSidebarVisible(true);
       // Keep selectedSection to show which section was selected
-      setCurrentCardIndex(0);    // Reset card index
+      setCurrentCardIndex(0); // Reset card index
       setSearchSelectedParagraph(null); // Clear search selection
       setIsFromSearch(false); // Reset search flag
     }
@@ -703,7 +781,7 @@ function App() {
 
   const handleLanguageChange = (languageCode) => {
     const selectedLanguage = Object.keys(languages).find(
-      key => languages[key].code === languageCode
+      (key) => languages[key].code === languageCode
     );
     setCurrentLanguage(selectedLanguage);
   };
@@ -712,20 +790,22 @@ function App() {
     if (!selectedSection) {
       return {
         mainTitle: content.title,
-        subTitle: null
+        subTitle: null,
       };
     }
 
-    let subTitle = '';
-    if (selectedSection === 'foreword') {
+    let subTitle = "";
+    if (selectedSection === "foreword") {
       subTitle = content.foreword.title;
-    } else if (selectedSection === 'conclusion') {
+    } else if (selectedSection === "conclusion") {
       subTitle = content.conclusion.title;
     } else {
-      const section = content.sections.find(section =>
-        section.subsections.some(sub => sub.id === selectedSection)
+      const section = content.sections.find((section) =>
+        section.subsections.some((sub) => sub.id === selectedSection)
       );
-      const subsection = section?.subsections.find(sub => sub.id === selectedSection);
+      const subsection = section?.subsections.find(
+        (sub) => sub.id === selectedSection
+      );
       if (subsection) {
         subTitle = `${section.title} - ${subsection.title}`;
       }
@@ -733,45 +813,58 @@ function App() {
 
     return {
       mainTitle: content.title,
-      subTitle
+      subTitle,
     };
   };
 
   const renderContent = () => {
-    let title = '';
+    let title = "";
     let allParagraphs = [];
 
-    if (selectedSection === 'foreword') {
+    if (selectedSection === "foreword") {
       title = content.foreword.title;
-      allParagraphs = content.foreword.paragraphs?.map(p => ({
-        ...p,
-        image: images[p.image]
-      })) || [];
-    } else if (selectedSection === 'conclusion') {
+      allParagraphs =
+        content.foreword.paragraphs?.map((p) => ({
+          ...p,
+          image: images[p.image],
+        })) || [];
+    } else if (selectedSection === "conclusion") {
       title = content.conclusion.title;
-      allParagraphs = content.conclusion.paragraphs?.map(p => ({
-        ...p,
-        image: images[p.image]
-      })) || [];
+      allParagraphs =
+        content.conclusion.paragraphs?.map((p) => ({
+          ...p,
+          image: images[p.image],
+        })) || [];
     } else if (selectedSection) {
-      const section = content.sections.find(section =>
-        section.subsections.some(sub => sub.id === selectedSection)
+      const section = content.sections.find((section) =>
+        section.subsections.some((sub) => sub.id === selectedSection)
       );
-      const subsection = section?.subsections.find(sub => sub.id === selectedSection);
+      const subsection = section?.subsections.find(
+        (sub) => sub.id === selectedSection
+      );
       if (subsection) {
         title = subsection.title;
-        allParagraphs = subsection.paragraphs?.map(p => ({
-          ...p,
-          image: images[p.image]
-        })) || [];
+        allParagraphs =
+          subsection.paragraphs?.map((p) => ({
+            ...p,
+            image: images[p.image],
+          })) || [];
       }
     }
 
     if (!selectedSection) {
       return (
         <div className="welcome-message">
-          <h2>{languages[currentLanguage].name === 'தமிழ்' ? 'வரவேற்பு' : 'Welcome'}</h2>
-          <p>{languages[currentLanguage].name === 'தமிழ்' ? 'தயவுசெய்து ஒரு பிரிவைத் தேர்ந்தெடுக்கவும்' : 'Please select a section'}</p>
+          <h2>
+            {languages[currentLanguage].name === "தமிழ்"
+              ? "வரவேற்பு"
+              : "Welcome"}
+          </h2>
+          <p>
+            {languages[currentLanguage].name === "தமிழ்"
+              ? "தயவுசெய்து ஒரு பிரிவைத் தேர்ந்தெடுக்கவும்"
+              : "Please select a section"}
+          </p>
         </div>
       );
     }
@@ -781,17 +874,84 @@ function App() {
     if (sectionSearchQuery.trim()) {
       const filteredParagraphs = performSectionSearch(sectionSearchQuery);
       if (filteredParagraphs) {
-        paragraphs = filteredParagraphs.map(p => ({
+        paragraphs = filteredParagraphs.map((p) => ({
           ...p,
-          image: images[p.image]
+          image: images[p.image],
         }));
       }
+    }
+
+    const handleDotClick = (index) => {
+      if (index !== currentCardIndex && paragraphs && paragraphs[index]) {
+        try {
+          // Start card transition animation
+          setIsCardTransitioning(true);
+
+          // Set loading state for the new card only if image needs to be loaded
+          const newImageUrl = paragraphs[index]?.image;
+          if (
+            newImageUrl &&
+            typeof newImageUrl === "string" &&
+            !preloadedImages.has(newImageUrl)
+          ) {
+            setCardLoadingState((prev) => ({ ...prev, [index]: true }));
+
+            // Preload the new image
+            preloadImage(newImageUrl)
+              .then(() => {
+                setCardLoadingState((prev) => ({ ...prev, [index]: false }));
+              })
+              .catch((error) => {
+                console.warn("Failed to preload image:", newImageUrl, error);
+                setCardLoadingState((prev) => ({ ...prev, [index]: false }));
+              });
+          } else {
+            // Image already loaded or no image, ensure loading state is false
+            setCardLoadingState((prev) => ({ ...prev, [index]: false }));
+          }
+
+          // Change card index with smooth transition
+          setTimeout(() => {
+            setCurrentCardIndex(index);
+            // Preload adjacent images for the new current card
+            preloadAdjacentImages(paragraphs, index);
+
+            // End transition after animation completes
+            setTimeout(() => {
+              setIsCardTransitioning(false);
+            }, 500);
+          }, 50);
+        } catch (error) {
+          console.warn("Error in dot navigation:", error);
+          setIsCardTransitioning(false);
+          setCardLoadingState((prev) => ({ ...prev, [index]: false }));
+        }
+      }
+    };
+
+    if (!selectedSection) {
+      return (
+        <div className="welcome-message">
+          <h2>
+            {languages[currentLanguage].name === "தமிழ்"
+              ? "வரவேற்பு"
+              : "Welcome"}
+          </h2>
+          <p>
+            {languages[currentLanguage].name === "தமிழ்"
+              ? "தயவுசெய்து ஒரு பிரிவைத் தேர்ந்தெடுக்கவும்"
+              : "Please select a section"}
+          </p>
+        </div>
+      );
     }
 
     const isMobile = window.innerWidth <= 768;
     // For mobile: show single paragraph at currentCardIndex
     // For desktop: show all paragraphs, but scroll to selected one if from search
-    const displayParagraphs = isMobile ? [paragraphs[currentCardIndex]] : paragraphs;
+    const displayParagraphs = isMobile
+      ? [paragraphs[currentCardIndex]]
+      : paragraphs;
 
     return (
       <>
@@ -803,34 +963,40 @@ function App() {
               <input
                 type="text"
                 className="section-search-input"
-                placeholder={getSectionSearchPlaceholder(languages[currentLanguage].code, window.innerWidth <= 768)}
+                placeholder={getSectionSearchPlaceholder(
+                  languages[currentLanguage].code,
+                  window.innerWidth <= 768
+                )}
                 value={sectionSearchQuery}
                 onChange={handleSectionSearchChange}
               />
               {sectionSearchQuery && (
-                <button 
+                <button
                   className="clear-search-btn"
-                  onClick={() => setSectionSearchQuery('')}
+                  onClick={() => setSectionSearchQuery("")}
                 >
                   ✕
                 </button>
               )}
             </div>
-          {sectionSearchQuery && paragraphs.length >= 1 && !isMobile && (
-          <div className="search-results-info">
-            {getResultsText(languages[currentLanguage].code, paragraphs.length)}
-          </div>
-        )}
+            {sectionSearchQuery && paragraphs.length >= 1 && !isMobile && (
+              <div className="search-results-info">
+                {getResultsText(
+                  languages[currentLanguage].code,
+                  paragraphs.length
+                )}
+              </div>
+            )}
           </div>
         </div>
-        
+
         {/* Show search info only when there are results and search is active */}
         {sectionSearchQuery && paragraphs.length >= 1 && isMobile && (
           <div className="search-results-info">
             {getResultsText(languages[currentLanguage].code, paragraphs.length)}
           </div>
         )}
-        
+
         {paragraphs.length === 0 && sectionSearchQuery ? (
           <div className="no-results">
             <p>{getNoResultsText(languages[currentLanguage].code)}</p>
@@ -841,30 +1007,49 @@ function App() {
               {showSwipeHint && isMobile && paragraphs.length > 1 && (
                 <div className="swipe-hint-container">
                   <span className="swipe-icon">←</span>
-                  {languages[currentLanguage].name === 'தமிழ்' ? 'ஸ்வைப் செய்யவும்' : 'Swipe to navigate'}
+                  {languages[currentLanguage].name === "தமிழ்"
+                    ? "ஸ்வைப் செய்யவும்"
+                    : "Swipe to navigate"}
                   <span className="swipe-icon">→</span>
                 </div>
               )}
               {displayParagraphs.map((paragraph, index) => {
                 // Check if this paragraph is the one selected from search
-                const isSearchHighlighted = isFromSearch && 
-                  searchSelectedParagraph && 
+                const isSearchHighlighted =
+                  isFromSearch &&
+                  searchSelectedParagraph &&
                   paragraph.content === searchSelectedParagraph;
-                
+
                 // For desktop, use the actual index from all paragraphs
                 // For mobile, use the display index
-                const actualIndex = isMobile ? currentCardIndex : paragraphs.findIndex(p => p.content === paragraph.content);
-                
+                const actualIndex = isMobile
+                  ? currentCardIndex
+                  : paragraphs.findIndex(
+                      (p) => p.content === paragraph.content
+                    );
+
                 // Check if card is loading or transitioning
                 const isCardLoading = cardLoadingState[actualIndex] || false;
                 const imageUrl = paragraph?.image;
-                const isImagePreloaded = imageUrl ? preloadedImages.has(imageUrl) : true; // Default to true if no image
-                
+                const isImagePreloaded = imageUrl
+                  ? preloadedImages.has(imageUrl)
+                  : true; // Default to true if no image
+
                 return (
-                  <div 
-                    key={actualIndex} 
-                    className={`content-card ${isSearchHighlighted ? 'search-highlighted' : ''} ${isCardTransitioning && isMobile ? 'card-transitioning' : ''} ${isCardLoading ? 'card-loading' : ''}`}
-                    style={{ backgroundImage: paragraph?.image ? `url(${paragraph.image})` : 'none' }}
+                  <div
+                    key={actualIndex}
+                    className={`content-card ${
+                      isSearchHighlighted ? "search-highlighted" : ""
+                    } ${
+                      isCardTransitioning && isMobile
+                        ? "card-transitioning"
+                        : ""
+                    } ${isCardLoading ? "card-loading" : ""}`}
+                    style={{
+                      backgroundImage: paragraph?.image
+                        ? `url(${paragraph.image})`
+                        : "none",
+                    }}
                     ref={cardRef}
                     onTouchStart={handleTouchStart}
                     onTouchMove={handleTouchMove}
@@ -876,18 +1061,21 @@ function App() {
                         <div className="card-loading-spinner"></div>
                       </div>
                     )}
-                    
-                    <div 
+
+                    <div
                       className="card-content"
                       ref={(el) => {
                         if (el) {
-                          const isScrollable = el.scrollHeight > el.clientHeight;
-                          el.classList.toggle('no-scroll', !isScrollable);
+                          const isScrollable =
+                            el.scrollHeight > el.clientHeight;
+                          el.classList.toggle("no-scroll", !isScrollable);
                         }
                       }}
                     >
-                      <p 
-                        className={isSearchHighlighted ? 'search-highlighted-text' : ''}
+                      <p
+                        className={
+                          isSearchHighlighted ? "search-highlighted-text" : ""
+                        }
                         dangerouslySetInnerHTML={{ __html: paragraph.content }}
                       ></p>
                     </div>
@@ -897,54 +1085,33 @@ function App() {
             </div>
             {isMobile && paragraphs.length > 1 && !isSidebarVisible && (
               <div className="card-navigation">
-                <div className="card-dots">
-                  {paragraphs.map((_, index) => (
-                    <div 
-                      key={index}
-                      className={`card-dot ${index === currentCardIndex ? 'active' : ''}`}
-                      onClick={() => {
-                                                 if (index !== currentCardIndex && paragraphs && paragraphs[index]) {
-                          try {
-                           // Start card transition animation
-                           setIsCardTransitioning(true);
-                           
-                           // Set loading state for the new card only if image needs to be loaded
-                          const newImageUrl = paragraphs[index]?.image;
-                          if (newImageUrl && typeof newImageUrl === 'string' && !preloadedImages.has(newImageUrl)) {
-                            setCardLoadingState(prev => ({ ...prev, [index]: true }));
-                            
-                            // Preload the new image
-                            preloadImage(newImageUrl).then(() => {
-                              setCardLoadingState(prev => ({ ...prev, [index]: false }));
-                            }).catch((error) => {
-                              console.warn('Failed to preload image:', newImageUrl, error);
-                              setCardLoadingState(prev => ({ ...prev, [index]: false }));
-                            });
-                          } else {
-                            // Image already loaded or no image, ensure loading state is false
-                            setCardLoadingState(prev => ({ ...prev, [index]: false }));
-                          }
-                          
-                          // Change card index with smooth transition
-                          setTimeout(() => {
-                            setCurrentCardIndex(index);
-                            // Preload adjacent images for the new current card
-                            preloadAdjacentImages(paragraphs, index);
-                            
-                            // End transition after animation completes
-                            setTimeout(() => {
-                              setIsCardTransitioning(false);
-                            }, 500);
-                          }, 50);
-                          } catch (error) {
-                            console.warn('Error in dot navigation:', error);
-                            setIsCardTransitioning(false);
-                            setCardLoadingState(prev => ({ ...prev, [index]: false }));
-                          }
-                        }
-                      }}
-                    />
-                  ))}
+                <div className="card-dots-container">
+                  {/* <div className="card-dots" ref={dotsContainerRef}> */}
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: justify, // <-- dynamically updates
+                      gap: "8px",
+                      width: `${window.innerWidth}px`,
+                      height: "20px",
+                      // backgroundColor: "yellow",
+                      overflowX: "auto",
+                      whiteSpace: "nowrap",
+                      scrollBehavior: "smooth",
+                      WebkitOverflowScrolling: "touch",
+                    }}
+                    ref={dotsContainerRef}
+                  >
+                    {paragraphs.map((_, index) => (
+                      <div
+                        key={index}
+                        className={`card-dot ${
+                          index === currentCardIndex ? "active" : ""
+                        }`}
+                        onClick={() => handleDotClick(index)}
+                      />
+                    ))}
+                  </div>
                 </div>
                 <div className="card-counter">
                   {currentCardIndex + 1} / {paragraphs.length}
@@ -957,9 +1124,50 @@ function App() {
     );
   };
 
+  // Add useRef for dots container
+  const dotsContainerRef = useRef(null);
+
+  // Add useEffect to handle dot scrolling
+  useEffect(() => {
+    if (dotsContainerRef.current && isMobile) {
+      const container = dotsContainerRef.current;
+      const hasScroll = container.scrollWidth > container.clientWidth;
+      setJustify(hasScroll ? "flex-start" : "center");
+    }
+  }, [selectedSection, isMobile]);
+  useEffect(() => {
+    if (dotsContainerRef.current && isMobile) {
+      const container = dotsContainerRef.current;
+      const activeDot = container.children[currentCardIndex];
+
+      if (activeDot) {
+        const containerWidth = container.offsetWidth;
+        const dotWidth = activeDot.offsetWidth;
+        const dotLeft = activeDot.offsetLeft;
+        const scrollLeft = container.scrollLeft;
+        const padding = containerWidth * 0.1;
+
+        const dotRightEdge = dotLeft + dotWidth;
+        const dotLeftEdge = dotLeft;
+        const containerRightEdge = scrollLeft + containerWidth - padding;
+        const containerLeftEdge = scrollLeft + padding;
+
+        if (
+          dotRightEdge > containerRightEdge ||
+          dotLeftEdge < containerLeftEdge
+        ) {
+          const newScrollLeft = dotLeft - containerWidth / 2 + dotWidth / 2;
+          container.scrollTo({
+            left: Math.max(0, newScrollLeft),
+            behavior: "smooth",
+          });
+        }
+      }
+    }
+  }, [currentCardIndex, isMobile]);
+
   return (
     <div className="App">
-      
       {/* Header */}
       <header className="header">
         {selectedSection && !isSidebarVisible && (
@@ -967,15 +1175,17 @@ function App() {
             ←
           </span>
         )}
-        
+
         {/* Titles Section */}
         <div className="header-titles">
           <h1>{getHeaderTitles().mainTitle}</h1>
           {getHeaderTitles().subTitle && (
-            <h2 className={`subtitle ${isMobile ? 'mobile-hide' : ''}`}>{getHeaderTitles().subTitle}</h2>
+            <h2 className={`subtitle ${isMobile ? "mobile-hide" : ""}`}>
+              {getHeaderTitles().subTitle}
+            </h2>
           )}
         </div>
-        
+
         {/* Second Row Container for Mobile - contains search and language selector */}
         <div className="header-second-row">
           {/* Global Search Bar */}
@@ -983,15 +1193,18 @@ function App() {
             <input
               type="text"
               className="global-search-input"
-              placeholder={getGlobalSearchPlaceholder(languages[currentLanguage].code, window.innerWidth <= 768)}
+              placeholder={getGlobalSearchPlaceholder(
+                languages[currentLanguage].code,
+                window.innerWidth <= 768
+              )}
               value={globalSearchQuery}
               onChange={handleGlobalSearchChange}
             />
             {globalSearchQuery && (
-              <button 
+              <button
                 className="clear-global-search-btn"
                 onClick={() => {
-                  setGlobalSearchQuery('');
+                  setGlobalSearchQuery("");
                   setSearchResults([]);
                   setIsGlobalSearching(false);
                 }}
@@ -999,21 +1212,30 @@ function App() {
                 ✕
               </button>
             )}
-            
+
             {/* Global Search Results */}
             {isGlobalSearching && searchResults.length > 0 && (
-              <div className={`global-search-results ${window.innerWidth <= 768 ? 'mobile-search-results' : ''}`}>
+              <div
+                className={`global-search-results ${
+                  window.innerWidth <= 768 ? "mobile-search-results" : ""
+                }`}
+              >
                 <div className="search-results-header">
-                  {getResultsText(languages[currentLanguage].code, searchResults.length)}
+                  {getResultsText(
+                    languages[currentLanguage].code,
+                    searchResults.length
+                  )}
                 </div>
                 <div className="search-results-list">
                   {searchResults.slice(0, 10).map((result, index) => (
-                    <div 
-                      key={index} 
+                    <div
+                      key={index}
                       className="search-result-item"
                       onClick={() => handleSearchResultClick(result)}
                     >
-                      <div className="search-result-section">{result.sectionTitle}</div>
+                      <div className="search-result-section">
+                        {result.sectionTitle}
+                      </div>
                       <div className="search-result-content">
                         {stripHtmlTags(result.content).substring(0, 100)}...
                       </div>
@@ -1021,22 +1243,28 @@ function App() {
                   ))}
                   {searchResults.length > 10 && (
                     <div className="search-results-more">
-                      {languages[currentLanguage].name === 'தமிழ்' ? 
-                        `மேலும் ${searchResults.length - 10} முடிவுகள்...` : 
-                        `${searchResults.length - 10} more results...`}
+                      {languages[currentLanguage].name === "தமிழ்"
+                        ? `மேலும் ${searchResults.length - 10} முடிவுகள்...`
+                        : `${searchResults.length - 10} more results...`}
                     </div>
                   )}
                 </div>
               </div>
             )}
-            
-            {isGlobalSearching && searchResults.length === 0 && globalSearchQuery && (
-              <div className={`global-no-results ${window.innerWidth <= 768 ? 'mobile-no-results' : ''}`}>
-                {getNoResultsText(languages[currentLanguage].code)}
-              </div>
-            )}
+
+            {isGlobalSearching &&
+              searchResults.length === 0 &&
+              globalSearchQuery && (
+                <div
+                  className={`global-no-results ${
+                    window.innerWidth <= 768 ? "mobile-no-results" : ""
+                  }`}
+                >
+                  {getNoResultsText(languages[currentLanguage].code)}
+                </div>
+              )}
           </div>
-          
+
           {/* Language Selector Space - contains the language selector */}
           <div className="header-language-space">
             <LanguageSelector
@@ -1050,36 +1278,55 @@ function App() {
       {/* Main Content */}
       <div className="main-content">
         {/* Limage.png*/}
-        <aside className={`sidebar ${!isSidebarVisible ? 'hidden' : ''} ${isGlobalSearching && window.innerWidth <= 768 ? 'mobile-search-hidden' : ''}`}>
+        <aside
+          className={`sidebar ${!isSidebarVisible ? "hidden" : ""} ${
+            isGlobalSearching && window.innerWidth <= 768
+              ? "mobile-search-hidden"
+              : ""
+          }`}
+        >
           <nav className="section-nav">
             {/* Foreword */}
-            <div 
-              className={`nav-special-section ${selectedSection === 'foreword' ? 'active' : ''}`}
-              onClick={() => handleSectionSelect('foreword')}
+            <div
+              className={`nav-special-section ${
+                selectedSection === "foreword" ? "active" : ""
+              }`}
+              onClick={() => handleSectionSelect("foreword")}
             >
               {content.foreword.title}
             </div>
 
             {/* Regular Sections */}
-            {content.sections.map(section => (
+            {content.sections.map((section) => (
               <div key={section.id} className="nav-section">
-                <div 
-                  className={`nav-section-header ${expandedSections[section.id] ? 'expanded' : ''}`}
+                <div
+                  className={`nav-section-header ${
+                    expandedSections[section.id] ? "expanded" : ""
+                  }`}
                   onClick={() => toggleSection(section.id)}
                 >
                   <span className="section-title">{section.title}</span>
-                  <span className={`arrow ${expandedSections[section.id] ? 'expanded' : ''}`}>
+                  <span
+                    className={`arrow ${
+                      expandedSections[section.id] ? "expanded" : ""
+                    }`}
+                  >
                     ▼
                   </span>
                 </div>
-                
-                <div className={`nav-subsections ${expandedSections[section.id] ? 'expanded' : ''}`}>
-                  {section.subsections.map(subsection => (
-                    <div 
-                      key={subsection.id} 
-                      className={`nav-subsection ${selectedSection === subsection.id ? 'active' : ''}`}
+
+                <div
+                  className={`nav-subsections ${
+                    expandedSections[section.id] ? "expanded" : ""
+                  }`}
+                >
+                  {section.subsections.map((subsection) => (
+                    <div
+                      key={subsection.id}
+                      className={`nav-subsection ${
+                        selectedSection === subsection.id ? "active" : ""
+                      }`}
                       onClick={(e) => {
-                        
                         e.stopPropagation();
                         handleSectionSelect(subsection.id);
                       }}
@@ -1092,9 +1339,11 @@ function App() {
             ))}
 
             {/* Conclusion */}
-            <div 
-              className={`nav-special-section ${selectedSection === 'conclusion' ? 'active' : ''}`}
-              onClick={() => handleSectionSelect('conclusion')}
+            <div
+              className={`nav-special-section ${
+                selectedSection === "conclusion" ? "active" : ""
+              }`}
+              onClick={() => handleSectionSelect("conclusion")}
             >
               {content.conclusion.title}
             </div>
@@ -1102,12 +1351,18 @@ function App() {
         </aside>
 
         {/* Right Content Area */}
-        <main className={`content ${isGlobalSearching && window.innerWidth <= 768 ? 'mobile-search-active' : ''}`} style={{height: '100%',width: '100%',overflow: 'auto'}}>
+        <main
+          className={`content ${
+            isGlobalSearching && window.innerWidth <= 768
+              ? "mobile-search-active"
+              : ""
+          }`}
+          style={{ height: "100%", width: "100%", overflow: "auto" }}
+        >
           {/* Show search results as cards on mobile when searching */}
-          {isGlobalSearching && window.innerWidth <= 768 && globalSearchQuery ? 
-            renderSearchResultsAsCards() : 
-            renderContent()
-          }
+          {isGlobalSearching && window.innerWidth <= 768 && globalSearchQuery
+            ? renderSearchResultsAsCards()
+            : renderContent()}
         </main>
       </div>
 
@@ -1124,7 +1379,7 @@ function App() {
           padding: 20px;
           position: relative;
           background: #fff;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           display: grid;
           grid-template-columns: 0.6fr 2.8fr 0.6fr;
           align-items: flex-start;
@@ -1259,7 +1514,7 @@ function App() {
           background: white;
           border: 1px solid #ddd;
           border-radius: 10px;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
           z-index: 1000;
           max-height: 400px;
           overflow-y: auto;
@@ -1327,7 +1582,7 @@ function App() {
           left: 0;
           right: 0;
           z-index: 1001;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         /* Section Search Styles */
@@ -1492,11 +1747,11 @@ function App() {
 
         .search-result-card:hover {
           transform: translateY(-2px);
-          box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .search-card-section {
-          background: rgba(0,123,255,0.9);
+          background: rgba(0, 123, 255, 0.9);
           color: white;
           padding: 5px 10px;
           border-radius: 15px;
@@ -1514,22 +1769,26 @@ function App() {
         }
 
         .search-highlighted-text {
-          background: linear-gradient(120deg, rgba(40, 167, 69, 0.3) 0%, rgba(40, 167, 69, 0.1) 100%);
+          background: linear-gradient(
+            120deg,
+            rgba(40, 167, 69, 0.3) 0%,
+            rgba(40, 167, 69, 0.1) 100%
+          );
           padding: 5px;
           border-radius: 5px;
           border-left: 4px solid #28a745;
         }
 
         @keyframes searchHighlight {
-          0% { 
+          0% {
             border-color: #28a745;
             box-shadow: 0 0 20px rgba(40, 167, 69, 0.8);
           }
-          50% { 
+          50% {
             border-color: #34ce57;
             box-shadow: 0 0 25px rgba(40, 167, 69, 0.6);
           }
-          100% { 
+          100% {
             border-color: #28a745;
             box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
           }
@@ -1559,7 +1818,7 @@ function App() {
             align-items: stretch;
             min-height: auto;
             background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
           }
 
           .header-titles {
@@ -1651,7 +1910,7 @@ function App() {
             padding: 10px 20px;
             text-align: center;
             border-top: 1px solid #ddd;
-            box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
           }
 
           .footer-content p {
@@ -1774,7 +2033,7 @@ function App() {
             margin-bottom: 15px;
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             border: 1px solid #eee;
           }
 
@@ -1834,17 +2093,73 @@ function App() {
         /* Card Navigation Styles */
         .card-navigation {
           position: fixed;
-          bottom: 80px; /* Position above footer */
+          bottom: 80px;
           left: 0;
           right: 0;
-          background: rgba(255, 255, 255, 0.9);
-          padding: 0px 0px;
+          background: rgba(255, 255, 255, 0.95);
+          padding: 15px 0;
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 8px;
+          gap: 10px;
           z-index: 999;
-          box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+          box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-dots-container {
+          width: 100%;
+          overflow: hidden;
+          padding: 0 15px;
+          position: relative;
+          margin: 0 auto;
+          max-width: 500px; /* Limit maximum width */
+        }
+
+        .card-dots {
+          display: flex;
+          gap: 12px;
+          justify-content: center;
+          padding: 5px 20px; /* Add horizontal padding */
+          overflow-x: auto;
+          scroll-behavior: smooth;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none; /* Firefox */
+          -ms-overflow-style: none; /* IE and Edge */
+          white-space: nowrap;
+          width: fit-content;
+          min-width: 100%; /* Ensure dots take full width */
+          margin: 0 auto;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .card-dots::-webkit-scrollbar {
+          display: none;
+        }
+
+        .card-dot {
+          width: 12px; /* Slightly larger dots */
+          height: 12px;
+          border-radius: 50%;
+          background: #ccc;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          flex-shrink: 0;
+          opacity: 0.6;
+        }
+
+        .card-dot.active {
+          background: #007bff;
+          transform: scale(1.4);
+          opacity: 1;
+          box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+        }
+
+        .card-counter {
+          font-size: 14px;
+          color: #666;
+          text-align: center;
+          padding: 0 0 5px;
+          font-weight: 500;
         }
 
         /* Card Loading and Transition Styles */
@@ -1872,8 +2187,12 @@ function App() {
         }
 
         @keyframes cardSpinnerRotate {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
         }
 
         /* Card Transition Animation */
