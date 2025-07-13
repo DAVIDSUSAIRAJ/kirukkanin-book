@@ -12,6 +12,8 @@ import {
 } from "./config/languages";
 import LanguageSelector from "./components/LanguageSelector";
 import { images } from "./content/images";
+import home_cover_image from "./images/home_cover_image.png";
+import end_cover_image from "./images/end_cover_image.png";
 
 const contentMap = {
   ta: tamilContent,
@@ -503,7 +505,7 @@ function App() {
     const languageCode = languages[currentLanguage].code;
     const currentContent = contentMap[languageCode];
     setContent(currentContent);
-    
+
     // Reset card index to 0 when clearing search
     if (isMobile) {
       setCurrentCardIndex(0);
@@ -551,7 +553,7 @@ function App() {
         const container = dotsContainerRef.current;
         const hasScroll = container.scrollWidth > container.clientWidth;
         setJustify(hasScroll ? "flex-start" : "center");
-        
+
         // Scroll to active dot
         const activeDot = container.children[result.paragraphIndex];
         if (activeDot) {
@@ -913,8 +915,46 @@ function App() {
 
     if (!selectedSection) {
       return (
-        <div className="welcome-message">
-          <h2>
+        <div
+          className="welcome-message1"
+          style={{
+            // backgroundColor: "red",
+            display: "flex",
+            justifyContent: "start",
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <div
+            style={{ width: "50%", height: "100%", }}
+          >
+            <img
+              src={home_cover_image}
+              alt="Welcome Cover"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover", // or "contain"
+                display: "block",
+              }}
+            />
+          </div>
+          <div
+            style={{ width: "50%", height: "100%" }}
+          >
+            <img
+              src={end_cover_image}
+              alt="Welcome Cover"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover", // or "contain"
+                display: "block",
+              }}
+            />
+          </div>
+
+          {/* <h2>
             {languages[currentLanguage].name === "தமிழ்"
               ? "வரவேற்பு"
               : "Welcome"}
@@ -923,7 +963,7 @@ function App() {
             {languages[currentLanguage].name === "தமிழ்"
               ? "தயவுசெய்து ஒரு பிரிவைத் தேர்ந்தெடுக்கவும்"
               : "Please select a section"}
-          </p>
+          </p> */}
         </div>
       );
     }
@@ -1009,7 +1049,9 @@ function App() {
     // For mobile: show single paragraph at currentCardIndex
     // For desktop: show all paragraphs, but scroll to selected one if from search
     const displayParagraphs = isMobile
-      ? paragraphs[currentCardIndex] ? [paragraphs[currentCardIndex]] : []
+      ? paragraphs[currentCardIndex]
+        ? [paragraphs[currentCardIndex]]
+        : []
       : paragraphs;
 
     return (
@@ -1166,7 +1208,7 @@ function App() {
                     {paragraphs.map((_, index) => (
                       <div
                         key={index}
-                        style={{marginRight: "20px"}}
+                        style={{ marginRight: "20px" }}
                         className={`card-dot ${
                           index === currentCardIndex ? "active" : ""
                         }`}
@@ -1307,15 +1349,17 @@ function App() {
               </div>
             )}
 
-            {isGlobalSearching && searchResults.length === 0 && globalSearchQuery && (
-              <div
-                className={`global-no-results ${
-                  window.innerWidth <= 768 ? "mobile-no-results" : ""
-                }`}
-              >
-                {getNoResultsText(languages[currentLanguage].code)}
-              </div>
-            )}
+            {isGlobalSearching &&
+              searchResults.length === 0 &&
+              globalSearchQuery && (
+                <div
+                  className={`global-no-results ${
+                    window.innerWidth <= 768 ? "mobile-no-results" : ""
+                  }`}
+                >
+                  {getNoResultsText(languages[currentLanguage].code)}
+                </div>
+              )}
           </div>
 
           {/* Language Selector Space - contains the language selector */}
