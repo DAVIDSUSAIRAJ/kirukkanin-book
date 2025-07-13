@@ -516,13 +516,16 @@ function App() {
     const currentContent = contentMap[languageCode];
     setContent(currentContent);
 
+    // Clear both search inputs and results
+    setGlobalSearchQuery("");
+    setSectionSearchQuery("");
+    setSearchResults([]);
+    setIsGlobalSearching(false);
+
     // Then update other states
     setSelectedSection(result.sectionId);
     setIsSidebarVisible(false);
     setCurrentCardIndex(result.paragraphIndex);
-    setGlobalSearchQuery("");
-    setSearchResults([]);
-    setIsGlobalSearching(false);
     setSearchSelectedParagraph(result.content);
     setIsFromSearch(true);
 
@@ -538,6 +541,34 @@ function App() {
         }));
       }
     }
+
+    // Reset justify state to ensure dots are properly aligned
+    setJustify("center");
+
+    // Force a re-render of the dots container after a short delay
+    setTimeout(() => {
+      if (dotsContainerRef.current) {
+        const container = dotsContainerRef.current;
+        const hasScroll = container.scrollWidth > container.clientWidth;
+        setJustify(hasScroll ? "flex-start" : "center");
+        
+        // Scroll to active dot
+        const activeDot = container.children[result.paragraphIndex];
+        if (activeDot) {
+          const containerWidth = container.offsetWidth;
+          const dotWidth = activeDot.offsetWidth;
+          const dotLeft = activeDot.offsetLeft;
+          const scrollLeft = container.scrollLeft;
+          const padding = containerWidth * 0.1;
+
+          const newScrollLeft = dotLeft - containerWidth / 2 + dotWidth / 2;
+          container.scrollTo({
+            left: Math.max(0, newScrollLeft),
+            behavior: "smooth",
+          });
+        }
+      }
+    }, 100);
   };
 
   // Function to render search results as cards
@@ -2167,6 +2198,9 @@ function App() {
           transition: all 0.3s ease;
           flex-shrink: 0;
           opacity: 0.6;
+          margin-right: 20px;
+          position: relative;
+          z-index: 1;
         }
 
         .card-dot.active {
