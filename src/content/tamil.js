@@ -3644,16 +3644,6 @@ image: 'journey_in_darkness_light_search'
                 }
               ]
             },
-                 {
-              id: '10.3',
-              title: "auditor.செந்தில்",
-              paragraphs: [
-                {
-                  content: `auditor.செந்தில்`,
-                  image: "thanksgiving_speech"
-                }
-              ]
-            },
             {
               id: '10.5',
               title: "கார்த்திக் குரு",
@@ -3664,18 +3654,29 @@ image: 'journey_in_darkness_light_search'
                 }
               ]
             },
-            {
+
+                 {
               id: '10.6',
-              title: "கஜேந்திரன் friend",
+              title: "auditor.செந்தில்",
               paragraphs: [
                 {
-                  content: `கஜேந்திரன் friend`,
+                  content: `auditor.செந்தில்`,
                   image: "thanksgiving_speech"
                 }
               ]
             },
             {
               id: '10.7',
+              title: "dhanasekar AI Engineer",
+              paragraphs: [
+                {
+                  content: `dhanasekar AI Engineer`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
+            {
+              id: '10.8',
               title: "சுப்ரமணியன் AI Engineer",
               paragraphs: [
                 {
@@ -3684,8 +3685,20 @@ image: 'journey_in_darkness_light_search'
                 }
               ]
             },
+       
             {
-              id: '10.8',
+              id: '10.9',
+              title: "கஜேந்திரன் friend",
+              paragraphs: [
+                {
+                  content: `கஜேந்திரன் friend`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
+     
+            {
+              id: '10.10',
               title: "இருதய ஜோவிட் மேரி Teacher",
               paragraphs: [
                 {
@@ -3695,7 +3708,7 @@ image: 'journey_in_darkness_light_search'
               ]
             },
             {
-              id: '10.9',
+              id: '10.11',
               title: "அனி",
               paragraphs: [
                 {
@@ -3714,7 +3727,27 @@ image: 'journey_in_darkness_light_search'
                   image: "thanks_ani_2"
                 }
               ]
-            }
+            },
+            {
+              id: '10.12',
+              title: "christopher",
+              paragraphs: [
+                {
+                  content: `christopher`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
+            {
+              id: '10.13',
+              title: "Robert",
+              paragraphs: [
+                {
+                  content: `Robert`,
+                  image: "thanksgiving_speech"
+                }
+              ]
+            },
           ]
         }
   ],
