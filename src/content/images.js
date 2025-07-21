@@ -452,6 +452,8 @@ import realize_god_nature from '../images/realize_god_nature.jpg';
 import kirukkan_may_perish from '../images/kirukkan_may_perish.jpg';
 import words_behind_pain from '../images/words_behind_pain.jpg';
 import light_for_truth_seekers from '../images/light_for_truth_seekers.jpg';
+import thanks_ani_1 from '../images/thanks_ani_1.jpg'
+import thanks_ani_2 from '../images/thanks_ani_2.jpg'
 
 export const images = {
   munnurai_1,
@@ -907,5 +909,7 @@ export const images = {
   realize_god_nature,
   kirukkan_may_perish,
   words_behind_pain,
-  light_for_truth_seekers
+  light_for_truth_seekers,
+  thanks_ani_1,
+  thanks_ani_2,
 };
