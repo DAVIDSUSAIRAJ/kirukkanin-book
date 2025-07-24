@@ -1918,6 +1918,10 @@ they cannot implement them.`,
               image: "physical_strength_dreams"
             },
             {
+              "content": "What becomes the greatest obstacle to dreams...<br>is love and lust.",
+              "image": "lust_desire_love",
+            },
+            {
               content: `When there is excessive seeking,<br>
 there will be equal amounts of adversity<br>
 and hardship.<br>

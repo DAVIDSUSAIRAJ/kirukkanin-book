@@ -260,6 +260,7 @@ import self_forgetting_meditation from '../images/self_forgetting_meditation.jpg
 import dreams_without_past from '../images/dreams_without_past.jpg';
 import dreams_paths_money from '../images/dreams_paths_money.jpg';
 import physical_strength_dreams from '../images/physical_strength_dreams.jpg';
+import lust_desire_love from '../images/lust_desire_love.jpg';
 import dreams_yearning_madman from '../images/dreams_yearning_madman.jpg';
 import imagination_ownership from '../images/imagination_ownership.jpg';
 import imagination_no_failure from '../images/imagination_no_failure.jpg';
@@ -718,6 +719,7 @@ export const images = {
   dreams_without_past,
   dreams_paths_money,
   physical_strength_dreams,
+  lust_desire_love,
   dreams_yearning_madman,
   imagination_ownership,
   imagination_no_failure,
