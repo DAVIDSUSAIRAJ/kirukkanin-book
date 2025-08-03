@@ -3075,7 +3075,11 @@ people keep decreasing.`,
             {
               "content": "Right and wrong...<br>Do not lie in the act itself,<br>They depend on culture and circumstances.",
               "image": "right_wrong_circumstances"
-            },            
+            },
+            {
+              "content": "In the journey of life, there's no religion,<br>But humanity exists.<br>When the place changes, the mind changes.<br>And when the mind changes, we realize humanity.",
+              "image": "human_in_life_journey"
+            },                        
             {
               content: `Whatever is destiny...<br>
 that is the path.`,

@@ -3192,6 +3192,12 @@ Block செய்துவிட்டுப் போனால்...<br>
               image: "right_wrong_circumstances"
             },
             {
+              content: `வாழ்வு பயணத்தில் மதமில்லை,<br>
+ஆனால்,மனிதம் உண்டு.<br> இது இடம் மாறும்போது மனம் மாறும்.<br>
+மனம் மாறும்போது மனிதத்தை உணருவோம்.`,
+              image: "human_in_life_journey"
+            },
+            {
               content: `விதி எதுவோ...<br>
 வழி அதுவே.`,
               image: "destiny_path"
