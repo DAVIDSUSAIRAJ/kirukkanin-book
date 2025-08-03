@@ -3073,6 +3073,10 @@ people keep decreasing.`,
               image: "experience_isolation"
             },
             {
+              "content": "Right and wrong...<br>Do not lie in the act itself,<br>They depend on culture and circumstances.",
+              "image": "right_wrong_circumstances"
+            },            
+            {
               content: `Whatever is destiny...<br>
 that is the path.`,
               image: "destiny_path"

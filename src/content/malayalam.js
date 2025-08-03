@@ -3083,6 +3083,10 @@ Block ചെയ്ത് പോയാൽ...<br>
               image: "experience_isolation"
             },
             {
+              "content": "ശരിയും തെറ്റും...<br>ചെയ്യുന്ന പ്രവർത്തിയിൽ മാത്രമല്ല,<br>അത് സാംസ്കാരികതയെയും സാഹചര്യങ്ങളെയും ആശ്രയിച്ചിരിക്കുന്നു.",
+              "image": "right_wrong_circumstances"
+            },            
+            {
               content: `വിധി എന്തായാലും...<br>
 വഴി അതുതന്നെ.`,
               image: "destiny_path"

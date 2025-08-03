@@ -3074,6 +3074,10 @@ Block कर दे और चला जाए...<br>
               image: "experience_isolation"
             },
             {
+              "content": "सही और गलत...<br>किसी कार्य में नहीं छिपे होते,<br>वे संस्कृति और परिस्थितियों पर निर्भर करते हैं।",
+              "image": "right_wrong_circumstances"
+            },            
+            {
               content: `जो भी किस्मत है...<br>
 वही रास्ता है।`,
               image: "destiny_path"

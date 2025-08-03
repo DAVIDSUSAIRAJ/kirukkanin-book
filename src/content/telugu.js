@@ -3075,6 +3075,10 @@ Block చేసి వెళ్లిపోతే...<br>
               image: "experience_isolation"
             },
             {
+              "content": "సరియు, తప్పు...<br>చేసే కార్యంలో ఉండవు,<br>అవి సాంస్కృతిక దృక్పథం మరియు పరిస్థితులపై ఆధారపడతాయి.",
+              "image": "right_wrong_circumstances"
+            },            
+            {
               content: `విధి ఏదైనా...<br>
 దారి అదే.`,
               image: "destiny_path"

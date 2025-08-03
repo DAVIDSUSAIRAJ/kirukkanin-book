@@ -409,6 +409,7 @@ import pure_love_divine from '../images/pure_love_divine.jpg';
 import excessive_love_naturally_contains_some_madness from '../images/excessive_love_naturally_contains_some_madness.jpg';
 import astray_middle_path from '../images/astray_middle_path.jpg';
 import experience_isolation from '../images/experience_isolation.jpg';
+import right_wrong_circumstances from '../images/right_wrong_circumstances.jpg';
 import destiny_path from '../images/destiny_path.jpg';
 import daily_journey_towards_death_not_life from '../images/daily_journey_towards_death_not_life.jpg';
 import eliminate_unnecessary_desires_love_death from '../images/eliminate_unnecessary_desires_love_death.jpg';
@@ -870,6 +871,7 @@ export const images = {
   excessive_love_naturally_contains_some_madness,
   astray_middle_path,
   experience_isolation,
+  right_wrong_circumstances,
   destiny_path,
   daily_journey_towards_death_not_life,
   eliminate_unnecessary_desires_love_death,

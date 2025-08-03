@@ -3187,6 +3187,11 @@ Block செய்துவிட்டுப் போனால்...<br>
               image: "experience_isolation"
             },
             {
+              content: `சரியும்,தவறும்...<br>செய்யும் செயலில் இல்லை,<br>
+              கலாட்ச்சாரத்தை பொருத்தும்,<br>சூழ்நிலைகளை பொருத்தே அமைகிறது.`,
+              image: "right_wrong_circumstances"
+            },
+            {
               content: `விதி எதுவோ...<br>
 வழி அதுவே.`,
               image: "destiny_path"
