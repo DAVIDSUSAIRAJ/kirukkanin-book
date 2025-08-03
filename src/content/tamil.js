@@ -3650,7 +3650,10 @@ image: 'journey_in_darkness_light_search'
               title: "குமரன் மகாகுரு",
               paragraphs: [
                 {
-                  content: `குமரன் மகாகுரு`,
+                  content: `விதி எதுவோ...<br>
+                    வழி அதுவே...<br>
+                   என்று கற்றுக் கொடுத்த ஆசனுக்கு,<br>
+                   விதி முடியும்போது என் நன்றியை கூறுகிறேன்`,
                   image: "thanksgiving_speech"
                 }
               ]
@@ -3701,7 +3704,18 @@ image: 'journey_in_darkness_light_search'
               title: "dhanasekar AI Engineer",
               paragraphs: [
                 {
-                  content: `dhanasekar AI Engineer`,
+                  content: `புதிய பயணத்தில் அனுபவம் இல்லாததால்...<br>
+                  ஆரம்பத்தில் எனக்காக அசிங்கங்களை சுமந்து கொண்டும்,<br>
+                   கால அவகாசம் கொடுத்தும்,<br>
+                    புதிதாக சிந்திக்க வாய்ப்பு அளித்தும்,<br>
+                     வழிநடத்திய ஆசான்.`,
+                  image: "thanksgiving_speech"
+                },
+                {
+                  content: `தூரம் சென்றிருந்தாலும்,<br>
+                   உங்களுடைய உதவிகள் உடனிருக்கும்.<br>
+                  உதவிகள் உடனிருக்கும் வரை,<br>
+                   நன்றியுணர்வும் உடனிருக்கும்`,
                   image: "thanksgiving_speech"
                 }
               ]
