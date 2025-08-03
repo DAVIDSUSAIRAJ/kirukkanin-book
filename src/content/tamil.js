@@ -3711,7 +3711,18 @@ image: 'journey_in_darkness_light_search'
               title: "சுப்ரமணியன் AI Engineer",
               paragraphs: [
                 {
-                  content: `சுப்ரமணியன் AI Engineer`,
+                  content: `கற்பனையை கதையாக்கி,<br> 
+                  கதையை வரிகளாக்கி,<br>
+                  வரிகளை எழுத்துக்களாக்கி,<br>
+                  உள்ளீடு செய்து,<br> 
+                  வெளியீடு பெறுவதுதான் programming;<br>
+                   என்று கற்றுக் கொடுத்த ஆசான்.`,
+                  image: "thanksgiving_speech"
+                },
+                {
+                  content: `சிந்தனைகள் பேசுவதில்லை, <br>
+                  செயல்படவைக்கும்.<br>
+                  செயல்பாடு மட்டுமே செழுமைப்படுத்தும்.`,
                   image: "thanksgiving_speech"
                 }
               ]
