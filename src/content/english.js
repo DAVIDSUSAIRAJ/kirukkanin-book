@@ -1867,7 +1867,12 @@ one who is dying naturally should not be stopped.`,
       content: `Among people who are watching for entertainment,<br>
 expecting humanity is a great mistake.`,
       image: "spectator_humanity"
+    },
+    {
+      "content": "Don't seek life,<br>It's an impossible task.<br>If possible, just live the present moment.",
+      "image": "calm_existence"
     }
+    
   ]
 }
 ,

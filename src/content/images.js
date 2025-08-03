@@ -252,6 +252,7 @@ import born_for_peace from '../images/born_for_peace.jpg';
 import pain_guidance from '../images/pain_guidance.jpg';
 import six_illusions from '../images/six_illusions.jpg';
 import spectator_humanity from '../images/spectator_humanity.jpg';
+import calm_existence from '../images/calm_existence.jpg';
 import death_wisdom from '../images/death_wisdom.jpg';
 import experiential_knowledge from '../images/experiential_knowledge.jpg';
 import action_over_money from '../images/action_over_money.jpg';
@@ -712,6 +713,7 @@ export const images = {
   pain_guidance,
   six_illusions,
   spectator_humanity,
+  calm_existence,
   death_wisdom,
   experiential_knowledge,
   action_over_money,
