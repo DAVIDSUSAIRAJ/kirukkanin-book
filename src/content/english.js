@@ -431,6 +431,10 @@ content:`<strong>* Not hidden...</strong><br>
       "image": "trapped_glance"
     },
     {
+      "content": "Past memories......<br>In the present, they are not just memories,<br>They remain as pain..<br>To avoid more pain in the future,<br>I follow peace in the present.",
+      "image": "silent_reminiscence"
+    },    
+    {
       "content": "Till my last breath...<br>I’ll try to stay with you.<br>With undying memories...<br>You and I...",
       "image": "eternal_memories"
     },

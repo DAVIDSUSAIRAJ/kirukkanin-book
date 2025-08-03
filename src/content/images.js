@@ -72,6 +72,7 @@ import distant_together from '../images/distant_together.jpg';
 import sleepless_heart from '../images/sleepless_heart.jpg';
 import trembling_heart from '../images/trembling_heart.jpg';
 import trapped_glance from '../images/trapped_glance.jpg';
+import silent_reminiscence from '../images/silent_reminiscence.jpg';  
 import eternal_memories from '../images/eternal_memories.jpg';
 import shadow_love from '../images/shadow_love.jpg';
 import eternal_hearts from '../images/eternal_hearts.jpg';
@@ -531,6 +532,7 @@ export const images = {
   sleepless_heart,
   trembling_heart,
   trapped_glance,
+  silent_reminiscence,
   eternal_memories,
   shadow_love,
   eternal_hearts,
