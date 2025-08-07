@@ -16,7 +16,7 @@ const ChatbotIcon = () => {
         {isChatOpen && (
           <div className="chatbot-iframe-container">
             <div className="chatbot-header">
-              <span className="chatbot-title">Chat with us</span>
+              <span className="chatbot-title">Chat with David Chatbot</span>
               <button className="close-button" onClick={toggleChat}>×</button>
             </div>
             <iframe
