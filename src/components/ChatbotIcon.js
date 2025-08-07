@@ -49,8 +49,8 @@ const ChatbotIcon = () => {
       <style>{`
         .chatbot-container {
           position: fixed;
-          bottom: 20px;
-          right: 20px;
+          bottom: 5px;
+          right: 5px;
           z-index: 1000;
         }
 
