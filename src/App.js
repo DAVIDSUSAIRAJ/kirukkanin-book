@@ -14,6 +14,7 @@ import LanguageSelector from "./components/LanguageSelector";
 import { images } from "./content/images";
 import home_cover_image from "./images/home_cover_image.png";
 import end_cover_image from "./images/end_cover_image.png";
+import ChatbotIcon from "./components/ChatbotIcon";
 
 const contentMap = {
   ta: tamilContent,
@@ -1470,6 +1471,7 @@ function App() {
           <p>{getAuthorText(languages[currentLanguage].code)}</p>
         </div>
       </footer>
+      <ChatbotIcon />
 
       <style>{`
         .header {
