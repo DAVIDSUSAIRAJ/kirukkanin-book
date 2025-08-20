@@ -457,8 +457,19 @@ import realize_god_nature from '../images/realize_god_nature.jpg';
 import kirukkan_may_perish from '../images/kirukkan_may_perish.jpg';
 import words_behind_pain from '../images/words_behind_pain.jpg';
 import light_for_truth_seekers from '../images/light_for_truth_seekers.jpg';
+import tulasi_divine_nature_experience from '../images/tulasi_divine_nature_experience.jpg';
+import guru_destiny_path_teaching from '../images/guru_destiny_path_teaching.jpg';
+import guru_wisdom_over_ego from '../images/guru_wisdom_over_ego.jpg';
+import guru_rational_thinking_lesson from '../images/guru_rational_thinking_lesson.jpg';
+import guru_divine_fear_life_lesson from '../images/guru_divine_fear_life_lesson.jpg';
+import guru_selfless_service_teaching from '../images/guru_selfless_service_teaching.jpg';
+import guru_experience_wisdom_eternal from '../images/guru_experience_wisdom_eternal.jpg';
+import guru_help_needy_lesson from '../images/guru_help_needy_lesson.jpg';
+import guru_preserve_goodness_teaching from '../images/guru_preserve_goodness_teaching.jpg';
+import guru_patient_guidance_journey from '../images/guru_patient_guidance_journey.jpg';
 import thanks_ani_1 from '../images/thanks_ani_1.jpg'
 import thanks_ani_2 from '../images/thanks_ani_2.jpg'
+
 
 export const images = {
   munnurai_1,
@@ -920,6 +931,16 @@ export const images = {
   kirukkan_may_perish,
   words_behind_pain,
   light_for_truth_seekers,
+  tulasi_divine_nature_experience,
+  guru_destiny_path_teaching,
+  guru_wisdom_over_ego,
+  guru_rational_thinking_lesson,
+  guru_divine_fear_life_lesson,
+  guru_selfless_service_teaching,
+  guru_experience_wisdom_eternal,
+  guru_help_needy_lesson,
+  guru_preserve_goodness_teaching,
+  guru_patient_guidance_journey,
   thanks_ani_1,
   thanks_ani_2,
 };

@@ -3640,8 +3640,9 @@ image: 'journey_in_darkness_light_search'
               title: "இறைவனும், இயற்கையும்,துளசியும்",
               paragraphs: [
                 {
-                  content: `இறைவனும், இயற்கையும்,துளசியும்`,
-                  image: "thanksgiving_speech"
+                  content: `மனதுக்கு இதமான துளசியின் வாசம் நுகர்ந்து,<br>
+                   இயற்கையின் வழியாக இறைவனை உணர்கிறேன்.`,
+                  image: "tulasi_divine_nature_experience"
                 }
               ]
             },
@@ -3652,9 +3653,8 @@ image: 'journey_in_darkness_light_search'
                 {
                   content: `விதி எதுவோ...<br>
                     வழி அதுவே...<br>
-                   என்று கற்றுக் கொடுத்த ஆசனுக்கு,<br>
-                   விதி முடியும்போது என் நன்றியை கூறுகிறேன்`,
-                  image: "thanksgiving_speech"
+                   என்று கற்றுக் கொடுத்த ஆசான்.`,
+                  image: "guru_destiny_path_teaching"
                 }
               ]
             },
@@ -3663,45 +3663,74 @@ image: 'journey_in_darkness_light_search'
               title: "Dr.செந்தில் முருகன்",
               paragraphs: [
                 {
-                  content: `Dr.செந்தில் முருகன்`,
-                  image: "thanksgiving_speech"
+                  content: `ஆசானிடம் சிறைப்படாமல் இருந்திருந்தால் <br>
+                  ஆனவத்தால்  சிறைபட்டுருப்பேன்...`,
+                  image: "guru_wisdom_over_ego"
+                },
+                {
+                  content: `உணர்வுபூர்வமாக சிந்திக்காமல் <br>
+                  எப்போதும் அறிவுபூர்வமாகவே சிந்திக்க பழகு....<br>
+                   என்று கற்றுக்கொடுத்த ஆசான்.`,
+                  image: "guru_rational_thinking_lesson"
                 }
               ]
             },
             {
               id: '10.4',
-              title: "வான்மதி Teacher",
+              title: "வான்மதி",
               paragraphs: [
                 {
-                  content: `வான்மதி Teacher`,
-                  image: "thanksgiving_speech"
+                  content: `நல்வாழ்வு வாழ, <br>
+                   இறைபயம்  வேண்டும் என்று கற்றுக்கொடுத்த ஆசான்.`,
+                  image: "guru_divine_fear_life_lesson"
                 }
               ]
             },
             {
               id: '10.5',
-              title: "கார்த்திக் குரு",
+              title: "கார்த்திக்",
               paragraphs: [
                 {
-                  content: `கார்த்திக் குரு`,
-                  image: "thanksgiving_speech"
+                  content: `தான் வாடியிருந்தாலும் <br>
+                  தன்னை நாடியவருக்கு தன்னால் முடிந்ததை செய்து கொடுக்கவேண்டும்.<br>
+                  என்று கற்றுக்கொடுத்த ஆசான்.`,
+                  image: "guru_selfless_service_teaching"
+                }
+              ]
+            },
+            {
+              id: '10.6',
+              title: "ஏகலைவன்",
+              paragraphs: [
+                {
+                  content: `உழைப்பும் முயற்சியும் மறுக்கப்பட்டாலும் <br>
+                அனுபவங்களால் உண்டான அறிவை எவரும் மறுக்க முடியாது.<br>
+                என்று கற்றுக்கொடுத்த ஆசான்.`,
+                  image: "guru_experience_wisdom_eternal"
                 }
               ]
             },
 
                  {
-              id: '10.6',
+              id: '10.7',
               title: "auditor.செந்தில்",
               paragraphs: [
                 {
-                  content: `auditor.செந்தில்`,
-                  image: "thanksgiving_speech"
+                  content: `உண்மையான இல்லாமையும்,<br>  வயிற்றுப்பசியும் எங்கே இருக்கிறதோ..<br>
+                   அங்கே தேடிப்போய்  உதவி செய்ய வேண்டும் என்று கற்றுக் கொடுத்த ஆசான்.`,
+                  image: "guru_help_needy_lesson"
+                },
+                {
+                  content: `யாரோ ஒருவர் ஏமாற்றியதுற்க்காக,<br>
+                   நம் நல்லகுணங்களை ஒருபோதும் மாற்றக் கூடாது,<br>
+                   என்று கற்றுக் கொடுத்த ஆசான்.`,
+                  image: "guru_preserve_goodness_teaching"
                 }
               ]
             },
             {
-              id: '10.7',
-              title: "dhanasekar AI Engineer",
+              id: '10.8',
+              title: "dhanasekar",
               paragraphs: [
                 {
                   content: `புதிய பயணத்தில் அனுபவம் இல்லாததால்...<br>
@@ -3709,19 +3738,19 @@ image: 'journey_in_darkness_light_search'
                    கால அவகாசம் கொடுத்து,<br>
                     புதிதாக சிந்திக்க வாய்ப்பு அளித்தும்,<br>
                      வழிநடத்திய ஆசான்.`,
-                  image: "thanksgiving_speech"
+                  image: "guru_patient_guidance_journey"
                 },
                 {
                   content: `தூரம் சென்றிருந்தாலும்,<br>
                    உங்களுடைய உதவிகள் உடனிருக்கும்.<br>
                   உதவிகள் உடனிருக்கும் வரை,<br>
                    நன்றியுணர்வும் உடனிருக்கும்`,
-                  image: "thanksgiving_speech"
+                  image: "gratitude_eternal_presence"
                 }
               ]
             },
             {
-              id: '10.8',
+              id: '10.9',
               title: "சுப்ரமணியன் AI Engineer",
               paragraphs: [
                 {
@@ -3731,40 +3760,43 @@ image: 'journey_in_darkness_light_search'
                   உள்ளீடு செய்து,<br> 
                   வெளியீடு பெறுவதுதான் programming;<br>
                    என்று கற்றுக் கொடுத்த ஆசான்.`,
-                  image: "thanksgiving_speech"
+                  image: "guru_programming_life_lesson"
                 },
                 {
                   content: `சிந்தனைகள் பேசுவதில்லை, <br>
                   செயல்படவைக்கும்.<br>
                   செயல்பாடு மட்டுமே செழுமைப்படுத்தும்.`,
-                  image: "thanksgiving_speech"
+                  image: "action_over_thoughts_wisdom"
                 }
               ]
             },
        
             {
-              id: '10.9',
-              title: "கஜேந்திரன் friend",
+              id: '10.10',
+              title: "கஜேந்திரன்",
               paragraphs: [
                 {
-                  content: `கஜேந்திரன் friend`,
-                  image: "thanksgiving_speech"
+                  content: `கனவுக்கு கை கொடுத்தவன்,<br>
+                  மௌனமான நட்புக்கு இலக்கணம்...`,
+                  image: "silent_friendship_dream_support"
                 }
               ]
             },
      
             {
-              id: '10.10',
-              title: "இருதய ஜோவிட் மேரி Teacher",
+              id: '10.11',
+              title: "இருதய ஜோவிட் மேரி",
               paragraphs: [
                 {
-                  content: `இருதய ஜோவிட் மேரி Teacher`,
-                  image: "thanksgiving_speech"
+                  content: `வீண் பழியையும்<br>,
+                  வீண் தண்டனையையும் <br>
+                  எப்படி சுமப்பது! என்று கற்றுக்கொடுத்த ஆசான்.`,
+                  image: "guru_bearing_false_blame_lesson"
                 }
               ]
             },
             {
-              id: '10.11',
+              id: '10.12',
               title: "அனித்தா M.com.,D.Coop.,Accountant",
               paragraphs: [
                 {
@@ -3785,22 +3817,36 @@ image: 'journey_in_darkness_light_search'
               ]
             },
             {
-              id: '10.12',
+              id: '10.13',
               title: "christopher",
               paragraphs: [
                 {
-                  content: `christopher`,
-                  image: "thanksgiving_speech"
+                  content: `உடல் உழைப்பால் செய்த உதவிக்கு,<br>
+                   என்ன செய்து ஈடு கொடுப்பது?`,
+                  image: "gratitude_physical_help"
+                },
+                {
+                  content: `காலத்தால் செய்த உதவிக்கு...<br>
+                   காலம் முழுவதும் கடன்பட்டிருக்கவேண்டும் என்பது காலத்தின் நியதி.`,
+                  image: "eternal_gratitude_time_help"
                 }
               ]
             },
             {
-              id: '10.13',
+              id: '10.14',
               title: "Robert",
               paragraphs: [
                 {
-                  content: `Robert`,
-                  image: "thanksgiving_speech"
+                  content: `குடும்ப சுமைகளை தாங்கிக்கொண்டு <br>
+                  என்னை சுதந்திரமாக பறக்க விட்டவர்.`,
+                  image: "family_support_freedom"
+                },
+                {
+                  content: `சுதந்திரமாக பறக்கவிட்டதோடு மட்டுமல்லாமல் <br>
+                   இக்கட்டான காலகட்டத்தில்,<br>
+                   இக்கட்டான சூழ்நிலையில்  இருந்தும்,<br>
+                   பணம் கொடுத்து உதவியவர்.`,
+                  image: "financial_help_difficult_times"
                 }
               ]
             },
