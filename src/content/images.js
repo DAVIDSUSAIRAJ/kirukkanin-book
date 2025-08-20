@@ -467,8 +467,17 @@ import guru_experience_wisdom_eternal from '../images/guru_experience_wisdom_ete
 import guru_help_needy_lesson from '../images/guru_help_needy_lesson.jpg';
 import guru_preserve_goodness_teaching from '../images/guru_preserve_goodness_teaching.jpg';
 import guru_patient_guidance_journey from '../images/guru_patient_guidance_journey.jpg';
+import gratitude_eternal_presence from '../images/gratitude_eternal_presence.jpg';
+import guru_programming_life_lesson from '../images/guru_programming_life_lesson.jpg';
+import action_over_thoughts_wisdom from '../images/action_over_thoughts_wisdom.jpg';
+import silent_friendship_dream_support from '../images/silent_friendship_dream_support.jpg';
+import guru_bearing_false_blame_lesson from '../images/guru_bearing_false_blame_lesson.jpg';
 import thanks_ani_1 from '../images/thanks_ani_1.jpg'
 import thanks_ani_2 from '../images/thanks_ani_2.jpg'
+import gratitude_physical_help from '../images/gratitude_physical_help.jpg';
+import eternal_gratitude_time_help from '../images/eternal_gratitude_time_help.jpg';
+import family_support_freedom from '../images/family_support_freedom.jpg';
+import financial_help_difficult_times from '../images/financial_help_difficult_times.jpg';
 
 
 export const images = {
@@ -941,6 +950,17 @@ export const images = {
   guru_help_needy_lesson,
   guru_preserve_goodness_teaching,
   guru_patient_guidance_journey,
+  gratitude_eternal_presence,
+  guru_programming_life_lesson,
+  action_over_thoughts_wisdom,
+  silent_friendship_dream_support,
+  guru_bearing_false_blame_lesson,
+ 
+
   thanks_ani_1,
   thanks_ani_2,
+  gratitude_physical_help,
+  eternal_gratitude_time_help,
+  family_support_freedom,
+  financial_help_difficult_times,
 };
