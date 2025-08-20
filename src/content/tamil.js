@@ -3730,7 +3730,7 @@ image: 'journey_in_darkness_light_search'
             },
             {
               id: '10.8',
-              title: "dhanasekar",
+              title: "தனசேகர்",
               paragraphs: [
                 {
                   content: `புதிய பயணத்தில் அனுபவம் இல்லாததால்...<br>
@@ -3818,7 +3818,7 @@ image: 'journey_in_darkness_light_search'
             },
             {
               id: '10.13',
-              title: "christopher",
+              title: "கிறிஸ்டோபர்",
               paragraphs: [
                 {
                   content: `உடல் உழைப்பால் செய்த உதவிக்கு,<br>
@@ -3834,7 +3834,7 @@ image: 'journey_in_darkness_light_search'
             },
             {
               id: '10.14',
-              title: "Robert",
+              title: "இராபர்ட் அருள்",
               paragraphs: [
                 {
                   content: `குடும்ப சுமைகளை தாங்கிக்கொண்டு <br>

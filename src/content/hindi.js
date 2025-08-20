@@ -3504,74 +3504,230 @@ image: 'journey_in_darkness_light_search'
       ]
     },
     {
-  "id": "10",
-  "title": "आभार भाषण",
-  "subsections": [
-    {
-      "id": "10.1",
-      "title": "ईश्वर, प्रकृति और तुलसी",
-      "paragraphs": [
-        { "content": "ईश्वर, प्रकृति और तुलसी", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.2",
-      "title": "कुमारन महागुरु",
-      "paragraphs": [
-        { "content": "कुमारन महागुरु", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.3",
-      "title": "डॉ. सेंथिल मुरुगन",
-      "paragraphs": [
-        { "content": "डॉ. सेंथिल मुरुगन", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.4",
-      "title": "वाण्मति टीचर",
-      "paragraphs": [
-        { "content": "वाण्मति टीचर", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.5",
-      "title": "कार्तिक गुरु",
-      "paragraphs": [
-        { "content": "कार्तिक गुरु", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.6",
-      "title": "गजेन्द्रन मित्र",
-      "paragraphs": [
-        { "content": "गजेन्द्रन मित्र", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.7",
-      "title": "सुबरमणियन एआई इंजीनियर",
-      "paragraphs": [
-        { "content": "सुबरमणियन एआई इंजीनियर", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.8",
-      "title": "इरुधया जोविट मेरी टीचर",
-      "paragraphs": [
-        { "content": "इरुधया जोविट मेरी टीचर", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.9",
-      "title": "किरुक्कन के सभी मित्र",
-      "paragraphs": [
-        { "content": "किरुक्कन के सभी मित्र", "image": "thanksgiving_speech" }
+      id: '10',
+      title: "आभार",
+      subsections: [
+        {
+          id: '10.1',
+          title: "ईश्वर, प्रकृति और तुलसी",
+          paragraphs: [
+            {
+              content: `तुलसी की सुखद सुगंध को साँसों में भरकर,<br>
+               मैं प्रकृति के माध्यम से ईश्वर को अनुभव करता हूँ।`,
+              image: "tulasi_divine_nature_experience"
+            }
+          ]
+        },
+        {
+          id: '10.2',
+          title: "कुमरन महागुरु",
+          paragraphs: [
+            {
+              content: `जो भी भाग्य है...<br>
+                वही मार्ग है...<br>
+               ऐसा मेरे गुरु ने सिखाया।`,
+              image: "guru_destiny_path_teaching"
+            }
+          ]
+        },
+        {
+          id: '10.3',
+          title: "डॉ. सेंथिल मुरुगन",
+          paragraphs: [
+            {
+              content: `अगर मैं गुरु से बंधा न होता,<br>
+              तो मैं अहंकार की कैद में होता...`,
+              image: "guru_wisdom_over_ego"
+            },
+            {
+              content: `हमेशा भावनाओं से मत सोचो,<br>
+              हमेशा विवेकपूर्ण सोचना सीखो...<br>
+               ऐसा मेरे गुरु ने सिखाया।`,
+              image: "guru_rational_thinking_lesson"
+            }
+          ]
+        },
+        {
+          id: '10.4',
+          title: "वान्मथि",
+          paragraphs: [
+            {
+              content: `अच्छा जीवन जीने के लिए,<br>
+               ईश्वर का भय होना चाहिए,<br>
+               ऐसा मेरे गुरु ने सिखाया।`,
+              image: "guru_divine_fear_life_lesson"
+            }
+          ]
+        },
+        {
+          id: '10.5',
+          title: "कार्तिक",
+          paragraphs: [
+            {
+              content: `भले ही स्वयं दुखी हो,<br>
+              जो तुम्हें खोजे उसके लिए जितना हो सके करना चाहिए।<br>
+              ऐसा मेरे गुरु ने सिखाया।`,
+              image: "guru_selfless_service_teaching"
+            }
+          ]
+        },
+        {
+          id: '10.6',
+          title: "एकलव्य",
+          paragraphs: [
+            {
+              content: `भले ही मेहनत और प्रयास नकार दिए जाएँ,<br>
+              अनुभवों से प्राप्त ज्ञान को कोई नहीं नकार सकता।<br>
+              ऐसा मेरे गुरु ने सिखाया।`,
+              image: "guru_experience_wisdom_eternal"
+            }
+          ]
+        },
+        {
+          id: '10.7',
+          title: "ऑडिटर. सेंथिल",
+          paragraphs: [
+            {
+              content: `जहाँ सच्ची गरीबी है,<br>
+              जहाँ भूख है,<br>
+              वहाँ जाकर मदद करनी चाहिए।<br>
+              ऐसा मेरे गुरु ने सिखाया।`,
+              image: "guru_help_needy_lesson"
+            },
+            {
+              content: `क्योंकि किसी ने धोखा दिया,<br>
+               हमें कभी भी अपने अच्छे गुण नहीं बदलने चाहिए।<br>
+               ऐसा मेरे गुरु ने सिखाया।`,
+              image: "guru_preserve_goodness_teaching"
+            }
+          ]
+        },
+        {
+          id: '10.8',
+          title: "धनशेखर",
+          paragraphs: [
+            {
+              content: `नई यात्रा में अनुभव की कमी के कारण...<br>
+              शुरुआत में आपने मेरी ओर से अपमान सहा,<br>
+               समय दिया,<br>
+                नया सोचने का अवसर दिया,<br>
+                 और मेरा मार्गदर्शन किया।<br>
+                 ऐसा मेरे गुरु ने सिखाया।`,
+              image: "guru_patient_guidance_journey"
+            },
+            {
+              content: `भले ही आप दूर हों,<br>
+               आपकी मदद हमेशा मौजूद रहेगी।<br>
+              जब तक मदद है,<br>
+               कृतज्ञता भी रहेगी।`,
+              image: "gratitude_eternal_presence"
+            }
+          ]
+        },
+        {
+          id: '10.9',
+          title: "सुबरमणियन एआई इंजीनियर",
+          paragraphs: [
+            {
+              content: `कल्पना को कहानी बनाना,<br> 
+              कहानी को पंक्तियों में बदलना,<br>
+              पंक्तियों को अक्षरों में बदलना,<br>
+              इनपुट देना,<br> 
+              आउटपुट प्राप्त करना — यही प्रोग्रामिंग है;<br>
+               ऐसा मेरे गुरु ने सिखाया।`,
+              image: "guru_programming_life_lesson"
+            },
+            {
+              content: `विचार बोलते नहीं हैं,<br>
+              वे कार्य करवाते हैं।<br>
+              केवल कार्य ही समृद्ध करता है।`,
+              image: "action_over_thoughts_wisdom"
+            }
+          ]
+        },
+        {
+          id: '10.10',
+          title: "गजेन्द्रन",
+          paragraphs: [
+            {
+              content: `जिसने मेरे सपनों को सहारा दिया,<br>
+              मौन मित्रता के लिए व्याकरण...`,
+              image: "silent_friendship_dream_support"
+            }
+          ]
+        },
+        {
+          id: '10.11',
+          title: "इरुधया जोवित मेरी",
+          paragraphs: [
+            {
+              content: `झूठे दोष को,<br>
+              और झूठी सजा को<br>
+              कैसे सहना है!<br>
+              ऐसा मेरे गुरु ने सिखाया।`,
+              image: "guru_bearing_false_blame_lesson"
+            }
+          ]
+        },
+        {
+          id: '10.12',
+          title: "अनीता एम.कॉम., डी.कूप., अकाउंटेंट",
+          paragraphs: [
+            {
+              content: `मैंने आपसे कभी सीधे बात नहीं की...<br>
+              पैसे के अलावा मैंने आपसे कभी कुछ नहीं माँगा...<br>
+              कठिन परिस्थितियों में आपने पैसा दिया,<br>
+              धन्यवाद कहने के लिए शब्द भी नहीं हैं...<br>
+              बल्कि, मैं कृतज्ञ रहना ही पसंद करती हूँ।`,
+              image: "thanks_ani_1"
+            },
+             {
+              content: `मैंने मदद माँगी...<br>
+               आपने मुझे शांति दी।<br>
+               केवल पैसों से ही नहीं,<br>
+               बल्कि अपने स्वभाव और दिल से भी...`,
+              image: "thanks_ani_2"
+            }
+          ]
+        },
+        {
+          id: '10.13',
+          title: "क्रिस्टोफर",
+          paragraphs: [
+            {
+              content: `शारीरिक श्रम से की गई मदद के लिए,<br>
+               मैं कैसे चुकाऊँ?`,
+              image: "gratitude_physical_help"
+            },
+            {
+              content: `समय से की गई मदद के लिए...<br>
+               जीवन भर ऋणी रहना पड़ता है,<br>
+               यही समय का नियम है।`,
+              image: "eternal_gratitude_time_help"
+            }
+          ]
+        },
+        {
+          id: '10.14',
+          title: "रॉबर्ट",
+          paragraphs: [
+            {
+              content: `परिवार का बोझ उठाते हुए भी,<br>
+              आपने मुझे स्वतंत्र रूप से उड़ने दिया।`,
+              image: "family_support_freedom"
+            },
+            {
+              content: `केवल स्वतंत्र रूप से उड़ने दिया ही नहीं,<br>
+               बल्कि कठिन समय में,<br>
+               अपनी कठिनाइयों के बावजूद,<br>
+               आपने आर्थिक मदद की।`,
+              image: "financial_help_difficult_times"
+            }
+          ]
+        }
       ]
     }
-  ]
-}
+    
 
   ],
 

@@ -3503,74 +3503,230 @@ Block చేసి వెళ్లిపోతే...<br>
       ]
     },
     {
-  "id": "10",
-  "title": "కృతజ్ఞతాభాషణం",
-  "subsections": [
-    {
-      "id": "10.1",
-      "title": "దేవుడు, ప్రకృతి, తులసి",
-      "paragraphs": [
-        { "content": "దేవుడు, ప్రకృతి, తులసి", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.2",
-      "title": "కుమారన్ మహాగురు",
-      "paragraphs": [
-        { "content": "కుమారన్ మహాగురు", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.3",
-      "title": "డా. సెంటిల్ మురుగన్",
-      "paragraphs": [
-        { "content": "డా. సెంటిల్ మురుగన్", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.4",
-      "title": "వాన్మతి టీచర్",
-      "paragraphs": [
-        { "content": "వాన్మతి టీచర్", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.5",
-      "title": "కార్తిక్ గురు",
-      "paragraphs": [
-        { "content": "కార్తిక్ గురు", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.6",
-      "title": "గజేంద్రన్ ఫ్రెండ్",
-      "paragraphs": [
-        { "content": "గజేంద్రన్ ఫ్రెండ్", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.7",
-      "title": "సుబ్రమణియన్ AI ఇంజనీర్",
-      "paragraphs": [
-        { "content": "సుబ్రమణియన్ AI ఇంజనీర్", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.8",
-      "title": "ఇరుధయా జోవిట్ మేరీ టీచర్",
-      "paragraphs": [
-        { "content": "ఇరుధయా జోవిట్ మేరీ టీచర్", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.9",
-      "title": "కిరుక్కన్ స్నేహితులు అందరూ",
-      "paragraphs": [
-        { "content": "కిరుక్కన్ స్నేహితులు అందరూ", "image": "thanksgiving_speech" }
+      id: '10',
+      title: "కృతజ్ఞతలు",
+      subsections: [
+        {
+          id: '10.1',
+          title: "దేవుడు, ప్రకృతి మరియు తులసి",
+          paragraphs: [
+            {
+              content: `మనసుకు హాయిగా తులసి సువాసన పీలుస్తూ,<br>
+               నేను ప్రకృతి ద్వారా దేవుడిని అనుభవిస్తున్నాను.`,
+              image: "tulasi_divine_nature_experience"
+            }
+          ]
+        },
+        {
+          id: '10.2',
+          title: "కుమరన్ మహాగురు",
+          paragraphs: [
+            {
+              content: `ఏ విధి అయితే ఉందో...<br>
+                అదే మార్గం...<br>
+               అని నా గురువు బోధించారు.`,
+              image: "guru_destiny_path_teaching"
+            }
+          ]
+        },
+        {
+          id: '10.3',
+          title: "డాక్టర్ సెంటిల్ మురుగన్",
+          paragraphs: [
+            {
+              content: `నేను గురువుతో కట్టుబడి ఉండకపోతే,<br>
+              అహంకారపు బంధంలో పడిపోయేవాడిని...`,
+              image: "guru_wisdom_over_ego"
+            },
+            {
+              content: `ఎప్పుడూ భావోద్వేగంతో ఆలోచించవద్దు,<br>
+              ఎప్పుడూ వివేకంతో ఆలోచించడం నేర్చుకో...<br>
+               అని నా గురువు బోధించారు.`,
+              image: "guru_rational_thinking_lesson"
+            }
+          ]
+        },
+        {
+          id: '10.4',
+          title: "వాన్మతి",
+          paragraphs: [
+            {
+              content: `మంచి జీవితం గడపడానికి,<br>
+               దైవభయం ఉండాలి,<br>
+               అని నా గురువు బోధించారు.`,
+              image: "guru_divine_fear_life_lesson"
+            }
+          ]
+        },
+        {
+          id: '10.5',
+          title: "కార్తిక్",
+          paragraphs: [
+            {
+              content: `తానే బాధలో ఉన్నా,<br>
+              తనను ఆశ్రయించిన వారికి సాధ్యమైనంత సహాయం చేయాలి.<br>
+              అని నా గురువు బోధించారు.`,
+              image: "guru_selfless_service_teaching"
+            }
+          ]
+        },
+        {
+          id: '10.6',
+          title: "ఏకలవ్య",
+          paragraphs: [
+            {
+              content: `కష్టం, శ్రమ నిరాకరించబడినా,<br>
+              అనుభవాల ద్వారా వచ్చిన జ్ఞానాన్ని ఎవ్వరూ నిరాకరించలేరు.<br>
+              అని నా గురువు బోధించారు.`,
+              image: "guru_experience_wisdom_eternal"
+            }
+          ]
+        },
+        {
+          id: '10.7',
+          title: "ఆడిటర్. సెంటిల్",
+          paragraphs: [
+            {
+              content: `ఎక్కడ నిజమైన పేదరికం ఉందో,<br>
+              ఎక్కడ ఆకలి ఉందో,<br>
+              అక్కడికి వెళ్లి సహాయం చేయాలి.<br>
+              అని నా గురువు బోధించారు.`,
+              image: "guru_help_needy_lesson"
+            },
+            {
+              content: `ఎవరో మోసం చేశారని,<br>
+               మన మంచి లక్షణాలను ఎప్పటికీ మార్చకూడదు.<br>
+               అని నా గురువు బోధించారు.`,
+              image: "guru_preserve_goodness_teaching"
+            }
+          ]
+        },
+        {
+          id: '10.8',
+          title: "ధనశేఖర్",
+          paragraphs: [
+            {
+              content: `కొత్త ప్రయాణంలో అనుభవం లేకపోవడం వల్ల...<br>
+              ఆరంభంలో నాపై అవమానాలను భరించి,<br>
+               నాకు సమయం ఇచ్చి,<br>
+                కొత్తగా ఆలోచించే అవకాశం ఇచ్చి,<br>
+                 నన్ను నడిపించారు.<br>
+                 అని నా గురువు బోధించారు.`,
+              image: "guru_patient_guidance_journey"
+            },
+            {
+              content: `మీరు దూరంగా ఉన్నా,<br>
+               మీ సహాయం ఎల్లప్పుడూ ఉంటుంది.<br>
+              సహాయం ఉన్నంతవరకు,<br>
+               కృతజ్ఞత కూడా ఉంటుంది.`,
+              image: "gratitude_eternal_presence"
+            }
+          ]
+        },
+        {
+          id: '10.9',
+          title: "సుబ్రహ్మణ్యన్ AI ఇంజనీర్",
+          paragraphs: [
+            {
+              content: `కల్పనను కథగా మార్చి,<br> 
+              కథను పంక్తులుగా మార్చి,<br>
+              పంక్తులను అక్షరాలుగా మార్చి,<br>
+              ఇన్‌పుట్ ఇచ్చి,<br> 
+              అవుట్‌పుట్ పొందడం — అదే ప్రోగ్రామింగ్;<br>
+               అని నా గురువు బోధించారు.`,
+              image: "guru_programming_life_lesson"
+            },
+            {
+              content: `ఆలోచనలు మాట్లాడవు,<br>
+              అవి మనలను చర్య చేయిస్తాయి.<br>
+              చర్య మాత్రమే సంపన్నం చేస్తుంది.`,
+              image: "action_over_thoughts_wisdom"
+            }
+          ]
+        },
+        {
+          id: '10.10',
+          title: "గజేంద్రన్",
+          paragraphs: [
+            {
+              content: `నా కలలకు చేయి అందించినవాడు,<br>
+              మౌన స్నేహానికి వ్యాకరణం...`,
+              image: "silent_friendship_dream_support"
+            }
+          ]
+        },
+        {
+          id: '10.11',
+          title: "ఇరుదయ జోవిట్ మేరీ",
+          paragraphs: [
+            {
+              content: `అబద్ధపు నిందను,<br>
+              అబద్ధపు శిక్షను<br>
+              ఎలా భరించాలో!<br>
+              అని నా గురువు బోధించారు.`,
+              image: "guru_bearing_false_blame_lesson"
+            }
+          ]
+        },
+        {
+          id: '10.12',
+          title: "అనితా M.Com., D.Coop., అకౌంటెంట్",
+          paragraphs: [
+            {
+              content: `నేను మీతో ఎప్పుడూ నేరుగా మాట్లాడలేదు...<br>
+              డబ్బు తప్ప నేను ఎప్పుడూ ఏదీ అడగలేదు...<br>
+              కష్టసమయంలో మీరు డబ్బు ఇచ్చారు,<br>
+              ధన్యవాదాలు చెప్పడానికి మాటలు కూడా లేవు...<br>
+              కానీ, నేను కృతజ్ఞతతో ఉండాలని మాత్రమే కోరుకుంటున్నాను.`,
+              image: "thanks_ani_1"
+            },
+             {
+              content: `నేను సహాయం అడిగాను...<br>
+               మీరు నన్ను శాంతింపజేశారు.<br>
+               డబ్బుతో మాత్రమే కాదు,<br>
+               మీ స్వభావం, హృదయం ద్వారానూ...`,
+              image: "thanks_ani_2"
+            }
+          ]
+        },
+        {
+          id: '10.13',
+          title: "క్రిస్టోఫర్",
+          paragraphs: [
+            {
+              content: `శారీరక శ్రమతో చేసిన సహాయానికి,<br>
+               నేను ఎలా తిరిగి చెల్లించగలను?`,
+              image: "gratitude_physical_help"
+            },
+            {
+              content: `సమయంతో చేసిన సహాయానికి...<br>
+               జీవితాంతం ఋణపడి ఉండాలి,<br>
+               అదే కాలం యొక్క ధర్మం.`,
+              image: "eternal_gratitude_time_help"
+            }
+          ]
+        },
+        {
+          id: '10.14',
+          title: "రాబర్ట్",
+          paragraphs: [
+            {
+              content: `కుటుంబ భారం మోస్తూ కూడా,<br>
+              మీరు నన్ను స్వేచ్ఛగా ఎగరనిచ్చారు.`,
+              image: "family_support_freedom"
+            },
+            {
+              content: `కేవలం స్వేచ్ఛగా ఎగరనివ్వడమే కాదు,<br>
+               కష్ట సమయంలో,<br>
+               మీ కష్టాల మధ్య కూడా,<br>
+               మీరు ఆర్థిక సహాయం చేశారు.`,
+              image: "financial_help_difficult_times"
+            }
+          ]
+        }
       ]
     }
-  ]
-}
+    
 
   ],
 

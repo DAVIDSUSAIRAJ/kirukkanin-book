@@ -3502,74 +3502,229 @@ continue to relate with you...`,
       ]
     },
     {
-  "id": "10",
-  "title": "Thanksgiving Speech",
-  "subsections": [
-    {
-      "id": "10.1",
-      "title": "God, Nature, and Tulsi",
-      "paragraphs": [
-        { "content": "God, Nature, and Tulsi", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.2",
-      "title": "Kumaran Mahaguru",
-      "paragraphs": [
-        { "content": "Kumaran Mahaguru", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.3",
-      "title": "Dr. Senthil Murugan",
-      "paragraphs": [
-        { "content": "Dr. Senthil Murugan", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.4",
-      "title": "Vanmathi Teacher",
-      "paragraphs": [
-        { "content": "Vanmathi Teacher", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.5",
-      "title": "Karthik Guru",
-      "paragraphs": [
-        { "content": "Karthik Guru", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.6",
-      "title": "Gajendran Friend",
-      "paragraphs": [
-        { "content": "Gajendran Friend", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.7",
-      "title": "Subramanian AI Engineer",
-      "paragraphs": [
-        { "content": "Subramanian AI Engineer", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.8",
-      "title": "Irudhaya Jovit Mary Teacher",
-      "paragraphs": [
-        { "content": "Irudhaya Jovit Mary Teacher", "image": "thanksgiving_speech" }
-      ]
-    },
-    {
-      "id": "10.9",
-      "title": "All Friends of Kirukkan",
-      "paragraphs": [
-        { "content": "All Friends of Kirukkan", "image": "thanksgiving_speech" }
+      id: '10',
+      title: "Acknowledgements",
+      subsections: [
+        {
+          id: '10.1',
+          title: "God, Nature, and Tulasi",
+          paragraphs: [
+            {
+              content: `Breathing in the soothing fragrance of Tulasi,<br>
+               I experience God through nature.`,
+              image: "tulasi_divine_nature_experience"
+            }
+          ]
+        },
+        {
+          id: '10.2',
+          title: "Kumaran Maha Guru",
+          paragraphs: [
+            {
+              content: `Whatever the destiny...<br>
+                That is the path...<br>
+               taught by my Guru.`,
+              image: "guru_destiny_path_teaching"
+            }
+          ]
+        },
+        {
+          id: '10.3',
+          title: "Dr. Senthil Murugan",
+          paragraphs: [
+            {
+              content: `If I had not been bound to my Guru,<br>
+              I would have been imprisoned by ego...`,
+              image: "guru_wisdom_over_ego"
+            },
+            {
+              content: `Do not always think emotionally,<br>
+              Learn to always think rationally...<br>
+               taught by my Guru.`,
+              image: "guru_rational_thinking_lesson"
+            }
+          ]
+        },
+        {
+          id: '10.4',
+          title: "Vanmathi",
+          paragraphs: [
+            {
+              content: `To live a good life,<br>
+               one must have divine fear,<br>
+               taught by my Guru.`,
+              image: "guru_divine_fear_life_lesson"
+            }
+          ]
+        },
+        {
+          id: '10.5',
+          title: "Karthik",
+          paragraphs: [
+            {
+              content: `Even while suffering himself,<br>
+              one must do whatever possible for those who seek him.<br>
+              taught by my Guru.`,
+              image: "guru_selfless_service_teaching"
+            }
+          ]
+        },
+        {
+          id: '10.6',
+          title: "Ekalavan",
+          paragraphs: [
+            {
+              content: `Even if hard work and effort are denied,<br>
+              the wisdom born of experiences cannot be denied by anyone.<br>
+              taught by my Guru.`,
+              image: "guru_experience_wisdom_eternal"
+            }
+          ]
+        },
+        {
+          id: '10.7',
+          title: "Auditor. Senthil",
+          paragraphs: [
+            {
+              content: `Where there is true poverty,<br>
+              where there is hunger,<br>
+              there one must go and help.<br>
+              taught by my Guru.`,
+              image: "guru_help_needy_lesson"
+            },
+            {
+              content: `Because someone deceived us,<br>
+               we must never change our good nature.<br>
+               taught by my Guru.`,
+              image: "guru_preserve_goodness_teaching"
+            }
+          ]
+        },
+        {
+          id: '10.8',
+          title: "Dhanasekar",
+          paragraphs: [
+            {
+              content: `In my new journey, due to lack of experience...<br>
+              at the beginning, you bore insults on my behalf,<br>
+               gave me time,<br>
+                gave me the chance to think anew,<br>
+                 and guided me.<br>
+                 taught by my Guru.`,
+              image: "guru_patient_guidance_journey"
+            },
+            {
+              content: `Even if you are far away,<br>
+               your help will always be present.<br>
+              As long as help is present,<br>
+               gratitude will remain too.`,
+              image: "gratitude_eternal_presence"
+            }
+          ]
+        },
+        {
+          id: '10.9',
+          title: "Subramanian AI Engineer",
+          paragraphs: [
+            {
+              content: `Turning imagination into story,<br> 
+              story into lines,<br>
+              lines into letters,<br>
+              giving input,<br> 
+              receiving output — that is programming;<br>
+               taught by my Guru.`,
+              image: "guru_programming_life_lesson"
+            },
+            {
+              content: `Thoughts do not speak,<br>
+              they make you act.<br>
+              Only action enriches.`,
+              image: "action_over_thoughts_wisdom"
+            }
+          ]
+        },
+        {
+          id: '10.10',
+          title: "Gajendran",
+          paragraphs: [
+            {
+              content: `The one who gave hand to my dreams,<br>
+              the grammar for silent friendship...`,
+              image: "silent_friendship_dream_support"
+            }
+          ]
+        },
+        {
+          id: '10.11',
+          title: "Iruthaya Jovit Mary",
+          paragraphs: [
+            {
+              content: `How to bear false blame,<br>
+              and false punishment!<br>
+              taught by my Guru.`,
+              image: "guru_bearing_false_blame_lesson"
+            }
+          ]
+        },
+        {
+          id: '10.12',
+          title: "Anitha M.Com., D.Coop., Accountant",
+          paragraphs: [
+            {
+              content: `I have never spoken directly with you...<br>
+              other than money, I never asked you for anything...<br>
+              in difficult situations you gave money,<br>
+              I don’t even have words to thank you enough...<br>
+              but instead, I wish to stay with gratitude.`,
+              image: "thanks_ani_1"
+            },
+             {
+              content: `I asked for help...<br>
+               You gave me peace.<br>
+               Not just with money,<br>
+               but with your character and heart...`,
+              image: "thanks_ani_2"
+            }
+          ]
+        },
+        {
+          id: '10.13',
+          title: "Christopher",
+          paragraphs: [
+            {
+              content: `For the help done with physical labor,<br>
+               how can I ever repay?`,
+              image: "gratitude_physical_help"
+            },
+            {
+              content: `For the help given with time...<br>
+               I must remain indebted for a lifetime,<br>
+               that is the law of time.`,
+              image: "eternal_gratitude_time_help"
+            }
+          ]
+        },
+        {
+          id: '10.14',
+          title: "Robert",
+          paragraphs: [
+            {
+              content: `While carrying family burdens,<br>
+              you let me fly freely.`,
+              image: "family_support_freedom"
+            },
+            {
+              content: `Not only did you let me fly freely,<br>
+               but in difficult times,<br>
+               despite your own hardships,<br>
+               you gave me financial help.`,
+              image: "financial_help_difficult_times"
+            }
+          ]
+        }
       ]
     }
-  ]
-}
+    
 
   ],
   conclusion: {
