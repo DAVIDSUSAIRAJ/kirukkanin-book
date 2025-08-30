@@ -885,17 +885,19 @@ function App() {
 
     if (selectedSection === "foreword") {
       title = content.foreword.title;
-      allParagraphs =
-        content.foreword.paragraphs?.map((p) => ({
-          ...p,
-          image: images[p.image],
-        })) || [];
+                allParagraphs =
+            content.foreword.paragraphs?.map((p) => ({
+              ...p,
+              displayImage: images[p.image], // for background image
+              image: p.image, // preserve original image name
+            })) || [];
     } else if (selectedSection === "conclusion") {
       title = content.conclusion.title;
       allParagraphs =
         content.conclusion.paragraphs?.map((p) => ({
           ...p,
-          image: images[p.image],
+          displayImage: images[p.image], // for background image
+          image: p.image, // preserve original image name
         })) || [];
     } else if (selectedSection) {
       const section = content.sections.find((section) =>
@@ -909,7 +911,8 @@ function App() {
         allParagraphs =
           subsection.paragraphs?.map((p) => ({
             ...p,
-            image: images[p.image],
+            displayImage: images[p.image], // for background image
+            image: p.image, // preserve original image name
           })) || [];
       }
     }
@@ -1148,8 +1151,8 @@ function App() {
                         : ""
                     } ${isCardLoading ? "card-loading" : ""}`}
                     style={{
-                      backgroundImage: paragraph?.image
-                        ? `url(${paragraph.image})`
+                      backgroundImage: paragraph?.displayImage
+                        ? `url(${paragraph.displayImage})`
                         : "none",
                     }}
                     ref={cardRef}
@@ -1180,6 +1183,12 @@ function App() {
                         }
                         dangerouslySetInnerHTML={{ __html: paragraph.content }}
                       ></p>
+                      {/* Display image name */}
+                      {/* {paragraph.image && (
+                        <p className="image-name">
+                          {paragraph.image}
+                        </p>
+                      )} */}
                     </div>
                   </div>
                 );
@@ -2187,6 +2196,19 @@ function App() {
 
         .header-language-space {
           /* Empty space for language selector */
+        }
+
+        /* Image name styling */
+        .image-name {
+          font-size: 12px;
+          color: rgba(255, 255, 255, 0.8);
+          text-align: right;
+          margin-top: 10px;
+          padding: 4px 8px;
+          background: rgba(0, 0, 0, 0.5);
+          border-radius: 4px;
+          display: inline-block;
+          float: right;
         }
 
         /* Card Navigation Styles */
