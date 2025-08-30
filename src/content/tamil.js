@@ -3688,7 +3688,7 @@ image: 'journey_in_darkness_light_search'
             },
             {
               id: '10.5',
-              title: "கார்த்திக்",
+              title: "கார்த்திக் அருணாசலம்",
               paragraphs: [
                 {
                   content: `தான் வாடியிருந்தாலும் <br>
@@ -3788,8 +3788,8 @@ image: 'journey_in_darkness_light_search'
               title: "இருதய ஜோவிட் மேரி",
               paragraphs: [
                 {
-                  content: `வீண் பழியையும்<br>,
-                  வீண் தண்டனையையும் <br>
+                  content: `வீண் பழியையும்,<br>
+                  வீண் தண்டனையையும், <br>
                   எப்படி சுமப்பது! என்று கற்றுக்கொடுத்த ஆசான்.`,
                   image: "guru_bearing_false_blame_lesson"
                 }
@@ -3838,7 +3838,7 @@ image: 'journey_in_darkness_light_search'
               paragraphs: [
                 {
                   content: `குடும்ப சுமைகளை தாங்கிக்கொண்டு <br>
-                  என்னை சுதந்திரமாக பறக்க விட்டவர்.`,
+                  என்னை சுதந்திரமாக பறக்கவிட்டவர்.`,
                   image: "family_support_freedom"
                 },
                 {
