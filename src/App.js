@@ -5,6 +5,7 @@ import { englishContent } from "./content/english";
 import { hindiContent } from "./content/hindi";
 import { teluguContent } from "./content/telugu";
 import { malayalamContent } from "./content/malayalam";
+import { germanContent } from "./content/german";
 import {
   languages,
   defaultLanguage,
@@ -22,6 +23,7 @@ const contentMap = {
   hi: hindiContent,
   te: teluguContent,
   ml: malayalamContent,
+  de: germanContent,
 };
 
 // Translation functions
@@ -32,6 +34,7 @@ const getAuthorText = (languageCode) => {
     hi: "लेखक: डेविड सुसैराज",
     te: "రచయిత: డేవిడ్ సుసైరాజ్",
     ml: "രചയിതാവ്: ഡേവിഡ് സുസൈരാജ്",
+    de: "Autor: David Susairaj",
   };
   return translations[languageCode] || translations.en;
 };
@@ -49,6 +52,7 @@ const getGlobalSearchPlaceholder = (languageCode, isMobile = false) => {
     ml: isMobile
       ? "തിരയുക..."
       : "മുഴുവൻ പുസ്തകത്തിലും തിരയുക (ex: സ്നേഹം, സന്തോഷം)...",
+    de: isMobile ? "Suchen..." : "Suchen Sie das gesamte Buch (ex: Liebe, Glück)...",
   };
   return translations[languageCode] || translations.en;
 };
@@ -60,6 +64,7 @@ const getSectionSearchPlaceholder = (languageCode, isMobile = false) => {
     hi: "भाग में खोजें...",
     te: "విభాగంలో వెతకండి...",
     ml: "വിഭാഗത്തിൽ തിരയുക...",
+    de: "Abschnitt suchen...",
   };
   return translations[languageCode] || translations.en;
 };
@@ -71,6 +76,7 @@ const getResultsText = (languageCode, count) => {
     hi: `${count} परिणाम मिले`,
     te: `${count} ఫలితాలు దొరికాయి`,
     ml: `${count} ഫലങ്ങൾ കണ്ടെത്തി`,
+    de: `${count} Ergebnisse gefunden`,
   };
   return translations[languageCode] || translations.en;
 };
@@ -82,6 +88,7 @@ const getSearchResultsTitle = (languageCode, count) => {
     hi: `खोज परिणाम (${count})`,
     te: `వెతుకుడు ఫలితాలు (${count})`,
     ml: `തിരയൽ ഫലങ്ങൾ (${count})`,
+    de: `Suchergebnisse (${count})`,
   };
   return translations[languageCode] || translations.en;
 };
@@ -93,7 +100,8 @@ const getNoResultsText = (languageCode) => {
     hi: "कोई खोज परिणाम नहीं मिला",
     te: "వెతుకుడు ఫలితాలు దొరకలేదు",
     ml: "തിരയൽ ഫലങ്ങൾ കണ്ടെത്തിയില്ല",
-  };
+    de: "Keine Suchergebnisse gefunden",
+    };
   return translations[languageCode] || translations.en;
 };
 

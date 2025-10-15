@@ -28,6 +28,12 @@ export const languages = {
     name: 'മലയാളം',
     direction: 'ltr',
     fontFamily: "'Noto Sans Malayalam', sans-serif"
+  },
+  german: {
+    code: 'de',
+    name: 'Deutsch',
+    direction: 'ltr',
+    fontFamily: "'Roboto', sans-serif"
   }
 };
 
