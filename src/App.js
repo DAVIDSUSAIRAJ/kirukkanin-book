@@ -1486,7 +1486,52 @@ function App() {
         <div className="footer-content">
           <p>&copy; 2024 {content.title}</p>
           <p>{getAuthorText(languages[currentLanguage].code)}</p>
-          <p>MailId: <strong>davidsusairaj1996@gmail.com</strong></p>
+          <p style={{ margin: '8px 0' }}>
+            <a
+              href="mailto:davidsusairaj1996@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                textDecoration: 'none',
+                padding: '8px 16px',
+                borderRadius: '6px',
+                backgroundColor: '#f8f9fa',
+                border: '1px solid #dee2e6',
+                transition: 'all 0.3s ease',
+                fontSize: '14px'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#e9ecef';
+                e.currentTarget.style.borderColor = '#adb5bd';
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#f8f9fa';
+                e.currentTarget.style.borderColor = '#dee2e6';
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+            >
+              <span style={{ 
+                color: '#6c757d',
+                fontWeight: '500',
+                fontSize: '13px'
+              }}>
+                ✉️ Email:
+              </span>
+              <span style={{ 
+                color: '#0066cc',
+                fontWeight: '500',
+                fontSize: '14px'
+              }}>
+                davidsusairaj1996@gmail.com
+              </span>
+            </a>
+          </p>
         </div>
       </footer>
       <ChatbotIcon />
