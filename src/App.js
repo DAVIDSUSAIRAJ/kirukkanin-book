@@ -2268,7 +2268,7 @@ function App() {
         /* Card Navigation Styles */
         .card-navigation {
           position: fixed;
-          bottom: 53px;
+          bottom: 113px;
           left: 0;
           right: 0;
           background: rgba(255, 255, 255, 0.95);
