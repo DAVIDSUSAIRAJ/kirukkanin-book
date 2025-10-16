@@ -1486,6 +1486,7 @@ function App() {
         <div className="footer-content">
           <p>&copy; 2024 {content.title}</p>
           <p>{getAuthorText(languages[currentLanguage].code)}</p>
+          <p>mailId: <strong>davidsusairaj1996@gmail.com</strong></p>
         </div>
       </footer>
       <ChatbotIcon />
