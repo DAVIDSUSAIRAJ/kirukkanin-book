@@ -1,9 +1,25 @@
 {
-  "short_name": "Kirukkanin Book",
-  "name": "Kirukkanin Book - A Philosophical Journey",
+  "short_name": "கிருக்கனின் பயணத் தத்துவங்கள்",
+  "name": "Philosophies of a Madman's Wanderings - கிருக்கனின் பயணத் தத்துவங்கள்",
+  "description": "David Susairaj's multilingual philosophical journey exploring life's wisdom in 6 languages",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -11,5 +27,7 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "lang": "ta",
+  "orientation": "portrait-primary"
 }
