@@ -3,13 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <!-- Favicon and Icon settings -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/logo192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/logo512.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="https://madwanderingsbook.vercel.app/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="https://madwanderingsbook.vercel.app/logo.png" />
+    <link rel="apple-touch-icon" href="https://madwanderingsbook.vercel.app/logo.png" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -50,10 +46,9 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
+      "@type": "Book",
       "name": "Philosophies of a Madman's Wanderings",
       "alternateName": "கிருக்கனின் பயணத் தத்துவங்கள்",
-      "url": "https://madwanderingsbook.vercel.app/",
       "description": "David Susairaj's wandering philosophies - A multilingual book of life philosophies exploring profound wisdom and insights. Available in Tamil, Malayalam, Telugu, Hindi, English and German",
       "author": {
         "@type": "Person",
@@ -68,51 +63,18 @@
           "https://david-portfolio-two.vercel.app/"
         ]
       },
-      "publisher": {
-        "@type": "Organization",
-        "name": "David Susairaj",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://madwanderingsbook.vercel.app/logo.png",
-          "width": 512,
-          "height": 512
-        }
-      },
       "inLanguage": ["ta", "ml", "te", "hi", "en", "de"],
+      "url": "https://madwanderingsbook.vercel.app/",
       "image": "https://madwanderingsbook.vercel.app/logo.png",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://madwanderingsbook.vercel.app/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-    
-    <!-- Additional Book Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Book",
-      "name": "Philosophies of a Madman's Wanderings",
-      "alternateName": "கிருக்கனின் பயணத் தத்துவங்கள்",
-      "description": "David Susairaj's wandering philosophies - A multilingual book of life philosophies exploring profound wisdom and insights. Available in Tamil, Malayalam, Telugu, Hindi, English and German",
-      "author": {
-        "@type": "Person",
-        "name": "David Susairaj",
-        "jobTitle": "MERN Stack Developer",
-        "email": "davidsusairaj1996@gmail.com",
-        "url": "https://www.linkedin.com/in/davidsusairaj"
-      },
       "publisher": {
         "@type": "Person",
         "name": "David Susairaj"
-      },
-      "inLanguage": ["ta", "ml", "te", "hi", "en", "de"],
-      "url": "https://madwanderingsbook.vercel.app/",
-      "image": "https://madwanderingsbook.vercel.app/logo.png"
+      }
     }
     </script>
     <!-- ========== End SEO METATAGS WITH OG ========== -->
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;500;600;700&display=swap" rel="stylesheet">
