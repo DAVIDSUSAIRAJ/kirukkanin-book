@@ -1484,7 +1484,7 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <p>&copy; 2024 {content.title}</p>
+          <p>&copy; 2025 {content.title}</p>
           <p>{getAuthorText(languages[currentLanguage].code)}</p>
           <p style={{ margin: '8px 0' }}>
             <a
