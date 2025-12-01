@@ -1534,7 +1534,7 @@ function App() {
           </p>
         </div>
       </footer>
-      <ChatbotIcon />
+      <ChatbotIcon currentLanguage={currentLanguage} />
 
       <style>{`
         .header {
