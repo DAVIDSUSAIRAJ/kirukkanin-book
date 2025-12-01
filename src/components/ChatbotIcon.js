@@ -15,6 +15,16 @@ const ChatbotIcon = ({ currentLanguage = 'tamil' }) => {
     return currentLanguage || 'tamil';
   };
 
+  // Parse markdown links [text](url) to clickable links
+  const parseMarkdownLinks = (text) => {
+    if (!text) return '';
+    const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    
+    return text.replace(markdownLinkRegex, (match, linkText, url) => {
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="message-link">${url}</a>`;
+    });
+  };
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -137,7 +147,16 @@ const ChatbotIcon = ({ currentLanguage = 'tamil' }) => {
               {messages.map((message) => (
                 <div key={message.id} className={`message ${message.sender}`}>
                   <div className="message-bubble">
-                    <div className="message-text">{message.text}</div>
+                    {message.sender === 'bot' ? (
+                      <div 
+                        className="message-text"
+                        dangerouslySetInnerHTML={{ 
+                          __html: parseMarkdownLinks(message.text) 
+                        }} 
+                      />
+                    ) : (
+                      <div className="message-text">{message.text}</div>
+                    )}
                     <div className="message-time">
                       {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                     </div>
@@ -483,6 +502,27 @@ const ChatbotIcon = ({ currentLanguage = 'tamil' }) => {
           font-size: 14px;
           line-height: 1.5;
           white-space: pre-wrap;
+        }
+
+        .message-link {
+          color: #667eea;
+          text-decoration: underline;
+          font-weight: 500;
+          transition: all 0.2s ease;
+          cursor: pointer;
+        }
+
+        .message-link:hover {
+          color: #764ba2;
+          text-decoration: none;
+        }
+
+        .message.bot .message-link {
+          color: #667eea;
+        }
+
+        .message.bot .message-link:hover {
+          color: #764ba2;
         }
 
         .message-time {
