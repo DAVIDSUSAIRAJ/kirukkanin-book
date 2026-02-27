@@ -174,11 +174,6 @@ function App() {
         return;
       }
 
-      if (preloadedImages.has(imageUrl)) {
-        resolve(imageUrl);
-        return;
-      }
-
       const img = new Image();
       img.onload = () => {
         setPreloadedImages((prev) => new Set([...prev, imageUrl]));
@@ -190,7 +185,7 @@ function App() {
       };
       img.src = imageUrl;
     });
-  }, [preloadedImages]);
+  }, []);
 
   // Preload adjacent card images
   const preloadAdjacentImages = useCallback((paragraphs, currentIndex) => {
@@ -234,11 +229,7 @@ function App() {
       }
 
       imagesToPreload.forEach((imageUrl) => {
-        if (
-          imageUrl &&
-          typeof imageUrl === "string" &&
-          !preloadedImages.has(imageUrl)
-        ) {
+        if (imageUrl && typeof imageUrl === "string") {
           preloadImage(imageUrl).catch((error) => {
             console.warn("Failed to preload image:", imageUrl, error);
           });
@@ -247,7 +238,7 @@ function App() {
     } catch (error) {
       console.warn("Error in preloadAdjacentImages:", error);
     }
-  }, [preloadImage, preloadedImages]);
+  }, [preloadImage]);
 
   useEffect(() => {
     const languageCode = languages[currentLanguage].code;
