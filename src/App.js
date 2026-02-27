@@ -13,7 +13,7 @@ import {
   getLanguageFont,
 } from "./config/languages";
 import LanguageSelector from "./components/LanguageSelector";
-import { getImage } from "./content/images";
+import { images } from "./content/images";
 import home_cover_image from "./images/home_cover_image.png";
 import end_cover_image from "./images/end_cover_image.png";
 import ChatbotIcon from "./components/ChatbotIcon";
@@ -139,7 +139,6 @@ function App() {
   const [isCardTransitioning, setIsCardTransitioning] = useState(false);
   const [preloadedImages, setPreloadedImages] = useState(new Set());
   const [cardLoadingState, setCardLoadingState] = useState({});
-  const [loadedImageUrls, setLoadedImageUrls] = useState({});
 
   const [justify, setJustify] = useState("center");
 
@@ -167,42 +166,28 @@ function App() {
   const [searchResults, setSearchResults] = useState([]);
   const [isGlobalSearching, setIsGlobalSearching] = useState(false);
 
-  // Image preloading function with dynamic import
-  const preloadImage = useCallback(async (imageName) => {
-    if (!imageName) {
-      return null;
-    }
-
-    if (loadedImageUrls[imageName]) {
-      return loadedImageUrls[imageName];
-    }
-
-    try {
-      const imageUrl = await getImage(imageName);
-      
-      if (imageUrl) {
-        return new Promise((resolve, reject) => {
-          const img = new Image();
-          img.onload = () => {
-            setLoadedImageUrls((prev) => ({ ...prev, [imageName]: imageUrl }));
-            setPreloadedImages((prev) => new Set([...prev, imageName]));
-            resolve(imageUrl);
-          };
-          img.onerror = (error) => {
-            console.warn("Image loading failed:", imageName);
-            reject(error);
-          };
-          img.src = imageUrl;
-        });
+  // Image preloading function
+  const preloadImage = useCallback((imageUrl) => {
+    return new Promise((resolve, reject) => {
+      if (!imageUrl) {
+        reject(new Error("No image URL provided"));
+        return;
       }
-      return null;
-    } catch (error) {
-      console.warn("Failed to load image:", imageName, error);
-      return null;
-    }
-  }, [loadedImageUrls]);
 
-  // Preload adjacent card images (optimized - current + next 2 only)
+      const img = new Image();
+      img.onload = () => {
+        setPreloadedImages((prev) => new Set([...prev, imageUrl]));
+        resolve(imageUrl);
+      };
+      img.onerror = (error) => {
+        console.warn("Image loading failed:", imageUrl);
+        reject(error);
+      };
+      img.src = imageUrl;
+    });
+  }, []);
+
+  // Preload adjacent card images
   const preloadAdjacentImages = useCallback((paragraphs, currentIndex) => {
     if (
       !paragraphs ||
@@ -216,7 +201,26 @@ function App() {
     const imagesToPreload = [];
 
     try {
-      // Preload current image (priority)
+      // Preload next image
+      if (
+        currentIndex < paragraphs.length - 1 &&
+        paragraphs[currentIndex + 1]?.image
+      ) {
+        const nextImage = paragraphs[currentIndex + 1].image;
+        if (nextImage && typeof nextImage === "string") {
+          imagesToPreload.push(nextImage);
+        }
+      }
+
+      // Preload previous image
+      if (currentIndex > 0 && paragraphs[currentIndex - 1]?.image) {
+        const prevImage = paragraphs[currentIndex - 1].image;
+        if (prevImage && typeof prevImage === "string") {
+          imagesToPreload.push(prevImage);
+        }
+      }
+
+      // Preload current image if not already loaded
       if (paragraphs[currentIndex]?.image) {
         const currentImage = paragraphs[currentIndex].image;
         if (currentImage && typeof currentImage === "string") {
@@ -224,21 +228,10 @@ function App() {
         }
       }
 
-      // Preload next 2 images only (reduced from aggressive loading)
-      for (let i = 1; i <= 2; i++) {
-        const nextIndex = currentIndex + i;
-        if (nextIndex < paragraphs.length && paragraphs[nextIndex]?.image) {
-          const nextImage = paragraphs[nextIndex].image;
-          if (nextImage && typeof nextImage === "string") {
-            imagesToPreload.push(nextImage);
-          }
-        }
-      }
-
-      imagesToPreload.forEach((imageName) => {
-        if (imageName && typeof imageName === "string") {
-          preloadImage(imageName).catch((error) => {
-            console.warn("Failed to preload image:", imageName, error);
+      imagesToPreload.forEach((imageUrl) => {
+        if (imageUrl && typeof imageUrl === "string") {
+          preloadImage(imageUrl).catch((error) => {
+            console.warn("Failed to preload image:", imageUrl, error);
           });
         }
       });
@@ -376,54 +369,6 @@ function App() {
       }
     }
   }, [selectedSection, currentCardIndex, content, isMobile, preloadAdjacentImages]);
-
-  // Preload search result images
-  useEffect(() => {
-    if (searchResults.length > 0) {
-      searchResults.slice(0, 10).forEach((result) => {
-        if (result.image) {
-          preloadImage(result.image).catch((error) => {
-            console.warn("Failed to preload search result image:", error);
-          });
-        }
-      });
-    }
-  }, [searchResults, preloadImage]);
-
-  // Preload images for desktop view (all visible paragraphs)
-  useEffect(() => {
-    if (selectedSection && !isMobile && content) {
-      let paragraphs = [];
-
-      try {
-        if (selectedSection === "foreword" && content.foreword) {
-          paragraphs = content.foreword.paragraphs || [];
-        } else if (selectedSection === "conclusion" && content.conclusion) {
-          paragraphs = content.conclusion.paragraphs || [];
-        } else if (content.sections) {
-          const section = content.sections.find(
-            (section) =>
-              section.subsections &&
-              section.subsections.some((sub) => sub.id === selectedSection)
-          );
-          const subsection = section?.subsections?.find(
-            (sub) => sub.id === selectedSection
-          );
-          paragraphs = subsection?.paragraphs || [];
-        }
-
-        paragraphs.forEach((paragraph) => {
-          if (paragraph?.image) {
-            preloadImage(paragraph.image).catch((error) => {
-              console.warn("Failed to load desktop image:", error);
-            });
-          }
-        });
-      } catch (error) {
-        console.warn("Error loading desktop images:", error);
-      }
-    }
-  }, [selectedSection, content, isMobile, preloadImage]);
 
   // Global search functionality
   const performGlobalSearch = (query) => {
@@ -652,11 +597,7 @@ function App() {
             <div
               key={index}
               className="content-card search-result-card"
-              style={{ 
-                backgroundImage: result.image && loadedImageUrls[result.image]
-                  ? `url(${loadedImageUrls[result.image]})`
-                  : "none"
-              }}
+              style={{ backgroundImage: `url(${images[result.image]})` }}
               onClick={() => handleSearchResultClick(result)}
             >
               <div className="card-content">
@@ -950,10 +891,20 @@ function App() {
 
     if (selectedSection === "foreword") {
       title = content.foreword.title;
-      allParagraphs = content.foreword.paragraphs || [];
+                allParagraphs =
+            content.foreword.paragraphs?.map((p) => ({
+              ...p,
+              displayImage: images[p.image], // for background image
+              image: p.image, // preserve original image name
+            })) || [];
     } else if (selectedSection === "conclusion") {
       title = content.conclusion.title;
-      allParagraphs = content.conclusion.paragraphs || [];
+      allParagraphs =
+        content.conclusion.paragraphs?.map((p) => ({
+          ...p,
+          displayImage: images[p.image], // for background image
+          image: p.image, // preserve original image name
+        })) || [];
     } else if (selectedSection) {
       const section = content.sections.find((section) =>
         section.subsections.some((sub) => sub.id === selectedSection)
@@ -963,7 +914,12 @@ function App() {
       );
       if (subsection) {
         title = subsection.title;
-        allParagraphs = subsection.paragraphs || [];
+        allParagraphs =
+          subsection.paragraphs?.map((p) => ({
+            ...p,
+            displayImage: images[p.image], // for background image
+            image: p.image, // preserve original image name
+          })) || [];
       }
     }
 
@@ -1027,7 +983,10 @@ function App() {
     if (sectionSearchQuery.trim()) {
       const filteredParagraphs = performSectionSearch(sectionSearchQuery);
       if (filteredParagraphs) {
-        paragraphs = filteredParagraphs;
+        paragraphs = filteredParagraphs.map((p) => ({
+          ...p,
+          image: images[p.image],
+        }));
       }
     }
 
@@ -1194,8 +1153,8 @@ function App() {
                         : ""
                     } ${isCardLoading ? "card-loading" : ""}`}
                     style={{
-                      backgroundImage: paragraph?.image && loadedImageUrls[paragraph.image]
-                        ? `url(${loadedImageUrls[paragraph.image]})`
+                      backgroundImage: paragraph?.displayImage
+                        ? `url(${paragraph.displayImage})`
                         : "none",
                     }}
                     ref={cardRef}
