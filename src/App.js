@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import "./App.css";
 import { tamilContent } from "./content/tamil";
 import { englishContent } from "./content/english";
@@ -167,7 +167,7 @@ function App() {
   const [isGlobalSearching, setIsGlobalSearching] = useState(false);
 
   // Image preloading function
-  const preloadImage = (imageUrl) => {
+  const preloadImage = useCallback((imageUrl) => {
     return new Promise((resolve, reject) => {
       if (!imageUrl) {
         reject(new Error("No image URL provided"));
@@ -190,10 +190,10 @@ function App() {
       };
       img.src = imageUrl;
     });
-  };
+  }, [preloadedImages]);
 
   // Preload adjacent card images
-  const preloadAdjacentImages = (paragraphs, currentIndex) => {
+  const preloadAdjacentImages = useCallback((paragraphs, currentIndex) => {
     if (
       !paragraphs ||
       paragraphs.length === 0 ||
@@ -247,7 +247,7 @@ function App() {
     } catch (error) {
       console.warn("Error in preloadAdjacentImages:", error);
     }
-  };
+  }, [preloadImage, preloadedImages]);
 
   useEffect(() => {
     const languageCode = languages[currentLanguage].code;
@@ -377,7 +377,7 @@ function App() {
         console.warn("Error in preloading images:", error);
       }
     }
-  }, [selectedSection, currentCardIndex, content?.sections, isMobile]);
+  }, [selectedSection, currentCardIndex, content, isMobile, preloadAdjacentImages]);
 
   // Global search functionality
   const performGlobalSearch = (query) => {
@@ -577,8 +577,6 @@ function App() {
           const containerWidth = container.offsetWidth;
           const dotWidth = activeDot.offsetWidth;
           const dotLeft = activeDot.offsetLeft;
-          const scrollLeft = container.scrollLeft;
-          const padding = containerWidth * 0.1;
 
           const newScrollLeft = dotLeft - containerWidth / 2 + dotWidth / 2;
           container.scrollTo({
@@ -592,8 +590,6 @@ function App() {
 
   // Function to render search results as cards
   const renderSearchResultsAsCards = () => {
-    const isMobile = window.innerWidth <= 768;
-
     return (
       <div className="search-results-cards">
         <div className="search-results-header-title">
@@ -794,29 +790,31 @@ function App() {
               typeof paragraphs[0].image === "string"
             ) {
               const firstImageUrl = paragraphs[0].image;
+              const firstCardIndex = 0;
               if (!preloadedImages.has(firstImageUrl)) {
                 // Show loading state for first card
-                setCardLoadingState((prev) => ({ ...prev, [0]: true }));
+                setCardLoadingState((prev) => ({ ...prev, [firstCardIndex]: true }));
 
                 // Preload the first image
                 preloadImage(firstImageUrl)
                   .then(() => {
-                    setCardLoadingState((prev) => ({ ...prev, [0]: false }));
+                    setCardLoadingState((prev) => ({ ...prev, [firstCardIndex]: false }));
                   })
                   .catch((error) => {
                     console.warn("Failed to preload first card image:", error);
-                    setCardLoadingState((prev) => ({ ...prev, [0]: false }));
+                    setCardLoadingState((prev) => ({ ...prev, [firstCardIndex]: false }));
                   });
               } else {
                 // Image already loaded
-                setCardLoadingState((prev) => ({ ...prev, [0]: false }));
+                setCardLoadingState((prev) => ({ ...prev, [firstCardIndex]: false }));
               }
 
               // Preload adjacent images for smooth navigation
-              preloadAdjacentImages(paragraphs, 0);
+              preloadAdjacentImages(paragraphs, firstCardIndex);
             } else {
               // No image, ensure loading state is false
-              setCardLoadingState((prev) => ({ ...prev, [0]: false }));
+              const firstCardIndex = 0;
+              setCardLoadingState((prev) => ({ ...prev, [firstCardIndex]: false }));
             }
 
             // End transition after animation completes
@@ -832,7 +830,8 @@ function App() {
         } catch (error) {
           console.warn("Error in handleSectionSelect:", error);
           setIsCardTransitioning(false);
-          setCardLoadingState((prev) => ({ ...prev, [0]: false }));
+          const firstCardIndex = 0;
+          setCardLoadingState((prev) => ({ ...prev, [firstCardIndex]: false }));
         }
       }, 50);
     } else {
@@ -1151,10 +1150,6 @@ function App() {
 
                 // Check if card is loading or transitioning
                 const isCardLoading = cardLoadingState[actualIndex] || false;
-                const imageUrl = paragraph?.image;
-                const isImagePreloaded = imageUrl
-                  ? preloadedImages.has(imageUrl)
-                  : true; // Default to true if no image
 
                 return (
                   <div
