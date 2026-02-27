@@ -1,5 +1,5 @@
 import React from 'react';
-import { languages, getLanguageName } from '../config/languages';
+import { languages } from '../config/languages';
 
 const LanguageSelector = ({ currentLanguage, onLanguageChange }) => {
   return (
