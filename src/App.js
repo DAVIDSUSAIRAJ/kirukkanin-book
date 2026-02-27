@@ -985,7 +985,8 @@ function App() {
       if (filteredParagraphs) {
         paragraphs = filteredParagraphs.map((p) => ({
           ...p,
-          image: images[p.image],
+          displayImage: images[p.image],
+          image: p.image,
         }));
       }
     }
