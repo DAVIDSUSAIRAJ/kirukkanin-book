@@ -6,6 +6,7 @@ import { hindiContent } from "./content/hindi";
 import { teluguContent } from "./content/telugu";
 import { malayalamContent } from "./content/malayalam";
 import { germanContent } from "./content/german";
+import { nepaliContent } from "./content/nepali";
 import {
   languages,
   defaultLanguage,
@@ -24,6 +25,7 @@ const contentMap = {
   te: teluguContent,
   ml: malayalamContent,
   de: germanContent,
+  ne: nepaliContent,
 };
 
 // Translation functions
@@ -35,6 +37,7 @@ const getAuthorText = (languageCode) => {
     te: "రచయిత: డేవిడ్ సుసైరాజ్",
     ml: "രചയിതാവ്: ഡേവിഡ് സുസൈരാജ്",
     de: "Autor: David Susairaj",
+    ne: "लेखक: डेभिड सुसैराज",
   };
   return translations[languageCode] || translations.en;
 };
@@ -53,6 +56,7 @@ const getGlobalSearchPlaceholder = (languageCode, isMobile = false) => {
       ? "തിരയുക..."
       : "മുഴുവൻ പുസ്തകത്തിലും തിരയുക (ex: സ്നേഹം, സന്തോഷം)...",
     de: isMobile ? "Suchen..." : "Suchen Sie das gesamte Buch (ex: Liebe, Glück)...",
+    ne: isMobile ? "खोज्नुहोस्..." : "सम्पूर्ण पुस्तकमा खोज्नुहोस् (ex: प्रेम, खुशी)...",
   };
   return translations[languageCode] || translations.en;
 };
@@ -65,6 +69,7 @@ const getSectionSearchPlaceholder = (languageCode, isMobile = false) => {
     te: "విభాగంలో వెతకండి...",
     ml: "വിഭാഗത്തിൽ തിരയുക...",
     de: "Abschnitt suchen...",
+    ne: "खण्डमा खोज्नुहोस्...",
   };
   return translations[languageCode] || translations.en;
 };
@@ -77,6 +82,7 @@ const getResultsText = (languageCode, count) => {
     te: `${count} ఫలితాలు దొరికాయి`,
     ml: `${count} ഫലങ്ങൾ കണ്ടെത്തി`,
     de: `${count} Ergebnisse gefunden`,
+    ne: `${count} परिणामहरू फेला परे`,
   };
   return translations[languageCode] || translations.en;
 };
@@ -89,6 +95,7 @@ const getSearchResultsTitle = (languageCode, count) => {
     te: `వెతుకుడు ఫలితాలు (${count})`,
     ml: `തിരയൽ ഫലങ്ങൾ (${count})`,
     de: `Suchergebnisse (${count})`,
+    ne: `खोज परिणामहरू (${count})`,
   };
   return translations[languageCode] || translations.en;
 };
@@ -101,6 +108,7 @@ const getNoResultsText = (languageCode) => {
     te: "వెతుకుడు ఫలితాలు దొరకలేదు",
     ml: "തിരയൽ ഫലങ്ങൾ കണ്ടെത്തിയില്ല",
     de: "Keine Suchergebnisse gefunden",
+    ne: "कुनै खोज परिणाम फेला परेन",
     };
   return translations[languageCode] || translations.en;
 };

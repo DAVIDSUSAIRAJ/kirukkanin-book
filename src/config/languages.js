@@ -34,6 +34,12 @@ export const languages = {
     name: 'Deutsch',
     direction: 'ltr',
     fontFamily: "'Roboto', sans-serif"
+  },
+  nepali: {
+    code: 'ne',
+    name: 'नेपाली',
+    direction: 'ltr',
+    fontFamily: "'Noto Sans Devanagari', sans-serif"
   }
 };
 
