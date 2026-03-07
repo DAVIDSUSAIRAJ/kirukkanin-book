@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 
-const ChatbotIcon = ({ currentLanguage = 'tamil' }) => {
+const ChatbotIcon = ({ currentLanguage = 'tamil', content, onTopicAction }) => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [messages, setMessages] = useState([]);
@@ -8,12 +8,107 @@ const ChatbotIcon = ({ currentLanguage = 'tamil' }) => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
-  const chatHistoryRef = useRef([]); // Maintain chat history for context
+  const chatHistoryRef = useRef([]);
 
-  // Get language name for API (backend expects full language name)
   const getLanguageForAPI = () => {
     return currentLanguage || 'tamil';
   };
+
+  const getAllTopics = useCallback(() => {
+    if (!content || !content.sections) return [];
+    const topics = [];
+    for (const section of content.sections) {
+      topics.push({
+        name: section.title,
+        sectionId: section.id,
+        type: 'section'
+      });
+      if (section.subsections) {
+        for (const sub of section.subsections) {
+          topics.push({
+            name: sub.title,
+            sectionId: section.id,
+            subsectionId: sub.id,
+            sectionTitle: section.title,
+            type: 'subsection'
+          });
+        }
+      }
+    }
+    if (content.foreword) {
+      topics.push({ name: content.foreword.title, sectionId: 'foreword', type: 'special' });
+    }
+    if (content.conclusion) {
+      topics.push({ name: content.conclusion.title, sectionId: 'conclusion', type: 'special' });
+    }
+    return topics;
+  }, [content]);
+
+  const parseTopicCommand = useCallback((text) => {
+    if (!text || !content) return null;
+    const trimmed = text.trim();
+
+    const openMatch = trimmed.match(/^open\s+(.+?)(?:\s+topic)?[.\s]*$/i);
+    const closeMatch = trimmed.match(/^close\s+(.+?)(?:\s+topic)?[.\s]*$/i);
+    const helpMatch = /^(help|commands?)$/i.test(trimmed);
+
+    if (helpMatch) return { action: 'help' };
+    if (!openMatch && !closeMatch) return null;
+
+    const action = openMatch ? 'open' : 'close';
+    const topicQuery = (openMatch || closeMatch)[1].trim().toLowerCase();
+    const topics = getAllTopics();
+
+    let match = topics.find(t => t.name.toLowerCase() === topicQuery);
+    if (!match) match = topics.find(t => t.type === 'subsection' && t.name.toLowerCase().includes(topicQuery));
+    if (!match) match = topics.find(t => t.type === 'section' && t.name.toLowerCase().includes(topicQuery));
+    if (!match) match = topics.find(t => t.type === 'special' && t.name.toLowerCase().includes(topicQuery));
+    if (!match) match = topics.find(t => topicQuery.includes(t.name.toLowerCase()));
+
+    if (!match) return { action, notFound: true, query: topicQuery };
+    return { action, ...match };
+  }, [content, getAllTopics]);
+
+  const executeTopicCommand = useCallback((command) => {
+    if (command.action === 'help') {
+      const topics = getAllTopics();
+      const subsectionNames = topics
+        .filter(t => t.type === 'subsection')
+        .map(t => `• ${t.name}`)
+        .join('\n');
+      return `🛠️ Available Commands:\n\n📂 open <topic>  →  Expand & navigate to topic\n📁 close <topic>  →  Collapse topic section\n\nAvailable Topics:\n${subsectionNames}\n\nExample: "open nature" or "close nature"`;
+    }
+
+    if (command.notFound) {
+      const topics = getAllTopics();
+      const topicNames = topics
+        .filter(t => t.type === 'subsection')
+        .map(t => `• ${t.name}`)
+        .join('\n');
+      return `❌ Topic "${command.query}" not found.\n\nAvailable topics:\n${topicNames}\n\nTry: "open nature" or "close nature"`;
+    }
+
+    if (onTopicAction) {
+      onTopicAction(command.action, {
+        sectionId: command.sectionId,
+        subsectionId: command.subsectionId
+      });
+    }
+
+    if (command.action === 'open') {
+      if (command.type === 'subsection') {
+        return `✅ Opened "${command.name}" under "${command.sectionTitle}".\nSection expanded & navigated to ${command.name}.`;
+      } else if (command.type === 'special') {
+        return `✅ Navigated to "${command.name}".`;
+      }
+      return `✅ Expanded "${command.name}" section in the sidebar.`;
+    }
+
+    if (command.type === 'subsection') {
+      return `✅ Collapsed "${command.sectionTitle}" section (contains "${command.name}").`;
+    }
+    return `✅ Collapsed "${command.name}" section in the sidebar.`;
+  }, [getAllTopics, onTopicAction]);
 
   // Parse markdown links [text](url) to clickable links
   const parseMarkdownLinks = (text) => {
@@ -51,7 +146,6 @@ const ChatbotIcon = ({ currentLanguage = 'tamil' }) => {
     const userMessage = inputText.trim();
     setInputText('');
     
-    // Add user message
     const newUserMessage = {
       id: Date.now(),
       text: userMessage,
@@ -59,6 +153,22 @@ const ChatbotIcon = ({ currentLanguage = 'tamil' }) => {
       timestamp: new Date()
     };
     setMessages(prev => [...prev, newUserMessage]);
+
+    const command = parseTopicCommand(userMessage);
+    if (command) {
+      const responseText = executeTopicCommand(command);
+      const botMessage = {
+        id: Date.now() + 1,
+        text: responseText,
+        sender: 'bot',
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, botMessage]);
+      chatHistoryRef.current.push({ role: "user", content: userMessage });
+      chatHistoryRef.current.push({ role: "assistant", content: responseText });
+      return;
+    }
+
     setIsLoading(true);
 
     try {
@@ -183,7 +293,7 @@ const ChatbotIcon = ({ currentLanguage = 'tamil' }) => {
                   ref={inputRef}
                   type="text"
                   className="chatbot-input"
-                  placeholder="Type your message..."
+                  placeholder="Type message or 'open/close topic'..."
                   value={inputText}
                   onChange={(e) => setInputText(e.target.value)}
                   onKeyPress={handleKeyPress}

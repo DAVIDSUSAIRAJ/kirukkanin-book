@@ -741,6 +741,23 @@ function App() {
     }));
   };
 
+  const handleChatbotTopicAction = (action, topicInfo) => {
+    if (action === 'open') {
+      if (topicInfo.sectionId !== 'foreword' && topicInfo.sectionId !== 'conclusion') {
+        setExpandedSections(prev => ({ ...prev, [topicInfo.sectionId]: true }));
+      }
+      if (topicInfo.subsectionId) {
+        handleSectionSelect(topicInfo.subsectionId);
+      } else if (topicInfo.sectionId === 'foreword' || topicInfo.sectionId === 'conclusion') {
+        handleSectionSelect(topicInfo.sectionId);
+      }
+    } else if (action === 'close') {
+      if (topicInfo.sectionId !== 'foreword' && topicInfo.sectionId !== 'conclusion') {
+        setExpandedSections(prev => ({ ...prev, [topicInfo.sectionId]: false }));
+      }
+    }
+  };
+
   const handleSectionSelect = (section) => {
     setSelectedSection(section);
     setIsSidebarVisible(false);
@@ -1529,7 +1546,7 @@ function App() {
           </p>
         </div>
       </footer>
-      <ChatbotIcon currentLanguage={currentLanguage} />
+      <ChatbotIcon currentLanguage={currentLanguage} content={content} onTopicAction={handleChatbotTopicAction} />
 
       <style>{`
         .header {
